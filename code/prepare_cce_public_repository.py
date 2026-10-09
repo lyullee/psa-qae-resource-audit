@@ -21,6 +21,7 @@ RESULTS = ROOT / "10_TEA_LCA_Python" / "results" / "pycharm_publication_enhancem
 MANIFEST = RESULTS / "PSA_QAE_CCE_SUBMISSION_PACKAGE_MANIFEST.json"
 AUTHORS = RESULTS / "PSA_QAE_CCE_AUTHOR_METADATA.json"
 DEFAULT_DESTINATION = ROOT / "10_TEA_LCA_Python" / "release" / "psa-qae-resource-audit"
+VERSION_DOI = "10.5281/zenodo.23271867"
 
 GROUP_DIRECTORIES = {
     "main_text": "manuscript",
@@ -143,7 +144,7 @@ Project code is released under the MIT License. Original text, tables, figures, 
 
 ## Citation
 
-Use `CITATION.cff`. A version DOI will be added after the first archived release.
+Use `CITATION.cff`. Archived release: https://doi.org/{VERSION_DOI}
 """
     (destination / "README.md").write_text(text, encoding="utf-8")
 
@@ -170,6 +171,8 @@ def write_citation(destination: Path, author_data: dict) -> None:
             "type: software",
             "version: 0.1.0",
             f"date-released: {date.today().isoformat()}",
+            f'doi: "{VERSION_DOI}"',
+            f'url: "https://doi.org/{VERSION_DOI}"',
             "authors:",
             *author_blocks,
             "keywords:",
@@ -209,7 +212,7 @@ def write_zenodo_metadata(destination: Path, author_data: dict) -> None:
         ),
         "creators": creators,
         "access_right": "open",
-        "license": "mit-license",
+        "license": "cc-by-4.0",
         "keywords": [
             "pressure swing adsorption",
             "quantum amplitude estimation",

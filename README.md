@@ -35,4 +35,4 @@ Project code is released under the MIT License. Original text, tables, figures, 
 
 ## Citation
 
-Use `CITATION.cff`. A version DOI will be added after the first archived release.
+Use `CITATION.cff`. Archived release: https://doi.org/10.5281/zenodo.23271867
