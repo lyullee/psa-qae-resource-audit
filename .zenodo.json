@@ -1,0 +1,37 @@
+{
+  "title": "Resource-aware quantum amplitude estimation for chance-constrained pressure swing adsorption: classical baselines, compiled oracle costs, and a hardware boundary",
+  "upload_type": "software",
+  "description": "Reproducibility package for a process-linked audit of quantum amplitude estimation in pressure swing adsorption, including classical baselines, process and circuit resource boundaries, external controls, and a small IBM QPU experiment.",
+  "creators": [
+    {
+      "name": "Lee, Ugwiyeon",
+      "affiliation": "Korea Gas Safety Corporation",
+      "orcid": "0009-0008-8976-5363"
+    },
+    {
+      "name": "Bae, Seong-Yun",
+      "affiliation": "Korea Gas Safety Corporation",
+      "orcid": "0009-0003-8731-428X"
+    },
+    {
+      "name": "Kim, Hakrae",
+      "affiliation": "Korea Gas Safety Corporation",
+      "orcid": "0009-0002-5048-3568"
+    },
+    {
+      "name": "Lee, Jungsu",
+      "affiliation": "Korea Gas Safety Corporation",
+      "orcid": "0009-0006-9347-453X"
+    }
+  ],
+  "access_right": "open",
+  "license": "mit-license",
+  "keywords": [
+    "pressure swing adsorption",
+    "quantum amplitude estimation",
+    "chance-constrained optimization",
+    "process systems engineering",
+    "quantum resource estimation"
+  ],
+  "notes": "The package reports negative and conditional findings. It does not establish quantum advantage or industrial H2 validation. Original generated data and figures are also available under CC BY 4.0 as stated in the repository README."
+}

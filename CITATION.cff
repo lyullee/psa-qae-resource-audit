@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the archived release."
+title: "Resource-aware quantum amplitude estimation for chance-constrained pressure swing adsorption: classical baselines, compiled oracle costs, and a hardware boundary"
+type: software
+version: 0.1.0
+date-released: 2026-10-10
+authors:
+  - family-names: "Lee"
+    given-names: "Ugwiyeon"
+    orcid: "https://orcid.org/0009-0008-8976-5363"
+    affiliation: "Korea Gas Safety Corporation"
+  - family-names: "Bae"
+    given-names: "Seong-Yun"
+    orcid: "https://orcid.org/0009-0003-8731-428X"
+    affiliation: "Korea Gas Safety Corporation"
+  - family-names: "Kim"
+    given-names: "Hakrae"
+    orcid: "https://orcid.org/0009-0002-5048-3568"
+    affiliation: "Korea Gas Safety Corporation"
+  - family-names: "Lee"
+    given-names: "Jungsu"
+    orcid: "https://orcid.org/0009-0006-9347-453X"
+    affiliation: "Korea Gas Safety Corporation"
+keywords:
+  - "pressure swing adsorption"
+  - "quantum amplitude estimation"
+  - "chance constraints"
+  - "process systems engineering"
+  - "resource estimation"
+license: MIT
+repository-code: "https://github.com/TO-BE-ASSIGNED/psa-qae-resource-audit"

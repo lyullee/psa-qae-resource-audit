@@ -1,0 +1,262 @@
+{
+  "schema": "psa-qae-cce-gate-compilation-manifest/v1",
+  "status": "pass",
+  "created_utc": "2026-10-09T05:11:41.725165+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\psa_qae\\.venv-qpu\\Scripts\\python.exe",
+  "rerun_performed": true,
+  "runs": [
+    {
+      "script": "10_TEA_LCA_Python\\psa_qae\\compile_primary_finite_oracle_gate_resources.py",
+      "returncode": 0,
+      "stdout_tail": "ror mitigation\"\n    },\n    \"linear_ECR\": {\n      \"shots_per_power\": 100,\n      \"logical_oracle_queries\": 3500,\n      \"median_transpiled_two_qubit_gates\": 883600.0,\n      \"note\": \"sum of median circuit counts multiplied by shots; excludes reset/readout and error mitigation\"\n    }\n  },\n  \"outputs\": [\n    \"C:\\\\Users\\\\lyul\\\\Desktop\\\\DocuData\\\\혐기성소화 공정 프로젝트\\\\10_TEA_LCA_Python\\\\results\\\\pycharm_publication_enhancement\\\\PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_GATE_RESOURCES.json\",\n    \"C:\\\\Users\\\\lyul\\\\Desktop\\\\DocuData\\\\혐기성소화 공정 프로젝트\\\\10_TEA_LCA_Python\\\\results\\\\pycharm_publication_enhancement\\\\PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_GATE_RESOURCES.csv\",\n    \"C:\\\\Users\\\\lyul\\\\Desktop\\\\DocuData\\\\혐기성소화 공정 프로젝트\\\\10_TEA_LCA_Python\\\\results\\\\pycharm_publication_enhancement\\\\PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_GATE_RESOURCES.md\",\n    \"C:\\\\Users\\\\lyul\\\\Desktop\\\\DocuData\\\\혐기성소화 공정 프로젝트\\\\10_TEA_LCA_Python\\\\results\\\\pycharm_publication_enhancement\\\\PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_GATE_RESOURCES_FIGURE.png\"\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "10_TEA_LCA_Python\\psa_qae\\compile_primary_linear_surrogate_oracle.py",
+      "returncode": 0,
+      "stdout_tail": ",\n    \"transpiled_basis\": \"u,cx; all-to-all connectivity\",\n    \"transpiler_optimization_level\": 1,\n    \"transpiled_depth\": 59012,\n    \"transpiled_size\": 79806,\n    \"transpiled_cx\": 35160,\n    \"frozen_schedule_phase_oracle_calls\": 1500,\n    \"frozen_schedule_cx_lower_bound_excluding_loader\": 52740000\n  },\n  \"outputs\": [\n    \"C:\\\\Users\\\\lyul\\\\Desktop\\\\DocuData\\\\혐기성소화 공정 프로젝트\\\\10_TEA_LCA_Python\\\\results\\\\pycharm_publication_enhancement\\\\PSA_QAE_CCE_PRIMARY_LINEAR_SURROGATE_ORACLE.json\",\n    \"C:\\\\Users\\\\lyul\\\\Desktop\\\\DocuData\\\\혐기성소화 공정 프로젝트\\\\10_TEA_LCA_Python\\\\results\\\\pycharm_publication_enhancement\\\\PSA_QAE_CCE_PRIMARY_LINEAR_SURROGATE_ORACLE.csv\",\n    \"C:\\\\Users\\\\lyul\\\\Desktop\\\\DocuData\\\\혐기성소화 공정 프로젝트\\\\10_TEA_LCA_Python\\\\results\\\\pycharm_publication_enhancement\\\\PSA_QAE_CCE_PRIMARY_LINEAR_SURROGATE_ORACLE.md\",\n    \"C:\\\\Users\\\\lyul\\\\Desktop\\\\DocuData\\\\혐기성소화 공정 프로젝트\\\\10_TEA_LCA_Python\\\\results\\\\pycharm_publication_enhancement\\\\PSA_QAE_CCE_PRIMARY_LINEAR_SURROGATE_ORACLE_FIGURE.png\"\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "10_TEA_LCA_Python\\psa_qae\\compile_primary_copula_state_loader.py",
+      "returncode": 0,
+      "stdout_tail": "_fidelity_check\": null,\n      \"transpiled_basis\": \"u,cx; all-to-all connectivity\",\n      \"transpiled_depth\": 524251,\n      \"transpiled_size\": 524268,\n      \"transpiled_cx_prepare\": 262125,\n      \"transpiled_cx_prepare_uncompute\": 524250,\n      \"probability_table_mib_float64\": 2.0\n    }\n  ],\n  \"accuracy_tier\": {\n    \"bits_per_active_feature\": 7,\n    \"active_features\": 9,\n    \"loader_qubits\": 63,\n    \"dense_basis_states\": 9223372036854775808,\n    \"dense_probability_table_bytes_float64\": 73786976294838206464,\n    \"dense_amplitude_vector_bytes_complex128\": 147573952589676412928,\n    \"dense_probability_table_gib\": 68719476736.0,\n    \"dense_probability_table_eib\": 64.0,\n    \"arbitrary_state_rotation_upper_bound\": 9223372036854775807,\n    \"response_oracle_logical_qubits\": 99,\n    \"response_oracle_cx\": 35160,\n    \"response_oracle_event_disagreement\": 0.002044677734375,\n    \"interpretation\": \"dense exact loading is infeasible; a structured reversible Gaussian/quantile loader is required\"\n  }\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "10_TEA_LCA_Python\\psa_qae\\cce_primary_threshold_activity.py",
+      "returncode": 0,
+      "stdout_tail": "34300994873047,\n    \"p427_purity_marginal\": 1.0,\n    \"p427_recovery_marginal\": 0.4705629348754883,\n    \"both_constraints_active_at_0427\": false,\n    \"selected_policy\": \"0.420\",\n    \"selection_stable_across_scrambles\": true,\n    \"replicate_selections\": \"[0.42, 0.42, 0.42, 0.42]\"\n  },\n  \"active_joint_rows_selecting_0420\": 8,\n  \"outputs\": [\n    \"C:\\\\Users\\\\lyul\\\\Desktop\\\\DocuData\\\\혐기성소화 공정 프로젝트\\\\10_TEA_LCA_Python\\\\results\\\\pycharm_publication_enhancement\\\\PSA_QAE_CCE_PRIMARY_THRESHOLD_ACTIVITY.json\",\n    \"C:\\\\Users\\\\lyul\\\\Desktop\\\\DocuData\\\\혐기성소화 공정 프로젝트\\\\10_TEA_LCA_Python\\\\results\\\\pycharm_publication_enhancement\\\\PSA_QAE_CCE_PRIMARY_THRESHOLD_ACTIVITY.csv\",\n    \"C:\\\\Users\\\\lyul\\\\Desktop\\\\DocuData\\\\혐기성소화 공정 프로젝트\\\\10_TEA_LCA_Python\\\\results\\\\pycharm_publication_enhancement\\\\PSA_QAE_CCE_PRIMARY_THRESHOLD_ACTIVITY.md\",\n    \"C:\\\\Users\\\\lyul\\\\Desktop\\\\DocuData\\\\혐기성소화 공정 프로젝트\\\\10_TEA_LCA_Python\\\\results\\\\pycharm_publication_enhancement\\\\PSA_QAE_CCE_PRIMARY_THRESHOLD_ACTIVITY_FIGURE.png\"\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "10_TEA_LCA_Python\\psa_qae\\compile_cce_primary_final_event_arithmetic.py",
+      "returncode": 0,
+      "stdout_tail": "{\n  \"status\": \"primary_quantized_joint_event_arithmetic_compiled_clean_phase_oracle_stream_aggregation_and_css_open\",\n  \"selected_bits\": 16,\n  \"coefficient_bits\": 8,\n  \"integer_event_matches\": 32,\n  \"clean_phase_oracle\": {\n    \"logical_qubits\": 125,\n    \"depth_all_to_all\": 355454,\n    \"size\": 504895,\n    \"cx\": 182981,\n    \"u\": 321914\n  },\n  \"qpu_submission\": false\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "10_TEA_LCA_Python\\psa_qae\\compile_cce_primary_policy_stream_event_oracle.py",
+      "returncode": 0,
+      "stdout_tail": "compiling policy 0.420 aggregation\ncompiling policy 0.420 flag compute\ncompiling policy 0.420 clean oracle\ncompiling policy 0.427 aggregation\ncompiling policy 0.427 flag compute\ncompiling policy 0.427 clean oracle\ncompiling policy 0.430 aggregation\ncompiling policy 0.430 flag compute\ncompiling policy 0.430 clean oracle\n{\n  \"status\": \"candidate_policy_collapsed_stream_aggregation_and_joint_event_compiled_physical_css_open\",\n  \"selected_aggregate_bits\": 19,\n  \"candidate_integer_event_matches\": 96,\n  \"ledger_support_event_matches\": 32,\n  \"max_clean_oracle\": {\n    \"logical_qubits\": 510,\n    \"cx\": 1286021,\n    \"depth\": 2481760\n  },\n  \"qpu_submission\": false\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "validations": {
+    "finite_gate_status": true,
+    "finite_logical_queries": true,
+    "finite_all_to_all_cx": true,
+    "linear_gate_status": true,
+    "linear_first_bits_below_mlae_rmse": true,
+    "linear_7bit_qubits": true,
+    "linear_7bit_cx": true,
+    "linear_7bit_schedule_lower_bound": true,
+    "loader_status": true,
+    "loader_1bit_fidelity": true,
+    "loader_2bit_cx": true,
+    "loader_7bit_dense_boundary": true,
+    "threshold_status": true,
+    "frozen_purity_inactive": true,
+    "active_joint_sensitivity_rows": true,
+    "final_event_status": true,
+    "final_event_precision": true,
+    "final_event_labels": true,
+    "final_event_primitive_resources": true,
+    "policy_stream_event_status": true,
+    "policy_stream_event_precision": true,
+    "policy_stream_event_labels": true,
+    "policy_stream_event_resources": true,
+    "ibm_preflight_no_submission": true
+  },
+  "artifacts": [
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\psa_two_bed_spatial_tank_n2_independent_source_uncertainty_32.csv",
+      "bytes": 13897,
+      "sha256": "3cb58e724e7996e73dd9f53ce615adaee84babcc9be3e42480be0981921dbe8b"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\psa_independent_source_surrogate_same_prior_qmc_32.py",
+      "bytes": 9613,
+      "sha256": "1041b6417fe3a466536530c9d086d18f3431b1fc2f5eb7ed41cfe5542d2b0428"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\compile_primary_finite_oracle_gate_resources.py",
+      "bytes": 19648,
+      "sha256": "f392dbdc9949b71068f964cb08d283be1bf1eb1e5bb5339d4662a73575277700"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\compile_primary_linear_surrogate_oracle.py",
+      "bytes": 18907,
+      "sha256": "f179400edaf77439bb3febfb3cb0d099b2a9b01ec435626ae6f5bb251b8d16ec"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\compile_primary_copula_state_loader.py",
+      "bytes": 14112,
+      "sha256": "ce7780f95e285ca31c34366a700d43f2c4ae579098a667054a568fc8e6824fea"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\cce_primary_threshold_activity.py",
+      "bytes": 11324,
+      "sha256": "0bf6d58a73d7874d6fdd670b113ae9ea16691b8b04830b7e7c08a59d5675faa4"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\compile_cce_primary_final_event_arithmetic.py",
+      "bytes": 23335,
+      "sha256": "101c0cbe023d935b0a0238bf0b04157b3cb8b85a8f1221543cc5e1cda39e8e09"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\compile_cce_primary_policy_stream_event_oracle.py",
+      "bytes": 39407,
+      "sha256": "728998ddf08be60213308be00adc81be893453c9ebc6647e2d9a612e520d60e2"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_GATE_RESOURCES.json",
+      "bytes": 8401,
+      "sha256": "d0db483808878583189783ea3a4d382bae975fb669a6cb848a8dd23a341f8682"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_GATE_RESOURCES.csv",
+      "bytes": 854,
+      "sha256": "4613a7fd80df3721508451cb6f0af5571b75e26830906b5c63307d786403d02a"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_GATE_RESOURCES.md",
+      "bytes": 2769,
+      "sha256": "90332bdfc41fda7aaa456e3337d5b15b0b8cdb065928db42bbd1ca40709e8043"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_GATE_RESOURCES_FIGURE.png",
+      "bytes": 143391,
+      "sha256": "2986e552cc73218a7b52caf061221eb3dcd2bca86c2553d8b4851e804d99dd2a"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_LINEAR_SURROGATE_ORACLE.json",
+      "bytes": 14741,
+      "sha256": "1afc9f1c88ef60b0c7b029e231b9bc6f2eed5ec8bc756afe0e24f2828d1b727e"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_LINEAR_SURROGATE_ORACLE.csv",
+      "bytes": 1381,
+      "sha256": "a2e76d4a4656c85d9ce90a229ad2ef94dc45b2144bdd5c3dfc26433d71aac9ab"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_LINEAR_SURROGATE_ORACLE.md",
+      "bytes": 2203,
+      "sha256": "55a939597c6447112e0ed76e1643a132940fc24074883c8959c070053e384dae"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_LINEAR_SURROGATE_ORACLE_FIGURE.png",
+      "bytes": 154783,
+      "sha256": "e167001926389eaac98afa8bfe2f8d5299779c2792e4e5ba5e10336ef6b6dff7"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_COPULA_STATE_LOADER.json",
+      "bytes": 3904,
+      "sha256": "600c26c6b1e81e22f7891ee97a7b2cf251e83901f76475002c1646b4543b1344"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_COPULA_STATE_LOADER.csv",
+      "bytes": 736,
+      "sha256": "2c5e50e24b7d6ede11e6c70f081531f14697cb043af88268b3d8091f538d4cd8"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_COPULA_STATE_LOADER.md",
+      "bytes": 1804,
+      "sha256": "88c5081ce8f989bfdf2de3c67cbdbced380c6f25678478dc1c598ac99075fff5"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_COPULA_STATE_LOADER_FIGURE.png",
+      "bytes": 133746,
+      "sha256": "e8f2479565b6a9c824a3a79dcb59eabb99fbd6885fa49a3eecf2f207765066d0"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_THRESHOLD_ACTIVITY.json",
+      "bytes": 18847,
+      "sha256": "e700a32982a2a38bcf70d5a5d0c96c42f801e5f61fb25bb6a852fddbcfb49b83"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_THRESHOLD_ACTIVITY.csv",
+      "bytes": 4037,
+      "sha256": "a0edecee7032f43b587c4afb7acfae317d1ed9f575d707aedfce01c20cb737c0"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_THRESHOLD_ACTIVITY.md",
+      "bytes": 1946,
+      "sha256": "0370e8cd58d613caed2d17938287695ca573a3751be7c667265e807b7cd35ba8"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_THRESHOLD_ACTIVITY_FIGURE.png",
+      "bytes": 141078,
+      "sha256": "d1fa926f3d3481353b918f9dfef87af042f347584d69ebcb71ecf307bd9859a8"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_FINAL_EVENT_ARITHMETIC.json",
+      "bytes": 44770,
+      "sha256": "225f88b18516ad082efa445e626a9c529e13f83c8d476ff83e8d50425f01c53d"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_FINAL_EVENT_ARITHMETIC.csv",
+      "bytes": 6140,
+      "sha256": "16c049d25dba340d92a1e9131172373fa9b621ac25ecfc556bdcda8a737e2d8c"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_FINAL_EVENT_ARITHMETIC.md",
+      "bytes": 1813,
+      "sha256": "9d6a38416e998cb9563604d8ab5e4f1b57811bd229a17da315421cafa706e3da"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_FINAL_EVENT_ARITHMETIC_FIGURE.png",
+      "bytes": 158859,
+      "sha256": "892d74dfbbf7a84e0f16a044ffc0b388b3831a08f3f9e9aa81776bf3147205c1"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_FINAL_EVENT_ARITHMETIC_FIGURE.pdf",
+      "bytes": 20045,
+      "sha256": "7e2b4cad1817f22651b19d8df979d3ef91cc8d05ead04c5ffbc7aebf55c356bd"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_POLICY_STREAM_EVENT_ORACLE.json",
+      "bytes": 232038,
+      "sha256": "183507582691dbee0ad8958d39e20b14cfe7a2465b7e6d659872102a0aa2210a"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_POLICY_STREAM_EVENT_ORACLE.csv",
+      "bytes": 9749,
+      "sha256": "3e0c49d70dc4ea8afb3a920ca16546d0d7dae0ff501c6625369910060bf13379"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_POLICY_STREAM_EVENT_ORACLE.md",
+      "bytes": 1810,
+      "sha256": "dd4de2a0ef0ec60025c64ef69a8d3cd5baba1846581dd25b2e41697968754bff"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_POLICY_STREAM_EVENT_ORACLE_FIGURE.png",
+      "bytes": 141407,
+      "sha256": "61c67a084cce15a36cfd8aabb28306a49fce1db8fbb7692f458b793fa097c3d3"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_POLICY_STREAM_EVENT_ORACLE_FIGURE.pdf",
+      "bytes": 18605,
+      "sha256": "0f72c58607984019af30c098b0ba3a7089cb587efa8df368a06cd9c14da3354c"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_IBM_PREFLIGHT_ibm_marrakesh.json",
+      "bytes": 11207,
+      "sha256": "545eaf1b95094315bbd2ea3d31d3f8bf521eb5b5a95b40498ca2575322517278"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_IBM_PREFLIGHT_ibm_marrakesh.csv",
+      "bytes": 2033,
+      "sha256": "877dbd4616da36af145632788286d0267e4acd70c4bf20f28bd08c847ad202aa"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_IBM_PREFLIGHT_ibm_marrakesh.md",
+      "bytes": 1010,
+      "sha256": "8caead544c7346973bca4b5e019526ee27f2677566f42256ec8721fae9e88b63"
+    }
+  ],
+  "qpu_submission": false,
+  "qpu_quota_consumed": false,
+  "note": "The live-backend preflight artifact is hashed and checked but is not regenerated by this local runner."
+}

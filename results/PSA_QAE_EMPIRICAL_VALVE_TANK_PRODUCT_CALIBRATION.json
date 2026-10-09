@@ -1,0 +1,701 @@
+{
+  "schema": "psa-qae-empirical-valve-tank-product-calibration/v1",
+  "sources": {
+    "tuwien_h2_ch4": {
+      "doi": "https://doi.org/10.34726/hss.2022.103430",
+      "role": "direct H2 valve sensitivity, tank geometry, breakthrough and product/recovery calibration"
+    },
+    "otway_co2_psa": {
+      "doi": "https://doi.org/10.17632/kb3b4sddzs.1",
+      "role": "transfer validation of one-second valve/pressure hydraulic identification",
+      "license": "CC BY-NC 3.0"
+    }
+  },
+  "tuwien": {
+    "valve_pair_rows": [
+      {
+        "stage": 1,
+        "opening_low_pct": 7.0,
+        "opening_high_pct": 53.0,
+        "opening_change_pct_point": 46.0,
+        "breakthrough_pressure_low_opening_bar_abs": 22.2,
+        "breakthrough_pressure_high_opening_bar_abs": 19.6,
+        "pressure_change_bar": -2.599999999999998,
+        "stage_slope_bar_per_pct_point": -0.056521739130434734
+      },
+      {
+        "stage": 2,
+        "opening_low_pct": 7.0,
+        "opening_high_pct": 53.0,
+        "opening_change_pct_point": 46.0,
+        "breakthrough_pressure_low_opening_bar_abs": 4.5,
+        "breakthrough_pressure_high_opening_bar_abs": 3.9,
+        "pressure_change_bar": -0.6000000000000001,
+        "stage_slope_bar_per_pct_point": -0.013043478260869568
+      },
+      {
+        "stage": 3,
+        "opening_low_pct": 27.0,
+        "opening_high_pct": 47.0,
+        "opening_change_pct_point": 20.0,
+        "breakthrough_pressure_low_opening_bar_abs": 7.2,
+        "breakthrough_pressure_high_opening_bar_abs": 6.0,
+        "pressure_change_bar": -1.2000000000000002,
+        "stage_slope_bar_per_pct_point": -0.06000000000000001
+      },
+      {
+        "stage": 4,
+        "opening_low_pct": 53.0,
+        "opening_high_pct": 100.0,
+        "opening_change_pct_point": 47.0,
+        "breakthrough_pressure_low_opening_bar_abs": 12.6,
+        "breakthrough_pressure_high_opening_bar_abs": 12.5,
+        "pressure_change_bar": -0.09999999999999964,
+        "stage_slope_bar_per_pct_point": -0.0021276595744680773
+      }
+    ],
+    "valve_loo_rows": [
+      {
+        "stage": 1,
+        "observed_pressure_change_bar": -2.599999999999998,
+        "leave_one_stage_out_predicted_change_bar": -0.54810582010582,
+        "absolute_error_bar": 2.0518941798941777
+      },
+      {
+        "stage": 2,
+        "observed_pressure_change_bar": -0.6000000000000001,
+        "leave_one_stage_out_predicted_change_bar": -1.4437671957671947,
+        "absolute_error_bar": 0.8437671957671946
+      },
+      {
+        "stage": 3,
+        "observed_pressure_change_bar": -1.2000000000000002,
+        "leave_one_stage_out_predicted_change_bar": -0.47166589038969076,
+        "absolute_error_bar": 0.7283341096103094
+      },
+      {
+        "stage": 4,
+        "observed_pressure_change_bar": -0.09999999999999964,
+        "leave_one_stage_out_predicted_change_bar": -1.737132987910189,
+        "absolute_error_bar": 1.6371329879101895
+      }
+    ],
+    "valve_summary": {
+      "fixed_effect_slope_bar_per_pct_point": -0.025712615114749284,
+      "pressure_change_per_10_pct_points_bar": -0.2571261511474928,
+      "stage_bootstrap_95_interval_bar_per_pct_point": [
+        -0.0570747217806041,
+        -0.005421943930553572
+      ],
+      "within_stage_r2": 0.5277536754590915,
+      "leave_one_stage_out_pair_delta_mae_bar": 1.315282118295468,
+      "interpretation": "empirical opening-pressure sensitivity; Cv is not identified without synchronized flow and pressure-time traces"
+    },
+    "recovery_threshold_rows": [
+      {
+        "recovery_threshold_pct": 55.0,
+        "observed_pass_count": 11,
+        "run_count": 13,
+        "observed_empirical_probability": 0.8461538461538461,
+        "measurement_aware_probability": 0.8703197788563481
+      },
+      {
+        "recovery_threshold_pct": 57.5,
+        "observed_pass_count": 11,
+        "run_count": 13,
+        "observed_empirical_probability": 0.8461538461538461,
+        "measurement_aware_probability": 0.8384523434805954
+      },
+      {
+        "recovery_threshold_pct": 60.0,
+        "observed_pass_count": 11,
+        "run_count": 13,
+        "observed_empirical_probability": 0.8461538461538461,
+        "measurement_aware_probability": 0.793387694841069
+      },
+      {
+        "recovery_threshold_pct": 62.5,
+        "observed_pass_count": 9,
+        "run_count": 13,
+        "observed_empirical_probability": 0.6923076923076923,
+        "measurement_aware_probability": 0.717690165233538
+      },
+      {
+        "recovery_threshold_pct": 65.0,
+        "observed_pass_count": 8,
+        "run_count": 13,
+        "observed_empirical_probability": 0.6153846153846154,
+        "measurement_aware_probability": 0.6351201896915357
+      },
+      {
+        "recovery_threshold_pct": 67.5,
+        "observed_pass_count": 7,
+        "run_count": 13,
+        "observed_empirical_probability": 0.5384615384615384,
+        "measurement_aware_probability": 0.5574553241132544
+      },
+      {
+        "recovery_threshold_pct": 70.0,
+        "observed_pass_count": 6,
+        "run_count": 13,
+        "observed_empirical_probability": 0.46153846153846156,
+        "measurement_aware_probability": 0.48651701306094
+      },
+      {
+        "recovery_threshold_pct": 72.5,
+        "observed_pass_count": 6,
+        "run_count": 13,
+        "observed_empirical_probability": 0.46153846153846156,
+        "measurement_aware_probability": 0.39370053059892923
+      },
+      {
+        "recovery_threshold_pct": 75.0,
+        "observed_pass_count": 3,
+        "run_count": 13,
+        "observed_empirical_probability": 0.23076923076923078,
+        "measurement_aware_probability": 0.26037449721624567
+      },
+      {
+        "recovery_threshold_pct": 77.5,
+        "observed_pass_count": 1,
+        "run_count": 13,
+        "observed_empirical_probability": 0.07692307692307693,
+        "measurement_aware_probability": 0.14696294144352687
+      },
+      {
+        "recovery_threshold_pct": 80.0,
+        "observed_pass_count": 1,
+        "run_count": 13,
+        "observed_empirical_probability": 0.07692307692307693,
+        "measurement_aware_probability": 0.06971585279391924
+      },
+      {
+        "recovery_threshold_pct": 82.5,
+        "observed_pass_count": 0,
+        "run_count": 13,
+        "observed_empirical_probability": 0.0,
+        "measurement_aware_probability": 0.016196543587895233
+      }
+    ],
+    "recovery_summary": {
+      "features": [
+        "purge_to_feed_ratio",
+        "bed_utilization_fraction",
+        "ppe2_pressure_ratio",
+        "methane_feed_fraction"
+      ],
+      "selected_ridge_alpha": 0.1,
+      "coefficients_pct_point_per_native_unit": {
+        "purge_to_feed_ratio": -77.96569551068848,
+        "bed_utilization_fraction": 18.553631967822696,
+        "ppe2_pressure_ratio": -55.67618924034747,
+        "methane_feed_fraction": 34.154284830214976
+      },
+      "intercept_pct": 89.29794304706826,
+      "training_rmse_pct_point": 3.2682104927714395,
+      "training_mae_pct_point": 2.4207320440046662,
+      "leave_one_stage_out_rmse_pct_point": 5.854142697236088,
+      "leave_one_stage_out_mae_pct_point": 4.601619229724037,
+      "alpha_screen": [
+        {
+          "alpha": 0.0,
+          "group_cv_rmse_pct_point": 5.853949607265458,
+          "group_cv_mae_pct_point": 4.682774297825164,
+          "group_cv_normalized_rmse": 2.497139662414577,
+          "baseline_group_cv_rmse_pct_point": 9.225784877644156
+        },
+        {
+          "alpha": 1e-06,
+          "group_cv_rmse_pct_point": 5.853948893562014,
+          "group_cv_mae_pct_point": 4.682772879688291,
+          "group_cv_normalized_rmse": 2.49713909103691,
+          "baseline_group_cv_rmse_pct_point": 9.225784877644156
+        },
+        {
+          "alpha": 0.0001,
+          "group_cv_rmse_pct_point": 5.853878335053598,
+          "group_cv_mae_pct_point": 4.682632525537001,
+          "group_cv_normalized_rmse": 2.4970825698469623,
+          "baseline_group_cv_rmse_pct_point": 9.225784877644156
+        },
+        {
+          "alpha": 0.01,
+          "group_cv_rmse_pct_point": 5.8477697528569115,
+          "group_cv_mae_pct_point": 4.669001640436755,
+          "group_cv_normalized_rmse": 2.49186745991233,
+          "baseline_group_cv_rmse_pct_point": 9.225784877644156
+        },
+        {
+          "alpha": 0.1,
+          "group_cv_rmse_pct_point": 5.854142697236088,
+          "group_cv_mae_pct_point": 4.601619229724037,
+          "group_cv_normalized_rmse": 2.473522364983795,
+          "baseline_group_cv_rmse_pct_point": 9.225784877644156
+        },
+        {
+          "alpha": 1.0,
+          "group_cv_rmse_pct_point": 6.5486032693508545,
+          "group_cv_mae_pct_point": 5.210579523583004,
+          "group_cv_normalized_rmse": 2.686923048340529,
+          "baseline_group_cv_rmse_pct_point": 9.225784877644156
+        },
+        {
+          "alpha": 10.0,
+          "group_cv_rmse_pct_point": 6.9727673810044495,
+          "group_cv_mae_pct_point": 5.476309293654988,
+          "group_cv_normalized_rmse": 3.0533940046245696,
+          "baseline_group_cv_rmse_pct_point": 9.225784877644156
+        },
+        {
+          "alpha": 100.0,
+          "group_cv_rmse_pct_point": 8.349754324901411,
+          "group_cv_mae_pct_point": 6.9627899986436494,
+          "group_cv_normalized_rmse": 3.8343225586951535,
+          "baseline_group_cv_rmse_pct_point": 9.225784877644156
+        },
+        {
+          "alpha": 1000.0,
+          "group_cv_rmse_pct_point": 9.115639126145584,
+          "group_cv_mae_pct_point": 7.555306534759575,
+          "group_cv_normalized_rmse": 4.13041719645633,
+          "baseline_group_cv_rmse_pct_point": 9.225784877644156
+        }
+      ],
+      "n_runs": 13,
+      "n_type1": 12,
+      "continuous_purity_model_status": "not_identifiable_one_type2_run_and_analyser_detection_limit"
+    },
+    "tank_rows": [
+      {
+        "stage": 1,
+        "pressure_high_bar": 60.0,
+        "nominal_empty_product_buffer_volume_L": 0.936559035517575,
+        "nominal_packed_bed_bulk_volume_L": 0.9131450596296357,
+        "buffer_to_packed_bed_bulk_volume_ratio": 1.0256410256410255,
+        "ideal_gas_inventory_at_high_pressure_mol_298K": 2.266821952178143
+      },
+      {
+        "stage": 2,
+        "pressure_high_bar": 50.0,
+        "nominal_empty_product_buffer_volume_L": 0.936559035517575,
+        "nominal_packed_bed_bulk_volume_L": 0.9131450596296357,
+        "buffer_to_packed_bed_bulk_volume_ratio": 1.0256410256410255,
+        "ideal_gas_inventory_at_high_pressure_mol_298K": 1.8890182934817858
+      },
+      {
+        "stage": 3,
+        "pressure_high_bar": 35.0,
+        "nominal_empty_product_buffer_volume_L": 0.936559035517575,
+        "nominal_packed_bed_bulk_volume_L": 0.9131450596296357,
+        "buffer_to_packed_bed_bulk_volume_ratio": 1.0256410256410255,
+        "ideal_gas_inventory_at_high_pressure_mol_298K": 1.3223128054372502
+      },
+      {
+        "stage": 4,
+        "pressure_high_bar": 25.0,
+        "nominal_empty_product_buffer_volume_L": 0.936559035517575,
+        "nominal_packed_bed_bulk_volume_L": 0.9131450596296357,
+        "buffer_to_packed_bed_bulk_volume_ratio": 1.0256410256410255,
+        "ideal_gas_inventory_at_high_pressure_mol_298K": 0.9445091467408929
+      }
+    ],
+    "tank_summary": {
+      "nominal_product_buffer_volume_L": 0.936559035517575,
+      "nominal_packed_bed_bulk_volume_L": 0.9131450596296357,
+      "dynamic_tank_calibration_status": "geometry_anchor_only_no_synchronized_tank_pressure_or_composition_trace",
+      "ideal_gas_inventory_temperature_assumption_K": 298.15
+    },
+    "breakthrough_repeatability_rows": [
+      {
+        "stage": 1,
+        "replicate_count": 1,
+        "mean_breakthrough_time_s": 1266.0,
+        "replicate_range_s": 0.0,
+        "relative_replicate_range_pct": 0.0,
+        "analyser_response_uncertainty_lower_s": 20.0
+      },
+      {
+        "stage": 2,
+        "replicate_count": 2,
+        "mean_breakthrough_time_s": 753.5,
+        "replicate_range_s": 13.0,
+        "relative_replicate_range_pct": 1.7252820172528203,
+        "analyser_response_uncertainty_lower_s": 20.0
+      },
+      {
+        "stage": 3,
+        "replicate_count": 2,
+        "mean_breakthrough_time_s": 582.5,
+        "replicate_range_s": 13.0,
+        "relative_replicate_range_pct": 2.2317596566523603,
+        "analyser_response_uncertainty_lower_s": 20.0
+      },
+      {
+        "stage": 4,
+        "replicate_count": 2,
+        "mean_breakthrough_time_s": 508.0,
+        "replicate_range_s": 16.0,
+        "relative_replicate_range_pct": 3.1496062992125986,
+        "analyser_response_uncertainty_lower_s": 20.0
+      }
+    ]
+  },
+  "otway": {
+    "source_sha256": "c4a92917d07eebd7f920bae298e69b4024e0cf714b8242f6caf417cb2d187532",
+    "source_bytes": 55912729,
+    "row_count": 82681,
+    "column_count": 42,
+    "time_summary": {
+      "minimum_s": 0.0,
+      "maximum_s": 86399.0,
+      "median_positive_interval_s": 1.0,
+      "nonpositive_interval_count": 139
+    },
+    "missing_percent": {
+      "PIT_001": 0.009675741706075157,
+      "PIT_201": 0.009675741706075157,
+      "PIT_202": 0.009675741706075157,
+      "PIT_203": 0.009675741706075157,
+      "PIT_204": 0.009675741706075157,
+      "PIT_205": 0.009675741706075157,
+      "PIT_303": 0.009675741706075157,
+      "PIT_901": 0.009675741706075157,
+      "FV_201": 0.008466273992815762,
+      "FV_902": 0.009675741706075157,
+      "{[ABPLC]SOLENOID_UV_651}": 0.009675741706075157,
+      "{[ABPLC]SOLENOID_UV_661}": 0.009675741706075157,
+      "{[ABPLC]SOLENOID_UV_671}": 0.009675741706075157
+    },
+    "complete_cycles": [
+      478,
+      479,
+      480,
+      481,
+      482,
+      483,
+      484
+    ],
+    "cycle_rows": [
+      {
+        "cycle": 477,
+        "sample_count": 530,
+        "time_start_s": 0.0,
+        "time_end_s": 553.0,
+        "elapsed_span_s": 553.0,
+        "step_count": 1,
+        "complete_cycle_for_hydraulic_analysis": false
+      },
+      {
+        "cycle": 478,
+        "sample_count": 11099,
+        "time_start_s": 555.0,
+        "time_end_s": 12153.0,
+        "elapsed_span_s": 11598.0,
+        "step_count": 10,
+        "complete_cycle_for_hydraulic_analysis": true
+      },
+      {
+        "cycle": 479,
+        "sample_count": 11101,
+        "time_start_s": 12154.0,
+        "time_end_s": 23754.0,
+        "elapsed_span_s": 11600.0,
+        "step_count": 10,
+        "complete_cycle_for_hydraulic_analysis": true
+      },
+      {
+        "cycle": 480,
+        "sample_count": 11100,
+        "time_start_s": 23756.0,
+        "time_end_s": 35355.0,
+        "elapsed_span_s": 11599.0,
+        "step_count": 10,
+        "complete_cycle_for_hydraulic_analysis": true
+      },
+      {
+        "cycle": 481,
+        "sample_count": 11099,
+        "time_start_s": 35356.0,
+        "time_end_s": 46954.0,
+        "elapsed_span_s": 11598.0,
+        "step_count": 10,
+        "complete_cycle_for_hydraulic_analysis": true
+      },
+      {
+        "cycle": 482,
+        "sample_count": 11100,
+        "time_start_s": 46955.00000000001,
+        "time_end_s": 58554.0,
+        "elapsed_span_s": 11598.999999999993,
+        "step_count": 10,
+        "complete_cycle_for_hydraulic_analysis": true
+      },
+      {
+        "cycle": 483,
+        "sample_count": 11100,
+        "time_start_s": 58555.00000000001,
+        "time_end_s": 70155.0,
+        "elapsed_span_s": 11599.999999999993,
+        "step_count": 10,
+        "complete_cycle_for_hydraulic_analysis": true
+      },
+      {
+        "cycle": 484,
+        "sample_count": 11101,
+        "time_start_s": 70156.00000000001,
+        "time_end_s": 81756.0,
+        "elapsed_span_s": 11599.999999999985,
+        "step_count": 11,
+        "complete_cycle_for_hydraulic_analysis": true
+      },
+      {
+        "cycle": 485,
+        "sample_count": 4443,
+        "time_start_s": 81756.99999999999,
+        "time_end_s": 86399.0,
+        "elapsed_span_s": 4642.000000000015,
+        "step_count": 5,
+        "complete_cycle_for_hydraulic_analysis": false
+      }
+    ],
+    "hydraulic_step_count": 70,
+    "state_only_model": {
+      "features": [
+        "PIT_001_start",
+        "PIT_201_start",
+        "PIT_202_start",
+        "PIT_203_start",
+        "PIT_204_start",
+        "PIT_205_start",
+        "PIT_303_start",
+        "PIT_901_start",
+        "elapsed_span_s",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "step_5",
+        "step_7",
+        "step_8",
+        "step_9",
+        "step_10",
+        "step_11"
+      ],
+      "selected_alpha": 1.0,
+      "validation_alpha_screen": [
+        {
+          "alpha": 0.0,
+          "mean_mae_ratio_to_persistence": 0.07774659821600492
+        },
+        {
+          "alpha": 1e-06,
+          "mean_mae_ratio_to_persistence": 0.07773223773305733
+        },
+        {
+          "alpha": 0.0001,
+          "mean_mae_ratio_to_persistence": 0.07713710110446197
+        },
+        {
+          "alpha": 0.01,
+          "mean_mae_ratio_to_persistence": 0.06929924821115839
+        },
+        {
+          "alpha": 0.1,
+          "mean_mae_ratio_to_persistence": 0.06845240132589253
+        },
+        {
+          "alpha": 1.0,
+          "mean_mae_ratio_to_persistence": 0.06776951236313576
+        },
+        {
+          "alpha": 10.0,
+          "mean_mae_ratio_to_persistence": 0.15318797144832821
+        },
+        {
+          "alpha": 100.0,
+          "mean_mae_ratio_to_persistence": 0.5127180497566437
+        },
+        {
+          "alpha": 1000.0,
+          "mean_mae_ratio_to_persistence": 0.7547741309008749
+        }
+      ],
+      "train_cycles_for_alpha_selection": [
+        478,
+        479,
+        480,
+        481,
+        482
+      ],
+      "validation_cycle": 483,
+      "final_training_cycles": [
+        478,
+        479,
+        480,
+        481,
+        482,
+        483
+      ],
+      "holdout_cycle": 484
+    },
+    "full_model": {
+      "features": [
+        "PIT_001_start",
+        "PIT_201_start",
+        "PIT_202_start",
+        "PIT_203_start",
+        "PIT_204_start",
+        "PIT_205_start",
+        "PIT_303_start",
+        "PIT_901_start",
+        "elapsed_span_s",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "step_5",
+        "step_7",
+        "step_8",
+        "step_9",
+        "step_10",
+        "step_11",
+        "FV_201_mean",
+        "FV_902_mean",
+        "{[ABPLC]SOLENOID_UV_651}_mean",
+        "{[ABPLC]SOLENOID_UV_661}_mean",
+        "{[ABPLC]SOLENOID_UV_671}_mean",
+        "feed flowrae_mean",
+        "exit flowrate_mean",
+        "FQ_204_Mass_mean",
+        "DPT_201_mean"
+      ],
+      "selected_alpha": 0.1,
+      "validation_alpha_screen": [
+        {
+          "alpha": 0.0,
+          "mean_mae_ratio_to_persistence": 0.07975976484762087
+        },
+        {
+          "alpha": 1e-06,
+          "mean_mae_ratio_to_persistence": 0.07979428071083094
+        },
+        {
+          "alpha": 0.0001,
+          "mean_mae_ratio_to_persistence": 0.08053435322801411
+        },
+        {
+          "alpha": 0.01,
+          "mean_mae_ratio_to_persistence": 0.07027058935510387
+        },
+        {
+          "alpha": 0.1,
+          "mean_mae_ratio_to_persistence": 0.06562012834145534
+        },
+        {
+          "alpha": 1.0,
+          "mean_mae_ratio_to_persistence": 0.0681182295536601
+        },
+        {
+          "alpha": 10.0,
+          "mean_mae_ratio_to_persistence": 0.15745345377210093
+        },
+        {
+          "alpha": 100.0,
+          "mean_mae_ratio_to_persistence": 0.49925525895722256
+        },
+        {
+          "alpha": 1000.0,
+          "mean_mae_ratio_to_persistence": 0.7494168019940369
+        }
+      ],
+      "train_cycles_for_alpha_selection": [
+        478,
+        479,
+        480,
+        481,
+        482
+      ],
+      "validation_cycle": 483,
+      "final_training_cycles": [
+        478,
+        479,
+        480,
+        481,
+        482,
+        483
+      ],
+      "holdout_cycle": 484
+    },
+    "holdout_metrics": [
+      {
+        "target_pressure_tag": "PIT_204",
+        "holdout_cycle": 484,
+        "holdout_steps": 10,
+        "selected_alpha": 0.1,
+        "persistence_mae_source_pressure_unit": 218.451974485,
+        "model_mae_source_pressure_unit": 14.291771091520696,
+        "mae_reduction_fraction": 0.9345770569242347,
+        "persistence_rmse_source_pressure_unit": 327.8761389157913,
+        "model_rmse_source_pressure_unit": 18.811893099357558,
+        "rmse_reduction_fraction": 0.9426250011313295,
+        "state_only_model_mae_source_pressure_unit": 11.74233550683615,
+        "full_vs_state_only_mae_reduction_fraction": -0.21711486468772034
+      },
+      {
+        "target_pressure_tag": "PIT_205",
+        "holdout_cycle": 484,
+        "holdout_steps": 10,
+        "selected_alpha": 0.1,
+        "persistence_mae_source_pressure_unit": 219.89687805,
+        "model_mae_source_pressure_unit": 20.5505166905255,
+        "mae_reduction_fraction": 0.9065447546469817,
+        "persistence_rmse_source_pressure_unit": 313.7010619128883,
+        "model_rmse_source_pressure_unit": 32.08313960646488,
+        "rmse_reduction_fraction": 0.8977270290038927,
+        "state_only_model_mae_source_pressure_unit": 25.022518984362865,
+        "full_vs_state_only_mae_reduction_fraction": 0.17871910884080133
+      },
+      {
+        "target_pressure_tag": "PIT_303",
+        "holdout_cycle": 484,
+        "holdout_steps": 10,
+        "selected_alpha": 0.1,
+        "persistence_mae_source_pressure_unit": 220.13234865000004,
+        "model_mae_source_pressure_unit": 8.115817668778641,
+        "mae_reduction_fraction": 0.9631320988553009,
+        "persistence_rmse_source_pressure_unit": 243.86386739573183,
+        "model_rmse_source_pressure_unit": 9.504200527763025,
+        "rmse_reduction_fraction": 0.9610266144416548,
+        "state_only_model_mae_source_pressure_unit": 5.276688494468277,
+        "full_vs_state_only_mae_reduction_fraction": -0.5380513132974809
+      }
+    ],
+    "status": "transferable_valve_pressure_hydraulic_holdout_complete_not_h2_chemistry_validation"
+  },
+  "headline": {
+    "valve_opening_sensitivity_bar_per_10_pct_points": -0.2571261511474928,
+    "nominal_product_buffer_volume_L": 0.936559035517575,
+    "recovery_group_holdout_rmse_pct_point": 5.854142697236088,
+    "event_probability_recovery_ge_70_and_type1_observed": 0.46153846153846156,
+    "event_probability_recovery_ge_70_and_type1_measurement_aware": 0.48651701306094,
+    "otway_mean_holdout_mae_reduction_vs_persistence": 0.9347513034755058
+  },
+  "claim_boundary": {
+    "supported": "literature-calibrated H2 table-level product/recovery response plus cross-chemistry hydraulic holdout validation",
+    "unsupported": "plant-calibrated H2 Cv, dynamic product-tank mixing, or industrial H2 purity prediction"
+  },
+  "status": "empirical_bridge_complete_h2_synchronized_stream_gate_open",
+  "artifacts": {
+    "json": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_EMPIRICAL_VALVE_TANK_PRODUCT_CALIBRATION.json",
+    "report": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_EMPIRICAL_VALVE_TANK_PRODUCT_CALIBRATION.md",
+    "figure": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_EMPIRICAL_VALVE_TANK_PRODUCT_CALIBRATION_FIGURE.png",
+    "valve": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_EMPIRICAL_VALVE_TANK_PRODUCT_CALIBRATION_TUWIEN_VALVE.csv",
+    "recovery": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_EMPIRICAL_VALVE_TANK_PRODUCT_CALIBRATION_TUWIEN_RECOVERY.csv",
+    "threshold": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_EMPIRICAL_VALVE_TANK_PRODUCT_CALIBRATION_TUWIEN_PRODUCT_EVENT.csv",
+    "tank": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_EMPIRICAL_VALVE_TANK_PRODUCT_CALIBRATION_TUWIEN_TANK.csv",
+    "breakthrough": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_EMPIRICAL_VALVE_TANK_PRODUCT_CALIBRATION_TUWIEN_BREAKTHROUGH.csv",
+    "otway_cycles": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_EMPIRICAL_VALVE_TANK_PRODUCT_CALIBRATION_OTWAY_CYCLES.csv",
+    "otway_steps": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_EMPIRICAL_VALVE_TANK_PRODUCT_CALIBRATION_OTWAY_STEPS.csv",
+    "otway_holdout": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\results\\pycharm_publication_enhancement\\PSA_QAE_EMPIRICAL_VALVE_TANK_PRODUCT_CALIBRATION_OTWAY_HOLDOUT.csv"
+  }
+}

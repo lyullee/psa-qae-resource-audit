@@ -1,0 +1,55 @@
+{
+  "schema": "psa-qae-cce-primary-resource-boundary/v1",
+  "status": "primary_case_conditional_normalized_resource_boundary_not_gate_count_or_speedup",
+  "source_benchmark": "PSA_QAE_CONTINUOUS_POLICY_SELECTION.json",
+  "observed_errors": {
+    "MC_RMSE": 0.00679421759656002,
+    "RQMC_RMSE": 0.002482444815142756,
+    "MLAE_zero_noise_RMSE": 0.0028915598669517215
+  },
+  "budgets": {
+    "MC_samples": 3500,
+    "RQMC_samples": 4096,
+    "MLAE_queries": 3500
+  },
+  "equal_accuracy_MC_scaling": {
+    "estimated_MC_samples_at_MLAE_RMSE": 19323.356715415084,
+    "paired_bootstrap_95_interval": [
+      15188.180240780654,
+      24519.915422868402
+    ],
+    "assumption": "MC RMSE scales as N^-1/2 from the observed 3500-sample point"
+  },
+  "crossover_factors_per_qae_query": {
+    "maximum_total_forward_multiplier_to_beat_equal_RMSE_MC": 5.520959061547167,
+    "maximum_total_forward_multiplier_to_cost_less_than_observed_RQMC": 1.1702857142857144,
+    "accuracy_caveat": "Observed RQMC RMSE is already lower than observed MLAE RMSE, so cost below this line alone would not establish dominance."
+  },
+  "spatial_tank_proxy": {
+    "forward_oracle_units": 1857600,
+    "controlled_oracle_units": 3715280,
+    "primary_11D_structured_loader_units": 759,
+    "controlled_forward_multiplier": 2.000043066322136,
+    "loader_forward_multiplier": 0.0004085917312661499,
+    "total_forward_multiplier_per_qae_query": 2.000451658053402,
+    "qae_total_forward_equivalents": 7001.580803186906,
+    "qae_over_equal_RMSE_MC_cost": 0.36233770903796647,
+    "qae_over_observed_RQMC_cost": 1.7093703132780533
+  },
+  "dense_loader_negative_control": {
+    "dimensions": 11,
+    "bits_per_dimension": 8,
+    "address_qubits": 88,
+    "dense_grid_states": 309485009821345068724781056,
+    "dense_probability_table_gib": 2.305843009213694e+18,
+    "interpretation": "upper-bound warning; not a lower bound and not used as the structured-loader estimate"
+  },
+  "conclusion": "At the optimistic structured-loader proxy, noiseless MLAE is cheaper than extrapolated equal-RMSE crude MC but is more expensive and less accurate than the observed RQMC point. RQMC is the preferred estimator for the current primary case.",
+  "limitations": [
+    "Arithmetic units are normalized proxies, not compiled Toffoli/T/depth counts.",
+    "The controlled oracle assumes reversible compute/uncompute around the existing spatial/tank update proxy.",
+    "The structured 11D loader is an optimistic parametric-copula rotation count and is not a compiled circuit.",
+    "Equal-RMSE MC cost extrapolates from one sample size using asymptotic square-root scaling.",
+    "Observed local surrogate timings and measured IBM QPU time are not converted into one wall-time claim."
+  ]
+}

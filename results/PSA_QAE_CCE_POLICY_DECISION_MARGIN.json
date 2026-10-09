@@ -1,0 +1,77 @@
+{
+  "schema": "psa-qae-cce-policy-decision-margin/v1",
+  "status": "surrogate_level_engineering_allocation_and_decision_margin_not_economic_optimum",
+  "decision_rule": "largest recycle candidate with estimated event probability >= target_probability",
+  "selected_policy": 0.42,
+  "target_probability": 0.5,
+  "rows": [
+    {
+      "policy_recycle_fraction": 0.42,
+      "selected": true,
+      "reference_event_probability": 0.9274306297302246,
+      "probability_margin_to_target": 0.4274306297302246,
+      "feasible": true,
+      "external_product_fraction_of_gross_product": 0.5800000000000001,
+      "internal_recycle_fraction_of_gross_product": 0.42,
+      "internal_recycle_per_external_product": 0.7241379310344827,
+      "incremental_internal_allocation_vs_selected_gross_fraction": 0.0,
+      "incremental_external_product_vs_selected_gross_fraction": 0.0,
+      "absolute_margin_over_mc_rmse": 62.91094208502197,
+      "absolute_margin_over_rqmc_rmse": 172.18132186581747,
+      "absolute_margin_over_mlae_rmse": 147.8200865267996,
+      "absolute_margin_over_residual_stress_half_width": 109.4222412109375
+    },
+    {
+      "policy_recycle_fraction": 0.427,
+      "selected": false,
+      "reference_event_probability": 0.4704403877258301,
+      "probability_margin_to_target": -0.029559612274169922,
+      "feasible": false,
+      "external_product_fraction_of_gross_product": 0.573,
+      "internal_recycle_fraction_of_gross_product": 0.427,
+      "internal_recycle_per_external_product": 0.7452006980802792,
+      "incremental_internal_allocation_vs_selected_gross_fraction": 0.007000000000000006,
+      "incremental_external_product_vs_selected_gross_fraction": -0.007000000000000006,
+      "absolute_margin_over_mc_rmse": 4.350701438990745,
+      "absolute_margin_over_rqmc_rmse": 11.907459974078037,
+      "absolute_margin_over_mlae_rmse": 10.222721864421096,
+      "absolute_margin_over_residual_stress_half_width": 7.5672607421875
+    },
+    {
+      "policy_recycle_fraction": 0.43,
+      "selected": false,
+      "reference_event_probability": 0.283597469329834,
+      "probability_margin_to_target": -0.21640253067016602,
+      "feasible": false,
+      "external_product_fraction_of_gross_product": 0.5700000000000001,
+      "internal_recycle_fraction_of_gross_product": 0.43,
+      "internal_recycle_per_external_product": 0.7543859649122806,
+      "incremental_internal_allocation_vs_selected_gross_fraction": 0.010000000000000009,
+      "incremental_external_product_vs_selected_gross_fraction": -0.010000000000000009,
+      "absolute_margin_over_mc_rmse": 31.850986165019613,
+      "absolute_margin_over_rqmc_rmse": 87.17314856311177,
+      "absolute_margin_over_mlae_rmse": 74.83937411895859,
+      "absolute_margin_over_residual_stress_half_width": 55.3990478515625
+    }
+  ],
+  "nearest_failed_policy": 0.427,
+  "nearest_failed_probability_shortfall": 0.029559612274169922,
+  "nearest_failed_shortfall_over_rqmc_rmse": 11.907459974078037,
+  "nearest_failed_shortfall_over_mlae_rmse": 10.222721864421096,
+  "nearest_failed_shortfall_over_residual_stress_half_width": 7.5672607421875,
+  "selected_external_product_fraction": 0.5800000000000001,
+  "selected_internal_recycle_per_external_product": 0.7241379310344827,
+  "residual_stress_half_width": 0.00390625,
+  "interpretation": "Within the frozen surrogate, estimator uncertainty is small relative to the nearest chance-constraint classification margin. The outer decision therefore does not benefit from estimator precision below the present RQMC scale. This is a product-split allocation and decision-margin calculation, not compressor duty, operating cost, plant profit, or global optimization.",
+  "limitations": [
+    "The product split is exact bookkeeping, but no compressor, tank-pressure, or monetary model is available.",
+    "Reference probabilities are conditional on the 32-run affine surrogate and empirical copula.",
+    "The residual-stress half-width is not a calibrated plant model-discrepancy posterior.",
+    "Independent process-model changes exceed these estimator-scale margins elsewhere in the evidence package."
+  ],
+  "sources": [
+    "PSA_QAE_CCE_PRIMARY_CASE_PROTOCOL.json",
+    "PSA_QAE_CONTINUOUS_POLICY_SELECTION.json",
+    "QAE_SURROGATE_MODEL_DISCREPANCY_BOUNDARY.json"
+  ]
+}

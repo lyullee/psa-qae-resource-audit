@@ -1,0 +1,5 @@
+﻿case,thermal_model,pressure_drop_model,species,feed_H2_fraction,columns,steps,spatial_CSTRs,high_pressure_bar,low_pressure_bar,configured_cycles,product_tank_purge,same_policy_semantics
+case_study_4.0,isothermal,none,H2/CO,0.7,2,6,25,11.14575,1.01325,20,True,False
+case_study_4.1,isothermal,Ergun,H2/CO,0.7,2,6,25,11.14575,1.01325,3,True,False
+case_study_4.2,nonisothermal,none,H2/CO,0.7,2,6,25,11.14575,1.01325,100,True,False
+case_study_4.3,nonisothermal,Ergun,H2/CO,0.7,2,6,25,11.14575,1.01325,3,True,False

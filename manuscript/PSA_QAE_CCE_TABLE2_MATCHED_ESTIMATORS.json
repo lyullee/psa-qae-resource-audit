@@ -1,0 +1,58 @@
+{
+  "schema": "psa-qae-cce-table2-matched-estimators/v1",
+  "status": "matched_primary_estimators_tabulated",
+  "source_files": [
+    "PSA_QAE_CONTINUOUS_POLICY_SELECTION.json",
+    "PSA_QAE_CCE_PRIMARY_CASE_PROTOCOL.json"
+  ],
+  "rows": [
+    {
+      "method": "MC",
+      "evaluations": 3500,
+      "rmse": "0.006794",
+      "mae": "0.005267",
+      "bias": "-0.000115",
+      "classification error fraction": "0.000000",
+      "correct policy fraction": "1.000",
+      "correct-policy Wilson 95%": "[0.981, 1.000]",
+      "median local seconds": "0.002982",
+      "interpretation": "reference classical sampling baseline"
+    },
+    {
+      "method": "scrambled Sobol RQMC",
+      "evaluations": 4096,
+      "rmse": "0.002482",
+      "mae": "0.001934",
+      "bias": "-0.000019",
+      "classification error fraction": "0.000000",
+      "correct policy fraction": "1.000",
+      "correct-policy Wilson 95%": "[0.981, 1.000]",
+      "median local seconds": "0.003733",
+      "interpretation": "best observed RMSE and preferred present method"
+    },
+    {
+      "method": "defensive-mixture IS",
+      "evaluations": 3500,
+      "rmse": "0.010170",
+      "mae": "0.007977",
+      "bias": "-0.000200",
+      "classification error fraction": "0.001667",
+      "correct policy fraction": "0.995",
+      "correct-policy Wilson 95%": "[0.972, 0.999]",
+      "median local seconds": "0.004359",
+      "interpretation": "proposal is inefficient for this broad non-rare event"
+    },
+    {
+      "method": "noiseless MLAE",
+      "evaluations": 3500,
+      "rmse": "0.002892",
+      "mae": "0.002090",
+      "bias": "-0.000578",
+      "classification error fraction": "0.000000",
+      "correct policy fraction": "1.000",
+      "correct-policy Wilson 95%": "[0.981, 1.000]",
+      "median local seconds": "0.004019",
+      "interpretation": "improves on crude MC but remains behind RQMC"
+    }
+  ]
+}

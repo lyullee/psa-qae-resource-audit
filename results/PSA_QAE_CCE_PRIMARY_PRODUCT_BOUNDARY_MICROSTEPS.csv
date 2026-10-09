@@ -1,0 +1,4 @@
+﻿module,precision,logical_qubits,depth_all_to_all,cx,p95_error
+product valve to five component fluxes,12-bit pressure address; 20-bit flow,288,1379148,800762,0.0031606667870124282
+scalar product split and tank candidate,24-bit amount; 14-bit fraction,197,293242,172225,5.254234673724989e-07
+five-component tank capacity flag,5 x 24-bit tank candidates,176,312609,182865,0.0

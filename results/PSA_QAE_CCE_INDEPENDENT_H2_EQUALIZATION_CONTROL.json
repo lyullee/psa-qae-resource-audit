@@ -1,0 +1,86 @@
+{
+  "schema": "psa-qae-cce-independent-h2-equalization-control/v1",
+  "status": "independent_same_chemistry_equalization_direction_control_not_same_recycle_policy_event_validation",
+  "source": {
+    "citation": "F. Thelen, Optimierung einer Druckwechseladsorptionsanlage fuer die Gewinnung von hochreinem Wasserstoff, TU Wien, 2023",
+    "doi": "10.34726/hss.2023.101204",
+    "repository": "https://repositum.tuwien.at/handle/20.500.12708/175664",
+    "local_pdf": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\psa_qae\\external_data\\h2_psa_thelen_2023\\Thelen_2023_H2_PSA.pdf",
+    "source_locations": {
+      "only_changed_factor": "Section 6.2.2, extracted-text lines 3559-3563",
+      "recovery_measurements": "Table 19, extracted-text lines 3690-3725",
+      "purity_and_productivity": "Table 24, extracted-text lines 6560-6582",
+      "measurement_warning": "Section 6.2.2, extracted-text lines 3681-3688"
+    },
+    "system": "automated four-column H2/N2/CO/CO2/CH4 PSA pilot, maximum 1 Nm3/h feed and 7 bara"
+  },
+  "frozen_local_event_for_nontransfer_check": {
+    "h2_purity_min_pct": 99.98,
+    "h2_recovery_min_pct": 78.9
+  },
+  "rows": [
+    {
+      "experiment": "VA-10",
+      "operating_point": "BP1",
+      "equalization_pressure_bara": 4.5,
+      "h2_purity_pct": 99.95,
+      "h2_recovery_direct_bellows_meter_pct": 81.45,
+      "h2_recovery_pulse_transmitter_pct": 80.78,
+      "source_table24_recovery_pct": 81.3,
+      "source_table24_productivity_slm_per_kg": 1.36,
+      "h2_recovery_method_mean_pct": 81.11500000000001,
+      "h2_recovery_method_range_pct_point": 0.6700000000000017,
+      "passes_frozen_purity_threshold": false,
+      "passes_frozen_recovery_threshold_both_methods": true,
+      "passes_frozen_joint_event": false
+    },
+    {
+      "experiment": "VA-10",
+      "operating_point": "BP2",
+      "equalization_pressure_bara": 4.75,
+      "h2_purity_pct": 99.93,
+      "h2_recovery_direct_bellows_meter_pct": 79.15,
+      "h2_recovery_pulse_transmitter_pct": 79.47,
+      "source_table24_recovery_pct": 79.0,
+      "source_table24_productivity_slm_per_kg": 1.33,
+      "h2_recovery_method_mean_pct": 79.31,
+      "h2_recovery_method_range_pct_point": 0.3199999999999932,
+      "passes_frozen_purity_threshold": false,
+      "passes_frozen_recovery_threshold_both_methods": true,
+      "passes_frozen_joint_event": false
+    }
+  ],
+  "paired_effects_bp2_minus_bp1": {
+    "equalization_pressure_bara": 0.25,
+    "h2_purity_pct_point": -0.01999999999999602,
+    "h2_recovery_direct_bellows_meter_pct_point": -2.299999999999997,
+    "h2_recovery_pulse_transmitter_pct_point": -1.3100000000000023,
+    "h2_recovery_method_mean_pct_point": -1.8050000000000068,
+    "h2_productivity_slm_per_kg": -0.030000000000000027,
+    "recovery_direction_consistent_across_measurement_methods": true
+  },
+  "measurement_context": {
+    "reported_feed_flow_sensitivity": "a 1% feed-flow deviation causes an H2-recovery deviation of the same order",
+    "recovery_method_difference_bp1_pct_point": 0.6700000000000017,
+    "recovery_method_difference_bp2_pct_point": 0.3199999999999932,
+    "excluded_bp2_with_continuous_raffinate_analysis": {
+      "direct_bellows_meter_recovery_pct": 57.95,
+      "pulse_transmitter_recovery_pct": 56.9,
+      "reason": "the analyser withdrew about 1 slm of raffinate and changed column pressurization; this is not the same operating pair"
+    }
+  },
+  "claim_boundary": {
+    "supported": [
+      "same-chemistry H2 PSA evidence that a 0.25 bara increase in equalization pressure lowered recovery under an otherwise matched operating pair",
+      "the recovery direction is consistent for direct bellows-meter and pulse-transmitter calculations",
+      "the local recovery threshold is passed at both literature operating points"
+    ],
+    "not_supported": [
+      "validation of the local product-gas recycle fractions 0.420/0.427/0.430",
+      "validation of the frozen joint purity/recovery event because both literature purities are below 99.98%",
+      "reproduction of the local 0.420 policy selection or its event probabilities",
+      "synchronized raw historian validation or industrial plant validation"
+    ]
+  },
+  "conclusion": "Thelen VA-10 supplies an independent, same-chemistry, one-factor equalization-pressure control. Raising equalization pressure from 4.50 to 4.75 bara changes H2 recovery by -2.30 and -1.31 percentage points under the two reported measurement methods, while purity changes by -0.02 percentage point. This strengthens the process-mechanism evidence tier but does not close the same-policy, same-event validation gate."
+}

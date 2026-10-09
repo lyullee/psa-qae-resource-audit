@@ -1,0 +1,262 @@
+{
+  "schema": "psa-qae-cce-manuscript-draft-audit/v1",
+  "created_utc": "2026-10-09T22:25:19.984066+00:00",
+  "status": "draft_structure_pass_submission_gates_open",
+  "submission_ready": false,
+  "submission_blockers": [
+    "calibrated same-policy H2 recycle/event validation; the corrected pyAPEP path is a non-CSS topology-feasibility stress test",
+    "multi-backend repeated QPU evidence with a noise-aware interval",
+    "a synthesized reversible nonlinear tank/spatial cycle map feeding the compiled policy stream-to-event oracle; the physical 85-cycle horizon, out-of-place register accounting, five parameter-specialized normalized-transport/LDF/interior-balance paths, gas-inventory-generated product-cell LDF/valve/boundary-balance paths, a finite-support coherent run/schedule/tank interface, direct controller-to-five-component coefficient arithmetic, dynamic run-affinity Langmuir denominator/reciprocal generation, response consumption in schedule-gated component LDF/loading/balance paths, pressure-derived saturated plus bounded-counterfactual unsaturated proportional tank allocation, and one short-schedule source-model physical unsaturated control are quantified, while frozen-schedule physical unsaturated coverage, monolithic five-component phase integration, adaptive integration, and remaining workspace remain open",
+    "final author approvals and declarations, and a permanent public archive"
+  ],
+  "word_count": 10489,
+  "abstract_word_count": 219,
+  "citation_keys": [
+    "callison2022mlqae",
+    "ceccanti2026deeponet",
+    "ga2023pyapep",
+    "gacon2020qsbo",
+    "he2025qareliability",
+    "hybrid2026pvsa",
+    "khajuria2013psa",
+    "kim2023topsail",
+    "nenno2024dynamicquantum",
+    "nieman2024cstramplitude",
+    "park2026polybedvpsa",
+    "sarno2026qaegrad",
+    "schell2013precombustion",
+    "schytt2026nitrogenpsa",
+    "shah2019mlpsa",
+    "thelen2023h2psa",
+    "woerner2019quantumrisk",
+    "yang1997twobedh2"
+  ],
+  "checks": [
+    {
+      "name": "main-text word count",
+      "pass": true,
+      "detail": "words=10489"
+    },
+    {
+      "name": "abstract length",
+      "pass": true,
+      "detail": "abstract_words=219"
+    },
+    {
+      "name": "required manuscript sections",
+      "pass": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "quantitative claim anchors",
+      "pass": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "citation keys resolve",
+      "pass": true,
+      "detail": "citations=18, missing=[]"
+    },
+    {
+      "name": "prohibited positive claims absent",
+      "pass": true,
+      "detail": "present=[]"
+    },
+    {
+      "name": "open evidence gates disclosed",
+      "pass": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "workflow figure and figure plan",
+      "pass": true,
+      "detail": "png=True, pdf=True, plan=True"
+    },
+    {
+      "name": "calibrated phase-map resource artifacts",
+      "pass": true,
+      "detail": "fixed_json=True, fixed_png=True, compile_json=True, compile_png=True"
+    },
+    {
+      "name": "public H2 synchronized-data claim boundary",
+      "pass": true,
+      "detail": "sources=10, strict_pass=0"
+    },
+    {
+      "name": "small coherent module-connection control",
+      "pass": true,
+      "detail": "json=True, png=True, clean=True"
+    },
+    {
+      "name": "independent H2 policy-spacing resolution audit",
+      "pass": true,
+      "detail": "json=True, png=True, all_pairs_fail=True"
+    },
+    {
+      "name": "public toPSAil/Yang same-chemistry H2 model audit",
+      "pass": true,
+      "detail": "cases=4, joint_event=False, same_policy=False"
+    },
+    {
+      "name": "prospective decision-active policy design audit",
+      "pass": true,
+      "detail": "json=True, png=True, primary_unchanged=True"
+    },
+    {
+      "name": "frozen primary final-cycle phase ledger",
+      "pass": true,
+      "detail": "runs=32, events=25, css=32"
+    },
+    {
+      "name": "physical tank/spatial CSS horizon and register accounting",
+      "pass": true,
+      "detail": "physical_horizon=68, bits=16, safe_horizon=85, out_of_place_qubits=2880"
+    },
+    {
+      "name": "competitive-Langmuir reversible microkernel",
+      "pass": true,
+      "detail": "states=25856, bits=18, qubits=266, forward_CX=127112"
+    },
+    {
+      "name": "competitive-Langmuir reciprocal and CO2 LDF clean microstep",
+      "pass": true,
+      "detail": "states=25856, address_bits=5, arithmetic_bits=24, qubits=515, CX=1225138"
+    },
+    {
+      "name": "nested-holdout primary phase-stream event bridge",
+      "pass": true,
+      "detail": "labels=32/32, purity_mae=3.789824838673628e-08, recovery_mae=7.271581715980954e-05"
+    },
+    {
+      "name": "primary event-active fixed-point and primitive-gate layer",
+      "pass": true,
+      "detail": "selected=12/16, qubits=272, forward_CX=1101233"
+    },
+    {
+      "name": "primary final joint-event arithmetic",
+      "pass": true,
+      "detail": "bits=16, coefficient_bits=8, labels=32/32, qubits=125, clean_CX=182981"
+    },
+    {
+      "name": "primary policy stream-to-event clean oracle",
+      "pass": true,
+      "detail": "aggregate_bits=19, candidate_labels=96/96, ledger_labels=32/32, max_qubits=510, max_clean_CX=1286021"
+    },
+    {
+      "name": "primary one-cycle free-running aggregate event bridge",
+      "pass": true,
+      "detail": "labels=32/32, recovery_mae=6.428084378119758e-05, p95_closure=0.00010850894568831795"
+    },
+    {
+      "name": "observed-start repeated-cycle instability control",
+      "pass": true,
+      "detail": "terminal_labels=21/32, css=1/32"
+    },
+    {
+      "name": "parameter-only CSS initializer and repeated-cycle boundary",
+      "pass": true,
+      "detail": "one_cycle=32/32, terminal=28/32, css=2/32"
+    },
+    {
+      "name": "parameter-only aggregate spectral-stability boundary",
+      "pass": true,
+      "detail": "raw_rho=[1.040098235592179,1.2539870028330067], weight=[0.13469711878937496,0.2822892119561682], labels=32/32, css=32/32"
+    },
+    {
+      "name": "parameter-only CSS initializer fixed-point and primitive-gate layer",
+      "pass": true,
+      "detail": "selected=9/14, qubits=118, forward_CX=578702"
+    },
+    {
+      "name": "main-text resource ladder figure and table",
+      "pass": true,
+      "detail": "figure_png=True, figure_pdf=True, table_json=True, table_md=True"
+    },
+    {
+      "name": "main-text protocol estimator and evidence tables",
+      "pass": true,
+      "detail": "table1=True, table2=True, table4=True"
+    },
+    {
+      "name": "coherent finite-support run schedule tank interface",
+      "pass": true,
+      "detail": "parameters=352, schedule=8, tank=640, resources=440q/166189CX"
+    },
+    {
+      "name": "coherent controller to five-component LDF coefficient interface",
+      "pass": true,
+      "detail": "coefficients=320, flags=16, resources=495q/353441CX"
+    },
+    {
+      "name": "coherent coefficient-consuming component LDF loading balance paths",
+      "pass": true,
+      "detail": "balances=64640, peak=1486q, additive_CX=11911052"
+    },
+    {
+      "name": "coherent dynamic Langmuir response to LDF loading balance paths",
+      "pass": true,
+      "detail": "balances=64640, peak=1960q, additive_CX=209832572"
+    },
+    {
+      "name": "coherent gas inventory to dynamic Langmuir transport LDF balance paths",
+      "pass": true,
+      "detail": "normalization=25856, balances=64640, peak=2885q, additive_CX=279319932"
+    },
+    {
+      "name": "pressure-derived saturated tank withdrawal interface",
+      "pass": true,
+      "detail": "records=128, labels=128/128, margin=1.6244043497948013, resources=557q/195276CX"
+    },
+    {
+      "name": "pressure-derived saturated and bounded-unsaturated proportional tank allocation",
+      "pass": true,
+      "detail": "observed=128, counterfactual=224, resources=647q/705194CX"
+    },
+    {
+      "name": "complete main-text figure set and captions",
+      "pass": true,
+      "detail": "figure2=True, figure3=True, figure5=True, figure6=True, captions=True"
+    },
+    {
+      "name": "machine-readable CCE editorial package",
+      "pass": true,
+      "detail": "status=editorial_materials_complete_scientific_submission_gates_open, highlights=[75, 67, 65, 72, 76], submission_ready=False"
+    },
+    {
+      "name": "CCE live-guide format limits and author-year references",
+      "pass": true,
+      "detail": "abstract=219/250, keywords=6, highlights=[75, 67, 65, 72, 76], graphical_abstract=[3706, 1446], vector_pdfs=6, references=18"
+    },
+    {
+      "name": "bounded novelty-search evidence",
+      "pass": true,
+      "detail": "date=2026-10-09, queries=4, unique=220, direct=0"
+    },
+    {
+      "name": "CCE table styling and main-text cross-references",
+      "pass": true,
+      "detail": "tables=4, shading=0, vertical_rules=0, figure_refs={1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1}, table_refs={1: 1, 2: 1, 3: 1, 4: 1}"
+    },
+    {
+      "name": "CCE cover letter highlights and checklist",
+      "pass": true,
+      "detail": "editorial=True, cover=True, highlights=True, checklist=True"
+    },
+    {
+      "name": "graphical abstract and claim boundary",
+      "pass": true,
+      "detail": "png=True, pdf=True, response_CX=35160"
+    },
+    {
+      "name": "gate package remains reproducible",
+      "pass": true,
+      "detail": "status=pass, artifacts=37, qpu_submission=False"
+    },
+    {
+      "name": "project-wide claim audit remains passing",
+      "pass": true,
+      "detail": "status=pass, checks=114"
+    }
+  ],
+  "note": "Passing this audit establishes manuscript structure and internal consistency only. It does not close the listed external evidence gates or establish acceptance, plant validation, or quantum advantage."
+}

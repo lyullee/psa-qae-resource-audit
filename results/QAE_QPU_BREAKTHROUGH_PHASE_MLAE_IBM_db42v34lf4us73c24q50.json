@@ -1,0 +1,150 @@
+{
+  "schema": "psa-qae-qpu-breakthrough-phase-mlae-ibm/v1",
+  "status": "real_qpu_completed",
+  "submitted_utc": "2026-10-09T00:04:28.249004+00:00",
+  "job_id": "db42v34lf4us73c24q50",
+  "backend": "ibm_marrakesh",
+  "powers": [
+    0,
+    1,
+    2
+  ],
+  "shots_per_power": 4096,
+  "exact_probability": 0.625,
+  "circuits": [
+    {
+      "name": "phase_mlae_m0",
+      "num_qubits": 156,
+      "depth": 4,
+      "size": 12,
+      "two_qubit_instructions": 0,
+      "operations": {
+        "rz": 6,
+        "sx": 3,
+        "measure": 3
+      },
+      "initial_layout": [
+        12,
+        146,
+        54
+      ]
+    },
+    {
+      "name": "phase_mlae_m1",
+      "num_qubits": 156,
+      "depth": 73,
+      "size": 96,
+      "two_qubit_instructions": 19,
+      "operations": {
+        "sx": 36,
+        "rz": 33,
+        "cz": 19,
+        "x": 5,
+        "measure": 3
+      },
+      "initial_layout": [
+        146,
+        148,
+        147
+      ]
+    },
+    {
+      "name": "phase_mlae_m2",
+      "num_qubits": 156,
+      "depth": 141,
+      "size": 190,
+      "two_qubit_instructions": 39,
+      "operations": {
+        "sx": 74,
+        "rz": 65,
+        "cz": 39,
+        "x": 9,
+        "measure": 3
+      },
+      "initial_layout": [
+        110,
+        112,
+        111
+      ]
+    }
+  ],
+  "dry_run": false,
+  "completed_utc": "2026-10-09T00:06:00.107939+00:00",
+  "counts": [
+    {
+      "011": 560,
+      "010": 469,
+      "111": 521,
+      "100": 544,
+      "101": 514,
+      "000": 482,
+      "001": 495,
+      "110": 511
+    },
+    {
+      "011": 804,
+      "000": 889,
+      "100": 293,
+      "001": 740,
+      "110": 247,
+      "010": 350,
+      "111": 418,
+      "101": 355
+    },
+    {
+      "010": 781,
+      "110": 541,
+      "101": 774,
+      "100": 688,
+      "111": 714,
+      "011": 190,
+      "001": 159,
+      "000": 249
+    }
+  ],
+  "good_counts": [
+    2559,
+    1663,
+    3498
+  ],
+  "total_counts": [
+    4096,
+    4096,
+    4096
+  ],
+  "estimate": {
+    "estimate": 0.5669399986612,
+    "absolute_error": 0.05806000133879996,
+    "likelihood_95_low": 0.5643199987136001,
+    "likelihood_95_high": 0.5695449986091
+  },
+  "oracle_query_count": 36864,
+  "verified_plan": "open",
+  "runtime_metrics": {
+    "caller": "qiskit_ibm_runtime~sampler.py",
+    "qiskit_version": "qiskit_ibm_runtime-0.50.0,qiskit-2.5.2*,qiskit_aer-0.17.2",
+    "timestamps": {
+      "created": "2026-10-09T00:04:28.136545Z",
+      "finished": "2026-10-09T00:04:37.236084Z",
+      "running": "2026-10-09T00:04:29.316767Z"
+    },
+    "usage": {
+      "qpu_charge_time_seconds": 5,
+      "value": 0.0829,
+      "unit": "resource_units",
+      "status": "complete",
+      "details": [
+        {
+          "value": 0.0829,
+          "unit": "resource_units",
+          "metric": {
+            "id": "caffe3ca-729c-5750-8777-df63bbf8bfd9",
+            "value": 5
+          }
+        }
+      ]
+    },
+    "circuits_execution_time_ns": 3268421632
+  },
+  "backend_properties_last_update": "2026-10-09T08:47:09+09:00"
+}

@@ -1,0 +1,5 @@
+﻿module,logical_qubits,depth_all_to_all,cx,u,measurement,reset,basis_gates,optimization_level,transpiler_seed
+coherent run-parameter loader,140,96304,49176,58095,0,0,"['u', 'cx']",1,20261010
+six-stage valve-schedule decoder,27,944,492,609,0,0,"['u', 'cx']",1,20261010
+clean five-component tank withdrawal,282,227249,116521,135719,0,0,"['u', 'cx']",1,20261010
+integrated run/schedule/tank interface,440,324495,166189,194419,0,0,"['u', 'cx']",1,20261010

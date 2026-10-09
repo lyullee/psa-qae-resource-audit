@@ -1,0 +1,2321 @@
+{
+  "runs": [
+    {
+      "draw_index": 0,
+      "policy_recycle_fraction": 0.42,
+      "adsorbent": "5A",
+      "n_nodes": 4,
+      "cycles_completed": 450,
+      "css_residual_final": 0.001253780834234175,
+      "css_gate": false,
+      "h2_product": 0.9916662549110212,
+      "h2_recovery_adsorption_feed_proxy": 2.0905337948108116,
+      "h2_recovery_external_boundary": 0.04416561223073386,
+      "joint_event": false,
+      "strict_same_policy_event_gate": false,
+      "purity_threshold_margin": -0.008133745088978794,
+      "recovery_threshold_margin": -0.7448343877692661,
+      "cycle_mass_balance_relative": 0.001226089563781324,
+      "cumulative_mass_balance_relative": 0.0035326837250163516,
+      "source_h2": 0.9999500000000001,
+      "source_co2": 0.0,
+      "source_ch4": 7.346839150849075e-06,
+      "source_co": 1.5382357004521715e-05,
+      "source_n2": 2.7270803844623713e-05,
+      "capacity_factor": 0.9906435391078445,
+      "affinity_factor": 1.0433116379961214,
+      "ldf_factor": 0.9853802772673789,
+      "p_low_bar": 0.0739552391076674,
+      "product_external_mol": [
+        0.10887528203138315,
+        0.0009146172442537422,
+        1.8809364594169883e-07,
+        4.175389780704694e-08,
+        1.1683124296108015e-07
+      ],
+      "feed_adsorption_in_mol": [
+        0.05208013489264646,
+        0.022501798739876257,
+        0.0032599779093106947,
+        0.0004770699379479065,
+        0.0011131631885451152
+      ],
+      "makeup_mol": [
+        2.413079443618059,
+        0.02027130520085473,
+        4.168851754305949e-06,
+        9.254210010686491e-07,
+        2.5894130008358147e-06
+      ],
+      "tank_withdrawal_mol": [
+        0.07884072147100159,
+        0.0006623090389423651,
+        1.362057436129543e-07,
+        3.023558117062019e-08,
+        8.460193455802354e-08
+      ],
+      "tank_supply_fraction_total": 0.03163854226773907,
+      "product_tank_self_sufficient": false,
+      "tank_final_mol": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.3234889800848443e-23
+      ],
+      "final_mean_pressure_bar": 15.649528768041238,
+      "css_history": [
+        {
+          "cycle": 1.0,
+          "css_residual": 0.010071501145339168,
+          "balance_relative": 0.004923420998487102
+        },
+        {
+          "cycle": 2.0,
+          "css_residual": 0.009998928145132147,
+          "balance_relative": 0.005379018912117862
+        },
+        {
+          "cycle": 3.0,
+          "css_residual": 0.00982389774523651,
+          "balance_relative": 0.0062093461883568546
+        },
+        {
+          "cycle": 4.0,
+          "css_residual": 0.009642725303479982,
+          "balance_relative": 0.006897934132751942
+        },
+        {
+          "cycle": 5.0,
+          "css_residual": 0.009476496400717571,
+          "balance_relative": 0.007449572247014423
+        },
+        {
+          "cycle": 6.0,
+          "css_residual": 0.00931165026251346,
+          "balance_relative": 0.007890538777682454
+        },
+        {
+          "cycle": 7.0,
+          "css_residual": 0.009140609509782793,
+          "balance_relative": 0.008244724587964774
+        },
+        {
+          "cycle": 8.0,
+          "css_residual": 0.008959970177963794,
+          "balance_relative": 0.00853150464062448
+        },
+        {
+          "cycle": 9.0,
+          "css_residual": 0.008768382844716038,
+          "balance_relative": 0.008766026286877199
+        },
+        {
+          "cycle": 10.0,
+          "css_residual": 0.008565742168178847,
+          "balance_relative": 0.00895980724574079
+        },
+        {
+          "cycle": 11.0,
+          "css_residual": 0.008352660239522747,
+          "balance_relative": 0.009121354163654794
+        },
+        {
+          "cycle": 12.0,
+          "css_residual": 0.008130278218122955,
+          "balance_relative": 0.009256908876164947
+        },
+        {
+          "cycle": 13.0,
+          "css_residual": 0.007899905579994315,
+          "balance_relative": 0.009371115389825595
+        },
+        {
+          "cycle": 14.0,
+          "css_residual": 0.007663026823832242,
+          "balance_relative": 0.009467157343633478
+        },
+        {
+          "cycle": 15.0,
+          "css_residual": 0.007421208329260076,
+          "balance_relative": 0.009547479790535975
+        },
+        {
+          "cycle": 16.0,
+          "css_residual": 0.0071759822309575005,
+          "balance_relative": 0.009613922094958982
+        },
+        {
+          "cycle": 17.0,
+          "css_residual": 0.006928866745319895,
+          "balance_relative": 0.009667857159297901
+        },
+        {
+          "cycle": 18.0,
+          "css_residual": 0.006693638477722863,
+          "balance_relative": 0.009710396176467028
+        },
+        {
+          "cycle": 19.0,
+          "css_residual": 0.006496132640388397,
+          "balance_relative": 0.00974244779640365
+        },
+        {
+          "cycle": 20.0,
+          "css_residual": 0.006306179047006588,
+          "balance_relative": 0.009764720710517006
+        },
+        {
+          "cycle": 21.0,
+          "css_residual": 0.006115019067680638,
+          "balance_relative": 0.009777937962444127
+        },
+        {
+          "cycle": 22.0,
+          "css_residual": 0.0059237775201770315,
+          "balance_relative": 0.00978271256209208
+        },
+        {
+          "cycle": 23.0,
+          "css_residual": 0.005733356448889171,
+          "balance_relative": 0.009779611097805287
+        },
+        {
+          "cycle": 24.0,
+          "css_residual": 0.005544539880276589,
+          "balance_relative": 0.009769193484795729
+        },
+        {
+          "cycle": 25.0,
+          "css_residual": 0.005357965288134814,
+          "balance_relative": 0.00975190668922926
+        },
+        {
+          "cycle": 26.0,
+          "css_residual": 0.005174270769812805,
+          "balance_relative": 0.009728332143827493
+        },
+        {
+          "cycle": 27.0,
+          "css_residual": 0.004993880629556857,
+          "balance_relative": 0.009698887511504314
+        },
+        {
+          "cycle": 28.0,
+          "css_residual": 0.0048172329600891794,
+          "balance_relative": 0.009664009393971057
+        },
+        {
+          "cycle": 29.0,
+          "css_residual": 0.004644636199038654,
+          "balance_relative": 0.009624209738381588
+        },
+        {
+          "cycle": 30.0,
+          "css_residual": 0.004476370505641758,
+          "balance_relative": 0.009579847235700139
+        },
+        {
+          "cycle": 31.0,
+          "css_residual": 0.00431264889833316,
+          "balance_relative": 0.009531330912798272
+        },
+        {
+          "cycle": 32.0,
+          "css_residual": 0.004153653643228505,
+          "balance_relative": 0.009479054406513492
+        },
+        {
+          "cycle": 33.0,
+          "css_residual": 0.004133777469875213,
+          "balance_relative": 0.009423368010832597
+        },
+        {
+          "cycle": 34.0,
+          "css_residual": 0.004127172610526404,
+          "balance_relative": 0.009364633662531712
+        },
+        {
+          "cycle": 35.0,
+          "css_residual": 0.004118586487032841,
+          "balance_relative": 0.009303139136740772
+        },
+        {
+          "cycle": 36.0,
+          "css_residual": 0.004108198864009723,
+          "balance_relative": 0.009239236788812983
+        },
+        {
+          "cycle": 37.0,
+          "css_residual": 0.004096184932933913,
+          "balance_relative": 0.009173179284215039
+        },
+        {
+          "cycle": 38.0,
+          "css_residual": 0.0040827026893608806,
+          "balance_relative": 0.009105232280294171
+        },
+        {
+          "cycle": 39.0,
+          "css_residual": 0.004067905431634329,
+          "balance_relative": 0.009035653468200835
+        },
+        {
+          "cycle": 40.0,
+          "css_residual": 0.004051936984078534,
+          "balance_relative": 0.008964664900738715
+        },
+        {
+          "cycle": 41.0,
+          "css_residual": 0.0040349231665486665,
+          "balance_relative": 0.008892494715614058
+        },
+        {
+          "cycle": 42.0,
+          "css_residual": 0.004016986670983021,
+          "balance_relative": 0.008819328878511857
+        },
+        {
+          "cycle": 43.0,
+          "css_residual": 0.003998239528644576,
+          "balance_relative": 0.008745342745521242
+        },
+        {
+          "cycle": 44.0,
+          "css_residual": 0.0039787807737481536,
+          "balance_relative": 0.008670718922327354
+        },
+        {
+          "cycle": 45.0,
+          "css_residual": 0.003958707221465239,
+          "balance_relative": 0.008595589913752278
+        },
+        {
+          "cycle": 46.0,
+          "css_residual": 0.003938103351448071,
+          "balance_relative": 0.008520124319532483
+        },
+        {
+          "cycle": 47.0,
+          "css_residual": 0.003917049612077066,
+          "balance_relative": 0.008444430833994378
+        },
+        {
+          "cycle": 48.0,
+          "css_residual": 0.0038956168015659284,
+          "balance_relative": 0.00836863746371163
+        },
+        {
+          "cycle": 49.0,
+          "css_residual": 0.003873866148778183,
+          "balance_relative": 0.008292836299488193
+        },
+        {
+          "cycle": 50.0,
+          "css_residual": 0.003851860414022825,
+          "balance_relative": 0.008217140390658136
+        },
+        {
+          "cycle": 51.0,
+          "css_residual": 0.0038296529277993207,
+          "balance_relative": 0.00814161286953566
+        },
+        {
+          "cycle": 52.0,
+          "css_residual": 0.003807291621387531,
+          "balance_relative": 0.008066347673772671
+        },
+        {
+          "cycle": 53.0,
+          "css_residual": 0.00378481687599322,
+          "balance_relative": 0.00799141090647237
+        },
+        {
+          "cycle": 54.0,
+          "css_residual": 0.0037622757169386047,
+          "balance_relative": 0.00791687817193702
+        },
+        {
+          "cycle": 55.0,
+          "css_residual": 0.0037396955038587624,
+          "balance_relative": 0.007842783704463807
+        },
+        {
+          "cycle": 56.0,
+          "css_residual": 0.0037171121730031303,
+          "balance_relative": 0.007769205436217707
+        },
+        {
+          "cycle": 57.0,
+          "css_residual": 0.0036945526993807853,
+          "balance_relative": 0.007696171459432185
+        },
+        {
+          "cycle": 58.0,
+          "css_residual": 0.0036720434500372764,
+          "balance_relative": 0.007623720890956687
+        },
+        {
+          "cycle": 59.0,
+          "css_residual": 0.0036496076500731407,
+          "balance_relative": 0.007551888247463048
+        },
+        {
+          "cycle": 60.0,
+          "css_residual": 0.0036272622259636575,
+          "balance_relative": 0.007480720613477599
+        },
+        {
+          "cycle": 61.0,
+          "css_residual": 0.0036050276310171958,
+          "balance_relative": 0.007410212765293473
+        },
+        {
+          "cycle": 62.0,
+          "css_residual": 0.003582918957083512,
+          "balance_relative": 0.007340430719398566
+        },
+        {
+          "cycle": 63.0,
+          "css_residual": 0.0035609498819270053,
+          "balance_relative": 0.007271373841974735
+        },
+        {
+          "cycle": 64.0,
+          "css_residual": 0.0035391355395864173,
+          "balance_relative": 0.007203036773526149
+        },
+        {
+          "cycle": 65.0,
+          "css_residual": 0.0035174791798458205,
+          "balance_relative": 0.0071354629368219685
+        },
+        {
+          "cycle": 66.0,
+          "css_residual": 0.0034959972720880936,
+          "balance_relative": 0.007068656458857968
+        },
+        {
+          "cycle": 67.0,
+          "css_residual": 0.0034746976061787076,
+          "balance_relative": 0.007002617592809868
+        },
+        {
+          "cycle": 68.0,
+          "css_residual": 0.0034535798189397385,
+          "balance_relative": 0.006937364074227247
+        },
+        {
+          "cycle": 69.0,
+          "css_residual": 0.0034326567973670796,
+          "balance_relative": 0.006872893299581088
+        },
+        {
+          "cycle": 70.0,
+          "css_residual": 0.0034119325426703426,
+          "balance_relative": 0.006809218216763642
+        },
+        {
+          "cycle": 71.0,
+          "css_residual": 0.003391407746533051,
+          "balance_relative": 0.006746337029244023
+        },
+        {
+          "cycle": 72.0,
+          "css_residual": 0.0033710888078635377,
+          "balance_relative": 0.006684253477217875
+        },
+        {
+          "cycle": 73.0,
+          "css_residual": 0.0033509742300511717,
+          "balance_relative": 0.006622966498911443
+        },
+        {
+          "cycle": 74.0,
+          "css_residual": 0.003331072201446416,
+          "balance_relative": 0.0065624643747310835
+        },
+        {
+          "cycle": 75.0,
+          "css_residual": 0.003311380236027961,
+          "balance_relative": 0.006502756700478629
+        },
+        {
+          "cycle": 76.0,
+          "css_residual": 0.0032918950587148,
+          "balance_relative": 0.006443823085359962
+        },
+        {
+          "cycle": 77.0,
+          "css_residual": 0.0032726250449228475,
+          "balance_relative": 0.006385672947851106
+        },
+        {
+          "cycle": 78.0,
+          "css_residual": 0.0032535661456576056,
+          "balance_relative": 0.006328311952700103
+        },
+        {
+          "cycle": 79.0,
+          "css_residual": 0.003234719334544017,
+          "balance_relative": 0.006271708246494957
+        },
+        {
+          "cycle": 80.0,
+          "css_residual": 0.003216083261825999,
+          "balance_relative": 0.006215878751870924
+        },
+        {
+          "cycle": 81.0,
+          "css_residual": 0.003197656323381254,
+          "balance_relative": 0.006160816044753178
+        },
+        {
+          "cycle": 82.0,
+          "css_residual": 0.0031794392684564555,
+          "balance_relative": 0.006106490612773526
+        },
+        {
+          "cycle": 83.0,
+          "css_residual": 0.003161430843892907,
+          "balance_relative": 0.006052910792182623
+        },
+        {
+          "cycle": 84.0,
+          "css_residual": 0.003143623835005343,
+          "balance_relative": 0.006000056228111104
+        },
+        {
+          "cycle": 85.0,
+          "css_residual": 0.003126024865768125,
+          "balance_relative": 0.005947932554386804
+        },
+        {
+          "cycle": 86.0,
+          "css_residual": 0.003108629336232807,
+          "balance_relative": 0.0058965350622461
+        },
+        {
+          "cycle": 87.0,
+          "css_residual": 0.0030914339825325174,
+          "balance_relative": 0.005845825880279924
+        },
+        {
+          "cycle": 88.0,
+          "css_residual": 0.0030744352771111265,
+          "balance_relative": 0.005795836451299649
+        },
+        {
+          "cycle": 89.0,
+          "css_residual": 0.0030576364870058856,
+          "balance_relative": 0.005746536153595485
+        },
+        {
+          "cycle": 90.0,
+          "css_residual": 0.003041029080449777,
+          "balance_relative": 0.0056979056484562935
+        },
+        {
+          "cycle": 91.0,
+          "css_residual": 0.003024613246058606,
+          "balance_relative": 0.00564996109215918
+        },
+        {
+          "cycle": 92.0,
+          "css_residual": 0.003008388632941041,
+          "balance_relative": 0.005602669783538174
+        },
+        {
+          "cycle": 93.0,
+          "css_residual": 0.0029923518544229554,
+          "balance_relative": 0.005556039217238169
+        },
+        {
+          "cycle": 94.0,
+          "css_residual": 0.0029764968143553305,
+          "balance_relative": 0.005510042282323072
+        },
+        {
+          "cycle": 95.0,
+          "css_residual": 0.002960826399397817,
+          "balance_relative": 0.00546468681295481
+        },
+        {
+          "cycle": 96.0,
+          "css_residual": 0.0029453364232466064,
+          "balance_relative": 0.005419950741034132
+        },
+        {
+          "cycle": 97.0,
+          "css_residual": 0.002930023688778299,
+          "balance_relative": 0.005375831588596068
+        },
+        {
+          "cycle": 98.0,
+          "css_residual": 0.002914884811896839,
+          "balance_relative": 0.00533231640886171
+        },
+        {
+          "cycle": 99.0,
+          "css_residual": 0.002899917684015567,
+          "balance_relative": 0.005289415231314009
+        },
+        {
+          "cycle": 100.0,
+          "css_residual": 0.0028851235524468164,
+          "balance_relative": 0.005247092940149846
+        },
+        {
+          "cycle": 101.0,
+          "css_residual": 0.002870493252282387,
+          "balance_relative": 0.005205327011385516
+        },
+        {
+          "cycle": 102.0,
+          "css_residual": 0.0028560303932453107,
+          "balance_relative": 0.005164151971298204
+        },
+        {
+          "cycle": 103.0,
+          "css_residual": 0.0028417277733131627,
+          "balance_relative": 0.005123531117039421
+        },
+        {
+          "cycle": 104.0,
+          "css_residual": 0.002827589467737496,
+          "balance_relative": 0.0050834641366737186
+        },
+        {
+          "cycle": 105.0,
+          "css_residual": 0.002813604204642273,
+          "balance_relative": 0.005043929797724887
+        },
+        {
+          "cycle": 106.0,
+          "css_residual": 0.002799776754595556,
+          "balance_relative": 0.005004943195268142
+        },
+        {
+          "cycle": 107.0,
+          "css_residual": 0.002786101615418329,
+          "balance_relative": 0.0049664659203968444
+        },
+        {
+          "cycle": 108.0,
+          "css_residual": 0.0027725774228033124,
+          "balance_relative": 0.004928514894434407
+        },
+        {
+          "cycle": 109.0,
+          "css_residual": 0.0027592012537037813,
+          "balance_relative": 0.00489106897252655
+        },
+        {
+          "cycle": 110.0,
+          "css_residual": 0.0027459687551276406,
+          "balance_relative": 0.004854111079290657
+        },
+        {
+          "cycle": 111.0,
+          "css_residual": 0.0027328834079713236,
+          "balance_relative": 0.00481765606556854
+        },
+        {
+          "cycle": 112.0,
+          "css_residual": 0.002719939511542826,
+          "balance_relative": 0.004781672427803174
+        },
+        {
+          "cycle": 113.0,
+          "css_residual": 0.0027071337618076877,
+          "balance_relative": 0.004746170597540424
+        },
+        {
+          "cycle": 114.0,
+          "css_residual": 0.002694465034015301,
+          "balance_relative": 0.004711137091416143
+        },
+        {
+          "cycle": 115.0,
+          "css_residual": 0.002681932598469479,
+          "balance_relative": 0.004676561333647615
+        },
+        {
+          "cycle": 116.0,
+          "css_residual": 0.0026695320633571525,
+          "balance_relative": 0.004642430895281002
+        },
+        {
+          "cycle": 117.0,
+          "css_residual": 0.0026572611238418007,
+          "balance_relative": 0.004608748734269677
+        },
+        {
+          "cycle": 118.0,
+          "css_residual": 0.0026451204148299663,
+          "balance_relative": 0.004575490534429518
+        },
+        {
+          "cycle": 119.0,
+          "css_residual": 0.0026331060161348756,
+          "balance_relative": 0.004542678112854341
+        },
+        {
+          "cycle": 120.0,
+          "css_residual": 0.0026212156979731997,
+          "balance_relative": 0.004510277090563198
+        },
+        {
+          "cycle": 121.0,
+          "css_residual": 0.0026094473759062055,
+          "balance_relative": 0.004478287964508086
+        },
+        {
+          "cycle": 122.0,
+          "css_residual": 0.0025978036723473628,
+          "balance_relative": 0.00444672141014089
+        },
+        {
+          "cycle": 123.0,
+          "css_residual": 0.0025862771337688095,
+          "balance_relative": 0.004415537735120311
+        },
+        {
+          "cycle": 124.0,
+          "css_residual": 0.00257486915547371,
+          "balance_relative": 0.004384757000128383
+        },
+        {
+          "cycle": 125.0,
+          "css_residual": 0.0025635741291199863,
+          "balance_relative": 0.004354356253627754
+        },
+        {
+          "cycle": 126.0,
+          "css_residual": 0.0025523936095738246,
+          "balance_relative": 0.004324346703732297
+        },
+        {
+          "cycle": 127.0,
+          "css_residual": 0.002541324953867362,
+          "balance_relative": 0.00429470002477691
+        },
+        {
+          "cycle": 128.0,
+          "css_residual": 0.0025303664005929473,
+          "balance_relative": 0.004265421832591206
+        },
+        {
+          "cycle": 129.0,
+          "css_residual": 0.0025195182257906215,
+          "balance_relative": 0.004236509192333214
+        },
+        {
+          "cycle": 130.0,
+          "css_residual": 0.0025087741612161447,
+          "balance_relative": 0.004207955464484511
+        },
+        {
+          "cycle": 131.0,
+          "css_residual": 0.0024981370365535346,
+          "balance_relative": 0.004179748998815295
+        },
+        {
+          "cycle": 132.0,
+          "css_residual": 0.0024876039016317403,
+          "balance_relative": 0.004151882875384782
+        },
+        {
+          "cycle": 133.0,
+          "css_residual": 0.002477170871789098,
+          "balance_relative": 0.0041243626654035685
+        },
+        {
+          "cycle": 134.0,
+          "css_residual": 0.0024668393679153464,
+          "balance_relative": 0.0040971616154717
+        },
+        {
+          "cycle": 135.0,
+          "css_residual": 0.0024566079336915975,
+          "balance_relative": 0.004070296037988178
+        },
+        {
+          "cycle": 136.0,
+          "css_residual": 0.0024464723871684977,
+          "balance_relative": 0.004043759375368596
+        },
+        {
+          "cycle": 137.0,
+          "css_residual": 0.0024364347975148024,
+          "balance_relative": 0.004017530260836336
+        },
+        {
+          "cycle": 138.0,
+          "css_residual": 0.0024264902918224845,
+          "balance_relative": 0.003991614874339788
+        },
+        {
+          "cycle": 139.0,
+          "css_residual": 0.0024166405495571366,
+          "balance_relative": 0.003966006713315825
+        },
+        {
+          "cycle": 140.0,
+          "css_residual": 0.0024068809325798897,
+          "balance_relative": 0.0039406972793253605
+        },
+        {
+          "cycle": 141.0,
+          "css_residual": 0.0023972135267926326,
+          "balance_relative": 0.003915688203345227
+        },
+        {
+          "cycle": 142.0,
+          "css_residual": 0.0023876319671524,
+          "balance_relative": 0.003890969360030189
+        },
+        {
+          "cycle": 143.0,
+          "css_residual": 0.002378143015436484,
+          "balance_relative": 0.00386653626138369
+        },
+        {
+          "cycle": 144.0,
+          "css_residual": 0.00236873848784408,
+          "balance_relative": 0.0038423901977541115
+        },
+        {
+          "cycle": 145.0,
+          "css_residual": 0.002359419524183888,
+          "balance_relative": 0.0038185162506973558
+        },
+        {
+          "cycle": 146.0,
+          "css_residual": 0.002350183185458999,
+          "balance_relative": 0.0037949153183853435
+        },
+        {
+          "cycle": 147.0,
+          "css_residual": 0.0023410322928890865,
+          "balance_relative": 0.003771584234809418
+        },
+        {
+          "cycle": 148.0,
+          "css_residual": 0.0023319597571493755,
+          "balance_relative": 0.003748512408337948
+        },
+        {
+          "cycle": 149.0,
+          "css_residual": 0.0023229723221104234,
+          "balance_relative": 0.003725712888549921
+        },
+        {
+          "cycle": 150.0,
+          "css_residual": 0.002314060034193251,
+          "balance_relative": 0.003703159495191749
+        },
+        {
+          "cycle": 151.0,
+          "css_residual": 0.0023052289190558677,
+          "balance_relative": 0.003680857201248561
+        },
+        {
+          "cycle": 152.0,
+          "css_residual": 0.0022964733388796286,
+          "balance_relative": 0.003658811192255036
+        },
+        {
+          "cycle": 153.0,
+          "css_residual": 0.0022877942559168074,
+          "balance_relative": 0.0036369965442178947
+        },
+        {
+          "cycle": 154.0,
+          "css_residual": 0.002279189408623224,
+          "balance_relative": 0.0036154296548159934
+        },
+        {
+          "cycle": 155.0,
+          "css_residual": 0.002270660483121341,
+          "balance_relative": 0.003594108081318461
+        },
+        {
+          "cycle": 156.0,
+          "css_residual": 0.002262204152559536,
+          "balance_relative": 0.003573010073725067
+        },
+        {
+          "cycle": 157.0,
+          "css_residual": 0.0022538167681564196,
+          "balance_relative": 0.0035521347366324636
+        },
+        {
+          "cycle": 158.0,
+          "css_residual": 0.00224550543832758,
+          "balance_relative": 0.0035314987659100794
+        },
+        {
+          "cycle": 159.0,
+          "css_residual": 0.0022372612586173887,
+          "balance_relative": 0.003511077560123357
+        },
+        {
+          "cycle": 160.0,
+          "css_residual": 0.0022290856005784386,
+          "balance_relative": 0.003490882586885667
+        },
+        {
+          "cycle": 161.0,
+          "css_residual": 0.0022209786352882987,
+          "balance_relative": 0.003470898139109034
+        },
+        {
+          "cycle": 162.0,
+          "css_residual": 0.002212939217627919,
+          "balance_relative": 0.003451124775846172
+        },
+        {
+          "cycle": 163.0,
+          "css_residual": 0.0022049658312279915,
+          "balance_relative": 0.003431559599768091
+        },
+        {
+          "cycle": 164.0,
+          "css_residual": 0.0021970583365706862,
+          "balance_relative": 0.003412199220565809
+        },
+        {
+          "cycle": 165.0,
+          "css_residual": 0.0021892140066041912,
+          "balance_relative": 0.003393038776403278
+        },
+        {
+          "cycle": 166.0,
+          "css_residual": 0.0021814346221462437,
+          "balance_relative": 0.0033740882100887254
+        },
+        {
+          "cycle": 167.0,
+          "css_residual": 0.002173716517583942,
+          "balance_relative": 0.0033553234938644904
+        },
+        {
+          "cycle": 168.0,
+          "css_residual": 0.0021660626274424923,
+          "balance_relative": 0.0033367636132922486
+        },
+        {
+          "cycle": 169.0,
+          "css_residual": 0.0021584693655989557,
+          "balance_relative": 0.0033183887876332245
+        },
+        {
+          "cycle": 170.0,
+          "css_residual": 0.002150935994694311,
+          "balance_relative": 0.003300198303748738
+        },
+        {
+          "cycle": 171.0,
+          "css_residual": 0.00214346138849006,
+          "balance_relative": 0.003282193440759075
+        },
+        {
+          "cycle": 172.0,
+          "css_residual": 0.0021360457901130362,
+          "balance_relative": 0.003264378544428764
+        },
+        {
+          "cycle": 173.0,
+          "css_residual": 0.0021286888640153706,
+          "balance_relative": 0.0032467341023914163
+        },
+        {
+          "cycle": 174.0,
+          "css_residual": 0.002121388504656034,
+          "balance_relative": 0.003229275445535226
+        },
+        {
+          "cycle": 175.0,
+          "css_residual": 0.0021141453928026984,
+          "balance_relative": 0.003211990617963145
+        },
+        {
+          "cycle": 176.0,
+          "css_residual": 0.0021069586123324303,
+          "balance_relative": 0.003194868640506336
+        },
+        {
+          "cycle": 177.0,
+          "css_residual": 0.0020998255854106007,
+          "balance_relative": 0.003177921041803743
+        },
+        {
+          "cycle": 178.0,
+          "css_residual": 0.0020927484170369204,
+          "balance_relative": 0.003161144626307284
+        },
+        {
+          "cycle": 179.0,
+          "css_residual": 0.0020857235051529345,
+          "balance_relative": 0.0031445272182114813
+        },
+        {
+          "cycle": 180.0,
+          "css_residual": 0.002078752706415587,
+          "balance_relative": 0.003128075276042853
+        },
+        {
+          "cycle": 181.0,
+          "css_residual": 0.002071832844280031,
+          "balance_relative": 0.003111780717460235
+        },
+        {
+          "cycle": 182.0,
+          "css_residual": 0.002064966688663367,
+          "balance_relative": 0.0030956487862645265
+        },
+        {
+          "cycle": 183.0,
+          "css_residual": 0.0020581523040951884,
+          "balance_relative": 0.0030796688283065555
+        },
+        {
+          "cycle": 184.0,
+          "css_residual": 0.0020513871875028076,
+          "balance_relative": 0.0030638414524147345
+        },
+        {
+          "cycle": 185.0,
+          "css_residual": 0.002044670722229691,
+          "balance_relative": 0.0030481657258304654
+        },
+        {
+          "cycle": 186.0,
+          "css_residual": 0.0020380052306215087,
+          "balance_relative": 0.003032649994205102
+        },
+        {
+          "cycle": 187.0,
+          "css_residual": 0.0020313889298564105,
+          "balance_relative": 0.0030172689345245316
+        },
+        {
+          "cycle": 188.0,
+          "css_residual": 0.0020248177819051495,
+          "balance_relative": 0.0030020343272474845
+        },
+        {
+          "cycle": 189.0,
+          "css_residual": 0.0020182960120825023,
+          "balance_relative": 0.0029869358131508926
+        },
+        {
+          "cycle": 190.0,
+          "css_residual": 0.002011822845122071,
+          "balance_relative": 0.0029719932068594116
+        },
+        {
+          "cycle": 191.0,
+          "css_residual": 0.0020053941121663922,
+          "balance_relative": 0.002957179977238757
+        },
+        {
+          "cycle": 192.0,
+          "css_residual": 0.0019990118186094924,
+          "balance_relative": 0.0029425102595159176
+        },
+        {
+          "cycle": 193.0,
+          "css_residual": 0.001992673664316094,
+          "balance_relative": 0.002927973852093115
+        },
+        {
+          "cycle": 194.0,
+          "css_residual": 0.0019863816784408774,
+          "balance_relative": 0.0029135636860722603
+        },
+        {
+          "cycle": 195.0,
+          "css_residual": 0.001980131404896991,
+          "balance_relative": 0.002899296523788217
+        },
+        {
+          "cycle": 196.0,
+          "css_residual": 0.0019739265355612407,
+          "balance_relative": 0.002885150683749545
+        },
+        {
+          "cycle": 197.0,
+          "css_residual": 0.001967764403636465,
+          "balance_relative": 0.002871135432158261
+        },
+        {
+          "cycle": 198.0,
+          "css_residual": 0.001961646845827525,
+          "balance_relative": 0.0028572429721179064
+        },
+        {
+          "cycle": 199.0,
+          "css_residual": 0.0019555695513599194,
+          "balance_relative": 0.002843484038661479
+        },
+        {
+          "cycle": 200.0,
+          "css_residual": 0.001949535108041669,
+          "balance_relative": 0.002829841374856758
+        },
+        {
+          "cycle": 201.0,
+          "css_residual": 0.001943539811881821,
+          "balance_relative": 0.0028163198635519516
+        },
+        {
+          "cycle": 202.0,
+          "css_residual": 0.001937586255882726,
+          "balance_relative": 0.0028029189376094854
+        },
+        {
+          "cycle": 203.0,
+          "css_residual": 0.001931671911438642,
+          "balance_relative": 0.002789635210655359
+        },
+        {
+          "cycle": 204.0,
+          "css_residual": 0.0019258003883243892,
+          "balance_relative": 0.0027764779598854635
+        },
+        {
+          "cycle": 205.0,
+          "css_residual": 0.0019199653842409568,
+          "balance_relative": 0.0027634261317815035
+        },
+        {
+          "cycle": 206.0,
+          "css_residual": 0.0019141701530281895,
+          "balance_relative": 0.0027504836381877324
+        },
+        {
+          "cycle": 207.0,
+          "css_residual": 0.0019084147795107983,
+          "balance_relative": 0.0027376614278498087
+        },
+        {
+          "cycle": 208.0,
+          "css_residual": 0.0019026969498895888,
+          "balance_relative": 0.002724953740001781
+        },
+        {
+          "cycle": 209.0,
+          "css_residual": 0.0018976029551036372,
+          "balance_relative": 0.0027123448317409675
+        },
+        {
+          "cycle": 210.0,
+          "css_residual": 0.0018928935572704389,
+          "balance_relative": 0.002699852111909398
+        },
+        {
+          "cycle": 211.0,
+          "css_residual": 0.001888210908071705,
+          "balance_relative": 0.0026874656366385934
+        },
+        {
+          "cycle": 212.0,
+          "css_residual": 0.0018835571372857293,
+          "balance_relative": 0.0026751803558913738
+        },
+        {
+          "cycle": 213.0,
+          "css_residual": 0.0018789298845476022,
+          "balance_relative": 0.0026630011271311462
+        },
+        {
+          "cycle": 214.0,
+          "css_residual": 0.001874330344981201,
+          "balance_relative": 0.0026509258171122088
+        },
+        {
+          "cycle": 215.0,
+          "css_residual": 0.0018697560922474627,
+          "balance_relative": 0.0026389487532126397
+        },
+        {
+          "cycle": 216.0,
+          "css_residual": 0.0018652095998930311,
+          "balance_relative": 0.00262706843962979
+        },
+        {
+          "cycle": 217.0,
+          "css_residual": 0.0018606879704425527,
+          "balance_relative": 0.0026152897925097542
+        },
+        {
+          "cycle": 218.0,
+          "css_residual": 0.0018561932519251772,
+          "balance_relative": 0.002603611749755463
+        },
+        {
+          "cycle": 219.0,
+          "css_residual": 0.0018517223431588031,
+          "balance_relative": 0.0025920352764140617
+        },
+        {
+          "cycle": 220.0,
+          "css_residual": 0.0018472789706420966,
+          "balance_relative": 0.0025805423941755823
+        },
+        {
+          "cycle": 221.0,
+          "css_residual": 0.0018428597962121018,
+          "balance_relative": 0.0025691479499274934
+        },
+        {
+          "cycle": 222.0,
+          "css_residual": 0.0018384652935565387,
+          "balance_relative": 0.0025578464129835613
+        },
+        {
+          "cycle": 223.0,
+          "css_residual": 0.0018340949079305305,
+          "balance_relative": 0.002546637543688064
+        },
+        {
+          "cycle": 224.0,
+          "css_residual": 0.0018297488578793504,
+          "balance_relative": 0.0025355214237674293
+        },
+        {
+          "cycle": 225.0,
+          "css_residual": 0.0018254275909015112,
+          "balance_relative": 0.002524493673674859
+        },
+        {
+          "cycle": 226.0,
+          "css_residual": 0.0018211292757977292,
+          "balance_relative": 0.002513555859947438
+        },
+        {
+          "cycle": 227.0,
+          "css_residual": 0.0018168550742385546,
+          "balance_relative": 0.002502702936110196
+        },
+        {
+          "cycle": 228.0,
+          "css_residual": 0.001812604497780409,
+          "balance_relative": 0.0024919356867117892
+        },
+        {
+          "cycle": 229.0,
+          "css_residual": 0.0018083778683613764,
+          "balance_relative": 0.002481255412309229
+        },
+        {
+          "cycle": 230.0,
+          "css_residual": 0.0018041732081542964,
+          "balance_relative": 0.0024706545561271128
+        },
+        {
+          "cycle": 231.0,
+          "css_residual": 0.0017999909829470053,
+          "balance_relative": 0.0024601416139859054
+        },
+        {
+          "cycle": 232.0,
+          "css_residual": 0.001795831729742841,
+          "balance_relative": 0.002449709040425278
+        },
+        {
+          "cycle": 233.0,
+          "css_residual": 0.0017916942663421078,
+          "balance_relative": 0.002439364105871906
+        },
+        {
+          "cycle": 234.0,
+          "css_residual": 0.0017875795265353549,
+          "balance_relative": 0.002429096158456649
+        },
+        {
+          "cycle": 235.0,
+          "css_residual": 0.0017834864776842974,
+          "balance_relative": 0.002418899692318318
+        },
+        {
+          "cycle": 236.0,
+          "css_residual": 0.0017794146211478933,
+          "balance_relative": 0.0024087908037890176
+        },
+        {
+          "cycle": 237.0,
+          "css_residual": 0.0017753646916462596,
+          "balance_relative": 0.0023987579638946846
+        },
+        {
+          "cycle": 238.0,
+          "css_residual": 0.0017713347843520194,
+          "balance_relative": 0.002388805102868692
+        },
+        {
+          "cycle": 239.0,
+          "css_residual": 0.0017673267171763201,
+          "balance_relative": 0.002378921945084101
+        },
+        {
+          "cycle": 240.0,
+          "css_residual": 0.0017633401434226158,
+          "balance_relative": 0.0023691203007340836
+        },
+        {
+          "cycle": 241.0,
+          "css_residual": 0.001759373501140852,
+          "balance_relative": 0.002359389660501453
+        },
+        {
+          "cycle": 242.0,
+          "css_residual": 0.001755427068894035,
+          "balance_relative": 0.0023497336127515653
+        },
+        {
+          "cycle": 243.0,
+          "css_residual": 0.0017515018396053407,
+          "balance_relative": 0.002340145524774478
+        },
+        {
+          "cycle": 244.0,
+          "css_residual": 0.0017475962601990848,
+          "balance_relative": 0.0023306329694961605
+        },
+        {
+          "cycle": 245.0,
+          "css_residual": 0.0017437101283619306,
+          "balance_relative": 0.002321192148484694
+        },
+        {
+          "cycle": 246.0,
+          "css_residual": 0.0017398447387299686,
+          "balance_relative": 0.0023118104979426204
+        },
+        {
+          "cycle": 247.0,
+          "css_residual": 0.0017359977625575564,
+          "balance_relative": 0.0023025144536840646
+        },
+        {
+          "cycle": 248.0,
+          "css_residual": 0.0017321705635967165,
+          "balance_relative": 0.0022932798749722583
+        },
+        {
+          "cycle": 249.0,
+          "css_residual": 0.0017283627708031355,
+          "balance_relative": 0.0022841055949285962
+        },
+        {
+          "cycle": 250.0,
+          "css_residual": 0.0017245731463527564,
+          "balance_relative": 0.002275012159042678
+        },
+        {
+          "cycle": 251.0,
+          "css_residual": 0.001720802503909134,
+          "balance_relative": 0.0022659774623686392
+        },
+        {
+          "cycle": 252.0,
+          "css_residual": 0.0017170512711801322,
+          "balance_relative": 0.0022570102541074224
+        },
+        {
+          "cycle": 253.0,
+          "css_residual": 0.0017133176675373845,
+          "balance_relative": 0.002248108368051461
+        },
+        {
+          "cycle": 254.0,
+          "css_residual": 0.0017096029286345826,
+          "balance_relative": 0.0022392679503025472
+        },
+        {
+          "cycle": 255.0,
+          "css_residual": 0.0017059066649213327,
+          "balance_relative": 0.0022304900623830006
+        },
+        {
+          "cycle": 256.0,
+          "css_residual": 0.0017022278873567388,
+          "balance_relative": 0.0022217790508131142
+        },
+        {
+          "cycle": 257.0,
+          "css_residual": 0.0016985663881278151,
+          "balance_relative": 0.002213127400977669
+        },
+        {
+          "cycle": 258.0,
+          "css_residual": 0.0016949236098053,
+          "balance_relative": 0.00220453696652739
+        },
+        {
+          "cycle": 259.0,
+          "css_residual": 0.0016912980412619148,
+          "balance_relative": 0.002196008321940092
+        },
+        {
+          "cycle": 260.0,
+          "css_residual": 0.00168768925375768,
+          "balance_relative": 0.0021875433085085543
+        },
+        {
+          "cycle": 261.0,
+          "css_residual": 0.0016840980964221849,
+          "balance_relative": 0.0021791323612884777
+        },
+        {
+          "cycle": 262.0,
+          "css_residual": 0.0016805237514551392,
+          "balance_relative": 0.0021707810785790383
+        },
+        {
+          "cycle": 263.0,
+          "css_residual": 0.001676967017541096,
+          "balance_relative": 0.0021624892654846647
+        },
+        {
+          "cycle": 264.0,
+          "css_residual": 0.001673426174964761,
+          "balance_relative": 0.0021542560687731797
+        },
+        {
+          "cycle": 265.0,
+          "css_residual": 0.0016699012969000038,
+          "balance_relative": 0.002146085064983161
+        },
+        {
+          "cycle": 266.0,
+          "css_residual": 0.0016663951510270593,
+          "balance_relative": 0.002137959500496088
+        },
+        {
+          "cycle": 267.0,
+          "css_residual": 0.0016629035098910687,
+          "balance_relative": 0.002129898698533161
+        },
+        {
+          "cycle": 268.0,
+          "css_residual": 0.0016594287101627488,
+          "balance_relative": 0.002121885026144723
+        },
+        {
+          "cycle": 269.0,
+          "css_residual": 0.0016559697079554451,
+          "balance_relative": 0.0021139311306100188
+        },
+        {
+          "cycle": 270.0,
+          "css_residual": 0.0016525269729126925,
+          "balance_relative": 0.002106031496898104
+        },
+        {
+          "cycle": 271.0,
+          "css_residual": 0.0016493593630868327,
+          "balance_relative": 0.0020981846006431285
+        },
+        {
+          "cycle": 272.0,
+          "css_residual": 0.0016463872947045561,
+          "balance_relative": 0.0020903940260197647
+        },
+        {
+          "cycle": 273.0,
+          "css_residual": 0.001643426745365926,
+          "balance_relative": 0.00208265232066813
+        },
+        {
+          "cycle": 274.0,
+          "css_residual": 0.0016404805999371377,
+          "balance_relative": 0.002074958738114107
+        },
+        {
+          "cycle": 275.0,
+          "css_residual": 0.0016375461071020945,
+          "balance_relative": 0.002067320201420299
+        },
+        {
+          "cycle": 276.0,
+          "css_residual": 0.0016346235744865488,
+          "balance_relative": 0.00205973275290913
+        },
+        {
+          "cycle": 277.0,
+          "css_residual": 0.001631712721347104,
+          "balance_relative": 0.002052200688310244
+        },
+        {
+          "cycle": 278.0,
+          "css_residual": 0.0016288146445819166,
+          "balance_relative": 0.00204471644213358
+        },
+        {
+          "cycle": 279.0,
+          "css_residual": 0.001625928934715497,
+          "balance_relative": 0.0020372796733802083
+        },
+        {
+          "cycle": 280.0,
+          "css_residual": 0.001623055251335877,
+          "balance_relative": 0.002029889400998345
+        },
+        {
+          "cycle": 281.0,
+          "css_residual": 0.0016201936758254085,
+          "balance_relative": 0.002022546719576592
+        },
+        {
+          "cycle": 282.0,
+          "css_residual": 0.0016173428807281613,
+          "balance_relative": 0.0020152585803353664
+        },
+        {
+          "cycle": 283.0,
+          "css_residual": 0.0016145044144262768,
+          "balance_relative": 0.002008014509383903
+        },
+        {
+          "cycle": 284.0,
+          "css_residual": 0.0016116780492071998,
+          "balance_relative": 0.002000812793876756
+        },
+        {
+          "cycle": 285.0,
+          "css_residual": 0.001608861464414026,
+          "balance_relative": 0.0019936629779734425
+        },
+        {
+          "cycle": 286.0,
+          "css_residual": 0.0016060576452762477,
+          "balance_relative": 0.0019865623807104682
+        },
+        {
+          "cycle": 287.0,
+          "css_residual": 0.0016032651380429304,
+          "balance_relative": 0.0019795023881847215
+        },
+        {
+          "cycle": 288.0,
+          "css_residual": 0.00160048377166554,
+          "balance_relative": 0.0019724871674003806
+        },
+        {
+          "cycle": 289.0,
+          "css_residual": 0.0015977135694472799,
+          "balance_relative": 0.0019655171304446125
+        },
+        {
+          "cycle": 290.0,
+          "css_residual": 0.0015949537607241294,
+          "balance_relative": 0.00195859155033887
+        },
+        {
+          "cycle": 291.0,
+          "css_residual": 0.0015922057694278252,
+          "balance_relative": 0.0019517116665408504
+        },
+        {
+          "cycle": 292.0,
+          "css_residual": 0.0015894678086613235,
+          "balance_relative": 0.0019448752022967022
+        },
+        {
+          "cycle": 293.0,
+          "css_residual": 0.0015867414698338364,
+          "balance_relative": 0.00193808062487686
+        },
+        {
+          "cycle": 294.0,
+          "css_residual": 0.0015840252964322162,
+          "balance_relative": 0.0019313294368317653
+        },
+        {
+          "cycle": 295.0,
+          "css_residual": 0.0015813191523658882,
+          "balance_relative": 0.0019246271241025069
+        },
+        {
+          "cycle": 296.0,
+          "css_residual": 0.001578624678612753,
+          "balance_relative": 0.0019179595508071806
+        },
+        {
+          "cycle": 297.0,
+          "css_residual": 0.0015759411182055666,
+          "balance_relative": 0.0019113292012831362
+        },
+        {
+          "cycle": 298.0,
+          "css_residual": 0.0015732665061402853,
+          "balance_relative": 0.001904747995065472
+        },
+        {
+          "cycle": 299.0,
+          "css_residual": 0.0015706030213785214,
+          "balance_relative": 0.0018982032679915088
+        },
+        {
+          "cycle": 300.0,
+          "css_residual": 0.0015679501411547227,
+          "balance_relative": 0.0018917003450513994
+        },
+        {
+          "cycle": 301.0,
+          "css_residual": 0.0015653074970792262,
+          "balance_relative": 0.0018852332903253782
+        },
+        {
+          "cycle": 302.0,
+          "css_residual": 0.0015626739628878726,
+          "balance_relative": 0.0018788113417279133
+        },
+        {
+          "cycle": 303.0,
+          "css_residual": 0.0015600512604792712,
+          "balance_relative": 0.0018724248421048044
+        },
+        {
+          "cycle": 304.0,
+          "css_residual": 0.0015574383220842282,
+          "balance_relative": 0.0018660787973587573
+        },
+        {
+          "cycle": 305.0,
+          "css_residual": 0.0015548351923804825,
+          "balance_relative": 0.0018597728223441743
+        },
+        {
+          "cycle": 306.0,
+          "css_residual": 0.0015522409230193737,
+          "balance_relative": 0.0018535045864377922
+        },
+        {
+          "cycle": 307.0,
+          "css_residual": 0.0015496576924435121,
+          "balance_relative": 0.001847272145110962
+        },
+        {
+          "cycle": 308.0,
+          "css_residual": 0.0015470843019047408,
+          "balance_relative": 0.0018410770951946868
+        },
+        {
+          "cycle": 309.0,
+          "css_residual": 0.0015445197167260434,
+          "balance_relative": 0.0018349229320688712
+        },
+        {
+          "cycle": 310.0,
+          "css_residual": 0.0015419644238649295,
+          "balance_relative": 0.0018288025844316442
+        },
+        {
+          "cycle": 311.0,
+          "css_residual": 0.001539418551107827,
+          "balance_relative": 0.0018227226617932662
+        },
+        {
+          "cycle": 312.0,
+          "css_residual": 0.0015368823674736913,
+          "balance_relative": 0.0018166748512269955
+        },
+        {
+          "cycle": 313.0,
+          "css_residual": 0.0015343550449105558,
+          "balance_relative": 0.0018106657852372816
+        },
+        {
+          "cycle": 314.0,
+          "css_residual": 0.001531838779473766,
+          "balance_relative": 0.0018046846484907825
+        },
+        {
+          "cycle": 315.0,
+          "css_residual": 0.0015293302145861845,
+          "balance_relative": 0.0017987429012308646
+        },
+        {
+          "cycle": 316.0,
+          "css_residual": 0.0015268306181662518,
+          "balance_relative": 0.0017928379997829093
+        },
+        {
+          "cycle": 317.0,
+          "css_residual": 0.001524339795189233,
+          "balance_relative": 0.001786968710321272
+        },
+        {
+          "cycle": 318.0,
+          "css_residual": 0.0015218585403352098,
+          "balance_relative": 0.0017811301971000812
+        },
+        {
+          "cycle": 319.0,
+          "css_residual": 0.001519386665514859,
+          "balance_relative": 0.00177532625301668
+        },
+        {
+          "cycle": 320.0,
+          "css_residual": 0.0015169234943717856,
+          "balance_relative": 0.0017695560739513355
+        },
+        {
+          "cycle": 321.0,
+          "css_residual": 0.0015144687524223184,
+          "balance_relative": 0.0017638194524928032
+        },
+        {
+          "cycle": 322.0,
+          "css_residual": 0.0015120222111839718,
+          "balance_relative": 0.0017581160270070046
+        },
+        {
+          "cycle": 323.0,
+          "css_residual": 0.0015095841796047285,
+          "balance_relative": 0.001752446955261416
+        },
+        {
+          "cycle": 324.0,
+          "css_residual": 0.0015071556789755705,
+          "balance_relative": 0.001746811052908695
+        },
+        {
+          "cycle": 325.0,
+          "css_residual": 0.0015047346560188755,
+          "balance_relative": 0.0017412068500353766
+        },
+        {
+          "cycle": 326.0,
+          "css_residual": 0.0015023240430623432,
+          "balance_relative": 0.0017356291366153907
+        },
+        {
+          "cycle": 327.0,
+          "css_residual": 0.001499920583510487,
+          "balance_relative": 0.0017300886000454355
+        },
+        {
+          "cycle": 328.0,
+          "css_residual": 0.001497525273249021,
+          "balance_relative": 0.0017245765501722682
+        },
+        {
+          "cycle": 329.0,
+          "css_residual": 0.0014951375142702756,
+          "balance_relative": 0.001719099624012314
+        },
+        {
+          "cycle": 330.0,
+          "css_residual": 0.0014927592748227524,
+          "balance_relative": 0.0017136504228533545
+        },
+        {
+          "cycle": 331.0,
+          "css_residual": 0.0014903895001147408,
+          "balance_relative": 0.001708230339460125
+        },
+        {
+          "cycle": 332.0,
+          "css_residual": 0.0014880263866859555,
+          "balance_relative": 0.0017028447502226767
+        },
+        {
+          "cycle": 333.0,
+          "css_residual": 0.0014856723430372418,
+          "balance_relative": 0.0016974889964557812
+        },
+        {
+          "cycle": 334.0,
+          "css_residual": 0.0014833259928291244,
+          "balance_relative": 0.0016921604116525144
+        },
+        {
+          "cycle": 335.0,
+          "css_residual": 0.001480987836132452,
+          "balance_relative": 0.001686862598707174
+        },
+        {
+          "cycle": 336.0,
+          "css_residual": 0.0014786575492392636,
+          "balance_relative": 0.0016815933686129068
+        },
+        {
+          "cycle": 337.0,
+          "css_residual": 0.0014763353822351472,
+          "balance_relative": 0.0016763518309118046
+        },
+        {
+          "cycle": 338.0,
+          "css_residual": 0.0014740206851940058,
+          "balance_relative": 0.0016711379495577539
+        },
+        {
+          "cycle": 339.0,
+          "css_residual": 0.0014717136361961265,
+          "balance_relative": 0.001665955198406402
+        },
+        {
+          "cycle": 340.0,
+          "css_residual": 0.0014694139153142807,
+          "balance_relative": 0.0016608036782364251
+        },
+        {
+          "cycle": 341.0,
+          "css_residual": 0.001467121905662076,
+          "balance_relative": 0.0016556770966394947
+        },
+        {
+          "cycle": 342.0,
+          "css_residual": 0.0014648379458716153,
+          "balance_relative": 0.0016505795611469667
+        },
+        {
+          "cycle": 343.0,
+          "css_residual": 0.0014625607327275224,
+          "balance_relative": 0.0016455105508170998
+        },
+        {
+          "cycle": 344.0,
+          "css_residual": 0.0014602925777670692,
+          "balance_relative": 0.0016404650251785398
+        },
+        {
+          "cycle": 345.0,
+          "css_residual": 0.0014580304034973008,
+          "balance_relative": 0.0016354489629782246
+        },
+        {
+          "cycle": 346.0,
+          "css_residual": 0.0014557766529728277,
+          "balance_relative": 0.0016304587829721454
+        },
+        {
+          "cycle": 347.0,
+          "css_residual": 0.0014535286442565873,
+          "balance_relative": 0.0016255027573780644
+        },
+        {
+          "cycle": 348.0,
+          "css_residual": 0.0014512885638333708,
+          "balance_relative": 0.0016205674423576584
+        },
+        {
+          "cycle": 349.0,
+          "css_residual": 0.0014490568278999966,
+          "balance_relative": 0.001615655772366028
+        },
+        {
+          "cycle": 350.0,
+          "css_residual": 0.0014468310661400398,
+          "balance_relative": 0.0016107738545709772
+        },
+        {
+          "cycle": 351.0,
+          "css_residual": 0.0014446127435982948,
+          "balance_relative": 0.0016059153812321566
+        },
+        {
+          "cycle": 352.0,
+          "css_residual": 0.0014424021855107753,
+          "balance_relative": 0.0016010834084592945
+        },
+        {
+          "cycle": 353.0,
+          "css_residual": 0.001440197499308189,
+          "balance_relative": 0.0015962790683762326
+        },
+        {
+          "cycle": 354.0,
+          "css_residual": 0.001438000507672414,
+          "balance_relative": 0.0015914958994166144
+        },
+        {
+          "cycle": 355.0,
+          "css_residual": 0.001435810277559508,
+          "balance_relative": 0.001586741021055094
+        },
+        {
+          "cycle": 356.0,
+          "css_residual": 0.0014336261635152525,
+          "balance_relative": 0.0015820135176651665
+        },
+        {
+          "cycle": 357.0,
+          "css_residual": 0.0014314500568456056,
+          "balance_relative": 0.0015773061886932374
+        },
+        {
+          "cycle": 358.0,
+          "css_residual": 0.0014292802511912215,
+          "balance_relative": 0.0015726261581336157
+        },
+        {
+          "cycle": 359.0,
+          "css_residual": 0.0014271167713721846,
+          "balance_relative": 0.0015679727921191135
+        },
+        {
+          "cycle": 360.0,
+          "css_residual": 0.0014249607280643747,
+          "balance_relative": 0.0015633389048978
+        },
+        {
+          "cycle": 361.0,
+          "css_residual": 0.001422811305138949,
+          "balance_relative": 0.0015587275210635504
+        },
+        {
+          "cycle": 362.0,
+          "css_residual": 0.0014206680221033675,
+          "balance_relative": 0.0015541454344322671
+        },
+        {
+          "cycle": 363.0,
+          "css_residual": 0.0014185318747667677,
+          "balance_relative": 0.001549580495359079
+        },
+        {
+          "cycle": 364.0,
+          "css_residual": 0.001416402746047549,
+          "balance_relative": 0.001545041264887089
+        },
+        {
+          "cycle": 365.0,
+          "css_residual": 0.001414279761017261,
+          "balance_relative": 0.001540526712274576
+        },
+        {
+          "cycle": 366.0,
+          "css_residual": 0.0014121619968319426,
+          "balance_relative": 0.0015360384625073185
+        },
+        {
+          "cycle": 367.0,
+          "css_residual": 0.0014100512690365082,
+          "balance_relative": 0.0015315708958231926
+        },
+        {
+          "cycle": 368.0,
+          "css_residual": 0.0014079475694312746,
+          "balance_relative": 0.0015271218000856754
+        },
+        {
+          "cycle": 369.0,
+          "css_residual": 0.0014058500258005194,
+          "balance_relative": 0.0015226960721304486
+        },
+        {
+          "cycle": 370.0,
+          "css_residual": 0.0014037573107945674,
+          "balance_relative": 0.0015182982545986256
+        },
+        {
+          "cycle": 371.0,
+          "css_residual": 0.0014016725085607292,
+          "balance_relative": 0.001513918054185804
+        },
+        {
+          "cycle": 372.0,
+          "css_residual": 0.001399594070368186,
+          "balance_relative": 0.0015095587033998748
+        },
+        {
+          "cycle": 373.0,
+          "css_residual": 0.001397520572080939,
+          "balance_relative": 0.0015052237851441578
+        },
+        {
+          "cycle": 374.0,
+          "css_residual": 0.0013954545225155488,
+          "balance_relative": 0.0015009096308088465
+        },
+        {
+          "cycle": 375.0,
+          "css_residual": 0.0013933928219880267,
+          "balance_relative": 0.0014966193967526594
+        },
+        {
+          "cycle": 376.0,
+          "css_residual": 0.001391338994758808,
+          "balance_relative": 0.0014923475659761145
+        },
+        {
+          "cycle": 377.0,
+          "css_residual": 0.0013892904281183121,
+          "balance_relative": 0.0014880961710957328
+        },
+        {
+          "cycle": 378.0,
+          "css_residual": 0.001387247875611283,
+          "balance_relative": 0.00148386996770738
+        },
+        {
+          "cycle": 379.0,
+          "css_residual": 0.0013852111871932428,
+          "balance_relative": 0.0014796623919878416
+        },
+        {
+          "cycle": 380.0,
+          "css_residual": 0.0013831793756846403,
+          "balance_relative": 0.0014754785555223362
+        },
+        {
+          "cycle": 381.0,
+          "css_residual": 0.001381155070079633,
+          "balance_relative": 0.0014713121742171615
+        },
+        {
+          "cycle": 382.0,
+          "css_residual": 0.001379136533265188,
+          "balance_relative": 0.0014671621729002578
+        },
+        {
+          "cycle": 383.0,
+          "css_residual": 0.001377123079989039,
+          "balance_relative": 0.0014630383360210869
+        },
+        {
+          "cycle": 384.0,
+          "css_residual": 0.0013751151855566494,
+          "balance_relative": 0.0014589315060962664
+        },
+        {
+          "cycle": 385.0,
+          "css_residual": 0.0013731133945812724,
+          "balance_relative": 0.0014548435398556844
+        },
+        {
+          "cycle": 386.0,
+          "css_residual": 0.0013711175481607295,
+          "balance_relative": 0.0014507803348891581
+        },
+        {
+          "cycle": 387.0,
+          "css_residual": 0.0013691260374664295,
+          "balance_relative": 0.0014467381859710425
+        },
+        {
+          "cycle": 388.0,
+          "css_residual": 0.0013671418846232038,
+          "balance_relative": 0.0014427079413348138
+        },
+        {
+          "cycle": 389.0,
+          "css_residual": 0.0013651621942019861,
+          "balance_relative": 0.0014387026786383346
+        },
+        {
+          "cycle": 390.0,
+          "css_residual": 0.0013631890262651484,
+          "balance_relative": 0.001434712251498262
+        },
+        {
+          "cycle": 391.0,
+          "css_residual": 0.0013612205475277794,
+          "balance_relative": 0.0014307466937732351
+        },
+        {
+          "cycle": 392.0,
+          "css_residual": 0.0013592575923647196,
+          "balance_relative": 0.001426797611427136
+        },
+        {
+          "cycle": 393.0,
+          "css_residual": 0.00135730012932281,
+          "balance_relative": 0.0014228639145073261
+        },
+        {
+          "cycle": 394.0,
+          "css_residual": 0.0013553488092237997,
+          "balance_relative": 0.0014189493789048804
+        },
+        {
+          "cycle": 395.0,
+          "css_residual": 0.001353401837994026,
+          "balance_relative": 0.0014150612838885802
+        },
+        {
+          "cycle": 396.0,
+          "css_residual": 0.0013514615616798398,
+          "balance_relative": 0.0014111821278354473
+        },
+        {
+          "cycle": 397.0,
+          "css_residual": 0.0013495253862180693,
+          "balance_relative": 0.0014073238406089477
+        },
+        {
+          "cycle": 398.0,
+          "css_residual": 0.0013475950440455732,
+          "balance_relative": 0.001403485853962663
+        },
+        {
+          "cycle": 399.0,
+          "css_residual": 0.0013456700340899338,
+          "balance_relative": 0.0013996638852417414
+        },
+        {
+          "cycle": 400.0,
+          "css_residual": 0.0013437496390613195,
+          "balance_relative": 0.0013958643198600648
+        },
+        {
+          "cycle": 401.0,
+          "css_residual": 0.0013418346532877586,
+          "balance_relative": 0.001392078998176981
+        },
+        {
+          "cycle": 402.0,
+          "css_residual": 0.0013399250806188105,
+          "balance_relative": 0.0013883091832037834
+        },
+        {
+          "cycle": 403.0,
+          "css_residual": 0.001338020151115287,
+          "balance_relative": 0.0013845617342570285
+        },
+        {
+          "cycle": 404.0,
+          "css_residual": 0.0013361199543061092,
+          "balance_relative": 0.001380831766148428
+        },
+        {
+          "cycle": 405.0,
+          "css_residual": 0.0013342259466028244,
+          "balance_relative": 0.001377114219126867
+        },
+        {
+          "cycle": 406.0,
+          "css_residual": 0.0013323364435942784,
+          "balance_relative": 0.00137341684638708
+        },
+        {
+          "cycle": 407.0,
+          "css_residual": 0.001330452756983211,
+          "balance_relative": 0.0013697371669787871
+        },
+        {
+          "cycle": 408.0,
+          "css_residual": 0.001328573237786265,
+          "balance_relative": 0.0013660717622907012
+        },
+        {
+          "cycle": 409.0,
+          "css_residual": 0.001326698039162327,
+          "balance_relative": 0.001362427656063663
+        },
+        {
+          "cycle": 410.0,
+          "css_residual": 0.0013248286504845366,
+          "balance_relative": 0.001358797431128054
+        },
+        {
+          "cycle": 411.0,
+          "css_residual": 0.0013229640596542707,
+          "balance_relative": 0.0013551826220670842
+        },
+        {
+          "cycle": 412.0,
+          "css_residual": 0.0013211053738874346,
+          "balance_relative": 0.0013515841260941825
+        },
+        {
+          "cycle": 413.0,
+          "css_residual": 0.0013192495209320208,
+          "balance_relative": 0.0013480052656867033
+        },
+        {
+          "cycle": 414.0,
+          "css_residual": 0.0013173992794992344,
+          "balance_relative": 0.0013444421878869763
+        },
+        {
+          "cycle": 415.0,
+          "css_residual": 0.0013155544520645622,
+          "balance_relative": 0.001340893396056695
+        },
+        {
+          "cycle": 416.0,
+          "css_residual": 0.0013137135411403504,
+          "balance_relative": 0.0013373590801102563
+        },
+        {
+          "cycle": 417.0,
+          "css_residual": 0.001311878303774939,
+          "balance_relative": 0.001333842425749718
+        },
+        {
+          "cycle": 418.0,
+          "css_residual": 0.0013100472057927005,
+          "balance_relative": 0.0013303447627208633
+        },
+        {
+          "cycle": 419.0,
+          "css_residual": 0.0013082197888214012,
+          "balance_relative": 0.0013268581295720358
+        },
+        {
+          "cycle": 420.0,
+          "css_residual": 0.0013063990436593962,
+          "balance_relative": 0.0013233853654512062
+        },
+        {
+          "cycle": 421.0,
+          "css_residual": 0.001304581193550072,
+          "balance_relative": 0.0013199332483724532
+        },
+        {
+          "cycle": 422.0,
+          "css_residual": 0.0013027686018329265,
+          "balance_relative": 0.0013164945357175143
+        },
+        {
+          "cycle": 423.0,
+          "css_residual": 0.0013009608897382608,
+          "balance_relative": 0.001313073373471566
+        },
+        {
+          "cycle": 424.0,
+          "css_residual": 0.001299156556571082,
+          "balance_relative": 0.0013096693120168382
+        },
+        {
+          "cycle": 425.0,
+          "css_residual": 0.0012973585196227454,
+          "balance_relative": 0.001306274085573644
+        },
+        {
+          "cycle": 426.0,
+          "css_residual": 0.0012955639620974688,
+          "balance_relative": 0.0013028945545527123
+        },
+        {
+          "cycle": 427.0,
+          "css_residual": 0.0012937740664907156,
+          "balance_relative": 0.0012995309151218179
+        },
+        {
+          "cycle": 428.0,
+          "css_residual": 0.0012919875863744673,
+          "balance_relative": 0.0012961861543823179
+        },
+        {
+          "cycle": 429.0,
+          "css_residual": 0.0012902063238640564,
+          "balance_relative": 0.0012928532858119495
+        },
+        {
+          "cycle": 430.0,
+          "css_residual": 0.001288430375663362,
+          "balance_relative": 0.0012895346069084527
+        },
+        {
+          "cycle": 431.0,
+          "css_residual": 0.0012866576312879907,
+          "balance_relative": 0.0012862303892861775
+        },
+        {
+          "cycle": 432.0,
+          "css_residual": 0.0012848895255935702,
+          "balance_relative": 0.0012829397909550114
+        },
+        {
+          "cycle": 433.0,
+          "css_residual": 0.001283125325373143,
+          "balance_relative": 0.0012796665265003356
+        },
+        {
+          "cycle": 434.0,
+          "css_residual": 0.001281366072884641,
+          "balance_relative": 0.0012764025414290152
+        },
+        {
+          "cycle": 435.0,
+          "css_residual": 0.0012796115988241037,
+          "balance_relative": 0.0012731558181039585
+        },
+        {
+          "cycle": 436.0,
+          "css_residual": 0.0012778599870211245,
+          "balance_relative": 0.0012699233738804928
+        },
+        {
+          "cycle": 437.0,
+          "css_residual": 0.0012761134025123812,
+          "balance_relative": 0.0012667036374129524
+        },
+        {
+          "cycle": 438.0,
+          "css_residual": 0.0012743715409566606,
+          "balance_relative": 0.0012634972997576776
+        },
+        {
+          "cycle": 439.0,
+          "css_residual": 0.0012726331185476843,
+          "balance_relative": 0.001260306921852907
+        },
+        {
+          "cycle": 440.0,
+          "css_residual": 0.0012708993059741597,
+          "balance_relative": 0.0012571290447602238
+        },
+        {
+          "cycle": 441.0,
+          "css_residual": 0.0012691684005080397,
+          "balance_relative": 0.0012539685329673032
+        },
+        {
+          "cycle": 442.0,
+          "css_residual": 0.0012674425935130156,
+          "balance_relative": 0.0012508186324589807
+        },
+        {
+          "cycle": 443.0,
+          "css_residual": 0.0012657211678266265,
+          "balance_relative": 0.0012476791657295406
+        },
+        {
+          "cycle": 444.0,
+          "css_residual": 0.0012640031350911575,
+          "balance_relative": 0.0012445561964730609
+        },
+        {
+          "cycle": 445.0,
+          "css_residual": 0.0012622894706326444,
+          "balance_relative": 0.0012414461398387571
+        },
+        {
+          "cycle": 446.0,
+          "css_residual": 0.0012605798400157128,
+          "balance_relative": 0.001238349864490014
+        },
+        {
+          "cycle": 447.0,
+          "css_residual": 0.0012588742902143876,
+          "balance_relative": 0.0012352651748746757
+        },
+        {
+          "cycle": 448.0,
+          "css_residual": 0.0012571724412753723,
+          "balance_relative": 0.0012321937677271866
+        },
+        {
+          "cycle": 449.0,
+          "css_residual": 0.0012554751951427134,
+          "balance_relative": 0.0012291341384143928
+        },
+        {
+          "cycle": 450.0,
+          "css_residual": 0.001253780834234175,
+          "balance_relative": 0.001226089563781324
+        }
+      ]
+    }
+  ]
+}

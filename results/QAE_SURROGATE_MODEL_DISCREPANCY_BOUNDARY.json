@@ -1,0 +1,28 @@
+{
+  "schema": "psa-qae-surrogate-model-discrepancy-boundary/v1",
+  "status": "empirical_loocv_residual_stress_not_fitted_discrepancy_model",
+  "source_physical_draws": "10_TEA_LCA_Python\\psa_qae\\psa_two_bed_spatial_tank_n2_independent_source_uncertainty_32.csv",
+  "source_holdout_residuals": "10_TEA_LCA_Python\\psa_qae\\psa_two_bed_spatial_tank_n2_independent_source_surrogate_holdout_32.csv",
+  "policy_recycle_fraction": 0.427,
+  "event": "H2 product >= 0.9998 and recovery proxy >= 0.789",
+  "state_count": 4096,
+  "replicates": 512,
+  "seed": 20261022,
+  "base_surrogate_probability": 0.4716796875,
+  "discrepancy_stress_probability_mean": 0.4722261428833008,
+  "discrepancy_stress_probability_std": 0.001958341546751945,
+  "discrepancy_stress_probability_p025": 0.46826171875,
+  "discrepancy_stress_probability_p975": 0.47607421875,
+  "discrepancy_stress_abs_shift_p975": 0.004638671875,
+  "qae_target_epsilon": 0.001,
+  "ideal_qae_queries": 3142,
+  "holdout_h2_rmse": 4.506290342163872e-07,
+  "holdout_recovery_rmse": 0.0005065212033548282,
+  "holdout_event_accuracy": 1.0,
+  "interpretation": "The empirical LOOCV residual stress is compared with the ideal QAE target; it is not a posterior discrepancy model or a new physical validation.",
+  "limitations": [
+    "Residuals are resampled iid from 32 leave-one-out errors and ignore input dependence.",
+    "The 4096 states come from a Gaussian-copula surrogate prior, not direct physical PSA evaluations.",
+    "QAE statistical error, state preparation, controlled oracle, and hardware noise are not included in the stress distribution."
+  ]
+}
