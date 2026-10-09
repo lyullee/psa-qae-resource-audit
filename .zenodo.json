@@ -1,5 +1,7 @@
 {
   "title": "Resource-aware quantum amplitude estimation for chance-constrained pressure swing adsorption: classical baselines, compiled oracle costs, and a hardware boundary",
+  "version": "0.1.0",
+  "publication_date": "2026-10-10",
   "upload_type": "software",
   "description": "Reproducibility package for a process-linked audit of quantum amplitude estimation in pressure swing adsorption, including classical baselines, process and circuit resource boundaries, external controls, and a nine-job three-backend IBM QPU experiment.",
   "creators": [
@@ -32,6 +34,13 @@
     "chance-constrained optimization",
     "process systems engineering",
     "quantum resource estimation"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/lyullee/psa-qae-resource-audit",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
   ],
   "notes": "The package reports negative and conditional findings. It does not establish quantum advantage or industrial H2 validation. Original generated data and figures are also available under CC BY 4.0 as stated in the repository README."
 }

@@ -179,7 +179,7 @@ def write_citation(destination: Path, author_data: dict) -> None:
             '  - "process systems engineering"',
             '  - "resource estimation"',
             "license: MIT",
-            "repository-code: \"https://github.com/TO-BE-ASSIGNED/psa-qae-resource-audit\"",
+            "repository-code: \"https://github.com/lyullee/psa-qae-resource-audit\"",
             "",
         ]
     )
@@ -199,6 +199,8 @@ def write_zenodo_metadata(destination: Path, author_data: dict) -> None:
         )
     payload = {
         "title": "Resource-aware quantum amplitude estimation for chance-constrained pressure swing adsorption: classical baselines, compiled oracle costs, and a hardware boundary",
+        "version": "0.1.0",
+        "publication_date": date.today().isoformat(),
         "upload_type": "software",
         "description": (
             "Reproducibility package for a process-linked audit of quantum amplitude estimation in "
@@ -214,6 +216,13 @@ def write_zenodo_metadata(destination: Path, author_data: dict) -> None:
             "chance-constrained optimization",
             "process systems engineering",
             "quantum resource estimation",
+        ],
+        "related_identifiers": [
+            {
+                "identifier": "https://github.com/lyullee/psa-qae-resource-audit",
+                "relation": "isSupplementTo",
+                "scheme": "url",
+            }
         ],
         "notes": (
             "The package reports negative and conditional findings. It does not establish quantum "
