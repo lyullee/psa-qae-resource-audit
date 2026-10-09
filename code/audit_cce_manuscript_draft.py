@@ -276,7 +276,7 @@ def main() -> None:
         "calibrated same-policy H2 event result",
         "reversible equalization/CSS/event logic",
         "scalable correlated loader",
-        "repeated noise-aware hardware results",
+        "repetition across calibration times",
     ]
 
     checks: list[dict[str, object]] = []
@@ -954,9 +954,9 @@ def main() -> None:
         and format_checks.get("graphical_abstract_pixels", [0, 0])[1] >= 531
         and format_checks.get("main_figure_vector_pdf_count") == 6
         and format_checks.get("main_table3_rows") == 8
-        and format_checks.get("supplementary_table_s1_rows") == 29
+        and format_checks.get("supplementary_table_s1_rows") == 31
         and format_checks.get("main_table4_rows") == 8
-        and format_checks.get("supplementary_table_s2_rows") == 30
+        and format_checks.get("supplementary_table_s2_rows") == 32
         and any("(Khajuria and Pistikopoulos, 2013)" in paragraph for paragraph in docx_paragraphs)
         and len(docx_references) == 18
         and reference_surnames == sorted(reference_surnames, key=str.casefold)
@@ -1152,7 +1152,13 @@ def main() -> None:
         and editorial.get("evidence", {}).get("policy_stream_event_candidate_labels") == 96
         and editorial.get("evidence", {}).get("policy_stream_event_ledger_labels") == 32
         and editorial.get("evidence", {}).get("policy_stream_event_logical_qubits") == 510
-        and editorial.get("evidence", {}).get("policy_stream_event_clean_cx") == 1286021,
+        and editorial.get("evidence", {}).get("policy_stream_event_clean_cx") == 1286021
+        and editorial.get("evidence", {}).get("qpu_campaign_jobs") == 9
+        and editorial.get("evidence", {}).get("qpu_campaign_total_charge_seconds") == 45.0
+        and editorial.get("evidence", {}).get("qpu_campaign_between_job_sd", 0.0) > 0.0
+        and f"{editorial.get('evidence', {}).get('qpu_campaign_estimate_mean', -1.0):.6f}" in text
+        and "three backends" in text.lower()
+        and "three fixed transpiler seeds" in text.lower(),
         f"png={GRAPHICAL_ABSTRACT_PNG.exists()}, pdf={GRAPHICAL_ABSTRACT_PDF.exists()}, response_CX={editorial.get('evidence', {}).get('response_oracle_cx_per_call')}",
     )
     check(
@@ -1183,7 +1189,6 @@ def main() -> None:
         "submission_ready": False,
         "submission_blockers": [
             "calibrated same-policy H2 recycle/event validation; the corrected pyAPEP path is a non-CSS topology-feasibility stress test",
-            "multi-backend repeated QPU evidence with a noise-aware interval",
             "a synthesized reversible nonlinear tank/spatial cycle map feeding the compiled policy stream-to-event oracle; the physical 85-cycle horizon, out-of-place register accounting, five parameter-specialized normalized-transport/LDF/interior-balance paths, gas-inventory-generated product-cell LDF/valve/boundary-balance paths, a finite-support coherent run/schedule/tank interface, direct controller-to-five-component coefficient arithmetic, dynamic run-affinity Langmuir denominator/reciprocal generation, response consumption in schedule-gated component LDF/loading/balance paths, pressure-derived saturated plus bounded-counterfactual unsaturated proportional tank allocation, and one short-schedule source-model physical unsaturated control are quantified, while frozen-schedule physical unsaturated coverage, monolithic five-component phase integration, adaptive integration, and remaining workspace remain open",
             "final author approvals and declarations, and a permanent public archive",
         ],

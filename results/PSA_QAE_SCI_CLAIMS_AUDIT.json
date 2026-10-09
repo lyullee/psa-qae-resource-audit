@@ -16,7 +16,7 @@
     {
       "name": "CCE editorial package and graphical abstract claim boundary",
       "pass": true,
-      "detail": "status=editorial_materials_complete_scientific_submission_gates_open, highlights=[75, 67, 65, 72, 76], qpu_submission=False"
+      "detail": "status=editorial_materials_complete_scientific_submission_gates_open, highlights=[75, 67, 65, 72, 72], qpu_submission=False"
     },
     {
       "name": "direct convergence sample sizes",
@@ -489,14 +489,19 @@
       "detail": "fixed=9/14 bits, blocks=20, qubits=118, forward_CX=578702"
     },
     {
+      "name": "completed crossed multi-backend QPU replication campaign",
+      "pass": true,
+      "detail": "status=complete_9_of_9, rows=9, charge=45.0"
+    },
+    {
       "name": "CCE main-text resource ladder table values",
       "pass": true,
-      "detail": "rows=30, response_qubits=99, affine_qubits=186, css_init_qubits=118, event_stream_qubits=272, final_event_qubits=125, integrated_policy_qubits=510, all_component_ldf_qubits=675, transport_qubits=584, direct_internal_face_balance_qubits=1508, normalized_internal_face_balance_qubits=1651, direct_ldf_sign_balance_qubits=1317, product_boundary_qubits=677, product_boundary_balance_qubits=842"
+      "detail": "rows=31, response_qubits=99, affine_qubits=186, css_init_qubits=118, event_stream_qubits=272, final_event_qubits=125, integrated_policy_qubits=510, all_component_ldf_qubits=675, transport_qubits=584, direct_internal_face_balance_qubits=1508, normalized_internal_face_balance_qubits=1651, direct_ldf_sign_balance_qubits=1317, product_boundary_qubits=677, product_boundary_balance_qubits=842"
     },
     {
       "name": "CCE main-text Tables 1 2 and 4 values",
       "pass": true,
-      "detail": "table1=12, table2=4, table4=31"
+      "detail": "table1=12, table2=4, table4=32"
     },
     {
       "name": "CCE main-text validity boundary figure values",
@@ -566,7 +571,7 @@
     {
       "name": "reviewer-facing artifact files",
       "pass": true,
-      "detail": "files=385"
+      "detail": "files=391"
     },
     {
       "name": "manuscript claim anchors",

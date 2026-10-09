@@ -158,8 +158,13 @@ def _summary(rows: list[dict[str, object]], complete: bool) -> dict[str, object]
             matrix[i, j] = float(row["estimate"])
         backend_means = matrix.mean(axis=1)
         seed_means = matrix.mean(axis=0)
-        fitted = backend_means[:, None] + seed_means[None, :] - matrix.mean()
+        grand_mean = float(matrix.mean())
+        fitted = backend_means[:, None] + seed_means[None, :] - grand_mean
         interaction = matrix - fitted
+        ss_backend = float(len(SEEDS) * np.sum((backend_means - grand_mean) ** 2))
+        ss_seed = float(len(BACKENDS) * np.sum((seed_means - grand_mean) ** 2))
+        ss_residual = float(np.sum(interaction**2))
+        ss_total = float(np.sum((matrix - grand_mean) ** 2))
         rng = np.random.default_rng(BOOTSTRAP_SEED)
         boot = np.empty(BOOTSTRAP_REPLICATES, dtype=float)
         for k in range(BOOTSTRAP_REPLICATES):
@@ -174,6 +179,18 @@ def _summary(rows: list[dict[str, object]], complete: bool) -> dict[str, object]
                 "backend_mean_range": float(np.ptp(backend_means)),
                 "seed_mean_range": float(np.ptp(seed_means)),
                 "backend_seed_interaction_rmse": float(np.sqrt(np.mean(interaction**2))),
+                "crossed_sum_of_squares": {
+                    "backend": ss_backend,
+                    "transpiler_seed": ss_seed,
+                    "unreplicated_interaction_and_job_noise": ss_residual,
+                    "total": ss_total,
+                    "fractions": {
+                        "backend": ss_backend / ss_total if ss_total else 0.0,
+                        "transpiler_seed": ss_seed / ss_total if ss_total else 0.0,
+                        "unreplicated_interaction_and_job_noise": ss_residual / ss_total if ss_total else 0.0,
+                    },
+                    "scope": "descriptive decomposition of the complete 3x3 matrix; the residual cannot separate interaction from one-shot job noise",
+                },
                 "crossed_design_bootstrap": {
                     "replicates": BOOTSTRAP_REPLICATES,
                     "seed": BOOTSTRAP_SEED,
@@ -276,6 +293,7 @@ def _write_markdown(path: Path, payload: dict[str, object], rows: list[dict[str,
         lines += [
             "",
             f"Across the complete design, the between-job SD is `{summary['between_job_sd']:.6f}` and the crossed-design bootstrap interval for the sampled backend/seed mean is `[{crossed['low_2_5_percent']:.6f}, {crossed['high_97_5_percent']:.6f}]`. This is a descriptive design-variability interval, not a universal noise-calibrated confidence interval.",
+            f"The backend-mean range is `{summary['backend_mean_range']:.6f}`, the seed-mean range is `{summary['seed_mean_range']:.6f}`, and the unreplicated backend-by-seed interaction/job-noise RMSE is `{summary['backend_seed_interaction_rmse']:.6f}`.",
             "",
             "The hardware campaign remains a three-qubit event-kernel boundary. It does not establish end-to-end quantum advantage or industrial PSA validation.",
         ]

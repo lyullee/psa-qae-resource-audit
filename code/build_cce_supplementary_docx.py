@@ -29,13 +29,13 @@ FULL_TABLES = (
     (
         "S1",
         RESULTS / "PSA_QAE_CCE_RESOURCE_TABLE3.csv",
-        "Complete 30-tier quantum-resource evidence ladder",
+        "Complete 31-tier quantum-resource evidence ladder",
         [1.05, 1.35, 0.50, 0.85, 1.20, 1.35, 1.25, 2.20],
     ),
     (
         "S2",
         RESULTS / "PSA_QAE_CCE_TABLE4_EVIDENCE_HIERARCHY.csv",
-        "Complete 31-tier process, validation, and hardware evidence hierarchy",
+        "Complete 32-tier process, validation, and hardware evidence hierarchy",
         [1.45, 1.6, 1.35, 1.65, 1.55, 2.15],
     ),
 )
@@ -318,6 +318,16 @@ def build() -> None:
 
     for label, csv_path, title, widths in FULL_TABLES:
         _add_full_table(doc, label, csv_path, title, widths)
+
+    # Word reserves a terminal paragraph after a table.  Make that paragraph
+    # explicit and one point high so the final landscape table does not push an
+    # otherwise empty page into the rendered supplement.
+    terminal = doc.add_paragraph()
+    terminal.paragraph_format.space_before = Pt(0)
+    terminal.paragraph_format.space_after = Pt(0)
+    terminal.paragraph_format.line_spacing = Pt(1)
+    terminal_run = terminal.add_run("\u200b")
+    terminal_run.font.size = Pt(1)
 
     props = doc.core_properties
     props.title = "Supplementary Information — resource-aware PSA QAE"

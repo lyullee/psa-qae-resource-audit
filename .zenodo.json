@@ -1,7 +1,7 @@
 {
   "title": "Resource-aware quantum amplitude estimation for chance-constrained pressure swing adsorption: classical baselines, compiled oracle costs, and a hardware boundary",
   "upload_type": "software",
-  "description": "Reproducibility package for a process-linked audit of quantum amplitude estimation in pressure swing adsorption, including classical baselines, process and circuit resource boundaries, external controls, and a small IBM QPU experiment.",
+  "description": "Reproducibility package for a process-linked audit of quantum amplitude estimation in pressure swing adsorption, including classical baselines, process and circuit resource boundaries, external controls, and a nine-job three-backend IBM QPU experiment.",
   "creators": [
     {
       "name": "Lee, Ugwiyeon",

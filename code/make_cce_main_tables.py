@@ -52,6 +52,7 @@ PYAPEP = RESULTS / "PSA_QAE_CCE_INDEPENDENT_PYAPEP_H2_RECYCLE_VALIDATION.json"
 H2_RESOLUTION = RESULTS / "PSA_QAE_CCE_INDEPENDENT_H2_POLICY_RESOLUTION_AUDIT.json"
 TOPSAIL_YANG = RESULTS / "PSA_QAE_CCE_TOPSAIL_YANG_H2_PUBLIC_MODEL_AUDIT.json"
 QPU = RESULTS / "QAE_QPU_BREAKTHROUGH_PHASE_MLAE_IBM_db42v34lf4us73c24q50.json"
+QPU_CAMPAIGN = RESULTS / "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS.json"
 
 
 def load(path: Path) -> dict:
@@ -128,6 +129,9 @@ def main() -> None:
     h2_resolution = load(H2_RESOLUTION)
     topsail_yang = load(TOPSAIL_YANG)
     qpu = load(QPU)
+    qpu_campaign = load(QPU_CAMPAIGN)
+    if qpu_campaign.get("status") != "complete_9_of_9":
+        raise RuntimeError("Table 4 requires the complete 9/9 QPU replication campaign")
 
     outer = protocol["outer_decision"]
     prior = protocol["uncertainty_prior"]
@@ -631,12 +635,25 @@ def main() -> None:
             "key result": f"exact p={qpu['exact_probability']:.3f}; p-hat={qpu['estimate']['estimate']:.6f}; error={qpu['estimate']['absolute_error']:.6f}",
             "explicit boundary": "not the continuous prior or cyclic PSA model; no hardware-general interval",
         },
+        {
+            "evidence tier": "real-QPU multi-backend finite-event replication",
+            "system and size": "three active logical qubits; three IBM processors x three fixed transpiler seeds; nine jobs",
+            "independence": "crossed backend/seed replication of the same frozen eight-state event kernel",
+            "supported role": "sampled backend and compilation-seed variability for amplification-depth noise",
+            "key result": (
+                f"mean p-hat={qpu_campaign['summary']['estimate_mean']:.6f}; "
+                f"mean absolute error={qpu_campaign['summary']['mean_absolute_error']:.6f}; "
+                f"between-job SD={qpu_campaign['summary']['between_job_sd']:.6f}; "
+                f"total QPU charge={qpu_campaign['summary']['total_qpu_charge_seconds_recorded']:.0f} s"
+            ),
+            "explicit boundary": "descriptive interval over three observed backends and three seeds; not a universal noise-calibrated interval, continuous prior, cyclic PSA execution, or speedup result",
+        },
     ]
     write_table(
         "PSA_QAE_CCE_TABLE4_EVIDENCE_HIERARCHY",
         "psa-qae-cce-table4-evidence-hierarchy/v1",
         "evidence_tiers_tabulated_without_cross_system_pooling",
-        [PROTOCOL, PRIMARY_PHASE_LEDGER, PRIMARY_PHYSICAL_CSS, PRIMARY_QSTAR_MICROKERNEL, PRIMARY_QSTAR_LDF_MICROSTEP, PRIMARY_ALL_COMPONENT_LDF, PRIMARY_PRODUCT_BOUNDARY, PRIMARY_PRODUCT_BOUNDARY_BALANCE, PRIMARY_PRODUCT_LDF_VALVE_BALANCE, PRIMARY_NORMALIZED_PRODUCT_LDF_VALVE_BALANCE, PRIMARY_COHERENT_RUN_SCHEDULE_TANK, PRIMARY_COHERENT_RUN_FACTOR_LDF, PRIMARY_COHERENT_COEFFICIENT_LDF_BALANCE, PRIMARY_COHERENT_DYNAMIC_LANGMUIR_LDF_BALANCE, PRIMARY_OFFLEDGER_TANK_SATURATION, PRIMARY_OFFLEDGER_TANK_PROPORTIONAL, PRIMARY_PHYSICAL_UNSATURATED_TANK, PRIMARY_INTERNAL_TRANSPORT, PRIMARY_INTERNAL_FACE_BALANCE, PRIMARY_NORMALIZED_INTERNAL_FACE_BALANCE, PRIMARY_CELL_BALANCE, PRIMARY_LOADING_SIGN_BALANCE, PRIMARY_LDF_SIGN_BALANCE, PRIMARY_JOINT_NORMALIZED_TRANSPORT_LDF_BALANCE, PRIMARY_EVENT_BRIDGE, PRIMARY_FINAL_EVENT, PRIMARY_POLICY_STREAM_EVENT, CSS_INITIALIZER_BRIDGE, CSS_INITIALIZER_REPEATED, CSS_INITIALIZER_STABILITY, PHASE_MAP, PHASE_LEDGER, EMPIRICAL, EXTERNAL, THELEN, PYAPEP, H2_RESOLUTION, TOPSAIL_YANG, QPU],
+        [PROTOCOL, PRIMARY_PHASE_LEDGER, PRIMARY_PHYSICAL_CSS, PRIMARY_QSTAR_MICROKERNEL, PRIMARY_QSTAR_LDF_MICROSTEP, PRIMARY_ALL_COMPONENT_LDF, PRIMARY_PRODUCT_BOUNDARY, PRIMARY_PRODUCT_BOUNDARY_BALANCE, PRIMARY_PRODUCT_LDF_VALVE_BALANCE, PRIMARY_NORMALIZED_PRODUCT_LDF_VALVE_BALANCE, PRIMARY_COHERENT_RUN_SCHEDULE_TANK, PRIMARY_COHERENT_RUN_FACTOR_LDF, PRIMARY_COHERENT_COEFFICIENT_LDF_BALANCE, PRIMARY_COHERENT_DYNAMIC_LANGMUIR_LDF_BALANCE, PRIMARY_OFFLEDGER_TANK_SATURATION, PRIMARY_OFFLEDGER_TANK_PROPORTIONAL, PRIMARY_PHYSICAL_UNSATURATED_TANK, PRIMARY_INTERNAL_TRANSPORT, PRIMARY_INTERNAL_FACE_BALANCE, PRIMARY_NORMALIZED_INTERNAL_FACE_BALANCE, PRIMARY_CELL_BALANCE, PRIMARY_LOADING_SIGN_BALANCE, PRIMARY_LDF_SIGN_BALANCE, PRIMARY_JOINT_NORMALIZED_TRANSPORT_LDF_BALANCE, PRIMARY_EVENT_BRIDGE, PRIMARY_FINAL_EVENT, PRIMARY_POLICY_STREAM_EVENT, CSS_INITIALIZER_BRIDGE, CSS_INITIALIZER_REPEATED, CSS_INITIALIZER_STABILITY, PHASE_MAP, PHASE_LEDGER, EMPIRICAL, EXTERNAL, THELEN, PYAPEP, H2_RESOLUTION, TOPSAIL_YANG, QPU, QPU_CAMPAIGN],
         table4,
         "Table 4. Evidence hierarchy and claim boundary",
     )

@@ -32,18 +32,18 @@
 - [x] Run-affinity-dependent Langmuir denominator/reciprocal generated from supplied 20-bit pressure and five compositions and consumed in the same five schedule-gated paths: 64,640 component balances; 1,771–1,960 qubits and 41,440,216–42,391,556 CX per path; denominator p95/max 1.955e-04/3.530e-04.
 - [x] Three raw five-component gas inventories directly connected through two normalizers, three pressure reconstructions, two oriented faces, coherent control, dynamic Langmuir response, q*/LDF/loading conversion, and one conservative component balance: 2,696–2,885 qubits and 55,337,688–56,289,028 CX per path; 2,885-peak-qubit/279,319,932-additive-CX conservative upper bound.
 - [x] Correlated dense-loader infeasibility control and explicit structured-loader caveat.
-- [x] IBM hardware result with job ID, counts, layout, calibration time, charge, and claim boundary.
+- [x] Nine-job IBM hardware campaign across three backends and three fixed transpiler seeds, with job IDs, counts, layouts, calibration times, charges, crossed variability analysis, and claim boundary.
 - [x] Independent H2/public-simulator controls reported without cross-system pooling.
 - [x] Prospective H2 campaign precision target.
 - [x] Main manuscript, six main figures, four main tables, SI draft, environment freezes, hashes, highlights, cover-letter draft, and graphical abstract.
-- [x] Condense Tables 3 and 4 to eight claim-critical rows each in the main text and reproduce the complete 29/30-tier audit tables as Supplementary Tables S1/S2.
+- [x] Condense Tables 3 and 4 to eight claim-critical rows each in the main text and reproduce the complete 31/32-tier audit tables as Supplementary Tables S1/S2.
 - [x] Compile the pressure-derived saturated/unsaturated tank-allocation tier: 647 qubits, depth 1,127,046, and 705,194 CX; preserve 128 observed saturated and 224 bounded-counterfactual unsaturated labels with p95/max component-scale errors 1.687e-4/3.872e-4.
 
 ## Scientific gates that most affect CCE acceptance
 
 - [ ] **Highest priority:** same physical product-recycle control in H2, with synchronized pressure, valve state, feed/product/recycle flow, continuous product composition, cycle index, and product/recycle split.
 - [ ] Use held-out groups or runs; target recovery RMSE <=1.517 percentage points across the observed recycle support, or about <=0.156 percentage points if retaining only the 0.420–0.430 span.
-- [ ] Repeat the frozen QPU kernel on 2–3 backends and at least three runs per backend; separate binomial uncertainty, run variation, and backend bias.
+- [x] Repeat the frozen QPU kernel on three backends and three fixed transpiler seeds; report the complete crossed nine-job hardware boundary and descriptive variation without claiming a universal device effect.
 - [ ] Generate a physically integrated unsaturated tank trajectory, connect the completed normalized dynamic component paths into at least one complete adsorption phase, and compare it with the 85-cycle physical target.
 - [ ] If an end-to-end advantage claim is pursued, implement and compile a scalable structured correlated loader. This is unnecessary for the present boundary-paper claim.
 
@@ -54,7 +54,7 @@
 - [ ] Obtain explicit approval of the final manuscript, order, and CRediT statement from every author.
 - [x] Insert a Methods description and pre-reference declaration of OpenAI Codex use that follows Elsevier's June 2026 generative-AI policy; retain author confirmation as a final approval gate.
 - [ ] Confirm funding, acknowledgements, and conflict of interest statements.
-- [x] Convert the manuscript, author title page, and SI into separate DOCX files and verify their Word-rendered pages (29-page review manuscript, 1-page title page, and 7-page SI at the current revision).
+- [x] Convert the manuscript, author title page, and SI into separate DOCX files and verify their Word-rendered pages (30-page review manuscript, 1-page title page, and 7-page SI at the current revision).
 - [x] Apply the current CCE reference, table, and artwork requirements: author-year citations, alphabetized references, editable tables without shading or vertical rules, and separate vector-PDF versions of all six main figures.
 - [x] Verify the graphical abstract against the current guide: 3,706 x 1,446 px PNG plus vector PDF, exceeding the 1,328 x 531 px minimum.
 - [ ] Create a permanent public code/data archive and insert its DOI.
@@ -63,4 +63,4 @@
 
 ## Submission decision
 
-The package is structurally complete but `submission_ready=false`. A resource-boundary methods paper can be submitted after author/journal administration if the remaining scientific gates are disclosed. The strongest CCE version closes the same-control H2 validation gate and adds repeated QPU evidence. End-to-end quantum advantage remains outside the supported claim.
+The package is structurally complete but `submission_ready=false`. A resource-boundary methods paper can be submitted after author/journal administration if the remaining scientific gates are disclosed. The multi-backend repeated-QPU gate is now complete; the strongest CCE version still closes the same-control H2 validation gate. End-to-end quantum advantage remains outside the supported claim.

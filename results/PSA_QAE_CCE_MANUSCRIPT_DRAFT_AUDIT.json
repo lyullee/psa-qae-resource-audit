@@ -1,16 +1,15 @@
 {
   "schema": "psa-qae-cce-manuscript-draft-audit/v1",
-  "created_utc": "2026-10-09T22:25:19.984066+00:00",
+  "created_utc": "2026-10-09T23:05:44.669021+00:00",
   "status": "draft_structure_pass_submission_gates_open",
   "submission_ready": false,
   "submission_blockers": [
     "calibrated same-policy H2 recycle/event validation; the corrected pyAPEP path is a non-CSS topology-feasibility stress test",
-    "multi-backend repeated QPU evidence with a noise-aware interval",
     "a synthesized reversible nonlinear tank/spatial cycle map feeding the compiled policy stream-to-event oracle; the physical 85-cycle horizon, out-of-place register accounting, five parameter-specialized normalized-transport/LDF/interior-balance paths, gas-inventory-generated product-cell LDF/valve/boundary-balance paths, a finite-support coherent run/schedule/tank interface, direct controller-to-five-component coefficient arithmetic, dynamic run-affinity Langmuir denominator/reciprocal generation, response consumption in schedule-gated component LDF/loading/balance paths, pressure-derived saturated plus bounded-counterfactual unsaturated proportional tank allocation, and one short-schedule source-model physical unsaturated control are quantified, while frozen-schedule physical unsaturated coverage, monolithic five-component phase integration, adaptive integration, and remaining workspace remain open",
     "final author approvals and declarations, and a permanent public archive"
   ],
-  "word_count": 10489,
-  "abstract_word_count": 219,
+  "word_count": 10499,
+  "abstract_word_count": 235,
   "citation_keys": [
     "callison2022mlqae",
     "ceccanti2026deeponet",
@@ -35,12 +34,12 @@
     {
       "name": "main-text word count",
       "pass": true,
-      "detail": "words=10489"
+      "detail": "words=10499"
     },
     {
       "name": "abstract length",
       "pass": true,
-      "detail": "abstract_words=219"
+      "detail": "abstract_words=235"
     },
     {
       "name": "required manuscript sections",
@@ -220,12 +219,12 @@
     {
       "name": "machine-readable CCE editorial package",
       "pass": true,
-      "detail": "status=editorial_materials_complete_scientific_submission_gates_open, highlights=[75, 67, 65, 72, 76], submission_ready=False"
+      "detail": "status=editorial_materials_complete_scientific_submission_gates_open, highlights=[75, 67, 65, 72, 72], submission_ready=False"
     },
     {
       "name": "CCE live-guide format limits and author-year references",
       "pass": true,
-      "detail": "abstract=219/250, keywords=6, highlights=[75, 67, 65, 72, 76], graphical_abstract=[3706, 1446], vector_pdfs=6, references=18"
+      "detail": "abstract=235/250, keywords=6, highlights=[75, 67, 65, 72, 72], graphical_abstract=[3706, 1446], vector_pdfs=6, references=18"
     },
     {
       "name": "bounded novelty-search evidence",
@@ -255,7 +254,7 @@
     {
       "name": "project-wide claim audit remains passing",
       "pass": true,
-      "detail": "status=pass, checks=114"
+      "detail": "status=pass, checks=115"
     }
   ],
   "note": "Passing this audit establishes manuscript structure and internal consistency only. It does not close the listed external evidence gates or establish acceptance, plant validation, or quantum advantage."

@@ -70,6 +70,7 @@ def main() -> None:
     reversible_cycle_path = results / "PSA_QAE_REVERSIBLE_FIXED_POINT_CYCLE_CONTROL.json"
     primary_finite_gate_path = results / "PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_GATE_RESOURCES.json"
     primary_finite_ibm_preflight_path = results / "PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_IBM_PREFLIGHT_ibm_marrakesh.json"
+    qpu_campaign_analysis_path = results / "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS.json"
     primary_linear_oracle_path = results / "PSA_QAE_CCE_PRIMARY_LINEAR_SURROGATE_ORACLE.json"
     primary_copula_loader_path = results / "PSA_QAE_CCE_PRIMARY_COPULA_STATE_LOADER.json"
     primary_threshold_activity_path = results / "PSA_QAE_CCE_PRIMARY_THRESHOLD_ACTIVITY.json"
@@ -268,6 +269,7 @@ def main() -> None:
     cce_css_fixed = _load(cce_css_fixed_path)
     cce_css_compile = _load(cce_css_compile_path)
     cce_resource_table = _load(cce_resource_table_path)
+    qpu_campaign_analysis = _load(qpu_campaign_analysis_path)
     cce_table1 = _load(cce_table1_path)
     cce_table2 = _load(cce_table2_path)
     cce_table4 = _load(cce_table4_path)
@@ -2502,13 +2504,28 @@ def main() -> None:
         and cce_css_compile["qpu_submission"] is False,
         f"fixed={css_fixed['bits_per_input']}/{css_fixed['sum_bits_per_scalar_output']} bits, blocks={css_compile['scalar_blocks']}, qubits={css_compile['max_logical_qubits_reusing_scalar_workspace']}, forward_CX={css_compile['serial_forward_cx']}",
     )
+    qpu_campaign_rows = qpu_campaign_analysis.get("rows", [])
+    _check(
+        checks,
+        "completed crossed multi-backend QPU replication campaign",
+        qpu_campaign_analysis.get("status") == "complete_9_of_9"
+        and len(qpu_campaign_rows) == 9
+        and not qpu_campaign_analysis.get("missing_cells")
+        and not qpu_campaign_analysis.get("validation_errors")
+        and set(qpu_campaign_analysis["summary"]["backend_means"])
+        == {"ibm_marrakesh", "ibm_fez", "ibm_kingston"}
+        and len(qpu_campaign_analysis["summary"]["seed_means"]) == 3
+        and qpu_campaign_analysis["summary"]["total_qpu_charge_seconds_recorded"] == 45.0
+        and all((results / str(row["source_file"])).exists() for row in qpu_campaign_rows),
+        f"status={qpu_campaign_analysis.get('status')}, rows={len(qpu_campaign_rows)}, charge={qpu_campaign_analysis.get('summary', {}).get('total_qpu_charge_seconds_recorded')}",
+    )
     resource_rows = {row["tier"]: row for row in cce_resource_table["rows"]}
     _check(
         checks,
         "CCE main-text resource ladder table values",
         cce_resource_table["status"]
         == "main_text_resource_ladder_assembled_open_end_to_end_gates_disclosed"
-        and len(resource_rows) == 30
+        and len(resource_rows) == 31
         and resource_rows["small end-to-end structural oracle"]["logical_qubits"] == 15
         and "304 CX" in resource_rows["small end-to-end structural oracle"]["per_call_or_block_resource"]
         and resource_rows["fixed-point response-event oracle"]["logical_qubits"] == 99
@@ -2626,7 +2643,10 @@ def main() -> None:
         and "578,702 forward CX" in resource_rows["parameter-only CSS initializer blocks"]["schedule_or_aggregate_resource"]
         and "1,157,404 clean CX" in resource_rows["parameter-only CSS initializer blocks"]["schedule_or_aggregate_resource"]
         and resource_rows["real-QPU three-qubit event"]["logical_qubits"] == 3
-        and "0.058060" in resource_rows["real-QPU three-qubit event"]["accuracy_or_observation"],
+        and "0.058060" in resource_rows["real-QPU three-qubit event"]["accuracy_or_observation"]
+        and resource_rows["real-QPU multi-backend event replication"]["logical_qubits"] == 3
+        and "9 jobs" in resource_rows["real-QPU multi-backend event replication"]["per_call_or_block_resource"]
+        and f"{qpu_campaign_analysis['summary']['estimate_mean']:.6f}" in resource_rows["real-QPU multi-backend event replication"]["accuracy_or_observation"],
         f"rows={len(resource_rows)}, response_qubits={resource_rows['fixed-point response-event oracle']['logical_qubits']}, affine_qubits={resource_rows['calibrated one-cycle affine blocks']['logical_qubits']}, css_init_qubits={resource_rows['parameter-only CSS initializer blocks']['logical_qubits']}, event_stream_qubits={resource_rows['primary phase-stream event blocks']['logical_qubits']}, final_event_qubits={resource_rows['primary final joint-event arithmetic']['logical_qubits']}, integrated_policy_qubits={resource_rows['primary policy stream-to-event clean oracle']['logical_qubits']}, all_component_ldf_qubits={resource_rows['five-component equilibrium/LDF microsteps']['logical_qubits']}, transport_qubits={resource_rows['pressure reconstruction and oriented internal-face transport']['logical_qubits']}, direct_internal_face_balance_qubits={resource_rows['direct pressure-to-two-face-to-interior-cell balance']['logical_qubits']}, normalized_internal_face_balance_qubits={resource_rows['direct gas-normalization-to-two-face-to-interior-cell balance']['logical_qubits']}, direct_ldf_sign_balance_qubits={resource_rows['direct LDF-to-loading-sign-to-cell-balance composition']['logical_qubits']}, product_boundary_qubits={resource_rows['product-boundary valve and recycle-tank modules']['logical_qubits']}, product_boundary_balance_qubits={resource_rows['direct product-valve-to-boundary-cell balance']['logical_qubits']}",
     )
     table1_rows = {row["item"]: row for row in cce_table1["rows"]}
@@ -2643,7 +2663,7 @@ def main() -> None:
         and table2_rows["scrambled Sobol RQMC"]["rmse"] == "0.002482"
         and table2_rows["noiseless MLAE"]["rmse"] == "0.002892"
         and cce_table4["status"] == "evidence_tiers_tabulated_without_cross_system_pooling"
-        and len(table4_rows) == 31
+        and len(table4_rows) == 32
         and "not plant validation" in table4_rows["primary spatial/tank response model"]["explicit boundary"]
         and "physical joint horizon 68 cycles" in table4_rows["primary physical CSS horizon and register accounting"]["key result"]
         and "2,880 qubits" in table4_rows["primary physical CSS horizon and register accounting"]["key result"]
@@ -2746,7 +2766,9 @@ def main() -> None:
         and "purity, recovery, tank, and CSS gates fail" in table4_rows["independent pyAPEP H2 recycle code path"]["explicit boundary"]
         and "0.99167" in table4_rows["independent pyAPEP H2 recycle code path"]["key result"]
         and "75.87%" in table4_rows["public toPSAil/Yang H2 model and experiment"]["key result"]
-        and "no 0.420 validation" in table4_rows["public toPSAil/Yang H2 model and experiment"]["explicit boundary"],
+        and "no 0.420 validation" in table4_rows["public toPSAil/Yang H2 model and experiment"]["explicit boundary"]
+        and "nine jobs" in table4_rows["real-QPU multi-backend finite-event replication"]["system and size"]
+        and "not a universal noise-calibrated interval" in table4_rows["real-QPU multi-backend finite-event replication"]["explicit boundary"],
         f"table1={len(table1_rows)}, table2={len(table2_rows)}, table4={len(table4_rows)}",
     )
     validity_panels = cce_validity_figure["panels"]
@@ -3069,6 +3091,12 @@ def main() -> None:
         primary_finite_ibm_preflight_path,
         results / "PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_IBM_PREFLIGHT_ibm_marrakesh.csv",
         results / "PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_IBM_PREFLIGHT_ibm_marrakesh.md",
+        qpu_campaign_analysis_path,
+        results / "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS.csv",
+        results / "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS.md",
+        results / "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS_FIGURE.png",
+        results / "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS_FIGURE.pdf",
+        results / "PSA_QAE_QPU_REPLICATION_CAMPAIGN_STATUS.json",
         primary_linear_oracle_path,
         results / "PSA_QAE_CCE_PRIMARY_LINEAR_SURROGATE_ORACLE.csv",
         results / "PSA_QAE_CCE_PRIMARY_LINEAR_SURROGATE_ORACLE.md",

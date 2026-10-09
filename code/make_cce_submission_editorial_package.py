@@ -21,6 +21,7 @@ TABLE2 = RESULTS / "PSA_QAE_CCE_TABLE2_MATCHED_ESTIMATORS.json"
 RESOURCE_TABLE = RESULTS / "PSA_QAE_CCE_RESOURCE_TABLE3.json"
 PROSPECTIVE = RESULTS / "PSA_QAE_CCE_PROSPECTIVE_POLICY_DESIGN_AUDIT.json"
 QPU = RESULTS / "QAE_QPU_BREAKTHROUGH_PHASE_MLAE_IBM_db42v34lf4us73c24q50.json"
+QPU_CAMPAIGN = RESULTS / "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS.json"
 CSS_INITIALIZER = RESULTS / "PSA_QAE_CCE_PRIMARY_CSS_INITIALIZER_EVENT_BRIDGE.json"
 CSS_REPEATED = RESULTS / "PSA_QAE_CCE_PRIMARY_CSS_INITIALIZER_REPEATED_CYCLE_SCREEN.json"
 CSS_STABILITY = RESULTS / "PSA_QAE_CCE_PRIMARY_CSS_INITIALIZER_SPECTRAL_STABILITY_SCREEN.json"
@@ -64,7 +65,7 @@ MAIN_FIGURE_BASES = [
     "PSA_QAE_CONTINUOUS_POLICY_SELECTION_FIGURE",
     "PSA_QAE_CCE_PRIMARY_RESOURCE_BOUNDARY_FIGURE",
     "PSA_QAE_CCE_RESOURCE_LADDER_FIGURE",
-    "FIG_QPU_MLAE_HARDWARE_BOUNDARY",
+    "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS_FIGURE",
     "PSA_QAE_CCE_VALIDITY_BOUNDARY_FIGURE",
 ]
 
@@ -78,7 +79,7 @@ HIGHLIGHTS = [
     "RQMC gives lower RMSE than MLAE for the frozen surrogate benchmark.",
     "A response oracle needs 99 logical qubits and 35,160 CX per call.",
     "Policy stream-to-event oracles preserve all candidate and ledger labels.",
-    "IBM hardware bounds execution without claiming end-to-end quantum advantage.",
+    "Nine IBM jobs quantify backend and transpiler-seed hardware variability.",
 ]
 
 
@@ -179,7 +180,7 @@ def make_graphical_abstract(payload: dict) -> None:
             "Raw agg. CSS: 2/32 | physical: 68→85 cycles",
             "Out-of-place state/streams: 2,880 q",
             "Dense 7-bit loader: 2^63 amplitudes",
-            "IBM: 0.625 exact -> 0.56694",
+            f"IBM 3x3: mean {payload['evidence']['qpu_campaign_estimate_mean']:.5f} vs 0.625",
         ],
     )
 
@@ -190,7 +191,7 @@ def make_graphical_abstract(payload: dict) -> None:
 
     conclusion = (
         "Current result: no end-to-end quantum advantage\n"
-        "State accumulation/full phase logic, loading, repeated QPU evidence, and H2 validation remain decisive"
+        "State accumulation/full phase logic, structured loading, and H2 validation remain decisive"
     )
     ax.add_patch(
         FancyBboxPatch(
@@ -231,6 +232,9 @@ def main() -> None:
     resources = load(RESOURCE_TABLE)
     prospective = load(PROSPECTIVE)
     qpu = load(QPU)
+    qpu_campaign = load(QPU_CAMPAIGN)
+    if qpu_campaign.get("status") != "complete_9_of_9":
+        raise RuntimeError("editorial packaging requires the complete 9/9 QPU campaign")
     css_initializer = load(CSS_INITIALIZER)
     css_repeated = load(CSS_REPEATED)
     css_stability = load(CSS_STABILITY)
@@ -464,6 +468,12 @@ def main() -> None:
         "qpu_exact_probability": qpu["exact_probability"],
         "qpu_estimate": qpu["estimate"]["estimate"],
         "qpu_absolute_error": qpu["estimate"]["absolute_error"],
+        "qpu_campaign_jobs": qpu_campaign["summary"]["completed_cells"],
+        "qpu_campaign_estimate_mean": qpu_campaign["summary"]["estimate_mean"],
+        "qpu_campaign_mean_absolute_error": qpu_campaign["summary"]["mean_absolute_error"],
+        "qpu_campaign_between_job_sd": qpu_campaign["summary"]["between_job_sd"],
+        "qpu_campaign_total_charge_seconds": qpu_campaign["summary"]["total_qpu_charge_seconds_recorded"],
+        "qpu_campaign_crossed_bootstrap": qpu_campaign["summary"]["crossed_design_bootstrap"],
         "same_control_h2_validation": False,
         "max_h2_recovery_rmse_full_support_pct_point": prospective["independent_h2_resolution_design"]["max_recovery_rmse_for_full_support_to_pass_5x_pct_point"],
         "max_h2_recovery_rmse_primary_span_pct_point": prospective["independent_h2_resolution_design"]["max_recovery_rmse_for_primary_0p010_span_to_pass_5x_pct_point"],
@@ -485,7 +495,6 @@ def main() -> None:
         "qpu_submission": False,
         "scientific_priority": [
             "same-control H2 product-recycle campaign with synchronized policy, pressure, flow, continuous composition, and product/recycle split",
-            "repeated multi-backend QPU campaign with noise-aware uncertainty",
             "generate a physically integrated unsaturated tank trajectory inside a complete five-component adsorption phase and quantify adaptive integration workspace",
         ],
         "outputs": [OUT_MD.name, OUT_COVER.name, OUT_HIGHLIGHTS.name, OUT_CHECKLIST.name, OUT_PNG.name, OUT_PDF.name],
@@ -510,11 +519,11 @@ def main() -> None:
         "graphical_abstract_minimum_pixels": [1328, 531],
         "main_figure_vector_pdf_count": len(vector_figure_pdfs),
         "main_table3_rows": 8,
-        "supplementary_table_s1_rows": 29,
+        "supplementary_table_s1_rows": 31,
         "main_table4_rows": 8,
-        "supplementary_table_s2_rows": 30,
+        "supplementary_table_s2_rows": 32,
         "word_rendered_pages": {
-            "manuscript": 29,
+            "manuscript": 30,
             "title_page": 1,
             "supplementary_information": 7,
         },
@@ -567,7 +576,7 @@ This study tests quantum amplitude estimation against strong classical estimator
 - Recompiling the five LDF microsteps at those wider interfaces permits direct clean LDF→sign→solid-conversion→cell-balance composition. Component circuits use **861–929 logical qubits** and **3,412,254–4,991,534 CX**; sequential workspace-reuse accounting is **1,317 logical qubits** and **19,082,852 additive CX**.
 - Five parameter-specialized paths connect the full 20-bit normalized pressure/composition outputs and both internal faces to LDF uptake and the same component balance. They use **1,944–2,039 logical qubits** and **20,670,468–35,947,274 CX** each; the common-path-repeating upper bound is **2,039 peak qubits/128,013,726 additive CX**. All five frozen-support precision gates pass. The higher controller-coupled tier generates normalization, pressure, both faces, the dynamic response, and each component update; the tank tier removes the recorded withdrawal lookup on the saturated branch. Monolithic five-component phase integration remains open.
 - A dense seven-bit representation addresses **2^63 amplitudes**, making generic dense preparation infeasible.
-- The completed IBM kernel gives **0.56694** for an exact probability of **0.625** on `ibm_marrakesh`; this is a hardware boundary, not an end-to-end PSA execution.
+- The complete nine-job IBM campaign spans three processors and three fixed transpiler seeds. Its mean estimate is **{evidence['qpu_campaign_estimate_mean']:.6f}**, mean absolute error is **{evidence['qpu_campaign_mean_absolute_error']:.6f}**, between-job SD is **{evidence['qpu_campaign_between_job_sd']:.6f}**, and recorded QPU charge is **{evidence['qpu_campaign_total_charge_seconds']:.0f} s**. This remains a three-qubit hardware boundary, not an end-to-end PSA execution.
 - The independent H2 audit fails the five-times resolution gate. A future full-support campaign needs group-held-out recovery RMSE no larger than **{evidence['max_h2_recovery_rmse_full_support_pct_point']:.3f} percentage points**; the frozen 0.010 policy span needs about **{evidence['max_h2_recovery_rmse_primary_span_pct_point']:.3f} percentage points**.
 
 ## Claim boundary
@@ -598,7 +607,7 @@ Please consider our manuscript, “{TITLE},” for publication as a research art
 
 The manuscript asks a process-systems question that asymptotic quantum-computing analyses usually leave unresolved: does amplitude estimation improve an actual PSA chance-constrained policy decision after strong classical estimators, state preparation, reversible process evaluation, and hardware error are counted on the same basis? We freeze three product-recycle policies and one joint hydrogen purity/recovery event, then compare Monte Carlo, scrambled Sobol randomized quasi-Monte Carlo, defensive-mixture importance sampling, and noiseless maximum-likelihood amplitude estimation over 200 matched replications.
 
-The result is deliberately resource-aware. Scrambled Sobol RQMC attains RMSE 0.002482, below noiseless MLAE at 0.002892. A compiled response-event oracle requires 99 logical qubits and 35,160 CX per call. A parameter-only initializer and one-cycle composition recover 32/32 event labels without held dynamic states; its 20 affine blocks reach 118 logical qubits and 578,702 forward CX. A policy-specific stream-to-event oracle retains 96/96 candidate-policy and 32/32 ledger-support labels at up to 510 logical qubits and 1,286,021 CX. Raw aggregate 50-cycle repetition passes CSS in only 2/32 runs, whereas all 32 source tank/spatial models settle with a latest joint horizon of 68 cycles. A 16-bit audit gives an 85-cycle target and 2,880-qubit clean out-of-place state/stream accounting point before nonlinear transport workspace. Five controller-coupled paths now generate normalized compositions, three pressures, two faces, the run-affinity Langmuir denominator/reciprocal, and q*/LDF/loading/balance updates directly from raw three-cell inventories. They compile to {evidence['coherent_normalized_dynamic_component_qubit_range'][0]:,}–{evidence['coherent_normalized_dynamic_component_qubit_range'][1]:,} qubits and {evidence['coherent_normalized_dynamic_component_cx_range'][0]:,}–{evidence['coherent_normalized_dynamic_component_cx_range'][1]:,} CX each. A 557-qubit pressure-derived circuit removes the withdrawal lookup on all 128 frozen saturated tank calls. A 647-qubit extension selects that branch or proportional allocation and preserves 128 observed saturated plus 224 bounded-counterfactual unsaturated labels; the added cases test arithmetic rather than physical trajectories. A completed three-qubit IBM experiment measures 0.56694 for exact 0.625 and serves as a hardware-noise boundary.
+The result is deliberately resource-aware. Scrambled Sobol RQMC attains RMSE 0.002482, below noiseless MLAE at 0.002892. A compiled response-event oracle requires 99 logical qubits and 35,160 CX per call. A parameter-only initializer and one-cycle composition recover 32/32 event labels without held dynamic states; its 20 affine blocks reach 118 logical qubits and 578,702 forward CX. A policy-specific stream-to-event oracle retains 96/96 candidate-policy and 32/32 ledger-support labels at up to 510 logical qubits and 1,286,021 CX. Raw aggregate 50-cycle repetition passes CSS in only 2/32 runs, whereas all 32 source tank/spatial models settle with a latest joint horizon of 68 cycles. A 16-bit audit gives an 85-cycle target and 2,880-qubit clean out-of-place state/stream accounting point before nonlinear transport workspace. Five controller-coupled paths now generate normalized compositions, three pressures, two faces, the run-affinity Langmuir denominator/reciprocal, and q*/LDF/loading/balance updates directly from raw three-cell inventories. They compile to {evidence['coherent_normalized_dynamic_component_qubit_range'][0]:,}–{evidence['coherent_normalized_dynamic_component_qubit_range'][1]:,} qubits and {evidence['coherent_normalized_dynamic_component_cx_range'][0]:,}–{evidence['coherent_normalized_dynamic_component_cx_range'][1]:,} CX each. A 557-qubit pressure-derived circuit removes the withdrawal lookup on all 128 frozen saturated tank calls. A 647-qubit extension selects that branch or proportional allocation and preserves 128 observed saturated plus 224 bounded-counterfactual unsaturated labels; the added cases test arithmetic rather than physical trajectories. A nine-job IBM campaign over three processors and three fixed transpiler seeds gives mean estimate {evidence['qpu_campaign_estimate_mean']:.6f}, mean absolute error {evidence['qpu_campaign_mean_absolute_error']:.6f}, and between-job SD {evidence['qpu_campaign_between_job_sd']:.6f} for exact 0.625; it serves as a hardware-noise boundary.
 
 The paper's contribution is the separation of estimator error, decision value, process-model validity, state-loading cost, reversible-oracle cost, and QPU behavior within one chemical-engineering workflow. Independent H2 literature data and two public simulator paths do not validate the selected policy; we report these results as negative or directional controls and quantify the accuracy required of a future same-control H2 campaign. This boundary is central to the manuscript: we do not claim quantum advantage, industrial H2 validation, or deployment readiness.
 
@@ -650,18 +659,18 @@ Ugwiyeon Lee\nKorea Gas Safety Corporation\n1390 Wonjung-ro, Maengdong-myeon, Eu
 - [x] Run-affinity-dependent Langmuir denominator/reciprocal generated from supplied 20-bit pressure and five compositions and consumed in the same five schedule-gated paths: {evidence['coherent_dynamic_langmuir_component_balance_records']:,} component balances; {evidence['coherent_dynamic_langmuir_component_qubit_range'][0]:,}–{evidence['coherent_dynamic_langmuir_component_qubit_range'][1]:,} qubits and {evidence['coherent_dynamic_langmuir_component_cx_range'][0]:,}–{evidence['coherent_dynamic_langmuir_component_cx_range'][1]:,} CX per path; denominator p95/max {evidence['coherent_dynamic_langmuir_denominator_p95_error']:.3e}/{evidence['coherent_dynamic_langmuir_denominator_max_error']:.3e}.
 - [x] Three raw five-component gas inventories directly connected through two normalizers, three pressure reconstructions, two oriented faces, coherent control, dynamic Langmuir response, q*/LDF/loading conversion, and one conservative component balance: {evidence['coherent_normalized_dynamic_component_qubit_range'][0]:,}–{evidence['coherent_normalized_dynamic_component_qubit_range'][1]:,} qubits and {evidence['coherent_normalized_dynamic_component_cx_range'][0]:,}–{evidence['coherent_normalized_dynamic_component_cx_range'][1]:,} CX per path; {evidence['coherent_normalized_dynamic_peak_logical_qubits']:,}-peak-qubit/{evidence['coherent_normalized_dynamic_additive_cx_upper_bound']:,}-additive-CX conservative upper bound.
 - [x] Correlated dense-loader infeasibility control and explicit structured-loader caveat.
-- [x] IBM hardware result with job ID, counts, layout, calibration time, charge, and claim boundary.
+- [x] Nine-job IBM hardware campaign across three backends and three fixed transpiler seeds, with job IDs, counts, layouts, calibration times, charges, crossed variability analysis, and claim boundary.
 - [x] Independent H2/public-simulator controls reported without cross-system pooling.
 - [x] Prospective H2 campaign precision target.
 - [x] Main manuscript, six main figures, four main tables, SI draft, environment freezes, hashes, highlights, cover-letter draft, and graphical abstract.
-- [x] Condense Tables 3 and 4 to eight claim-critical rows each in the main text and reproduce the complete 29/30-tier audit tables as Supplementary Tables S1/S2.
+- [x] Condense Tables 3 and 4 to eight claim-critical rows each in the main text and reproduce the complete 31/32-tier audit tables as Supplementary Tables S1/S2.
 - [x] Compile the pressure-derived saturated/unsaturated tank-allocation tier: 647 qubits, depth 1,127,046, and 705,194 CX; preserve 128 observed saturated and 224 bounded-counterfactual unsaturated labels with p95/max component-scale errors 1.687e-4/3.872e-4.
 
 ## Scientific gates that most affect CCE acceptance
 
 - [ ] **Highest priority:** same physical product-recycle control in H2, with synchronized pressure, valve state, feed/product/recycle flow, continuous product composition, cycle index, and product/recycle split.
 - [ ] Use held-out groups or runs; target recovery RMSE <=1.517 percentage points across the observed recycle support, or about <=0.156 percentage points if retaining only the 0.420–0.430 span.
-- [ ] Repeat the frozen QPU kernel on 2–3 backends and at least three runs per backend; separate binomial uncertainty, run variation, and backend bias.
+- [x] Repeat the frozen QPU kernel on three backends and three fixed transpiler seeds; report the complete crossed nine-job hardware boundary and descriptive variation without claiming a universal device effect.
 - [ ] Generate a physically integrated unsaturated tank trajectory, connect the completed normalized dynamic component paths into at least one complete adsorption phase, and compare it with the 85-cycle physical target.
 - [ ] If an end-to-end advantage claim is pursued, implement and compile a scalable structured correlated loader. This is unnecessary for the present boundary-paper claim.
 
@@ -672,7 +681,7 @@ Ugwiyeon Lee\nKorea Gas Safety Corporation\n1390 Wonjung-ro, Maengdong-myeon, Eu
 - [ ] Obtain explicit approval of the final manuscript, order, and CRediT statement from every author.
 - [x] Insert a Methods description and pre-reference declaration of OpenAI Codex use that follows Elsevier's June 2026 generative-AI policy; retain author confirmation as a final approval gate.
 - [ ] Confirm funding, acknowledgements, and conflict of interest statements.
-- [x] Convert the manuscript, author title page, and SI into separate DOCX files and verify their Word-rendered pages (29-page review manuscript, 1-page title page, and 7-page SI at the current revision).
+- [x] Convert the manuscript, author title page, and SI into separate DOCX files and verify their Word-rendered pages (30-page review manuscript, 1-page title page, and 7-page SI at the current revision).
 - [x] Apply the current CCE reference, table, and artwork requirements: author-year citations, alphabetized references, editable tables without shading or vertical rules, and separate vector-PDF versions of all six main figures.
 - [x] Verify the graphical abstract against the current guide: 3,706 x 1,446 px PNG plus vector PDF, exceeding the 1,328 x 531 px minimum.
 - [ ] Create a permanent public code/data archive and insert its DOI.
@@ -681,7 +690,7 @@ Ugwiyeon Lee\nKorea Gas Safety Corporation\n1390 Wonjung-ro, Maengdong-myeon, Eu
 
 ## Submission decision
 
-The package is structurally complete but `submission_ready=false`. A resource-boundary methods paper can be submitted after author/journal administration if the remaining scientific gates are disclosed. The strongest CCE version closes the same-control H2 validation gate and adds repeated QPU evidence. End-to-end quantum advantage remains outside the supported claim.
+The package is structurally complete but `submission_ready=false`. A resource-boundary methods paper can be submitted after author/journal administration if the remaining scientific gates are disclosed. The multi-backend repeated-QPU gate is now complete; the strongest CCE version still closes the same-control H2 validation gate. End-to-end quantum advantage remains outside the supported claim.
 """
     OUT_CHECKLIST.write_text(checklist, encoding="utf-8")
     print(json.dumps({"status": payload["status"], "outputs": len(payload["outputs"]) + 1, "qpu_submission": False}, indent=2))

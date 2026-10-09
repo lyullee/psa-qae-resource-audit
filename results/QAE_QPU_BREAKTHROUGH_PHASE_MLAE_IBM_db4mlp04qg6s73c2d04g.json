@@ -1,0 +1,178 @@
+{
+  "schema": "psa-qae-qpu-breakthrough-phase-mlae-ibm/v1",
+  "status": "real_qpu_completed",
+  "submitted_utc": "2026-10-09T22:29:56.757349+00:00",
+  "job_id": "db4mlp04qg6s73c2d04g",
+  "backend": "ibm_fez",
+  "powers": [
+    0,
+    1,
+    2
+  ],
+  "shots_per_power": 4096,
+  "exact_probability": 0.625,
+  "circuits": [
+    {
+      "name": "phase_mlae_m0",
+      "num_qubits": 156,
+      "depth": 4,
+      "size": 12,
+      "two_qubit_instructions": 0,
+      "operations": {
+        "rz": 6,
+        "sx": 3,
+        "measure": 3
+      },
+      "initial_layout": [
+        86,
+        132,
+        4
+      ]
+    },
+    {
+      "name": "phase_mlae_m1",
+      "num_qubits": 156,
+      "depth": 72,
+      "size": 97,
+      "two_qubit_instructions": 19,
+      "operations": {
+        "sx": 36,
+        "rz": 33,
+        "cz": 19,
+        "x": 6,
+        "measure": 3
+      },
+      "initial_layout": [
+        144,
+        142,
+        143
+      ]
+    },
+    {
+      "name": "phase_mlae_m2",
+      "num_qubits": 156,
+      "depth": 134,
+      "size": 192,
+      "two_qubit_instructions": 37,
+      "operations": {
+        "sx": 75,
+        "rz": 68,
+        "cz": 37,
+        "x": 9,
+        "measure": 3
+      },
+      "initial_layout": [
+        142,
+        140,
+        141
+      ]
+    }
+  ],
+  "transpiler_seed": 20261010,
+  "dry_run": false,
+  "verified_plan": "open",
+  "usage_before": {
+    "usage_consumed_seconds": 84,
+    "usage_consumed_ru": 1.3657,
+    "usage_period": {
+      "start_time": "2026-09-11T22:29:53.461Z",
+      "end_time": "2026-10-09T22:29:53.461Z"
+    },
+    "usage_limit_seconds": 600,
+    "usage_limit_ru": 10,
+    "usage_limit_reached": false,
+    "usage_remaining_seconds": 516,
+    "normalized_remaining_seconds": 516
+  },
+  "minimum_remaining_seconds_guard": 400,
+  "runtime_metrics": {
+    "caller": "qiskit_ibm_runtime~sampler.py",
+    "qiskit_version": "qiskit_ibm_runtime-0.50.0,qiskit-2.5.2*,qiskit_aer-0.17.2",
+    "timestamps": {
+      "created": "2026-10-09T22:29:56.737684Z",
+      "finished": "2026-10-09T22:30:05.005401Z",
+      "running": "2026-10-09T22:29:57.975857Z"
+    },
+    "usage": {
+      "qpu_charge_time_seconds": 5,
+      "value": 0.0818,
+      "unit": "resource_units",
+      "status": "complete",
+      "details": [
+        {
+          "value": 0.0818,
+          "unit": "resource_units",
+          "metric": {
+            "id": "caffe3ca-729c-5750-8777-df63bbf8bfd9",
+            "value": 5
+          }
+        }
+      ]
+    },
+    "circuits_execution_time_ns": 3200237568
+  },
+  "backend_properties_last_update": "2026-10-10T06:50:51+09:00",
+  "usage_after": {
+    "usage_consumed_seconds": 99,
+    "usage_consumed_ru": 1.611,
+    "usage_period": {
+      "start_time": "2026-09-11T22:32:52.609Z",
+      "end_time": "2026-10-09T22:32:52.609Z"
+    },
+    "usage_limit_seconds": 600,
+    "usage_limit_ru": 10,
+    "usage_limit_reached": false,
+    "usage_remaining_seconds": 501,
+    "normalized_remaining_seconds": 501
+  },
+  "completed_utc": "2026-10-09T22:32:52.896263+00:00",
+  "counts": [
+    {
+      "101": 556,
+      "111": 557,
+      "001": 507,
+      "100": 488,
+      "110": 537,
+      "000": 511,
+      "011": 498,
+      "010": 442
+    },
+    {
+      "001": 1291,
+      "100": 135,
+      "011": 928,
+      "010": 273,
+      "000": 1060,
+      "111": 119,
+      "101": 154,
+      "110": 136
+    },
+    {
+      "101": 787,
+      "111": 864,
+      "100": 724,
+      "000": 79,
+      "010": 756,
+      "110": 668,
+      "011": 109,
+      "001": 109
+    }
+  ],
+  "good_counts": [
+    2580,
+    817,
+    3799
+  ],
+  "total_counts": [
+    4096,
+    4096,
+    4096
+  ],
+  "estimate": {
+    "estimate": 0.6038449979231,
+    "absolute_error": 0.02115500207690002,
+    "likelihood_95_low": 0.6013249979735,
+    "likelihood_95_high": 0.6063299978734
+  },
+  "oracle_query_count": 36864
+}

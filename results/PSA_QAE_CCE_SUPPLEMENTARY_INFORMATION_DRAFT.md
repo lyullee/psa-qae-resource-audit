@@ -36,7 +36,7 @@ One- and two-bit dense empirical-copula loaders are compiled exactly. The seven-
 
 ## S6. QPU execution and preflight
 
-The completed `ibm_marrakesh` job includes raw counts, physical layouts, circuit depths, two-qubit instructions, calibration timestamp, and QPU charge. The multi-backend replication campaign remains a plan and is not pooled with the completed job. Ideal-model likelihood intervals are not interpreted as noise-calibrated hardware confidence intervals.
+The completed three-backend by three-seed IBM campaign contains nine Open-plan jobs and 45 s of recorded QPU charge. Its mean event estimate is 0.599193, the mean absolute error from p=0.625 is 0.025807, and the between-job standard deviation is 0.003747. The crossed-design bootstrap interval [0.595136, 0.602318] describes only the sampled backend/seed design. Raw counts, physical layouts, depths, two-qubit instructions, calibration timestamps, and charges are archived for every job. Ideal-model likelihood intervals are not interpreted as noise-calibrated hardware confidence intervals.
 
 ## S7. External and model-form validity controls
 
@@ -54,6 +54,5 @@ The novelty screen was refreshed on 9 October 2026 with four exact and related q
 ## Open evidence gates
 
 - Calibrated same-policy H2 recycle/event validation; the corrected pyAPEP path is a non-CSS topology-feasibility stress test, the Thelen pair is a narrower equalization-direction control, and the toPSAil/Yang branch is a same-chemistry model/experiment anchor with different policy semantics.
-- Multi-backend repeated QPU evidence with a noise-aware interval.
 - A completed reversible nonlinear tank/spatial cycle map feeding the policy stream-to-event oracle. The source model settles, its 85-cycle target is quantified, and direct five-component LDF-to-loading-sign-to-cell-balance, gas-normalization-to-two-face-to-interior-cell, parameter-specialized normalized-transport/LDF/interior-balance, supplied-composition product-cell LDF/valve/boundary-balance, gas-inventory-generated product-cell normalization/inward-face/LDF/valve/balance paths, coherent control, pressure-derived saturated/unsaturated tank allocation, and one short-schedule source-model physical unsaturated control are compiled; frozen-schedule physical unsaturated coverage, a monolithic five-component phase/cycle, adaptive phase integration, and remaining workspace are open.
 - A scalable structured correlated loader if an end-to-end speedup claim is pursued.

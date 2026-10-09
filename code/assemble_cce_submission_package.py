@@ -37,6 +37,8 @@ MAIN_FILES = [
     "PSA_QAE_CCE_RESOURCE_LADDER_FIGURE.pdf",
     "FIG_QPU_MLAE_HARDWARE_BOUNDARY.png",
     "FIG_QPU_MLAE_HARDWARE_BOUNDARY.pdf",
+    "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS_FIGURE.png",
+    "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS_FIGURE.pdf",
     "PSA_QAE_CCE_VALIDITY_BOUNDARY_FIGURE.png",
     "PSA_QAE_CCE_VALIDITY_BOUNDARY_FIGURE.pdf",
     "PSA_QAE_CCE_TABLE1_FROZEN_PROTOCOL.json",
@@ -283,6 +285,7 @@ CODE_FILES = [
     "qpu_breakthrough_phase_mlae.py",
     "plan_qpu_replication_campaign.py",
     "analyze_qpu_replication_campaign.py",
+    "collect_qpu_replication_campaign.py",
     "run_cce_primary_package.py",
     "run_cce_gate_compilation_package.py",
     "cce_calibrated_one_cycle_phase_map.py",
@@ -365,6 +368,14 @@ def resolve(group: str, name: str) -> Path:
 
 
 def main() -> None:
+    qpu_campaign = json.loads(
+        (
+            RESULTS
+            / "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS.json"
+        ).read_text(encoding="utf-8")
+    )
+    if qpu_campaign.get("status") != "complete_9_of_9":
+        raise RuntimeError("submission assembly requires the complete 9/9 QPU campaign")
     normalized_product = json.loads(
         (
             RESULTS
@@ -425,9 +436,20 @@ def main() -> None:
             / "PSA_QAE_CCE_PHYSICAL_UNSATURATED_TANK_TRAJECTORY.json"
         ).read_text(encoding="utf-8")
     )
+    qpu_support_files = [
+        "PSA_QAE_QPU_REPLICATION_CAMPAIGN_PLAN.csv",
+        "PSA_QAE_QPU_REPLICATION_CAMPAIGN_PLAN.md",
+        "PSA_QAE_QPU_REPLICATION_CAMPAIGN_STATUS.json",
+        "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS.json",
+        "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS.csv",
+        "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS.md",
+    ]
+    for row in qpu_campaign["rows"]:
+        stem = Path(str(row["source_file"])).stem
+        qpu_support_files.extend(f"{stem}.{suffix}" for suffix in ("json", "csv", "md"))
     groups = {
         "main_text": MAIN_FILES,
-        "supporting_information": SI_FILES,
+        "supporting_information": list(dict.fromkeys(SI_FILES + qpu_support_files)),
         "reproducibility": REPRO_FILES,
         "code": CODE_FILES,
     }
@@ -475,7 +497,7 @@ def main() -> None:
         "",
         "## S6. QPU execution and preflight",
         "",
-        "The completed `ibm_marrakesh` job includes raw counts, physical layouts, circuit depths, two-qubit instructions, calibration timestamp, and QPU charge. The multi-backend replication campaign remains a plan and is not pooled with the completed job. Ideal-model likelihood intervals are not interpreted as noise-calibrated hardware confidence intervals.",
+        f"The completed three-backend by three-seed IBM campaign contains nine Open-plan jobs and {qpu_campaign['summary']['total_qpu_charge_seconds_recorded']:.0f} s of recorded QPU charge. Its mean event estimate is {qpu_campaign['summary']['estimate_mean']:.6f}, the mean absolute error from p=0.625 is {qpu_campaign['summary']['mean_absolute_error']:.6f}, and the between-job standard deviation is {qpu_campaign['summary']['between_job_sd']:.6f}. The crossed-design bootstrap interval [{qpu_campaign['summary']['crossed_design_bootstrap']['low_2_5_percent']:.6f}, {qpu_campaign['summary']['crossed_design_bootstrap']['high_97_5_percent']:.6f}] describes only the sampled backend/seed design. Raw counts, physical layouts, depths, two-qubit instructions, calibration timestamps, and charges are archived for every job. Ideal-model likelihood intervals are not interpreted as noise-calibrated hardware confidence intervals.",
         "",
         "## S7. External and model-form validity controls",
         "",
@@ -493,7 +515,6 @@ def main() -> None:
         "## Open evidence gates",
         "",
         "- Calibrated same-policy H2 recycle/event validation; the corrected pyAPEP path is a non-CSS topology-feasibility stress test, the Thelen pair is a narrower equalization-direction control, and the toPSAil/Yang branch is a same-chemistry model/experiment anchor with different policy semantics.",
-        "- Multi-backend repeated QPU evidence with a noise-aware interval.",
         "- A completed reversible nonlinear tank/spatial cycle map feeding the policy stream-to-event oracle. The source model settles, its 85-cycle target is quantified, and direct five-component LDF-to-loading-sign-to-cell-balance, gas-normalization-to-two-face-to-interior-cell, parameter-specialized normalized-transport/LDF/interior-balance, supplied-composition product-cell LDF/valve/boundary-balance, gas-inventory-generated product-cell normalization/inward-face/LDF/valve/balance paths, coherent control, pressure-derived saturated/unsaturated tank allocation, and one short-schedule source-model physical unsaturated control are compiled; frozen-schedule physical unsaturated coverage, a monolithic five-component phase/cycle, adaptive phase integration, and remaining workspace are open.",
         "- A scalable structured correlated loader if an end-to-end speedup claim is pursued.",
     ]
@@ -687,7 +708,6 @@ def main() -> None:
         "artifacts": artifacts,
         "open_gates": [
             "calibrated same-policy H2 recycle/event validation (corrected pyAPEP topology stress test and same-chemistry equalization control completed)",
-            "multi-backend repeated QPU evidence with a noise-aware interval",
             "completed reversible nonlinear tank/spatial cycle map feeding the compiled policy stream-to-event oracle; physical horizon/register accounting, direct five-component LDF-to-loading-sign-to-cell-balance, gas-inventory-generated product-cell paths, a finite-support coherent run/schedule/tank interface, pressure-derived saturated and bounded-counterfactual proportional tank-allocation branches, one short-schedule source-model physical unsaturated control, and five raw-gas-inventory-to-normalization/pressure/two-face/dynamic-Langmuir/LDF/loading/balance paths are quantified, while frozen-schedule physical unsaturated coverage, monolithic five-component phase integration, adaptive integration, and remaining workspace remain open",
             "permanent public archive DOI and journal-formatted final files",
         ],

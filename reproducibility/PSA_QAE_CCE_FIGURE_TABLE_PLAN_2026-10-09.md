@@ -19,8 +19,8 @@ The finite-table compiler, threshold-activity grid, IBM target preflight, detail
 |---|---|---|
 | Table 1 | Frozen policy candidates, chance event, prior, estimator budgets, endpoints, and prohibited claims | PSA_QAE_CCE_PRIMARY_CASE_PROTOCOL.json |
 | Table 2 | MC/RQMC/IS/MLAE RMSE, MAE, bias, classification error, policy-selection interval, calls, and local timing | PSA_QAE_CONTINUOUS_POLICY_SELECTION.json |
-| Table 3 | Eight decision-relevant resource tiers in the main text; the complete 29-tier ladder is Supplementary Table S1 | PSA_QAE_CCE_RESOURCE_TABLE3.json/csv/md; includes the 2,696–2,885-qubit gas-inventory-to-dynamic-Langmuir/transport/LDF/balance paths and the 647-qubit pressure-derived saturated/unsaturated proportional tank-allocation interface while preserving the counterfactual boundary and all exclusions |
-| Table 4 | Eight claim-critical evidence tiers in the main text; the complete 30-tier hierarchy is Supplementary Table S2 | PSA_QAE_CCE_TABLE4_EVIDENCE_HIERARCHY.json/csv/md; manuscript Sections 2.1 and 2.4 |
+| Table 3 | Eight decision-relevant resource tiers in the main text; the complete 31-tier ladder is Supplementary Table S1 | PSA_QAE_CCE_RESOURCE_TABLE3.json/csv/md; includes the 2,696–2,885-qubit gas-inventory-to-dynamic-Langmuir/transport/LDF/balance paths, the 647-qubit pressure-derived saturated/unsaturated proportional tank-allocation interface, and the nine-job multi-backend QPU boundary while preserving the counterfactual boundary and all exclusions |
+| Table 4 | Eight claim-critical evidence tiers in the main text; the complete 32-tier hierarchy is Supplementary Table S2 | PSA_QAE_CCE_TABLE4_EVIDENCE_HIERARCHY.json/csv/md; manuscript Sections 2.1 and 2.4 |
 
 ## Supporting Information
 

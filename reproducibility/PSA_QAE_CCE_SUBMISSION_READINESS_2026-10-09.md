@@ -16,10 +16,10 @@
 | 고전 기준선 | 완료 | 200회 반복, MC/RQMC/IS/MLAE 동일 사건 비교 | 현 주 사례에서 RQMC가 최선이므로 양자 우위 주장은 불가 |
 | 공정 오라클 자원 | 부분 완료(큰 진전) | response oracle 99 논리 큐빗·35,160 CX/call; calibrated phase-map clean 계상 186 논리 큐빗·8,367,972 CX; integrated policy stream-to-event oracle 최대 510 논리 큐빗·1,286,021 clean CX; 물리모델 joint horizon 68·보수적 horizon 85·out-of-place state/stream 2,880 qubits; finite-support controller는 440 qubits·166,189 CX, controller-to-coefficient 회로는 495 qubits·353,441 CX; 세 raw 5성분 기체재고에서 조성 정규화·압력 3개·방향성 내부면 2개·run/stage controller·동적 Langmuir response·q*/LDF/loading conversion·보존수지를 직접 연결한 성분별 경로는 2,696–2,885 qubits·55,337,688–56,289,028 CX; 압력유도 포화/비포화 탱크 배분 회로는 647 qubits·705,194 CX이며 관측 포화 128건과 제한된 비포화 counterfactual 224건의 label을 보존 | raw aggregate map은 CSS 2/32이고 spectral 안정화는 명시적 보정이다. 비포화 counterfactual은 산술 시험이며 물리적 비포화 trajectory, out-of-support normalization/flow reversal, monolithic five-component transpilation, adaptive integration, 완전 phase/cycle unitary는 미합성 |
 | 상태준비 | 음성 대조군 완료 | 1비트 502 CX, 2비트 262,125 CX; 7비트 dense 표는 64 EiB | scalable reversible copula/quantile loader는 미완성 |
-| QPU | 단일 실행 완료 | ibm_marrakesh, 5 s charge, exact 0.625 대비 0.566940 | 단일 backend·단일 run이며 noise-aware interval 없음 |
+| QPU | 다중-backend 반복 완료 | ibm_marrakesh/fez/kingston × 고정 transpiler seed 3개, 9 jobs, 총 45 s charge; exact 0.625 대비 평균 0.599193, 평균 절대오차 0.025807, between-job SD 0.003747 | 한 짧은 calibration window의 비완화 결과이므로 readout mitigation과 시간대 반복 없이는 hardware-general interval로 해석할 수 없음 |
 | 외부 공정 검증 | 부분 완료(경계 교정) | 공개 CO2/N2 동적 PSA에서 purity 방향 4/4, recovery 방향 3/4; Thelen VA-10의 독립 H2 matched pair에서 균압압력 4.50→4.75 bara 시 회수율이 두 측정법 모두 감소(-2.30/-1.31 %-point); pyAPEP wrapper의 제품단 연결·외부 H2 회수율 경계를 교정하고 3정책 15-cycle screen과 450-cycle stress control을 실행; Voigt 13-run H2 자료로 동결 후보간격 분해능 감사; toPSAil/Yang 공개 H2/CO 70/30·2-bed·6-step·zeolite-5A 모델과 99.99% purity/75.87% recovery 실험 앵커; 공개자료 10개 감사에서 strict raw-data gate 0/10 | 교정 pyAPEP 450-cycle control도 purity 0.991666, recovery 0.044166, tank supply 0.03164, CSS 1.2538e-3로 네 gate를 모두 실패; synchronized H2 historian과 0.420 선택 검증은 열림 |
-| 재현성 | 로컬 패키지 완료 | 전체 주장 감사 113/113 PASS; 전용 원고 감사 45/45 PASS; scientific/Qiskit 환경 freeze; 본문·SI·코드 318개 manifest artifact 검증 PASS; 공개저장소 staging 326 files·325 checksum entries; 패키징 중 QPU 제출 0건 | GitHub 공개와 DOI 발급은 과학적 외부 게이트와 저자 검토 뒤 필요 |
-| 원고 | CCE 심사용 원고·title page·Figures 1–6·Tables 1–4·SI·편집자료 완료 | 본문 10,493단어, 초록 219단어, 참고문헌 18개; 6개 키워드; 5개 highlights; graphical abstract와 Figures 1–6의 PNG/vector PDF; 제한적 신규성 검색 프로토콜; AI 사용 공개문; blinded review DOCX, title page, SI DOCX; 4인 저자·ORCID·이메일·소속·CRediT 기록; 본문 Table 3·4는 각각 핵심 8개 행이며 전체 29개 resource tier와 30개 evidence tier는 SI Tables S1·S2에 수록 | 공동저자 최종 승인, COI·funding과 AI 공개문 최종 승인, 실제 Editorial Manager 입력 필요 |
+| 재현성 | 로컬 패키지 완료 | 전체 주장 감사 115/115 PASS; 전용 원고 감사 45/45 PASS; scientific/Qiskit 환경 freeze; 본문·SI·코드 360개 manifest artifact의 존재·크기·SHA-256 검증 PASS; 패키징 스크립트의 신규 QPU 제출 0건 | GitHub 공개와 DOI 발급, 공동저자 최종 검토가 필요 |
+| 원고 | CCE 심사용 원고·title page·Figures 1–6·Tables 1–4·SI·편집자료 완료 | 본문 10,499단어, 초록 235단어, 참고문헌 18개; 6개 키워드; 5개 highlights; graphical abstract와 Figures 1–6의 PNG/vector PDF; blinded review DOCX 30쪽, title page 1쪽, SI 7쪽; 4인 저자·ORCID·이메일·소속·CRediT 기록; 본문 Table 3·4는 각각 핵심 8개 행이며 전체 31개 resource tier와 32개 evidence tier는 SI Tables S1·S2에 수록 | 공동저자 최종 승인, COI·funding과 AI 공개문 최종 승인, 실제 Editorial Manager 입력 필요 |
 
 ## 투고 전에 닫아야 하는 최소 네 작업
 
@@ -37,11 +37,11 @@
 
 core draft와 번호형 참고문헌 18개, Tables 1–4, Figures 1–6을 묶은 blinded review DOCX를 생성했고 Word PDF 출력으로 전 페이지를 검수했다. 저자 4인의 순서, ORCID, 이메일, 소속, KGS 공식 본사 우편주소와 CRediT를 별도 1-page title page에 기록하고 렌더링 검수했다. 공정모델·CSS·prior/copula·surrogate 검증, matched estimator budget, reversible oracle와 uncomputation, QPU metadata, 독립 검증의 성공과 실패가 포함되며, OpenAI Codex의 코드·분석·원고 지원 범위를 Methods와 참고문헌 직전 공개문에 기록했다. 남은 편집 작업은 공동저자 승인, COI·funding 및 AI 공개문 최종 승인, 투고 시스템 파일 유형 지정이다.
 
-### P1. 다중 QPU 반복과 noise-aware interval
+### 완료. 다중 QPU 반복과 sampled-design interval
 
-준비된 3-backend × 3-seed 행렬은 9 jobs, 27 circuits이다. 기존 5 s job과 같은 charge라고 단순 가정하면 약 45 s로 Open plan 600 s rolling allowance의 7.5%지만 실제 charge는 보장되지 않는다. 실행 전 다른 세션의 사용량을 확인한다.
+3-backend × 3-seed 행렬의 9 jobs와 27 circuits를 IBM Open plan에서 완료했다. 각 job은 Grover power `m=[0,1,2]`, power당 4,096 shots를 사용했고 총 charge는 45 s였다. 평균 추정치는 `0.599193`, 평균 절대오차는 `0.025807`, between-job SD는 `0.003747`이며 crossed bootstrap interval은 `[0.595136, 0.602318]`이다.
 
-최소 결과는 backend/run별 p estimate, amplified-depth별 bias, calibration timestamp, layout, two-qubit count, raw counts, QPU charge와 readout mitigation 전후 비교다. 이상적 binomial likelihood interval과 run/backend 변동을 포함한 bootstrap 또는 hierarchical interval을 분리해 보고한다.
+Backend/seed별 추정치, amplification-depth별 raw count, calibration timestamp, layout, two-qubit count와 QPU charge를 보존했다. 이 interval은 관측한 backend와 seed의 기술통계이며 noise-calibrated 보편 구간이 아니다. Readout mitigation과 다른 calibration window의 반복은 후속 hardware-general 주장에 필요한 작업으로 남긴다.
 
 ### P1. 공정 단계와 가역 산술의 마지막 연결 — 전 성분 reciprocal/LDF microstep까지 합성, full phase는 미합성
 
@@ -80,7 +80,7 @@ reduced-H2 ledger와 72개 calibrated affine block에 더해, 주 32-run spatial
 
 ## 제출 판단
 
-parameter-only initializer, raw 50-cycle 실패, spectral correction, 19-bit integrated policy oracle, 85-cycle register target, 440-qubit finite-support controller, 495-qubit controller-to-kinetics coefficient interface, 647-qubit pressure-derived 포화/비포화 탱크배분 회로, 그리고 2,696–2,885-qubit gas-inventory-to-dynamic-Langmuir/transport/LDF/balance paths를 심사용 원고와 함께 제시해 “작은 QPU kernel이 PSA와 분리돼 있다”는 위험은 크게 줄었다. 자원경계 논문 기준 **로컬 원고·재현성 패키지는 약 99%**, 외부검증과 반복 하드웨어 증거까지 포함한 **과학적 투고 준비도는 약 95%**로 판단한다. 여전히 **calibrated 동일 recycle 정책·사건의 H2 검증 부재와 단일 QPU 실행**이 가장 큰 거절 위험이다. 제목·초록에서 완전한 cyclic oracle이나 양자우위를 주장하지 않고, 방법 비교·one-cycle 성공·physical horizon·resource audit를 함께 전면에 두면 CCE 도전은 현실적이다. 양자 우위 문구를 유지하려면 structured loader와 synthesized nonlinear reversible cycle map이 필요하다.
+parameter-only initializer, raw 50-cycle 실패, spectral correction, 19-bit integrated policy oracle, 85-cycle register target, 440-qubit finite-support controller, 495-qubit controller-to-kinetics coefficient interface, 647-qubit pressure-derived 포화/비포화 탱크배분 회로, 2,696–2,885-qubit gas-inventory-to-dynamic-Langmuir/transport/LDF/balance paths, 그리고 9-job/3-backend QPU campaign을 함께 제시해 “작은 QPU kernel이 PSA와 분리돼 있다”는 위험을 줄였다. 자원경계 논문 기준 **로컬 원고·재현성 패키지는 약 99%**, 외부검증까지 포함한 **과학적 투고 준비도는 약 97%**로 판단한다. 가장 큰 거절 위험은 **calibrated 동일 recycle 정책·사건의 H2 검증 부재와 완전한 물리 phase/cycle 미통합**이다. 제목·초록에서 완전한 cyclic oracle이나 양자우위를 주장하지 않고 방법 비교·physical horizon·resource audit를 전면에 두면 CCE 도전은 현실적이다. 양자 우위 문구에는 structured loader와 synthesized nonlinear reversible cycle map이 추가로 필요하다.
 
 동결 surrogate에서 0.427의 확률 shortfall은 `0.029560`으로 RQMC RMSE의 `11.91x`, noiseless MLAE RMSE의 `10.22x`, residual-stress 반폭의 `7.57x`다. 따라서 현재 후보 간격에서는 RQMC보다 더 정밀한 확률추정이 정책을 바꾸지 않는다. 이 결과는 QAE를 억지로 유리하게 만드는 대신 **공정모델 개선과 후보정책 재설계가 우선**이라는 의사결정 가치를 제공한다.
 

@@ -2,4 +2,4 @@
 • RQMC gives lower RMSE than MLAE for the frozen surrogate benchmark.
 • A response oracle needs 99 logical qubits and 35,160 CX per call.
 • Policy stream-to-event oracles preserve all candidate and ledger labels.
-• IBM hardware bounds execution without claiming end-to-end quantum advantage.
+• Nine IBM jobs quantify backend and transpiler-seed hardware variability.

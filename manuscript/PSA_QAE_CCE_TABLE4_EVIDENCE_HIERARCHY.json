@@ -40,7 +40,8 @@
     "PSA_QAE_CCE_INDEPENDENT_PYAPEP_H2_RECYCLE_VALIDATION.json",
     "PSA_QAE_CCE_INDEPENDENT_H2_POLICY_RESOLUTION_AUDIT.json",
     "PSA_QAE_CCE_TOPSAIL_YANG_H2_PUBLIC_MODEL_AUDIT.json",
-    "QAE_QPU_BREAKTHROUGH_PHASE_MLAE_IBM_db42v34lf4us73c24q50.json"
+    "QAE_QPU_BREAKTHROUGH_PHASE_MLAE_IBM_db42v34lf4us73c24q50.json",
+    "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS.json"
   ],
   "rows": [
     {
@@ -290,6 +291,14 @@
       "supported role": "executable amplification-depth noise boundary",
       "key result": "exact p=0.625; p-hat=0.566940; error=0.058060",
       "explicit boundary": "not the continuous prior or cyclic PSA model; no hardware-general interval"
+    },
+    {
+      "evidence tier": "real-QPU multi-backend finite-event replication",
+      "system and size": "three active logical qubits; three IBM processors x three fixed transpiler seeds; nine jobs",
+      "independence": "crossed backend/seed replication of the same frozen eight-state event kernel",
+      "supported role": "sampled backend and compilation-seed variability for amplification-depth noise",
+      "key result": "mean p-hat=0.599193; mean absolute error=0.025807; between-job SD=0.003747; total QPU charge=45 s",
+      "explicit boundary": "descriptive interval over three observed backends and three seeds; not a universal noise-calibrated interval, continuous prior, cyclic PSA execution, or speedup result"
     }
   ]
 }

@@ -2,15 +2,15 @@
   "schema": "psa-qae-qpu-replication-campaign-plan/v1",
   "status": "preflight_only_no_qpu_submission_no_quantum_quota_consumed",
   "qpu_submission": false,
-  "created_utc": "2026-10-09T07:48:03.817495+00:00",
+  "created_utc": "2026-10-09T22:28:29.160394+00:00",
   "verified_instance_present": true,
   "verified_plan": "open",
   "usage_snapshot": {
     "usage_consumed_seconds": 69,
     "usage_consumed_ru": 1.1171,
     "usage_period": {
-      "start_time": "2026-09-11T07:47:53.393Z",
-      "end_time": "2026-10-09T07:47:53.393Z"
+      "start_time": "2026-09-11T22:28:22.301Z",
+      "end_time": "2026-10-09T22:28:22.301Z"
     },
     "usage_limit_seconds": 600,
     "usage_limit_ru": 10,
@@ -83,26 +83,26 @@
     {
       "backend": "ibm_marrakesh",
       "operational": true,
-      "pending_jobs_at_preflight": 1,
+      "pending_jobs_at_preflight": 0,
       "status_message": "active",
       "num_qubits": 156,
-      "calibration_at_preflight": "2026-10-09T16:16:39+09:00"
+      "calibration_at_preflight": "2026-10-10T06:18:00+09:00"
     },
     {
       "backend": "ibm_fez",
       "operational": true,
-      "pending_jobs_at_preflight": 0,
+      "pending_jobs_at_preflight": 1,
       "status_message": "active",
       "num_qubits": 156,
-      "calibration_at_preflight": "2026-10-09T16:00:24+09:00"
+      "calibration_at_preflight": "2026-10-10T06:50:51+09:00"
     },
     {
       "backend": "ibm_kingston",
       "operational": true,
-      "pending_jobs_at_preflight": 7,
+      "pending_jobs_at_preflight": 6,
       "status_message": "active",
       "num_qubits": 156,
-      "calibration_at_preflight": "2026-10-09T16:17:00+09:00"
+      "calibration_at_preflight": "2026-10-10T06:45:45+09:00"
     }
   ],
   "transpiler_seeds": [
@@ -142,8 +142,8 @@
       "transpiled_depth": 4,
       "transpiled_size": 12,
       "two_qubit_instructions": 0,
-      "initial_layout": "[146, 54, 6]",
-      "calibration_at_preflight": "2026-10-09T16:16:39+09:00",
+      "initial_layout": "[54, 12, 6]",
+      "calibration_at_preflight": "2026-10-10T06:18:00+09:00",
       "submitted": false
     },
     {
@@ -155,8 +155,8 @@
       "transpiled_depth": 67,
       "transpiled_size": 97,
       "two_qubit_instructions": 17,
-      "initial_layout": "[5, 7, 6]",
-      "calibration_at_preflight": "2026-10-09T16:16:39+09:00",
+      "initial_layout": "[55, 53, 54]",
+      "calibration_at_preflight": "2026-10-10T06:18:00+09:00",
       "submitted": false
     },
     {
@@ -169,7 +169,7 @@
       "transpiled_size": 191,
       "two_qubit_instructions": 37,
       "initial_layout": "[55, 53, 54]",
-      "calibration_at_preflight": "2026-10-09T16:16:39+09:00",
+      "calibration_at_preflight": "2026-10-10T06:18:00+09:00",
       "submitted": false
     },
     {
@@ -181,8 +181,8 @@
       "transpiled_depth": 4,
       "transpiled_size": 12,
       "two_qubit_instructions": 0,
-      "initial_layout": "[146, 54, 6]",
-      "calibration_at_preflight": "2026-10-09T16:16:39+09:00",
+      "initial_layout": "[54, 12, 6]",
+      "calibration_at_preflight": "2026-10-10T06:18:00+09:00",
       "submitted": false
     },
     {
@@ -195,7 +195,7 @@
       "transpiled_size": 96,
       "two_qubit_instructions": 19,
       "initial_layout": "[55, 53, 54]",
-      "calibration_at_preflight": "2026-10-09T16:16:39+09:00",
+      "calibration_at_preflight": "2026-10-10T06:18:00+09:00",
       "submitted": false
     },
     {
@@ -208,7 +208,7 @@
       "transpiled_size": 191,
       "two_qubit_instructions": 37,
       "initial_layout": "[55, 53, 54]",
-      "calibration_at_preflight": "2026-10-09T16:16:39+09:00",
+      "calibration_at_preflight": "2026-10-10T06:18:00+09:00",
       "submitted": false
     },
     {
@@ -220,8 +220,8 @@
       "transpiled_depth": 4,
       "transpiled_size": 12,
       "two_qubit_instructions": 0,
-      "initial_layout": "[146, 54, 6]",
-      "calibration_at_preflight": "2026-10-09T16:16:39+09:00",
+      "initial_layout": "[54, 12, 6]",
+      "calibration_at_preflight": "2026-10-10T06:18:00+09:00",
       "submitted": false
     },
     {
@@ -234,7 +234,7 @@
       "transpiled_size": 96,
       "two_qubit_instructions": 19,
       "initial_layout": "[55, 53, 54]",
-      "calibration_at_preflight": "2026-10-09T16:16:39+09:00",
+      "calibration_at_preflight": "2026-10-10T06:18:00+09:00",
       "submitted": false
     },
     {
@@ -247,7 +247,7 @@
       "transpiled_size": 191,
       "two_qubit_instructions": 37,
       "initial_layout": "[55, 53, 54]",
-      "calibration_at_preflight": "2026-10-09T16:16:39+09:00",
+      "calibration_at_preflight": "2026-10-10T06:18:00+09:00",
       "submitted": false
     },
     {
@@ -259,12 +259,129 @@
       "transpiled_depth": 4,
       "transpiled_size": 12,
       "two_qubit_instructions": 0,
-      "initial_layout": "[110, 22, 4]",
-      "calibration_at_preflight": "2026-10-09T16:00:24+09:00",
+      "initial_layout": "[86, 132, 4]",
+      "calibration_at_preflight": "2026-10-10T06:50:51+09:00",
       "submitted": false
     },
     {
       "backend": "ibm_fez",
+      "transpiler_seed": 20261009,
+      "power": 1,
+      "shots": 4096,
+      "ideal_amplified_probability": 0.1562499999999999,
+      "transpiled_depth": 66,
+      "transpiled_size": 98,
+      "two_qubit_instructions": 17,
+      "initial_layout": "[144, 142, 143]",
+      "calibration_at_preflight": "2026-10-10T06:50:51+09:00",
+      "submitted": false
+    },
+    {
+      "backend": "ibm_fez",
+      "transpiler_seed": 20261009,
+      "power": 2,
+      "shots": 4096,
+      "ideal_amplified_probability": 0.9765625000000002,
+      "transpiled_depth": 134,
+      "transpiled_size": 192,
+      "two_qubit_instructions": 37,
+      "initial_layout": "[142, 140, 141]",
+      "calibration_at_preflight": "2026-10-10T06:50:51+09:00",
+      "submitted": false
+    },
+    {
+      "backend": "ibm_fez",
+      "transpiler_seed": 20261010,
+      "power": 0,
+      "shots": 4096,
+      "ideal_amplified_probability": 0.6250000000000001,
+      "transpiled_depth": 4,
+      "transpiled_size": 12,
+      "two_qubit_instructions": 0,
+      "initial_layout": "[86, 132, 4]",
+      "calibration_at_preflight": "2026-10-10T06:50:51+09:00",
+      "submitted": false
+    },
+    {
+      "backend": "ibm_fez",
+      "transpiler_seed": 20261010,
+      "power": 1,
+      "shots": 4096,
+      "ideal_amplified_probability": 0.1562499999999999,
+      "transpiled_depth": 72,
+      "transpiled_size": 97,
+      "two_qubit_instructions": 19,
+      "initial_layout": "[144, 142, 143]",
+      "calibration_at_preflight": "2026-10-10T06:50:51+09:00",
+      "submitted": false
+    },
+    {
+      "backend": "ibm_fez",
+      "transpiler_seed": 20261010,
+      "power": 2,
+      "shots": 4096,
+      "ideal_amplified_probability": 0.9765625000000002,
+      "transpiled_depth": 134,
+      "transpiled_size": 192,
+      "two_qubit_instructions": 37,
+      "initial_layout": "[142, 140, 141]",
+      "calibration_at_preflight": "2026-10-10T06:50:51+09:00",
+      "submitted": false
+    },
+    {
+      "backend": "ibm_fez",
+      "transpiler_seed": 20261011,
+      "power": 0,
+      "shots": 4096,
+      "ideal_amplified_probability": 0.6250000000000001,
+      "transpiled_depth": 4,
+      "transpiled_size": 12,
+      "two_qubit_instructions": 0,
+      "initial_layout": "[86, 132, 4]",
+      "calibration_at_preflight": "2026-10-10T06:50:51+09:00",
+      "submitted": false
+    },
+    {
+      "backend": "ibm_fez",
+      "transpiler_seed": 20261011,
+      "power": 1,
+      "shots": 4096,
+      "ideal_amplified_probability": 0.1562499999999999,
+      "transpiled_depth": 72,
+      "transpiled_size": 97,
+      "two_qubit_instructions": 19,
+      "initial_layout": "[144, 142, 143]",
+      "calibration_at_preflight": "2026-10-10T06:50:51+09:00",
+      "submitted": false
+    },
+    {
+      "backend": "ibm_fez",
+      "transpiler_seed": 20261011,
+      "power": 2,
+      "shots": 4096,
+      "ideal_amplified_probability": 0.9765625000000002,
+      "transpiled_depth": 134,
+      "transpiled_size": 192,
+      "two_qubit_instructions": 37,
+      "initial_layout": "[142, 140, 141]",
+      "calibration_at_preflight": "2026-10-10T06:50:51+09:00",
+      "submitted": false
+    },
+    {
+      "backend": "ibm_kingston",
+      "transpiler_seed": 20261009,
+      "power": 0,
+      "shots": 4096,
+      "ideal_amplified_probability": 0.6250000000000001,
+      "transpiled_depth": 4,
+      "transpiled_size": 12,
+      "two_qubit_instructions": 0,
+      "initial_layout": "[11, 21, 148]",
+      "calibration_at_preflight": "2026-10-10T06:45:45+09:00",
+      "submitted": false
+    },
+    {
+      "backend": "ibm_kingston",
       "transpiler_seed": 20261009,
       "power": 1,
       "shots": 4096,
@@ -272,125 +389,8 @@
       "transpiled_depth": 67,
       "transpiled_size": 97,
       "two_qubit_instructions": 17,
-      "initial_layout": "[144, 146, 145]",
-      "calibration_at_preflight": "2026-10-09T16:00:24+09:00",
-      "submitted": false
-    },
-    {
-      "backend": "ibm_fez",
-      "transpiler_seed": 20261009,
-      "power": 2,
-      "shots": 4096,
-      "ideal_amplified_probability": 0.9765625000000002,
-      "transpiled_depth": 135,
-      "transpiled_size": 191,
-      "two_qubit_instructions": 37,
-      "initial_layout": "[142, 140, 141]",
-      "calibration_at_preflight": "2026-10-09T16:00:24+09:00",
-      "submitted": false
-    },
-    {
-      "backend": "ibm_fez",
-      "transpiler_seed": 20261010,
-      "power": 0,
-      "shots": 4096,
-      "ideal_amplified_probability": 0.6250000000000001,
-      "transpiled_depth": 4,
-      "transpiled_size": 12,
-      "two_qubit_instructions": 0,
-      "initial_layout": "[110, 22, 4]",
-      "calibration_at_preflight": "2026-10-09T16:00:24+09:00",
-      "submitted": false
-    },
-    {
-      "backend": "ibm_fez",
-      "transpiler_seed": 20261010,
-      "power": 1,
-      "shots": 4096,
-      "ideal_amplified_probability": 0.1562499999999999,
-      "transpiled_depth": 73,
-      "transpiled_size": 96,
-      "two_qubit_instructions": 19,
-      "initial_layout": "[144, 146, 145]",
-      "calibration_at_preflight": "2026-10-09T16:00:24+09:00",
-      "submitted": false
-    },
-    {
-      "backend": "ibm_fez",
-      "transpiler_seed": 20261010,
-      "power": 2,
-      "shots": 4096,
-      "ideal_amplified_probability": 0.9765625000000002,
-      "transpiled_depth": 135,
-      "transpiled_size": 191,
-      "two_qubit_instructions": 37,
-      "initial_layout": "[142, 140, 141]",
-      "calibration_at_preflight": "2026-10-09T16:00:24+09:00",
-      "submitted": false
-    },
-    {
-      "backend": "ibm_fez",
-      "transpiler_seed": 20261011,
-      "power": 0,
-      "shots": 4096,
-      "ideal_amplified_probability": 0.6250000000000001,
-      "transpiled_depth": 4,
-      "transpiled_size": 12,
-      "two_qubit_instructions": 0,
-      "initial_layout": "[110, 22, 4]",
-      "calibration_at_preflight": "2026-10-09T16:00:24+09:00",
-      "submitted": false
-    },
-    {
-      "backend": "ibm_fez",
-      "transpiler_seed": 20261011,
-      "power": 1,
-      "shots": 4096,
-      "ideal_amplified_probability": 0.1562499999999999,
-      "transpiled_depth": 73,
-      "transpiled_size": 96,
-      "two_qubit_instructions": 19,
-      "initial_layout": "[144, 146, 145]",
-      "calibration_at_preflight": "2026-10-09T16:00:24+09:00",
-      "submitted": false
-    },
-    {
-      "backend": "ibm_fez",
-      "transpiler_seed": 20261011,
-      "power": 2,
-      "shots": 4096,
-      "ideal_amplified_probability": 0.9765625000000002,
-      "transpiled_depth": 135,
-      "transpiled_size": 191,
-      "two_qubit_instructions": 37,
-      "initial_layout": "[142, 140, 141]",
-      "calibration_at_preflight": "2026-10-09T16:00:24+09:00",
-      "submitted": false
-    },
-    {
-      "backend": "ibm_kingston",
-      "transpiler_seed": 20261009,
-      "power": 0,
-      "shots": 4096,
-      "ideal_amplified_probability": 0.6250000000000001,
-      "transpiled_depth": 4,
-      "transpiled_size": 12,
-      "two_qubit_instructions": 0,
-      "initial_layout": "[149, 44, 148]",
-      "calibration_at_preflight": "2026-10-09T16:17:00+09:00",
-      "submitted": false
-    },
-    {
-      "backend": "ibm_kingston",
-      "transpiler_seed": 20261009,
-      "power": 1,
-      "shots": 4096,
-      "ideal_amplified_probability": 0.1562499999999999,
-      "transpiled_depth": 67,
-      "transpiled_size": 97,
-      "two_qubit_instructions": 17,
-      "initial_layout": "[95, 93, 94]",
-      "calibration_at_preflight": "2026-10-09T16:17:00+09:00",
+      "initial_layout": "[138, 152, 151]",
+      "calibration_at_preflight": "2026-10-10T06:45:45+09:00",
       "submitted": false
     },
     {
@@ -402,8 +402,8 @@
       "transpiled_depth": 135,
       "transpiled_size": 191,
       "two_qubit_instructions": 37,
-      "initial_layout": "[95, 93, 94]",
-      "calibration_at_preflight": "2026-10-09T16:17:00+09:00",
+      "initial_layout": "[74, 59, 75]",
+      "calibration_at_preflight": "2026-10-10T06:45:45+09:00",
       "submitted": false
     },
     {
@@ -415,8 +415,8 @@
       "transpiled_depth": 4,
       "transpiled_size": 12,
       "two_qubit_instructions": 0,
-      "initial_layout": "[149, 44, 148]",
-      "calibration_at_preflight": "2026-10-09T16:17:00+09:00",
+      "initial_layout": "[11, 21, 148]",
+      "calibration_at_preflight": "2026-10-10T06:45:45+09:00",
       "submitted": false
     },
     {
@@ -428,8 +428,8 @@
       "transpiled_depth": 73,
       "transpiled_size": 96,
       "two_qubit_instructions": 19,
-      "initial_layout": "[95, 93, 94]",
-      "calibration_at_preflight": "2026-10-09T16:17:00+09:00",
+      "initial_layout": "[138, 152, 151]",
+      "calibration_at_preflight": "2026-10-10T06:45:45+09:00",
       "submitted": false
     },
     {
@@ -441,8 +441,8 @@
       "transpiled_depth": 135,
       "transpiled_size": 191,
       "two_qubit_instructions": 37,
-      "initial_layout": "[95, 93, 94]",
-      "calibration_at_preflight": "2026-10-09T16:17:00+09:00",
+      "initial_layout": "[74, 59, 75]",
+      "calibration_at_preflight": "2026-10-10T06:45:45+09:00",
       "submitted": false
     },
     {
@@ -454,8 +454,8 @@
       "transpiled_depth": 4,
       "transpiled_size": 12,
       "two_qubit_instructions": 0,
-      "initial_layout": "[149, 44, 148]",
-      "calibration_at_preflight": "2026-10-09T16:17:00+09:00",
+      "initial_layout": "[11, 21, 148]",
+      "calibration_at_preflight": "2026-10-10T06:45:45+09:00",
       "submitted": false
     },
     {
@@ -467,8 +467,8 @@
       "transpiled_depth": 73,
       "transpiled_size": 96,
       "two_qubit_instructions": 19,
-      "initial_layout": "[95, 93, 94]",
-      "calibration_at_preflight": "2026-10-09T16:17:00+09:00",
+      "initial_layout": "[138, 152, 151]",
+      "calibration_at_preflight": "2026-10-10T06:45:45+09:00",
       "submitted": false
     },
     {
@@ -480,8 +480,8 @@
       "transpiled_depth": 135,
       "transpiled_size": 191,
       "two_qubit_instructions": 37,
-      "initial_layout": "[95, 93, 94]",
-      "calibration_at_preflight": "2026-10-09T16:17:00+09:00",
+      "initial_layout": "[74, 59, 75]",
+      "calibration_at_preflight": "2026-10-10T06:45:45+09:00",
       "submitted": false
     }
   ]

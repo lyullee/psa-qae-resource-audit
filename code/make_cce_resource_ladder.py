@@ -32,6 +32,7 @@ SMALL_E2E = RESULTS / "PSA_QAE_CCE_SMALL_END_TO_END_ORACLE.json"
 FINITE = RESULTS / "PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_GATE_RESOURCES.json"
 IBM_PREFLIGHT = RESULTS / "PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_IBM_PREFLIGHT_ibm_marrakesh.json"
 QPU = RESULTS / "QAE_QPU_BREAKTHROUGH_PHASE_MLAE_IBM_db42v34lf4us73c24q50.json"
+QPU_CAMPAIGN = RESULTS / "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS.json"
 ALL_COMPONENT_LDF = RESULTS / "PSA_QAE_CCE_PRIMARY_ALL_COMPONENT_LDF_MICROSTEPS.json"
 PRODUCT_BOUNDARY = RESULTS / "PSA_QAE_CCE_PRIMARY_PRODUCT_BOUNDARY_MICROSTEPS.json"
 PRODUCT_BOUNDARY_BALANCE = RESULTS / "PSA_QAE_CCE_PRIMARY_PRODUCT_BOUNDARY_BALANCE_COMPOSITION.json"
@@ -82,6 +83,9 @@ def main() -> None:
     finite = load(FINITE)
     ibm_preflight = load(IBM_PREFLIGHT)
     qpu = load(QPU)
+    qpu_campaign = load(QPU_CAMPAIGN)
+    if qpu_campaign.get("status") != "complete_9_of_9":
+        raise RuntimeError("the manuscript resource ladder requires the complete 9/9 QPU campaign")
     all_component_ldf = load(ALL_COMPONENT_LDF)
     product_boundary = load(PRODUCT_BOUNDARY)
     product_boundary_balance = load(PRODUCT_BOUNDARY_BALANCE)
@@ -840,6 +844,24 @@ def main() -> None:
             "accuracy_or_observation": f"p-hat {qpu['estimate']['estimate']:.6f}; absolute error {qpu['estimate']['absolute_error']:.6f}",
             "boundary": "one backend and one job; ideal likelihood interval is not noise calibrated",
         },
+        {
+            "tier": "real-QPU multi-backend event replication",
+            "role": "crossed backend/transpiler-seed amplification-noise boundary",
+            "logical_qubits": 3,
+            "compiled_basis_or_device": "ibm_marrakesh / ibm_fez / ibm_kingston",
+            "per_call_or_block_resource": "9 jobs; m=[0,1,2]; 4,096 shots per circuit",
+            "schedule_or_aggregate_resource": (
+                f"{qpu_campaign['summary']['total_qpu_charge_seconds_recorded']:.0f} s total QPU charge; "
+                f"between-job SD {qpu_campaign['summary']['between_job_sd']:.6f}"
+            ),
+            "accuracy_or_observation": (
+                f"mean p-hat {qpu_campaign['summary']['estimate_mean']:.6f}; "
+                f"mean absolute error {qpu_campaign['summary']['mean_absolute_error']:.6f}; "
+                f"crossed bootstrap [{qpu_campaign['summary']['crossed_design_bootstrap']['low_2_5_percent']:.6f}, "
+                f"{qpu_campaign['summary']['crossed_design_bootstrap']['high_97_5_percent']:.6f}]"
+            ),
+            "boundary": "three observed backends and three transpiler seeds; descriptive sampled-design interval, not a universal hardware confidence interval or end-to-end PSA execution",
+        },
     ]
     payload = {
         "schema": "psa-qae-cce-resource-table3/v1",
@@ -864,6 +886,7 @@ def main() -> None:
                 FINITE,
                 IBM_PREFLIGHT,
                 QPU,
+                QPU_CAMPAIGN,
                 ALL_COMPONENT_LDF,
                 PRODUCT_BOUNDARY,
                 PRODUCT_BOUNDARY_BALANCE,

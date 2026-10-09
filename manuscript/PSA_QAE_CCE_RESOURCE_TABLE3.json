@@ -19,6 +19,7 @@
     "PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_GATE_RESOURCES.json",
     "PSA_QAE_CCE_PRIMARY_FINITE_ORACLE_IBM_PREFLIGHT_ibm_marrakesh.json",
     "QAE_QPU_BREAKTHROUGH_PHASE_MLAE_IBM_db42v34lf4us73c24q50.json",
+    "PSA_QAE_QPU_REPLICATION_CAMPAIGN_ANALYSIS.json",
     "PSA_QAE_CCE_PRIMARY_ALL_COMPONENT_LDF_MICROSTEPS.json",
     "PSA_QAE_CCE_PRIMARY_PRODUCT_BOUNDARY_MICROSTEPS.json",
     "PSA_QAE_CCE_PRIMARY_PRODUCT_BOUNDARY_BALANCE_COMPOSITION.json",
@@ -339,6 +340,16 @@
       "schedule_or_aggregate_resource": "5 s QPU charge; 0.0829 RU",
       "accuracy_or_observation": "p-hat 0.566940; absolute error 0.058060",
       "boundary": "one backend and one job; ideal likelihood interval is not noise calibrated"
+    },
+    {
+      "tier": "real-QPU multi-backend event replication",
+      "role": "crossed backend/transpiler-seed amplification-noise boundary",
+      "logical_qubits": 3,
+      "compiled_basis_or_device": "ibm_marrakesh / ibm_fez / ibm_kingston",
+      "per_call_or_block_resource": "9 jobs; m=[0,1,2]; 4,096 shots per circuit",
+      "schedule_or_aggregate_resource": "45 s total QPU charge; between-job SD 0.003747",
+      "accuracy_or_observation": "mean p-hat 0.599193; mean absolute error 0.025807; crossed bootstrap [0.595136, 0.602318]",
+      "boundary": "three observed backends and three transpiler seeds; descriptive sampled-design interval, not a universal hardware confidence interval or end-to-end PSA execution"
     }
   ],
   "figure": "PSA_QAE_CCE_RESOURCE_LADDER_FIGURE.png",

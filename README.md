@@ -1,6 +1,6 @@
 # Resource-aware quantum amplitude estimation for chance-constrained pressure swing adsorption: classical baselines, compiled oracle costs, and a hardware boundary
 
-This repository is the reproducibility package for a *Computers & Chemical Engineering* manuscript on chance-constrained pressure swing adsorption (PSA), matched classical and quantum probability estimators, reversible-oracle resource accounting, and a small IBM QPU hardware boundary.
+This repository is the reproducibility package for a *Computers & Chemical Engineering* manuscript on chance-constrained pressure swing adsorption (PSA), matched classical and quantum probability estimators, reversible-oracle resource accounting, and a nine-job, three-backend IBM QPU hardware boundary.
 
 ## Authors
 
@@ -23,7 +23,7 @@ The repository does **not** claim quantum advantage, industrial H2 validation, a
 - `reproducibility/`: environments, submission checks, author metadata, and readiness records
 - `checksums/sha256.txt`: SHA-256 values for every copied manifest artifact and repository metadata file
 
-The staged release contains 324 manifest artifacts. The source manifest status is `local_submission_packet_assembled_external_evidence_gates_open` and `submission_ready=false`. Open scientific boundaries are documented rather than converted into positive validation claims.
+The staged release contains 360 manifest artifacts. The source manifest status is `local_submission_packet_assembled_external_evidence_gates_open` and `submission_ready=false`. Open scientific boundaries are documented rather than converted into positive validation claims.
 
 ## Reproduction entry points
 

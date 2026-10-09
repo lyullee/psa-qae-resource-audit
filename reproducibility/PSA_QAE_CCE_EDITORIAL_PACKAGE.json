@@ -1,6 +1,6 @@
 {
   "schema": "psa-qae-cce-editorial-package/v1",
-  "created_utc": "2026-10-09T22:14:55.450689+00:00",
+  "created_utc": "2026-10-09T23:01:14.340549+00:00",
   "status": "editorial_materials_complete_scientific_submission_gates_open",
   "target_journal": "Computers & Chemical Engineering",
   "title": "Resource-aware quantum amplitude estimation for chance-constrained pressure swing adsorption: classical baselines, compiled oracle costs, and a hardware boundary",
@@ -9,14 +9,14 @@
     "RQMC gives lower RMSE than MLAE for the frozen surrogate benchmark.",
     "A response oracle needs 99 logical qubits and 35,160 CX per call.",
     "Policy stream-to-event oracles preserve all candidate and ledger labels.",
-    "IBM hardware bounds execution without claiming end-to-end quantum advantage."
+    "Nine IBM jobs quantify backend and transpiler-seed hardware variability."
   ],
   "highlight_character_counts": [
     75,
     67,
     65,
     72,
-    76
+    72
   ],
   "evidence": {
     "rqmc_rmse": 0.002482,
@@ -271,6 +271,18 @@
     "qpu_exact_probability": 0.625,
     "qpu_estimate": 0.5669399986612,
     "qpu_absolute_error": 0.05806000133879996,
+    "qpu_campaign_jobs": 9,
+    "qpu_campaign_estimate_mean": 0.5991933313494667,
+    "qpu_campaign_mean_absolute_error": 0.02580666865053331,
+    "qpu_campaign_between_job_sd": 0.0037469903840819294,
+    "qpu_campaign_total_charge_seconds": 45.0,
+    "qpu_campaign_crossed_bootstrap": {
+      "replicates": 100000,
+      "seed": 20261009,
+      "low_2_5_percent": 0.5951361092083889,
+      "high_97_5_percent": 0.6023183312869667,
+      "scope": "independent resampling of the three observed backend and three transpiler-seed levels; descriptive design variability, not a universal hardware confidence interval"
+    },
     "same_control_h2_validation": false,
     "max_h2_recovery_rmse_full_support_pct_point": 1.517180480512733,
     "max_h2_recovery_rmse_primary_span_pct_point": 0.1559313910213771
@@ -283,7 +295,6 @@
   "qpu_submission": false,
   "scientific_priority": [
     "same-control H2 product-recycle campaign with synchronized policy, pressure, flow, continuous composition, and product/recycle split",
-    "repeated multi-backend QPU campaign with noise-aware uncertainty",
     "generate a physically integrated unsaturated tank trajectory inside a complete five-component adsorption phase and quantify adaptive integration workspace"
   ],
   "outputs": [
@@ -295,7 +306,7 @@
     "PSA_QAE_CCE_GRAPHICAL_ABSTRACT.pdf"
   ],
   "submission_format_checks": {
-    "abstract_words": 219,
+    "abstract_words": 235,
     "abstract_limit": 250,
     "keyword_count": 6,
     "keyword_limit": [
@@ -308,7 +319,7 @@
       67,
       65,
       72,
-      76
+      72
     ],
     "highlight_limit_each": 85,
     "graphical_abstract_pixels": [
@@ -321,11 +332,11 @@
     ],
     "main_figure_vector_pdf_count": 6,
     "main_table3_rows": 8,
-    "supplementary_table_s1_rows": 29,
+    "supplementary_table_s1_rows": 31,
     "main_table4_rows": 8,
-    "supplementary_table_s2_rows": 30,
+    "supplementary_table_s2_rows": 32,
     "word_rendered_pages": {
-      "manuscript": 29,
+      "manuscript": 30,
       "title_page": 1,
       "supplementary_information": 7
     },

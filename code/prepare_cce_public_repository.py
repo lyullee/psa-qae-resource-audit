@@ -108,7 +108,7 @@ def write_readme(destination: Path, manifest: dict, author_data: dict) -> None:
     )
     text = f"""# Resource-aware quantum amplitude estimation for chance-constrained pressure swing adsorption: classical baselines, compiled oracle costs, and a hardware boundary
 
-This repository is the reproducibility package for a *Computers & Chemical Engineering* manuscript on chance-constrained pressure swing adsorption (PSA), matched classical and quantum probability estimators, reversible-oracle resource accounting, and a small IBM QPU hardware boundary.
+This repository is the reproducibility package for a *Computers & Chemical Engineering* manuscript on chance-constrained pressure swing adsorption (PSA), matched classical and quantum probability estimators, reversible-oracle resource accounting, and a nine-job, three-backend IBM QPU hardware boundary.
 
 ## Authors
 
@@ -203,7 +203,7 @@ def write_zenodo_metadata(destination: Path, author_data: dict) -> None:
         "description": (
             "Reproducibility package for a process-linked audit of quantum amplitude estimation in "
             "pressure swing adsorption, including classical baselines, process and circuit resource "
-            "boundaries, external controls, and a small IBM QPU experiment."
+            "boundaries, external controls, and a nine-job three-backend IBM QPU experiment."
         ),
         "creators": creators,
         "access_right": "open",
