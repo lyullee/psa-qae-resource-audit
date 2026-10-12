@@ -1,5 +1,0 @@
-tier,adsorbent,n_nodes,policy_recycle_fraction,cycles_completed,css_residual_final,css_gate,h2_product,h2_recovery_external_boundary,h2_recovery_adsorption_feed_proxy,tank_supply_fraction_total,product_tank_self_sufficient,joint_event,strict_same_policy_event_gate,cycle_mass_balance_relative
-15-cycle policy-direction screen,5A,5,0.42,15,0.007996359379082607,False,0.7938702499656572,0.047980210487360744,1.5290229508816908,0.034627780448838304,False,False,False,0.008991786859660445
-15-cycle policy-direction screen,5A,5,0.427,15,0.007996369352089805,False,0.7938702726552588,0.04742857701227658,1.5105692852403594,0.03520489047031824,False,False,False,0.008996787345617863
-15-cycle policy-direction screen,5A,5,0.43,15,0.007996361003462904,False,0.7938702685007273,0.0471919955312394,1.5026602607467254,0.0354522446223599,False,False,False,0.008998989559200863
-450-cycle baseline stress control,5A,4,0.42,450,0.001253780834234175,False,0.9916662549110212,0.04416561223073386,2.0905337948108116,0.03163854226773907,False,False,False,0.001226089563781324

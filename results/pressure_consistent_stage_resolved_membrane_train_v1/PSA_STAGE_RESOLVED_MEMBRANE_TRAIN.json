@@ -1,0 +1,516 @@
+{
+  "schema": "psa-stage-resolved-membrane-train/v1",
+  "status": "sixteen_case_packetwise_stage_train_confirmed",
+  "input_variant": "pressure_consistent_6bar_v1",
+  "architecture": {
+    "stage_0": "finite perfectly mixed surge buffer at 20 bar",
+    "stage_1": "literature-parameterized H2-selective concentration membrane",
+    "stage_2": "ideal defect-free dense-Pd final H2 polishing membrane",
+    "stage_3": "co-sized finite product receiver",
+    "retentate_routing": "both retentates to fuel/offgas",
+    "internal_recycle_fraction": 0.0,
+    "reason_for_zero_recycle": "the single-pass design meets the frozen target and avoids an unvalidated accumulation loop",
+    "surge_buffer_capacity_mol": 4.615939905899888,
+    "surge_buffer_volume_L_at_20bar_298K": 5.721358338870908,
+    "surge_buffer_heel_mol": 0.5,
+    "product_receiver_capacity_mol": 1.54598433549796,
+    "product_receiver_volume_L_at_1bar_298K": 38.324287360672116
+  },
+  "literature_parameters": {
+    "source": "Zito et al. 2023",
+    "doi": "10.1016/j.renene.2023.119243",
+    "materials": {
+      "polymer": {
+        "h2_permeance_mol_m2_s_pa": 3.35e-08,
+        "selectivity": {
+          "CH4": 170.0,
+          "CO2": 5.0,
+          "CO": 100.0,
+          "N2": 100.0
+        },
+        "zito_area_m2_per_Nm3_h": 1.0,
+        "zito_pd_area_m2_per_Nm3_h": 1.3,
+        "basis": "Zito et al. 2023 Table 2 and Figure 9; H2/N2 assigned equal to H2/CO as stated for similar gas behavior"
+      },
+      "carbon": {
+        "h2_permeance_mol_m2_s_pa": 8e-09,
+        "selectivity": {
+          "CH4": 79.0,
+          "CO2": 5.4,
+          "CO": 34.0,
+          "N2": 34.0
+        },
+        "zito_area_m2_per_Nm3_h": 4.0,
+        "zito_pd_area_m2_per_Nm3_h": 1.4,
+        "basis": "Zito et al. 2023 Table 2 and Figure 9; H2/N2 conservatively assigned equal to H2/CO"
+      }
+    },
+    "pd_h2_permeance_mol_m2_s_pa_half": 5.56e-06,
+    "pressure_bar": {
+      "upstream": 6.2,
+      "concentrator_feed": 20.0,
+      "concentrator_permeate": 1.0,
+      "pd_feed": 20.0,
+      "pd_permeate": 1.0
+    }
+  },
+  "screen": {
+    "maximum_fresh_feed_flow_Nm3_h": 0.3691630673654986,
+    "selection_rule": "meet the frozen recovery and shipment targets in all 8 corners and 8 hold-outs; retain designs within 0.1% of maximum worst shipment; then minimize Pd area, total area, and compression energy",
+    "screened_configuration_count": 1500,
+    "feasible_configuration_count": 104,
+    "maximum_worst_qualified_h2_rate_mol_s": 0.0024574106763259845
+  },
+  "surge_buffer_sizing": [
+    {
+      "case_id": "corner_00",
+      "constant_packet_out_mol": 0.30363659853937863,
+      "initial_inventory_mol": 2.520507164386416,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.336455143664696,
+      "required_capacity_mol": 4.336455143664696,
+      "inventory_swing_mol": 3.836455143664696
+    },
+    {
+      "case_id": "corner_01",
+      "constant_packet_out_mol": 0.3010236598756516,
+      "initial_inventory_mol": 2.399921264262963,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.238351707365176,
+      "required_capacity_mol": 4.238351707365176,
+      "inventory_swing_mol": 3.7383517073651755
+    },
+    {
+      "case_id": "corner_02",
+      "constant_packet_out_mol": 0.3031343490394344,
+      "initial_inventory_mol": 2.797397020619897,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.615939905899888,
+      "required_capacity_mol": 4.615939905899888,
+      "inventory_swing_mol": 4.115939905899888
+    },
+    {
+      "case_id": "corner_03",
+      "constant_packet_out_mol": 0.3001643661877097,
+      "initial_inventory_mol": 2.650597940134117,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.494417252511425,
+      "required_capacity_mol": 4.494417252511425,
+      "inventory_swing_mol": 3.994417252511426
+    },
+    {
+      "case_id": "corner_04",
+      "constant_packet_out_mol": 0.31024595869797245,
+      "initial_inventory_mol": 2.453183037529145,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.214682915177651,
+      "required_capacity_mol": 4.214682915177651,
+      "inventory_swing_mol": 3.7146829151776504
+    },
+    {
+      "case_id": "corner_05",
+      "constant_packet_out_mol": 0.3078081382460065,
+      "initial_inventory_mol": 2.341188423689337,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.1237672108331545,
+      "required_capacity_mol": 4.1237672108331545,
+      "inventory_swing_mol": 3.623767210833155
+    },
+    {
+      "case_id": "corner_06",
+      "constant_packet_out_mol": 0.30937942464676477,
+      "initial_inventory_mol": 2.703326120279998,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.470345452828321,
+      "required_capacity_mol": 4.470345452828321,
+      "inventory_swing_mol": 3.9703454528283206
+    },
+    {
+      "case_id": "corner_07",
+      "constant_packet_out_mol": 0.3066102575600477,
+      "initial_inventory_mol": 2.5643438174084006,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.355032675610981,
+      "required_capacity_mol": 4.355032675610981,
+      "inventory_swing_mol": 3.855032675610981
+    },
+    {
+      "case_id": "holdout_00",
+      "constant_packet_out_mol": 0.3055849670944554,
+      "initial_inventory_mol": 2.62106320708706,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.419979084429429,
+      "required_capacity_mol": 4.419979084429429,
+      "inventory_swing_mol": 3.9199790844294293
+    },
+    {
+      "case_id": "holdout_01",
+      "constant_packet_out_mol": 0.30507136333108065,
+      "initial_inventory_mol": 2.520438786767045,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.324253364258766,
+      "required_capacity_mol": 4.324253364258766,
+      "inventory_swing_mol": 3.824253364258766
+    },
+    {
+      "case_id": "holdout_02",
+      "constant_packet_out_mol": 0.3015526112902383,
+      "initial_inventory_mol": 2.5586373692659747,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.391372639499848,
+      "required_capacity_mol": 4.391372639499848,
+      "inventory_swing_mol": 3.8913726394998482
+    },
+    {
+      "case_id": "holdout_03",
+      "constant_packet_out_mol": 0.3079757795620632,
+      "initial_inventory_mol": 2.503233322266421,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.283068750742444,
+      "required_capacity_mol": 4.283068750742444,
+      "inventory_swing_mol": 3.7830687507424443
+    },
+    {
+      "case_id": "holdout_04",
+      "constant_packet_out_mol": 0.3073327563159182,
+      "initial_inventory_mol": 2.547963835212081,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.332725321570265,
+      "required_capacity_mol": 4.332725321570265,
+      "inventory_swing_mol": 3.8327253215702646
+    },
+    {
+      "case_id": "holdout_05",
+      "constant_packet_out_mol": 0.30312427648304946,
+      "initial_inventory_mol": 2.4319190017025165,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.2526235377617185,
+      "required_capacity_mol": 4.2526235377617185,
+      "inventory_swing_mol": 3.7526235377617185
+    },
+    {
+      "case_id": "holdout_06",
+      "constant_packet_out_mol": 0.30411288516191537,
+      "initial_inventory_mol": 2.6955307367042436,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.506328462624566,
+      "required_capacity_mol": 4.506328462624566,
+      "inventory_swing_mol": 4.006328462624566
+    },
+    {
+      "case_id": "holdout_07",
+      "constant_packet_out_mol": 0.304408354391641,
+      "initial_inventory_mol": 2.4772790136091656,
+      "minimum_inventory_mol": 0.5,
+      "maximum_inventory_mol": 4.286797494764509,
+      "required_capacity_mol": 4.286797494764509,
+      "inventory_swing_mol": 3.7867974947645093
+    }
+  ],
+  "product_receiver_sizing": [
+    {
+      "case_id": "corner_00",
+      "receiver_inventory_swing_mol": 1.3798278042025038,
+      "minimum_receiver_capacity_mol": 1.4599441198581535,
+      "constant_outlet_rate_mol_s": 0.0024561729650664074
+    },
+    {
+      "case_id": "corner_01",
+      "receiver_inventory_swing_mol": 1.3607668404832376,
+      "minimum_receiver_capacity_mol": 1.4397764280519605,
+      "constant_outlet_rate_mol_s": 0.002460539538911136
+    },
+    {
+      "case_id": "corner_02",
+      "receiver_inventory_swing_mol": 1.4538770667570495,
+      "minimum_receiver_capacity_mol": 1.538292871142249,
+      "constant_outlet_rate_mol_s": 0.0024581722139785734
+    },
+    {
+      "case_id": "corner_03",
+      "receiver_inventory_swing_mol": 1.4297612318168333,
+      "minimum_receiver_capacity_mol": 1.5127768094212088,
+      "constant_outlet_rate_mol_s": 0.002463477321610015
+    },
+    {
+      "case_id": "corner_04",
+      "receiver_inventory_swing_mol": 1.1704943816914102,
+      "minimum_receiver_capacity_mol": 1.2384562658273461,
+      "constant_outlet_rate_mol_s": 0.0025722542392539174
+    },
+    {
+      "case_id": "corner_05",
+      "receiver_inventory_swing_mol": 1.1509365399604081,
+      "minimum_receiver_capacity_mol": 1.2177628460068957,
+      "constant_outlet_rate_mol_s": 0.0025775185551282632
+    },
+    {
+      "case_id": "corner_06",
+      "receiver_inventory_swing_mol": 1.2186286126333505,
+      "minimum_receiver_capacity_mol": 1.289385292778065,
+      "constant_outlet_rate_mol_s": 0.002570652844764853
+    },
+    {
+      "case_id": "corner_07",
+      "receiver_inventory_swing_mol": 1.1931846349241078,
+      "minimum_receiver_capacity_mol": 1.2624639729370861,
+      "constant_outlet_rate_mol_s": 0.002576842761145026
+    },
+    {
+      "case_id": "holdout_00",
+      "receiver_inventory_swing_mol": 1.2679429183438122,
+      "minimum_receiver_capacity_mol": 1.341562912643094,
+      "constant_outlet_rate_mol_s": 0.002545804610953719
+    },
+    {
+      "case_id": "holdout_01",
+      "receiver_inventory_swing_mol": 1.3017181014321584,
+      "minimum_receiver_capacity_mol": 1.3772991688605594,
+      "constant_outlet_rate_mol_s": 0.002515397590575039
+    },
+    {
+      "case_id": "holdout_02",
+      "receiver_inventory_swing_mol": 1.378595320323349,
+      "minimum_receiver_capacity_mol": 1.4586400748268011,
+      "constant_outlet_rate_mol_s": 0.0024791827083160433
+    },
+    {
+      "case_id": "holdout_03",
+      "receiver_inventory_swing_mol": 1.2280077641758156,
+      "minimum_receiver_capacity_mol": 1.2993090217404584,
+      "constant_outlet_rate_mol_s": 0.0025504130102156127
+    },
+    {
+      "case_id": "holdout_04",
+      "receiver_inventory_swing_mol": 1.2061889289276109,
+      "minimum_receiver_capacity_mol": 1.276223329362212,
+      "constant_outlet_rate_mol_s": 0.0025673707431545637
+    },
+    {
+      "case_id": "holdout_05",
+      "receiver_inventory_swing_mol": 1.3255538791555257,
+      "minimum_receiver_capacity_mol": 1.4025189125296535,
+      "constant_outlet_rate_mol_s": 0.0024902839704592657
+    },
+    {
+      "case_id": "holdout_06",
+      "receiver_inventory_swing_mol": 1.3744021835629645,
+      "minimum_receiver_capacity_mol": 1.4542034738694647,
+      "constant_outlet_rate_mol_s": 0.002496034164273519
+    },
+    {
+      "case_id": "holdout_07",
+      "receiver_inventory_swing_mol": 1.2602640515605354,
+      "minimum_receiver_capacity_mol": 1.3334381913023041,
+      "constant_outlet_rate_mol_s": 0.0025376522151349876
+    }
+  ],
+  "selected_design": {
+    "material": "polymer",
+    "concentrator_area_m2": 0.18919607202481806,
+    "pd_area_m2": 0.4799119875751482,
+    "total_area_m2": 0.6691080595999662,
+    "literature_scaled_concentrator_area_cap_m2": 0.3691630673654986,
+    "literature_scaled_pd_area_cap_m2": 0.4799119875751482,
+    "worst_overall_h2_recovery": 0.934682082168888,
+    "worst_qualified_h2_rate_mol_s": 0.002456943220032103,
+    "minimum_stage1_h2_fraction": 0.9296921315995922,
+    "maximum_compression_energy_kwh_kg_h2": 2.572896569872298,
+    "maximum_mass_balance_abs_mol": 5.115907697472721e-13,
+    "all_16_recovery_pass": true,
+    "all_16_shipment_pass": true,
+    "surge_buffer_capacity_mol": 4.615939905899888,
+    "surge_buffer_volume_L_at_20bar_298K": 5.721358338870908,
+    "receiver_capacity_mol": 1.54598433549796,
+    "receiver_volume_L_at_1bar_298K": 38.324287360672116
+  },
+  "dynamic_confirmation": {
+    "case_count": 16,
+    "corner_pass_count": 8,
+    "holdout_pass_count": 8,
+    "minimum_overall_h2_recovery": 0.9345006233428855,
+    "minimum_qualified_h2_rate_mol_s": 0.0024561729650653796,
+    "minimum_stage1_h2_fraction": 0.9297644516380522,
+    "maximum_compression_energy_kwh_kg_h2": 2.3600013374013646,
+    "minimum_source_tank_pressure_bar": 3.531055071416517,
+    "maximum_required_surge_capacity_mol": 4.615939905899888,
+    "maximum_surge_component_balance_abs_mol": 8.135714324453147e-13,
+    "all_surge_capacity_gates_pass": true,
+    "all_surge_constant_outlet_gates_pass": true,
+    "maximum_module_mass_balance_abs_mol": 3.885780586188048e-16,
+    "maximum_receiver_mass_balance_abs_mol": 8.233208559360605e-10,
+    "all_continuous_product_gates_pass": true,
+    "all_receiver_inventory_gates_pass": true,
+    "all_stage_train_events_pass": true
+  },
+  "strict_component_burden": {
+    "original_direct_feed_requirement": {
+      "CO": 53869.10411049063,
+      "CO2": 152647.91634456845,
+      "N2": 3276.4247562877385,
+      "CH4": 573.1105634041913
+    },
+    "worst_requirement_after_concentration": {
+      "CO": 885.2884840029768,
+      "CO2": 7946.934570553233,
+      "N2": 117.61162029672693,
+      "CH4": 5.1611355488009805
+    },
+    "requirement_reduction_factor": {
+      "CO": 60.84920913792153,
+      "CO2": 19.208402307751946,
+      "N2": 27.85800202413264,
+      "CH4": 111.04350156766075
+    },
+    "experimental_component_gate_closed": false
+  },
+  "mesh_audit": {
+    "worst_case_id": "corner_06",
+    "rows": [
+      {
+        "concentrator_area_steps": 36,
+        "pd_area_steps": 72,
+        "overall_h2_recovery": 0.9363695416688697,
+        "qualified_h2_rate_mol_s": 0.0025757939259454933,
+        "stage1_h2_fraction": 0.9355648623620685,
+        "compression_energy_kwh_kg_h2": 2.5719185742457062,
+        "maximum_module_mass_balance_abs_mol": 1.942890293094024e-16,
+        "receiver_mass_balance_max_abs_mol": 4.073720250019619e-10,
+        "stage_train_event": true
+      },
+      {
+        "concentrator_area_steps": 72,
+        "pd_area_steps": 144,
+        "overall_h2_recovery": 0.9345006233428855,
+        "qualified_h2_rate_mol_s": 0.0025706528483580905,
+        "stage1_h2_fraction": 0.9355066005139645,
+        "compression_energy_kwh_kg_h2": 2.574618375025907,
+        "maximum_module_mass_balance_abs_mol": 2.7755575615628914e-16,
+        "receiver_mass_balance_max_abs_mol": 6.968424726139233e-10,
+        "stage_train_event": true
+      },
+      {
+        "concentrator_area_steps": 144,
+        "pd_area_steps": 288,
+        "overall_h2_recovery": 0.9335574290949761,
+        "qualified_h2_rate_mol_s": 0.0025680582808150477,
+        "stage1_h2_fraction": 0.9354774164203039,
+        "compression_energy_kwh_kg_h2": 2.5759696941174437,
+        "maximum_module_mass_balance_abs_mol": 4.440892098500626e-16,
+        "receiver_mass_balance_max_abs_mol": 1.916864444950761e-10,
+        "stage_train_event": true
+      }
+    ],
+    "fine_recovery_change_absolute": 0.0009431942479094513,
+    "fine_recovery_margin_above_gate": 0.050617304230505034,
+    "recovery_margin_to_mesh_change_ratio": 53.665832189600465,
+    "fine_mesh_stable": true
+  },
+  "energy_scope": {
+    "included": "ideal-gas isothermal compression from 6.2 to 20 bar and interstage 1 to 20 bar at 72% efficiency",
+    "excluded": "heating, cooling, pressure drop, vacuum, membrane fabrication, replacement, and retentate credit"
+  },
+  "claim_boundary": {
+    "allowed": "A literature-parameterized, stage-resolved membrane train preserves the frozen engineering event over all eight corners and eight predeclared hold-outs under an ideal dense-Pd assumption.",
+    "not_allowed": "The selected train is experimentally validated at the declared CO/CO2/N2/CH4 limits or has a proven cost optimum."
+  },
+  "sources": [
+    {
+      "validation_kind": "uncertainty_corner",
+      "case_id": "corner_00",
+      "state_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_008.json",
+      "trace_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_008_traces.npz"
+    },
+    {
+      "validation_kind": "uncertainty_corner",
+      "case_id": "corner_01",
+      "state_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_009.json",
+      "trace_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_009_traces.npz"
+    },
+    {
+      "validation_kind": "uncertainty_corner",
+      "case_id": "corner_02",
+      "state_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_010.json",
+      "trace_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_010_traces.npz"
+    },
+    {
+      "validation_kind": "uncertainty_corner",
+      "case_id": "corner_03",
+      "state_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_011.json",
+      "trace_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_011_traces.npz"
+    },
+    {
+      "validation_kind": "uncertainty_corner",
+      "case_id": "corner_04",
+      "state_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_012.json",
+      "trace_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_012_traces.npz"
+    },
+    {
+      "validation_kind": "uncertainty_corner",
+      "case_id": "corner_05",
+      "state_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_013.json",
+      "trace_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_013_traces.npz"
+    },
+    {
+      "validation_kind": "uncertainty_corner",
+      "case_id": "corner_06",
+      "state_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_014.json",
+      "trace_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_014_traces.npz"
+    },
+    {
+      "validation_kind": "uncertainty_corner",
+      "case_id": "corner_07",
+      "state_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_015.json",
+      "trace_path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_015_traces.npz"
+    },
+    {
+      "validation_kind": "predeclared_interior_holdout",
+      "case_id": "holdout_00",
+      "state_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_000.json",
+      "trace_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_000_traces.npz"
+    },
+    {
+      "validation_kind": "predeclared_interior_holdout",
+      "case_id": "holdout_01",
+      "state_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_001.json",
+      "trace_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_001_traces.npz"
+    },
+    {
+      "validation_kind": "predeclared_interior_holdout",
+      "case_id": "holdout_02",
+      "state_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_002.json",
+      "trace_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_002_traces.npz"
+    },
+    {
+      "validation_kind": "predeclared_interior_holdout",
+      "case_id": "holdout_03",
+      "state_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_003.json",
+      "trace_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_003_traces.npz"
+    },
+    {
+      "validation_kind": "predeclared_interior_holdout",
+      "case_id": "holdout_04",
+      "state_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_004.json",
+      "trace_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_004_traces.npz"
+    },
+    {
+      "validation_kind": "predeclared_interior_holdout",
+      "case_id": "holdout_05",
+      "state_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_005.json",
+      "trace_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_005_traces.npz"
+    },
+    {
+      "validation_kind": "predeclared_interior_holdout",
+      "case_id": "holdout_06",
+      "state_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_006.json",
+      "trace_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_006_traces.npz"
+    },
+    {
+      "validation_kind": "predeclared_interior_holdout",
+      "case_id": "holdout_07",
+      "state_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_007.json",
+      "trace_path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_007_traces.npz"
+    }
+  ],
+  "wall_time_s": 77.08930563926697
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "psa-final-objective-evidence-manifest/v44",
+  "files": [
+    {
+      "path": "PSA_FINAL_OBJECTIVE_EVIDENCE_V44.json",
+      "bytes": 9801,
+      "sha256": "fc7cee6024c575a54107bb283b2632085b8bd55f907c3eef63b4646f92644cd9"
+    },
+    {
+      "path": "PSA_FINAL_OBJECTIVE_GATES_V44.csv",
+      "bytes": 671,
+      "sha256": "e825d8800a3154cc13d7c1cb0fc4c353fbc457e7bcca4e47b77e65d1c89b972c"
+    },
+    {
+      "path": "PSA_FINAL_OBJECTIVE_PROGRESS_V44.csv",
+      "bytes": 324,
+      "sha256": "327a6b7ee8d1ef31cc58477b5dfdd447639ccaefb6825a43a0ac4350a87fcb87"
+    },
+    {
+      "path": "PSA_FINAL_OBJECTIVE_EVIDENCE_V44.md",
+      "bytes": 989,
+      "sha256": "e8813326b84a79d1cb5b74bad5856ce815ce5679879e0b3823f02e7155a5ed2e"
+    }
+  ]
+}

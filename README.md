@@ -1,38 +1,52 @@
-# Resource-aware quantum amplitude estimation for chance-constrained pressure swing adsorption: classical baselines, compiled oracle costs, and a hardware boundary
+# Pressure-consistent regeneration-reserve-aware hydrogen PSA and QAE event
 
-This repository is the reproducibility package for a *Computers & Chemical Engineering* manuscript on chance-constrained pressure swing adsorption (PSA), matched classical and quantum probability estimators, reversible-oracle resource accounting, and a nine-job, three-backend IBM QPU hardware boundary.
+This is the **v0.2.0** reproducibility package for a Separation and
+Purification Technology-oriented study. It supersedes v0.1.0 because the former
+7.0 bar regeneration tank could not be passively filled from the 6.2 bar
+product manifold.
 
-## Authors
+## Current engineering result
 
-Ugwiyeon Lee, Seong-Yun Bae, Hakrae Kim, Jungsu Lee. All authors are affiliated with Korea Gas Safety Corporation, Republic of Korea. Ugwiyeon Lee is the corresponding author. ORCIDs and the CRediT statement are recorded in `reproducibility/PSA_QAE_CCE_AUTHOR_METADATA.md`.
+- Corrected topology: 6.2 bar product manifold -> 6.0 bar regulated tank ->
+  discharge booster -> 6.5 bar purge/repressurization header.
+- Selected policy: 4 s active purge and 540 s adsorption; comparison: 6 s and
+  480 s. Both use the same 6.0 bar tank set point.
+- Direct decisions: 8/8 uncertainty corners and 8/8 predeclared hold-outs pass;
+  the comparison passes 0/8 corners.
+- Qualified H2 shipment improves by 6.785-7.341%; conservative regeneration
+  booster duty is at most 0.197 kWh kg-1 qualified H2.
+- The ideal stage-resolved train uses 0.1892 m2 polymer and 0.4799 m2 dense Pd.
+- The 20%-permeance-loss guard is 0.554 m2 and passes 16/16 direct cases.
+- A public 50%-retention actual-syngas stress requires 0.887 m2 and passes 16/16.
+- Corrected module selectivity guards are H2/CO >=5,660, H2/CO2 >=168,660,
+  H2/N2 >=540, and H2/CH4 >=40; the simultaneous rounded vector passes 16/16.
+- Independent fixed-area RK4 reproduces all 32 DOP853 design-case labels.
+- The 0.440 m2 chance design has conservative continuous probability 0.951210
+  and 10-bit probability 0.950629 with zero direct label errors.
+- Reversible register allocation requires 66 logical qubits.
+- The included OpenQASM 3 oracle has 24,042 CX gates, 61,269 primitive gates,
+  and all-to-all depth 36,163 before device optimization or routing. Its
+  reported basis-state tests have zero phase-label or work-qubit-restoration
+  errors.
 
-## Supported conclusions
+## Execution boundary
 
-- Scrambled-Sobol RQMC is the best current estimator for the frozen smooth, moderate-dimensional surrogate.
-- Noiseless MLAE improves over matched crude Monte Carlo but does not create an end-to-end advantage after state loading, reversible process evaluation, and hardware noise are counted.
-- The compiled process/event tiers include direct five-component LDF-to-loading-sign-to-solid-conversion-to-interior-cell-balance circuits, gas-inventory-normalized interior and product-cell paths, a finite-support run/schedule controller, coefficient generation, and five paths that connect three raw gas-inventory vectors through normalization, pressure reconstruction, two oriented faces, the run-affinity Langmuir denominator/reciprocal, q*/LDF/loading conversion, and conservative balance. These highest component paths compile to 2,696–2,885 logical qubits and 55,337,688–56,289,028 CX per component, with a 279,319,932-CX repeated-path upper bound. A 557-qubit/195,276-CX pressure-derived circuit replaces the recorded tank-withdrawal lookup on all 128 frozen saturated calls. A 647-qubit/705,194-CX extension preserves 128 observed saturated and 224 bounded-counterfactual unsaturated proportional-allocation labels. A separate 845-qubit/1,078,054-CX source-model control supplies 128 physically generated unsaturated, zero-makeup calls using start/end-pressure trapezoidal demand. It keeps the recycle fraction but uses a declared 0.02-s non-adsorption schedule; frozen-schedule unsaturated coverage and monolithic five-component phase integration remain open.
-- Public H2 evidence and independent simulator controls do not validate the selected industrial recycle policy. This limitation is retained as part of the result.
-
-The repository does **not** claim quantum advantage, industrial H2 validation, a global recycle optimum, or deployment readiness.
+The corrected integer specification, portable OpenQASM 3 oracle, and corrected
+DWSIM input deck are included. Device-specific Qiskit optimization/routing and
+DWSIM execution were blocked on the current Windows host by Application Control
+rejecting their native DLLs. Earlier DWSIM and C# runs are not used as current
+corrected-input evidence. The manuscript states these boundaries explicitly.
 
 ## Contents
 
-- `manuscript/`: review manuscript, figures, tables, references, highlights, and cover-letter draft
-- `results/`: machine-readable estimator, process, circuit, QPU, external-control, and audit outputs
-- `code/`: local generation, compilation, audit, and verification scripts
-- `reproducibility/`: environments, submission checks, author metadata, and readiness records
-- `checksums/sha256.txt`: SHA-256 values for every copied manifest artifact and repository metadata file
+- `manuscript/`: render-checked Word, PDF, Markdown, and reference audit.
+- `evidence/`: V44 consolidated evidence, gates, progress, and hashes.
+- `results/`: corrected machine-readable calculation records and public-data audits.
+- `source/`: scripts needed to rerun the corrected analyses and rebuild artifacts.
+- `dwsim_corrected_input/`: the 16-case corrected DWSIM input deck and runner tools.
+- `figures/`: 19 manuscript figures.
+- `checksums/sha256.txt`: file-level SHA-256 ledger.
 
-The staged release contains 360 manifest artifacts. The source manifest status is `local_submission_packet_assembled_external_evidence_gates_open` and `submission_ready=false`. Open scientific boundaries are documented rather than converted into positive validation claims.
-
-## Reproduction entry points
-
-From the repository root, restore the recorded Python environments and run the relevant scripts from `code/`. The primary package and gate-compilation runners default to local simulation and dry-run behavior; IBM credentials are intentionally excluded. Read `reproducibility/PSA_QAE_CCE_SUBMISSION_READINESS_2026-10-09.md` before interpreting evidence tiers.
-
-## Licensing
-
-Project code is released under the MIT License. Original text, tables, figures, and generated data are released under CC BY 4.0. Third-party source code and data are not redistributed by this compact release and remain under their original licenses and citations.
-
-## Citation
-
-Use `CITATION.cff`. Archived release: https://doi.org/10.5281/zenodo.23271867
+The package does not claim current quantum advantage or matched experimental
+certification of the final integrated apparatus. The remaining external checks
+are stated in `EXECUTION_BOUNDARIES.md`.

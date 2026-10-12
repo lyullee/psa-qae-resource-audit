@@ -1,0 +1,107 @@
+{
+  "schema": "psa-independent-ode-membrane-audit/v1",
+  "status": "adaptive_ode_guard_redesign_completed",
+  "solver": {
+    "method": "scipy solve_ivp DOP853",
+    "relative_tolerance": 1e-09,
+    "absolute_tolerance": 1e-13,
+    "tight_replay_relative_tolerance": 1e-10,
+    "tight_replay_absolute_tolerance": 1e-14,
+    "limiting_case": "corner_06",
+    "regular_limiting_recovery": 0.883220742882423,
+    "tight_limiting_recovery": 0.8832207429706057,
+    "absolute_recovery_difference": 8.818268337762447e-11,
+    "tight_polymer_function_evaluations": 185,
+    "tight_pd_function_evaluations": 185
+  },
+  "frozen_gates": {
+    "minimum_h2_recovery": 0.882940124864471,
+    "minimum_qualified_h2_rate_mol_s": 0.0022630964185957605,
+    "h2_min_fraction": 0.9997,
+    "impurity_max_fraction": {
+      "CO": 5e-07,
+      "CO2": 4.9999999999999996e-06,
+      "N2": 0.0003,
+      "CH4": 9.999999999999999e-05
+    }
+  },
+  "stage1_integrator_comparison": {
+    "minimum_ode_minus_euler_recovery_percentage_point": -0.1747160144603962,
+    "maximum_ode_minus_euler_recovery_percentage_point": -0.1551131711123049,
+    "maximum_ode_mass_balance_abs_mol": 4.163336342344337e-17
+  },
+  "superseded_0p553_m2_guard": {
+    "pd_area_m2": 0.553,
+    "summary": {
+      "pass_count": 15,
+      "case_count": 16,
+      "all_pass": false,
+      "minimum_recovery": 0.8819967458580293,
+      "minimum_qualified_h2_rate_mol_s": 0.0023579053474868292,
+      "maximum_worst_gate_factor": 0.9997728788949336,
+      "maximum_co_ppm": 0.1212466480406863,
+      "maximum_co2_ppm": 4.030102199616682,
+      "maximum_n2_ppm": 49.02721502644635,
+      "maximum_ch4_ppm": 25.25049613998681,
+      "receiver_capacity_mol": 1.2254478709192933,
+      "maximum_module_mass_balance_abs_mol": 4.163336342344337e-17,
+      "maximum_receiver_mass_balance_abs_mol": 9.476974760502799e-12
+    },
+    "reason": "the independently integrated continuous-area model falls below the frozen recovery floor in at least one direct case"
+  },
+  "revised_guard_design": {
+    "minimum_unrounded_pd_area_m2": 0.5537702461630105,
+    "selected_rounded_pd_area_m2": 0.554,
+    "area_increase_vs_0p553_percent": 0.1808318264014508,
+    "permeance_retention": 0.8,
+    "minimum_common_selectivity_multiplier": 16.95909780794342,
+    "selected_common_selectivity_multiplier": 21.2,
+    "selected_effective_selectivity": {
+      "CO": 18768.11586086311,
+      "CO2": 168475.01289572855,
+      "N2": 2493.366350290611,
+      "CH4": 109.41607363458078
+    },
+    "receiver_capacity_mol": 1.232009239802619,
+    "receiver_volume_L_at_1bar_298K": 30.54097965487508,
+    "direct_confirmation": {
+      "pass_count": 16,
+      "case_count": 16,
+      "all_pass": true,
+      "minimum_recovery": 0.883220742882423,
+      "minimum_qualified_h2_rate_mol_s": 0.0023605451505414096,
+      "maximum_worst_gate_factor": 0.999772368770079,
+      "maximum_co_ppm": 0.12036718943759817,
+      "maximum_co2_ppm": 3.9998322116112184,
+      "maximum_n2_ppm": 48.82818170798942,
+      "maximum_ch4_ppm": 25.06874296016963,
+      "receiver_capacity_mol": 1.232009239802619,
+      "maximum_module_mass_balance_abs_mol": 4.163336342344337e-17,
+      "maximum_receiver_mass_balance_abs_mol": 1.2623790901500342e-11
+    }
+  },
+  "revised_defect_boundary": {
+    "definition": "local H2-equivalent Knudsen defect H2 transfer divided by dense-Pd H2 transfer; this is a conductance ratio, not a geometric pinhole-area fraction",
+    "maximum_passing_ratio": 3.466627374291421e-05,
+    "guard_banded_ratio": 2.773301899433137e-05,
+    "guard_banded_direct_confirmation": {
+      "pass_count": 16,
+      "case_count": 16,
+      "all_pass": true,
+      "minimum_recovery": 0.8832201379978227,
+      "minimum_qualified_h2_rate_mol_s": 0.00236052153908386,
+      "maximum_worst_gate_factor": 0.9997048253185158,
+      "maximum_co_ppm": 0.016809081447014325,
+      "maximum_co2_ppm": 3.999987322309257,
+      "maximum_n2_ppm": 0.9062540115743013,
+      "maximum_ch4_ppm": 0.02729599350610101,
+      "receiver_capacity_mol": 1.2321421021548984,
+      "maximum_module_mass_balance_abs_mol": 4.163336342344337e-17,
+      "maximum_receiver_mass_balance_abs_mol": 1.2255529924232178e-11
+    }
+  },
+  "claim_boundary": {
+    "allowed": "adaptive continuous-area ODE integration independently audits the fixed-section membrane numerics and supplies the revised numerical guard band",
+    "not_allowed": "the ODE audit uses the same literature transport laws and is not experimental, Aspen, or vendor-module validation"
+  }
+}

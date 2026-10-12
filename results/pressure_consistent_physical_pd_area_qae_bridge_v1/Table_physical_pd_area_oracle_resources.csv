@@ -1,0 +1,7 @@
+﻿input_bits_per_variable,state_qubits,sum_qubits,adder_ancillas,phase_flag_qubits,comparator_ancillas,total_logical_qubits,direct_states_checked,direct_label_disagreement_vs_buffered_trilinear,direct_false_positive_vs_buffered_trilinear,direct_false_negative_vs_buffered_trilinear,exact_continuous_conservative_affine_probability,exact_discrete_oracle_probability,absolute_probability_discretization_error,transpiled_depth,transpiled_size,transpiled_cx
+2,6,12,12,1,11,42,16,1,0,1,0.9512096800712508,0.78125,0.16995968007125084,,,
+3,9,12,12,1,11,45,16,0,0,0,0.9512096800712508,0.88671875,0.06449093007125084,,,
+4,12,12,12,1,11,48,16,0,0,0,0.9512096800712508,0.923583984375,0.02762569569625084,,,
+6,18,12,12,1,11,54,16,0,0,0,0.9512096800712508,0.9443817138671875,0.00682796620406334,,,
+8,24,12,12,1,11,60,16,0,0,0,0.9512096800712508,0.9493963718414307,0.0018133082298201764,,,
+10,30,12,12,1,11,66,16,0,0,0,0.9512096800712508,0.9506290182471275,0.0005806618241233075,,,

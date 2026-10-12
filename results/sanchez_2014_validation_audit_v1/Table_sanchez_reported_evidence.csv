@@ -1,0 +1,17 @@
+﻿item,value,unit,paper_location
+facility_capacity,2.0,m3(STP)/h,p. 895
+maximum_facility_pressure,1.2,MPa,p. 895
+membrane_area,0.01216,m2,p. 897
+pure_H2_permeance_723K,2.8,m3 m-2 h-1 kPa-0.5,p. 897
+full_mix_H2,17.0,vol%,p. 901
+full_mix_CO,19.0,vol%,p. 901
+full_mix_CO2,7.0,vol%,p. 901
+full_mix_H2O,57.0,vol%,p. 901
+full_mix_max_feed_pressure,1.0,MPa,p. 901
+full_mix_feed_flow,10.95,L(STP)/min,p. 901
+full_mix_max_H2_recovery,47.0,%,pp. 901-902
+TCD_accuracy,0.01,vol%,p. 895
+small_flowmeter_accuracy,1.0,mL/min,p. 895
+pure_N2_or_CO2_permeate_upper_flow,8.0,mL/min,p. 896
+pure_N2_transfer_upper_fraction,0.08,% of feed,p. 896
+pure_CO2_transfer_upper_fraction,0.2,% of feed,p. 896

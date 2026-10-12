@@ -1,0 +1,52 @@
+{
+  "schema": "psa-independent-rk4-membrane-crosscheck-manifest/v1",
+  "files": [
+    {
+      "path": "PSA_INDEPENDENT_RK4_MEMBRANE_CROSSCHECK_V1.json",
+      "bytes": 2573,
+      "sha256": "81fe9b9a300de15e4a4bc7a477816331485b839f571a9d23b2f66eda8a1f1b67"
+    },
+    {
+      "path": "PSA_INDEPENDENT_RK4_MEMBRANE_CROSSCHECK_V1.md",
+      "bytes": 879,
+      "sha256": "a0ebb8794fb40592950cbbd2e47248933d369adf02f73797ad7a3e5f3262d48e"
+    },
+    {
+      "path": "Table_rk4_192section_direct_cases.csv",
+      "bytes": 17885,
+      "sha256": "7462171dee1b07982654682e4391319b8734f646428f4df7958e4e86e33d8e52"
+    },
+    {
+      "path": "Table_rk4_mesh_convergence.csv",
+      "bytes": 856,
+      "sha256": "0181b07480eec4e2b38850fbe41037df0bfdd306411b8485cea1d6a82ce92582"
+    },
+    {
+      "path": "Fig_independent_rk4_membrane_crosscheck_v1.png",
+      "bytes": 181706,
+      "sha256": "a520250c7500f2e76162e697971cd8efb59b4cf9b8d38697d670a92a69363868"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "results\\pressure_consistent_independent_ode_membrane_audit_v1\\PSA_INDEPENDENT_ODE_MEMBRANE_AUDIT.json",
+      "bytes": 4639,
+      "sha256": "e3ff6da7b8aae79b5982c6ded99bfb2878467e8a430e24de177d5a7b69cd0d17"
+    },
+    {
+      "path": "results\\pressure_consistent_independent_ode_membrane_audit_v1\\Table_ode_revised_guard_validation.csv",
+      "bytes": 5246,
+      "sha256": "985ab6c5831b85981d07269ae537cf5cc3f1b5853a045954d91dd1bf6e982dd7"
+    },
+    {
+      "path": "results\\pressure_consistent_pd_actual_syngas_poisoning_guard_v1\\PSA_PD_ACTUAL_SYNGAS_POISONING_GUARD_V1.json",
+      "bytes": 6003,
+      "sha256": "1f77924c35f57b892d7ebe677a223e0bf557c597ceaeb5a786120b57dd383d6a"
+    },
+    {
+      "path": "results\\pressure_consistent_pd_actual_syngas_poisoning_guard_v1\\Table_pd_50pct_retention_direct_cases.csv",
+      "bytes": 5263,
+      "sha256": "e8ce55dab2036ee3c4d38075ea3c7259bad9e29cabeb7c391276e26f01eefee2"
+    }
+  ]
+}

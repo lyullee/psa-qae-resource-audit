@@ -1,11 +1,11 @@
 cff-version: 1.2.0
-message: "If you use this software or data, please cite the archived release."
-title: "Resource-aware quantum amplitude estimation for chance-constrained pressure swing adsorption: classical baselines, compiled oracle costs, and a hardware boundary"
+message: "If you use this software or data, cite the archived release."
+title: "Hydraulically feasible regeneration-reserve-aware hydrogen pressure swing adsorption under uncertainty with staged membrane polishing and a quantum-ready probability event"
 type: software
-version: 0.1.0
-date-released: 2026-10-10
-doi: "10.5281/zenodo.23271867"
-url: "https://doi.org/10.5281/zenodo.23271867"
+version: "0.2.0"
+date-released: 2026-10-12
+doi: "10.5281/zenodo.23271866"
+url: "https://doi.org/10.5281/zenodo.23271866"
 authors:
   - family-names: "Lee"
     given-names: "Ugwiyeon"
@@ -25,9 +25,9 @@ authors:
     affiliation: "Korea Gas Safety Corporation"
 keywords:
   - "pressure swing adsorption"
-  - "quantum amplitude estimation"
+  - "hydrogen purification"
+  - "palladium membrane"
   - "chance constraints"
-  - "process systems engineering"
-  - "resource estimation"
+  - "quantum amplitude estimation"
 license: MIT
 repository-code: "https://github.com/lyullee/psa-qae-resource-audit"

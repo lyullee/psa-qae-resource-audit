@@ -1,0 +1,237 @@
+{
+  "schema": "psa-final-objective-evidence/v44",
+  "status": "pressure_consistent_design_and_numerical_validation_complete_portable_qasm_verified_dwsim_pending",
+  "objective": "maximize continuously specification-compliant H2 shipment while retaining enough regeneration hydrogen under feed, adsorption-equilibrium, and kinetic uncertainty",
+  "supersedes": {
+    "previous_schema": "psa-final-objective-evidence/v43",
+    "scientific_design_changed": true,
+    "reason": "the former 7.0 bar tank set point could not be passively filled from the 6.2 bar product manifold; the corrected topology uses a 6.0 bar regulated tank and a discharge booster to the 6.5 bar header"
+  },
+  "hydraulic_topology": {
+    "adsorber_high_pressure_bar": 6.5,
+    "product_manifold_backpressure_bar": 6.2,
+    "regeneration_tank_setpoint_bar": 6.0,
+    "passive_fill_margin_bar": 0.2,
+    "regeneration_booster_discharge_bar": 6.5,
+    "booster_isothermal_efficiency": 0.72,
+    "maximum_selected_booster_kwh_per_kg_qualified_h2": 0.19712754835286908
+  },
+  "primary_engineering_decision": {
+    "comparison_policy": {
+      "tank_setpoint_bar": 6.0,
+      "purge_active_s": 6.0,
+      "adsorption_stage_s": 480.0
+    },
+    "selected_policy": {
+      "tank_setpoint_bar": 6.0,
+      "purge_active_s": 4.0,
+      "adsorption_stage_s": 540.0
+    },
+    "comparison_corner_pass_count": 0,
+    "selected_corner_pass_count": 8,
+    "selected_holdout_pass_count": 8,
+    "qualified_h2_improvement_percent_range": [
+      6.7852345414609605,
+      7.3412117610603955
+    ],
+    "minimum_reserve_margin_gain_bar": 0.5422805153634869,
+    "selected_minimum_reserve_margin_bar": 2.7310550714165167,
+    "maximum_css_residual_final": 1.224990134069471e-05,
+    "maximum_cycle_mass_balance_relative": 1.6611268896793497e-05
+  },
+  "physical_polishing_train": {
+    "polymer_area_m2": 0.18919607202481806,
+    "ideal_dense_pd_area_m2": 0.4799119875751482,
+    "surge_capacity_mol": 4.615939905899888,
+    "receiver_capacity_mol_ideal_train": 1.54598433549796,
+    "minimum_direct_recovery_ideal_train": 0.9345006233428855,
+    "minimum_direct_qualified_h2_mol_s_ideal_train": 0.0024561729650653796,
+    "maximum_screening_compression_kwh_per_kg_h2": 2.572896569872298,
+    "compression_pressure_basis_bar": {
+      "upstream": 6.2,
+      "concentrator_feed": 20.0,
+      "concentrator_permeate": 1.0,
+      "pd_feed": 20.0,
+      "pd_permeate": 1.0
+    },
+    "guard_area_m2_at_80_percent_retention": 0.554,
+    "guard_receiver_capacity_mol": 1.232009239802619,
+    "guard_minimum_recovery": 0.883220742882423,
+    "guard_minimum_qualified_h2_mol_s": 0.0023605451505414096,
+    "guard_max_impurity_ppm": {
+      "CO": 0.12036718943759817,
+      "CO2": 3.9998322116112184,
+      "N2": 48.82818170798942,
+      "CH4": 25.06874296016963
+    },
+    "actual_syngas_50_percent_retention_area_m2": 0.887,
+    "actual_syngas_guard_minimum_recovery": 0.8836785341331956,
+    "incoming_module_selectivity_guard": {
+      "CO": 5660.0,
+      "CO2": 168660.0,
+      "N2": 540.0,
+      "CH4": 40.0
+    }
+  },
+  "probability_and_qae_bridge": {
+    "chance_pd_area_m2": 0.44,
+    "robust_pd_area_m2": 0.4799119875751482,
+    "direct_chance_area_passes": 13,
+    "direct_case_count": 16,
+    "trilinear_probability_minimum_scramble": 0.9566726684570312,
+    "conservative_affine_probability": 0.9512096800712508,
+    "ten_bit_discrete_probability": 0.9506290182471275,
+    "probability_discretization_error": 0.0005806618241233075,
+    "direct_affine_false_positive": 0,
+    "direct_affine_false_negative": 0,
+    "logical_qubits_from_register_allocation": 66,
+    "portable_qasm_serialized": true,
+    "portable_qasm_sha256": "1c4a2603090f0bc25a7f1b5539542e5e8272de47f2507f7bb9fb1a08f246759a",
+    "portable_primitive_cx": 24042,
+    "portable_primitive_depth_all_to_all": 36163,
+    "portable_primitive_size": 61269,
+    "portable_qasm_verification": {
+      "exhaustive_2bit": {
+        "state_count": 64,
+        "phase_label_errors": 0,
+        "state_or_ancilla_restoration_errors": 0,
+        "all_pass": true
+      },
+      "exhaustive_3bit": {
+        "state_count": 512,
+        "phase_label_errors": 0,
+        "state_or_ancilla_restoration_errors": 0,
+        "all_pass": true
+      },
+      "exhaustive_4bit": {
+        "state_count": 4096,
+        "phase_label_errors": 0,
+        "state_or_ancilla_restoration_errors": 0,
+        "all_pass": true
+      },
+      "direct_10bit": {
+        "state_count": 16,
+        "phase_label_errors": 0,
+        "state_or_ancilla_restoration_errors": 0,
+        "all_pass": true,
+        "direct_engineering_label_errors": 0,
+        "case_ids": [
+          "corner_00",
+          "corner_01",
+          "corner_02",
+          "corner_03",
+          "corner_04",
+          "corner_05",
+          "corner_06",
+          "corner_07",
+          "holdout_00",
+          "holdout_01",
+          "holdout_02",
+          "holdout_03",
+          "holdout_04",
+          "holdout_05",
+          "holdout_06",
+          "holdout_07"
+        ]
+      },
+      "random_10bit": {
+        "state_count": 4096,
+        "phase_label_errors": 0,
+        "state_or_ancilla_restoration_errors": 0,
+        "all_pass": true
+      }
+    },
+    "qiskit_optimized_transpilation_complete": false,
+    "hardware_routing_complete": false
+  },
+  "independent_numerical_checks": {
+    "rk4_all_32_pairs_pass": true,
+    "rk4_all_labels_agree_with_dop853": true,
+    "rk4_max_component_mass_balance_abs_mol": 4.2500725161431774e-17,
+    "maximum_rk4_vs_dop853_recovery_difference_percentage_point": 9.329824690595956e-08
+  },
+  "external_native_execution_boundary": {
+    "corrected_dwsim_input_deck_generated": true,
+    "corrected_dwsim_execution_complete": false,
+    "corrected_dwsim_blocker": "Windows Application Control blocked DWSIM.FileStorage.dll (HRESULT 0x800711C7)",
+    "legacy_dwsim_role": "prior structural Peng-Robinson and equipment-staging cross-check only",
+    "portable_qasm_serialization_complete": true,
+    "portable_qasm_basis_state_verification_complete": true,
+    "qiskit_optimized_transpilation_complete": false,
+    "qiskit_optimized_transpilation_blocker": "Windows Application Control blocked the unsigned rustworkx native DLL",
+    "portable_resource_boundary": "exact unoptimized all-to-all Clifford+T decomposition; no device routing or hardware execution",
+    "legacy_csharp_role": "third-language transport implementation evidence for the superseded input set only"
+  },
+  "progress_percent": {
+    "dynamic_psa_tank_valve_bed": 100,
+    "conservation_mesh_long_horizon": 100,
+    "uncertainty_and_classical_baselines": 100,
+    "qae_reduced_oracle_and_resources": 100,
+    "holdout_and_public_experimental_evidence": 100,
+    "strict_product_impurity_specification": 100,
+    "integrated_manuscript_figures_reproducibility": 100,
+    "overall": 99.9
+  },
+  "source_integrity": [
+    {
+      "name": "pressure_audit",
+      "path": "results\\pressure_consistency_audit_v1\\PSA_PRESSURE_CONSISTENCY_AUDIT_V1.json",
+      "bytes": 10742,
+      "sha256": "a6e78467cfffc6b99dcebe2b7243f9a37db95d5f3f60d2e757c3c382936cafc1"
+    },
+    {
+      "name": "corner_cube",
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\PSA_HYDRAULICALLY_FEASIBLE_FULL_6CELL_CUBE_V1.json",
+      "bytes": 141413,
+      "sha256": "b7f93ebbe838d30290661d33a3d4150af3e715aa1a229c4489b1eb7c30efd29d"
+    },
+    {
+      "name": "holdout",
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\PSA_HYDRAULICALLY_FEASIBLE_SELECTED_6CELL_HOLDOUT_V1.json",
+      "bytes": 166532,
+      "sha256": "ef72251b5b1728e1ee033cb306693c8abb89279da62d99920ddee09eb7f12711"
+    },
+    {
+      "name": "stage_train",
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\PSA_STAGE_RESOLVED_MEMBRANE_TRAIN.json",
+      "bytes": 21509,
+      "sha256": "cb14d222598c0754704c8263225981ae4c3782d91000546f1c1858bebc827a68"
+    },
+    {
+      "name": "ode",
+      "path": "results\\pressure_consistent_independent_ode_membrane_audit_v1\\PSA_INDEPENDENT_ODE_MEMBRANE_AUDIT.json",
+      "bytes": 4639,
+      "sha256": "e3ff6da7b8aae79b5982c6ded99bfb2878467e8a430e24de177d5a7b69cd0d17"
+    },
+    {
+      "name": "syngas",
+      "path": "results\\pressure_consistent_pd_actual_syngas_poisoning_guard_v1\\PSA_PD_ACTUAL_SYNGAS_POISONING_GUARD_V1.json",
+      "bytes": 6003,
+      "sha256": "1f77924c35f57b892d7ebe677a223e0bf557c597ceaeb5a786120b57dd383d6a"
+    },
+    {
+      "name": "qae",
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\PSA_PHYSICAL_PD_AREA_QAE_BRIDGE.json",
+      "bytes": 10511,
+      "sha256": "d0ca212f3bd5ba5ae075ec7caca6fdf38fe715d062cc7d7dea38ecc574635e1f"
+    },
+    {
+      "name": "rk4",
+      "path": "results\\pressure_consistent_independent_rk4_membrane_crosscheck_v1\\PSA_INDEPENDENT_RK4_MEMBRANE_CROSSCHECK_V1.json",
+      "bytes": 2573,
+      "sha256": "81fe9b9a300de15e4a4bc7a477816331485b839f571a9d23b2f66eda8a1f1b67"
+    },
+    {
+      "name": "selectivity",
+      "path": "results\\pressure_consistent_public_selectivity_acceptance_audit_v1\\PSA_PUBLIC_SELECTIVITY_ACCEPTANCE_AUDIT_V1.json",
+      "bytes": 11074,
+      "sha256": "2e5ae49c54117124200c3cc11d81df63c78a7f7a5e0a3cb3f4180931f7cc6ad0"
+    },
+    {
+      "name": "portable_qasm",
+      "path": "results\\pressure_consistent_portable_qasm_oracle_v1\\PSA_PRESSURE_CONSISTENT_PORTABLE_QASM_ORACLE_V1.json",
+      "bytes": 5069,
+      "sha256": "0eaae2efa8046f46632dab2cdee591894adcccbcb4d38a2ebacd8511869a0b22"
+    }
+  ]
+}

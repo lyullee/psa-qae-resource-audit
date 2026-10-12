@@ -1,0 +1,13 @@
+﻿run,cycle_type,high_pressure_bar,low_pressure_bar,adsorption_time_s,adsorption_flowrate_SLPM,purge_to_feed_ratio,experimental_H2_purity_percent,published_simulated_H2_purity_percent,experimental_H2_recovery_percent,published_simulated_H2_recovery_percent,purity_absolute_error_percentage_points,recovery_absolute_error_percentage_points,evidence_class
+I,A,5.12,1.15,80,0.9,0.1,94.64,94.25,52.14,51.81,0.39,0.33,article_experimental_and_published_model
+II,B,5.12,0.05,80,0.9,0.1,99.96,99.99,35.43,41.46,0.03,6.03,article_experimental_and_published_model
+III,B,5.17,0.11,120,2.6,0.0077,99.03,98.76,85.05,85.44,0.27,0.39,article_experimental_and_published_model
+IV,C,5.17,0.11,120,2.6,0.0,,95.6,,86.96,,,published_model_only
+V,D,5.17,0.11,120,2.6,0.0077,,99.15,,85.55,,,published_model_only
+VI,D,5.17,0.11,160,2.6,0.0077,99.48,98.88,89.72,90.08,0.6,0.36,article_experimental_and_published_model
+VII,E,5.17,0.11,160,2.6,0.0077,,99.51,,90.04,,,published_model_only
+VIII,F,5.17,0.11,120,2.6,0.0077,,98.31,,91.63,,,published_model_only
+IX,G,5.17,0.11,120,2.6,0.0077,98.99,98.76,91.93,91.69,0.23,0.24,article_experimental_and_published_model
+X,H,5.17,0.11,120,2.6,0.0077,,98.19,,91.68,,,published_model_only
+XI,I,5.17,0.11,120,2.6,0.0077,,99.97,,91.35,,,published_model_only
+XII,I,5.17,0.11,120,2.6,0.0077,99.67,99.74,91.97,92.33,0.07,0.36,article_experimental_and_published_model

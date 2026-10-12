@@ -1,0 +1,10 @@
+﻿gate,result,evidence
+hydraulic topology,pass,6.2 bar manifold -> 6.0 bar tank; booster -> 6.5 bar header
+uncertainty corners,pass,8/8 selected; 0/8 comparison
+predeclared holdouts,pass,8/8
+guard-banded physical train,pass,16/16 at 0.554 m2 and 80% retention
+actual-syngas aging stress,pass,16/16 at 0.887 m2 and 50% retention
+independent RK4,pass,32/32 labels agree with DOP853
+portable QASM oracle,pass,"66 qubits; 24,042 CX; depth 36,163; zero verified phase/restoration errors"
+Qiskit optimization and hardware routing,pending,optional device-specific step; host rustworkx DLL blocked
+corrected DWSIM execution,pending,input deck frozen; host DLL blocked

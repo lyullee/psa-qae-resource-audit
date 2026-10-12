@@ -1,0 +1,74 @@
+{
+  "schema": "psa-membrane-public-evidence-audit/v2",
+  "status": "quantitative_public_evidence_traceability_completed",
+  "current_design": {
+    "case_count": 16,
+    "minimum_dynamic_product_h2_fraction": 0.9999278403448315,
+    "minimum_overall_h2_recovery": 0.8832172366601458,
+    "feed_flow_Nm3_h_range": [
+      0.3571669354752041,
+      0.3691630673590775
+    ],
+    "feed_h2_fraction_range": [
+      0.5724366794322028,
+      0.6083013409653326
+    ],
+    "polymer_area_intensity_m2_per_Nm3_h_range": [
+      0.5125000002925689,
+      0.5297132890473496
+    ],
+    "polymer_h2_recovery_range": [
+      0.9711281740595266,
+      0.9766927292633549
+    ],
+    "polymer_permeate_h2_fraction_range": [
+      0.9297034528422349,
+      0.9387309952300011
+    ],
+    "pd_feed_h2_fraction_range": [
+      0.9297034528422349,
+      0.9387309952300011
+    ],
+    "pd_area_intensity_m2_per_Nm3_h_range": [
+      2.3928485066911613,
+      2.5725890614312132
+    ],
+    "pd_stage_h2_recovery_range": [
+      0.9053848368979645,
+      0.9511550453035897
+    ]
+  },
+  "zito_input_traceability": {
+    "public_feed_flow_Nm3_h": 1.0,
+    "public_pressure_bar": [
+      10,
+      20,
+      30,
+      50,
+      100
+    ],
+    "public_permeate_pressure_bar": 1.0,
+    "polymer_h2_permeance_nmol_m2_s_Pa": 33.5,
+    "polymer_selectivity": {
+      "CH4": 170.0,
+      "CO2": 5.0,
+      "CO": 100.0,
+      "N2_assigned_as_CO": 100.0
+    },
+    "pd_h2_permeance_nmol_m2_s_Pa_half": 5560.0,
+    "zito_polymer_20bar_90pct_area_intensity_m2_per_Nm3_h": 0.5,
+    "present_to_zito_polymer_area_intensity_ratio_range": [
+      1.0250000005851378,
+      1.0594265780946992
+    ],
+    "zito_single_pd_10bar_71p1pct_area_intensity_m2_per_Nm3_h": 3.7,
+    "present_to_zito_single_pd_area_intensity_ratio_range": [
+      0.6467158126192327,
+      0.6952943409273549
+    ]
+  },
+  "claim_boundary": {
+    "supported": "The present coefficients exactly trace to the public Zito table, the polymer area intensity is close to the 20-bar public benchmark, and the final purity/recovery lies inside the combined experimental/simulation envelope.",
+    "not_supported": "The studies use different feeds, temperatures, pressures, membrane constructions, and impurity reporting; none independently validates the final five-component PSA/polymer/Pd apparatus."
+  }
+}

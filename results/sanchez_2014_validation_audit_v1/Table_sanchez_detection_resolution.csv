@@ -1,0 +1,5 @@
+﻿component,project_product_limit_ppm,reported_gc_accuracy_ppm,gc_accuracy_to_limit_ratio,accuracy_nominally_finer_than_or_equal_to_limit,direct_matched_validation
+CO,0.5,100.0,200.0,False,False
+CO2,5.0,100.0,20.0,False,False
+N2,300.0,100.0,0.3333333333333333,True,False
+CH4,100.0,100.0,1.0,True,False

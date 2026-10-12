@@ -1,0 +1,22 @@
+{
+  "PSA_SANCHEZ_2014_VALIDATION_AUDIT_V1.json": {
+    "sha256": "ac008e0aa18c9874bf21fb82694e06817d1634703684836a6598c1400d7da878",
+    "bytes": 2358
+  },
+  "README.md": {
+    "sha256": "f18d6ddea2ab8e0bd96cb97ded72a74a9ef0e2d761afa6418799c98be7e362ec",
+    "bytes": 528
+  },
+  "Fig_sanchez_detection_resolution_v1.png": {
+    "sha256": "ae04217eb806eb95a6303028c43aff1c2f728419bb32844a8574f57758ed278f",
+    "bytes": 78571
+  },
+  "Table_sanchez_detection_resolution.csv": {
+    "sha256": "68d38c87274c23704ba8d6c7b00a1f374800e45a74a7d59d23045230b4ce47ac",
+    "bytes": 308
+  },
+  "Table_sanchez_reported_evidence.csv": {
+    "sha256": "cc0d5268be26b841ad311a2eaa2beecd61a56aa1c72a541d2ce77941f6b0abca",
+    "bytes": 696
+  }
+}

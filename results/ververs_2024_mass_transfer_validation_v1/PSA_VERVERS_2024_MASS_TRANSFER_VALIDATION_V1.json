@@ -1,0 +1,237 @@
+{
+  "schema": "psa-ververs-2024-mass-transfer-validation/v1",
+  "status": "public_raw_data_mass_transfer_reproduction_completed",
+  "source": {
+    "citation": "Ververs et al., International Journal of Hydrogen Energy 71 (2024) 1121-1133",
+    "article_doi": "10.1016/j.ijhydene.2024.04.337",
+    "dataset_doi": "10.5281/zenodo.7961792",
+    "pdf_sha256": "cafddd8233703a20e144ec722c379bb4600fad2d9788c641723c9f608c4bcde9",
+    "xlsx_sha256": "05c5487a74faafb4c550da0d9b659c2610ae5ae0076a504eea51926cead4afd9"
+  },
+  "published_model": {
+    "axial_component_balance": "paper equations 2-3",
+    "richardson_membrane_law": "paper equation 1 with Table 1 parameters",
+    "film_layer_equation": "paper equation 4",
+    "hydraulic_diameter_m": 0.064,
+    "membrane_od_m": 0.014,
+    "vessel_id_m": 0.078,
+    "sherwood": "Sh_z = 1.846 Gz_z^0.60 (paper equation 13)",
+    "graetz": "Gz = v d_h^2 / (D z) (paper equation 14)",
+    "richardson_parameters": {
+      "L-467": {
+        "length_m": 0.467,
+        "Pe0": 0.002187,
+        "Ea_J_mol": 9684.0,
+        "n": 0.594
+      },
+      "L-300": {
+        "length_m": 0.3,
+        "Pe0": 0.002669,
+        "Ea_J_mol": 9262.0,
+        "n": 0.581
+      },
+      "L-150": {
+        "length_m": 0.15,
+        "Pe0": 0.002968,
+        "Ea_J_mol": 10451.0,
+        "n": 0.584
+      }
+    }
+  },
+  "independent_implementation": {
+    "axial_method": "fixed-grid classical RK4, 192 sections",
+    "binary_diffusivity": "Fuller H2-N2 correlation",
+    "normal_litre_basis": "22.414 L/mol",
+    "fitted_to_public_mixture_flux": false,
+    "record_count": 468,
+    "article_stated_record_count": 423,
+    "record_count_note": "The downloaded workbook contains 468 fully numeric mixture records, 45 more than the 423 stated in the article. All public workbook records are retained; no undocumented row selection is made.",
+    "mesh_convergence": {
+      "area_sections": [
+        96,
+        192,
+        384
+      ],
+      "maximum_relative_flux_difference_96_vs_384": 0.0002211515749788218,
+      "maximum_relative_flux_difference_192_vs_384": 5.771856520237235e-05,
+      "mean_relative_flux_difference_192_vs_384": 7.288164061121761e-06
+    }
+  },
+  "results": {
+    "with_published_cp_correlation": {
+      "count": 468,
+      "mean_relative_error_percent": 3.9820338022103843,
+      "mean_absolute_relative_error_percent": 4.405296750550666,
+      "median_absolute_relative_error_percent": 3.144229418472624,
+      "rmse_flux_mol_m2_s": 0.006621924750684755,
+      "r_squared": 0.9965649139851098,
+      "within_10_percent_fraction": 0.9252136752136753,
+      "within_20_percent_fraction": 0.9914529914529915,
+      "relative_error_percent_quantiles": [
+        -20.918802093262304,
+        -1.2442973057845366,
+        1.6765019850918197,
+        3.1257950063133544,
+        5.180059619777454,
+        13.324651017485955,
+        33.160246744803366
+      ]
+    },
+    "without_concentration_polarization": {
+      "count": 468,
+      "mean_relative_error_percent": 29.01569601163193,
+      "mean_absolute_relative_error_percent": 29.01569601163193,
+      "median_absolute_relative_error_percent": 28.114133403707328,
+      "rmse_flux_mol_m2_s": 0.04402797305283266,
+      "r_squared": 0.8481459015483364,
+      "within_10_percent_fraction": 0.09615384615384616,
+      "within_20_percent_fraction": 0.29914529914529914,
+      "relative_error_percent_quantiles": [
+        2.7945723707006223,
+        7.289429083307127,
+        18.604826546227375,
+        28.114133403707328,
+        38.53216583163488,
+        55.2568963102326,
+        76.04317828485178
+      ]
+    },
+    "by_membrane": {
+      "L-467": {
+        "with_cp": {
+          "count": 156,
+          "mean_relative_error_percent": 3.676709789236462,
+          "mean_absolute_relative_error_percent": 4.15797621138672,
+          "median_absolute_relative_error_percent": 2.940005992466051,
+          "rmse_flux_mol_m2_s": 0.0035792656100808165,
+          "r_squared": 0.9986025494609421,
+          "within_10_percent_fraction": 0.9294871794871795,
+          "within_20_percent_fraction": 0.9871794871794872,
+          "relative_error_percent_quantiles": [
+            -2.543996409787949,
+            -1.7448117345765377,
+            1.3891477935199728,
+            2.940005992466051,
+            4.793880792931686,
+            13.578840354261018,
+            28.334394179100222
+          ]
+        },
+        "without_cp": {
+          "count": 156,
+          "mean_relative_error_percent": 28.266462115297582,
+          "mean_absolute_relative_error_percent": 28.266462115297582,
+          "median_absolute_relative_error_percent": 28.02067968887853,
+          "rmse_flux_mol_m2_s": 0.03646648743560299,
+          "r_squared": 0.8549437467414488,
+          "within_10_percent_fraction": 0.07692307692307693,
+          "within_20_percent_fraction": 0.26282051282051283,
+          "relative_error_percent_quantiles": [
+            5.456530545224304,
+            8.779015053823557,
+            19.262998989852697,
+            28.02067968887853,
+            36.04460954348493,
+            50.83041106327697,
+            65.98749628776338
+          ]
+        }
+      },
+      "L-300": {
+        "with_cp": {
+          "count": 156,
+          "mean_relative_error_percent": 4.1393568340499725,
+          "mean_absolute_relative_error_percent": 4.221690807849836,
+          "median_absolute_relative_error_percent": 2.730751462331823,
+          "rmse_flux_mol_m2_s": 0.004222834369223164,
+          "r_squared": 0.99862092781364,
+          "within_10_percent_fraction": 0.9230769230769231,
+          "within_20_percent_fraction": 1.0,
+          "relative_error_percent_quantiles": [
+            -1.3353508377521686,
+            -0.16368850877615504,
+            1.2578813516946878,
+            2.730751462331823,
+            5.844253025776375,
+            13.915065404044139,
+            19.45293989573251
+          ]
+        },
+        "without_cp": {
+          "count": 156,
+          "mean_relative_error_percent": 32.06444555100256,
+          "mean_absolute_relative_error_percent": 32.06444555100256,
+          "median_absolute_relative_error_percent": 31.28250684576594,
+          "rmse_flux_mol_m2_s": 0.04728359864766826,
+          "r_squared": 0.8270980270318591,
+          "within_10_percent_fraction": 0.0641025641025641,
+          "within_20_percent_fraction": 0.21794871794871795,
+          "relative_error_percent_quantiles": [
+            4.762107471443971,
+            9.24191189869801,
+            21.741397491934656,
+            31.28250684576594,
+            41.1369179833341,
+            57.392609308601216,
+            68.5620760375778
+          ]
+        }
+      },
+      "L-150": {
+        "with_cp": {
+          "count": 156,
+          "mean_relative_error_percent": 4.130034783344718,
+          "mean_absolute_relative_error_percent": 4.836223232415442,
+          "median_absolute_relative_error_percent": 3.755123011839695,
+          "rmse_flux_mol_m2_s": 0.010045207304669946,
+          "r_squared": 0.9928598581897482,
+          "within_10_percent_fraction": 0.9230769230769231,
+          "within_20_percent_fraction": 0.9871794871794872,
+          "relative_error_percent_quantiles": [
+            -20.918802093262304,
+            -0.14903724094055068,
+            2.338488561526903,
+            3.5716786851208115,
+            5.532014771937724,
+            10.841245114358525,
+            33.160246744803366
+          ]
+        },
+        "without_cp": {
+          "count": 156,
+          "mean_relative_error_percent": 26.71618036859565,
+          "mean_absolute_relative_error_percent": 26.71618036859565,
+          "median_absolute_relative_error_percent": 23.258037676699416,
+          "rmse_flux_mol_m2_s": 0.047432518660283154,
+          "r_squared": 0.8408006089154867,
+          "within_10_percent_fraction": 0.14743589743589744,
+          "within_20_percent_fraction": 0.4166666666666667,
+          "relative_error_percent_quantiles": [
+            2.7945723707006223,
+            5.722835344294752,
+            15.912163203173424,
+            23.258037676699416,
+            36.17182977132016,
+            53.345869965091445,
+            76.04317828485178
+          ]
+        }
+      }
+    },
+    "predicted_cp_flux_reduction_vs_no_cp_percent_quantiles": [
+      1.509485587360082,
+      4.301067854531717,
+      13.189692516280399,
+      19.935723656407323,
+      24.49690685946699,
+      29.969492619111797,
+      35.32768663963303
+    ],
+    "published_reference_within_10_percent_fraction": 0.9551
+  },
+  "project_implication": {
+    "present_project_effective_Q_mol_m2_s_Pa_half": 5.56e-06,
+    "supported": "The public dataset directly tests axial depletion and external mass-transfer physics for a highly permeable Pd-Ag tube. Reproducing its flux trend provides an external model-form check for adding a concentration-polarization guard to the project's Pd polishing stage.",
+    "not_supported": "The experiment is H2/N2 at 2-5 bar and 350-450 C. It does not validate the project's effective 20-bar coefficient, five-component impurity leakage, CO/CO2 inhibition, or aging design."
+  }
+}

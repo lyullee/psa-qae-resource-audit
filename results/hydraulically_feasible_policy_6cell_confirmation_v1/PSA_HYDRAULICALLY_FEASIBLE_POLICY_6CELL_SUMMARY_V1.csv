@@ -1,0 +1,6 @@
+﻿policy,tank_setpoint_bar,purge_active_s,adsorption_stage_s,role,scenario_count,confirmation_pass_count,design_pass_count,minimum_qualified_h2_rate_mol_s,maximum_worst_gate_factor,minimum_reserve_margin_bar,maximum_booster_pressure_ratio,maximum_conservative_booster_kwh_per_kg_qualified_h2,all_scenarios_pass
+corrected_conservative,6.0,4.0,540.0,hydraulically feasible correction of the prior selected policy,3,3,3,0.002244891626008704,0.9999757403238478,2.7310550714165167,1.8408095791585777,0.19712754832417978,True
+candidate,6.0,3.0,540.0,low-resolution extended-screen optimum,3,0,0,0.002301541362752251,1.2706332625707586,2.9144497386477575,1.749922722703557,0.16696664517883927,False
+short_purge_boundary,6.0,2.0,540.0,nearest low-purge failure boundary,3,0,0,0.0023568363543754306,1.0749205627470813,3.0886376817393604,1.6715365462108558,0.14182709005132063,False
+long_adsorption_boundary,6.0,3.0,600.0,nearest high-throughput breakthrough boundary,3,0,0,0.002303236599141719,1.3834075937946153,3.1411465204252584,1.6492662646043,0.13235019174046364,False
+low_tank_tradeoff,4.5,4.0,540.0,reserve-versus-booster-energy tradeoff,3,3,3,0.0022435079200630315,0.9999754361096561,1.3930984346510906,2.9638432535902623,0.37722694531239304,True

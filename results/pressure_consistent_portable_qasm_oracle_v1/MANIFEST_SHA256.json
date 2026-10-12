@@ -1,0 +1,42 @@
+{
+  "schema": "psa-pressure-consistent-portable-qasm-manifest/v1",
+  "sources": [
+    {
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\PSA_PHYSICAL_PD_AREA_EVENT_ORACLE_INTEGER_SPEC.json",
+      "bytes": 5277,
+      "sha256": "180be0ed56831e0ecd513af2a0364a29e6ba7e07efd654cdb15e6bf1a0da4b40"
+    },
+    {
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\PSA_PHYSICAL_PD_AREA_QAE_BRIDGE.json",
+      "bytes": 10511,
+      "sha256": "d0ca212f3bd5ba5ae075ec7caca6fdf38fe715d062cc7d7dea38ecc574635e1f"
+    },
+    {
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\Table_physical_pd_area_direct_validation.csv",
+      "bytes": 4786,
+      "sha256": "f72712f7bfa0ef88927ad50119b5e28be71775cd349d2247de16fc830c397202"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "PSA_PHYSICAL_PD_AREA_EVENT_ORACLE_10BIT_PORTABLE.qasm",
+      "bytes": 823248,
+      "sha256": "1c4a2603090f0bc25a7f1b5539542e5e8272de47f2507f7bb9fb1a08f246759a"
+    },
+    {
+      "path": "PSA_PRESSURE_CONSISTENT_PORTABLE_QASM_ORACLE_V1.json",
+      "bytes": 5069,
+      "sha256": "0eaae2efa8046f46632dab2cdee591894adcccbcb4d38a2ebacd8511869a0b22"
+    },
+    {
+      "path": "PSA_PRESSURE_CONSISTENT_PORTABLE_QASM_ORACLE_V1.md",
+      "bytes": 464,
+      "sha256": "96c7ec27643010437b28559bd7dc42cfe9ca219b70fa2c39ac051ae430161d3d"
+    },
+    {
+      "path": "Fig_pressure_consistent_portable_qasm_oracle_v1.png",
+      "bytes": 167691,
+      "sha256": "9c4e027c66c6a3a8e134ff462f7c3dac6a79eec8a120548f60ffc1bd7c44777c"
+    }
+  ]
+}

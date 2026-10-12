@@ -1,0 +1,54 @@
+{
+  "schema": "psa-independent-rk4-membrane-crosscheck/v1",
+  "status": "fixed_area_rk4_crosscheck_passed",
+  "solver_contract": {
+    "method": "standalone vectorized classical RK4 over membrane area",
+    "area_sections_per_stage": [
+      48,
+      96,
+      192
+    ],
+    "polymer_permeate_closure": "32-iteration bisection",
+    "adaptive_integrator_called": false,
+    "transport_equations": "same frozen literature polymer solution-diffusion and finite-selectivity Pd Sieverts-law equations",
+    "case_count": 16,
+    "design_count": 2
+  },
+  "maximum_component_mass_balance_abs_mol": 4.2500725161431774e-17,
+  "dwsim_horizon_reference_used": false,
+  "dwsim_horizon_reference_status": "not used because current DWSIM DLL execution was blocked by Windows application-control policy",
+  "summary_by_design": {
+    "base_20pct_loss": {
+      "pd_area_m2": 0.554,
+      "permeance_retention": 0.8,
+      "rk4_pass_count": 16,
+      "case_count": 16,
+      "event_label_agreement_count": 16,
+      "minimum_rk4_recovery": 0.8832207428148372,
+      "minimum_rk4_qualified_h2_rate_mol_s": 0.0023605451490007552,
+      "maximum_recovery_difference_vs_dop853_percentage_point": 9.06222652474753e-08,
+      "maximum_qualified_h2_relative_difference_vs_dop853": 9.799357958065369e-10,
+      "maximum_horizon_h2_relative_difference_vs_dop853": null,
+      "maximum_horizon_impurity_difference_vs_dop853_ppm": null
+    },
+    "public_syngas_50pct_loss": {
+      "pd_area_m2": 0.887,
+      "permeance_retention": 0.5,
+      "rk4_pass_count": 16,
+      "case_count": 16,
+      "event_label_agreement_count": 16,
+      "minimum_rk4_recovery": 0.8836785340646295,
+      "minimum_rk4_qualified_h2_rate_mol_s": 0.00236152923694439,
+      "maximum_recovery_difference_vs_dop853_percentage_point": 9.329824690595956e-08,
+      "maximum_qualified_h2_relative_difference_vs_dop853": 1.0085296613337867e-09,
+      "maximum_horizon_h2_relative_difference_vs_dop853": null,
+      "maximum_horizon_impurity_difference_vs_dop853_ppm": null
+    }
+  },
+  "all_32_case_design_pairs_pass": true,
+  "all_32_event_labels_agree_with_dop853": true,
+  "claim_boundary": {
+    "supported": "The final two design decisions are insensitive to replacing adaptive DOP853 with a separately coded fixed-area RK4 implementation and a refined area mesh.",
+    "not_supported": "This is a numerical implementation cross-check of the same transport laws. It is not Aspen, a vendor module calculation, or matched multicomponent experimental validation."
+  }
+}

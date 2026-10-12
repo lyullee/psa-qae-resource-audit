@@ -1,9 +1,9 @@
 {
-  "title": "Resource-aware quantum amplitude estimation for chance-constrained pressure swing adsorption: classical baselines, compiled oracle costs, and a hardware boundary",
-  "version": "0.1.0",
-  "publication_date": "2026-10-10",
+  "title": "Hydraulically feasible regeneration-reserve-aware hydrogen pressure swing adsorption under uncertainty with staged membrane polishing and a quantum-ready probability event",
+  "version": "0.2.0",
+  "publication_date": "2026-10-12",
   "upload_type": "software",
-  "description": "Reproducibility package for a process-linked audit of quantum amplitude estimation in pressure swing adsorption, including classical baselines, process and circuit resource boundaries, external controls, and a nine-job three-backend IBM QPU experiment.",
+  "description": "Reproducibility package for a pressure-consistent dynamic hydrogen PSA, staged polymer and palladium polishing, public-data validation, uncertainty analysis, and a verified portable OpenQASM probability oracle.",
   "creators": [
     {
       "name": "Lee, Ugwiyeon",
@@ -30,10 +30,10 @@
   "license": "cc-by-4.0",
   "keywords": [
     "pressure swing adsorption",
-    "quantum amplitude estimation",
-    "chance-constrained optimization",
-    "process systems engineering",
-    "quantum resource estimation"
+    "hydrogen purification",
+    "palladium membrane",
+    "chance constraints",
+    "quantum amplitude estimation"
   ],
   "related_identifiers": [
     {
@@ -42,5 +42,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "The package reports negative and conditional findings. It does not establish quantum advantage or industrial H2 validation. Original generated data and figures are also available under CC BY 4.0 as stated in the repository README."
+  "notes": "The portable OpenQASM oracle and all claimed corrected calculations are included. Device-specific quantum execution, corrected-input DWSIM execution, and matched integrated experimental certification remain outside the quantitative claim."
 }

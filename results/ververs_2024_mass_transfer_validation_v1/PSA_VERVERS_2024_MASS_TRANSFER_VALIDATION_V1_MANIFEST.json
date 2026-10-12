@@ -1,0 +1,37 @@
+{
+  "schema": "psa-ververs-2024-mass-transfer-validation-manifest/v1",
+  "files": [
+    {
+      "path": "results\\ververs_2024_mass_transfer_validation_v1\\PSA_VERVERS_2024_MASS_TRANSFER_VALIDATION_V1.json",
+      "bytes": 9371,
+      "sha256": "6516489448308c26f376082c17e4c6ec2aab1a9dbd43d1a0facb5036fe510ad9"
+    },
+    {
+      "path": "results\\ververs_2024_mass_transfer_validation_v1\\Table_ververs_2024_raw_data_predictions.csv",
+      "bytes": 85892,
+      "sha256": "1efbc62227d0e9f86bed9a10afdc84d447f0cef6ee53d74c7567968d7552f081"
+    },
+    {
+      "path": "results\\ververs_2024_mass_transfer_validation_v1\\Fig_ververs_2024_mass_transfer_validation_v1.png",
+      "bytes": 325090,
+      "sha256": "885e17ae4f849d130c518fadea9fa246e74b2cbba65d72fc9c05a35fa39e875b"
+    },
+    {
+      "path": "results\\ververs_2024_mass_transfer_validation_v1\\PSA_VERVERS_2024_MASS_TRANSFER_VALIDATION_V1.md",
+      "bytes": 929,
+      "sha256": "6560784bac15998091b95b28d10c015da5cdd53fb11c909271d284b25cbbeb2a"
+    }
+  ],
+  "sources": [
+    {
+      "path": "external_data\\pd_membrane_public\\MACBETH_2023_DATASET_permeationdata.xlsx",
+      "bytes": 34982,
+      "sha256": "05c5487a74faafb4c550da0d9b659c2610ae5ae0076a504eea51926cead4afd9"
+    },
+    {
+      "path": "external_data\\pd_membrane_public\\Ververs_2024_external_mass_transfer.pdf",
+      "bytes": 3088113,
+      "sha256": "cafddd8233703a20e144ec722c379bb4600fad2d9788c641723c9f608c4bcde9"
+    }
+  ]
+}

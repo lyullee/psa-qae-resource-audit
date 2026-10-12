@@ -1,0 +1,62 @@
+{
+  "audit_id": "PSA_SANCHEZ_2014_VALIDATION_AUDIT_V1",
+  "source": {
+    "citation": "J.M. Sanchez, M.M. Barreiro, M. Marono, Fuel 116 (2014) 894-903",
+    "doi": "10.1016/j.fuel.2013.02.051",
+    "local_file": "external_data\\pd_membrane_high_pressure\\Sanchez_2014_Fuel_syngas_membrane.pdf",
+    "sha256": "c94e647e8477189b1cea1ac60488fe7d8b68c6bccedbfe1ae7baede213cb893b"
+  },
+  "experimental_scope": {
+    "scale": "bench",
+    "feed_retentate_permeate_slipstreams_analysed_by_gc": true,
+    "main_parameters_continuously_recorded": true,
+    "steady_state_duration": "several hours; most cases 24 h",
+    "full_mixture_vol_percent": {
+      "H2": 17.0,
+      "CO": 19.0,
+      "CO2": 7.0,
+      "H2O": 57.0
+    },
+    "temperatures_K": [
+      593.0,
+      653.0,
+      723.0
+    ],
+    "feed_pressure_range_MPa": [
+      0.15,
+      1.0
+    ],
+    "permeate_pressure": "atmospheric"
+  },
+  "reported_results": {
+    "pure_H2_permeance_723K_m3_m2_h_kPa0p5": 2.8,
+    "full_mixture_max_H2_recovery": 0.47,
+    "pure_N2_or_CO2_permeate_flow_upper_mL_min": 8.0,
+    "pure_N2_feed_transfer_upper_fraction": 0.0008,
+    "pure_CO2_feed_transfer_upper_fraction": 0.002,
+    "CO_and_H2O_in_binary_or_ternary_permeate": "not measured by GC"
+  },
+  "measurement_boundary": {
+    "reported_TCD_accuracy_vol_percent": 0.01,
+    "equivalent_accuracy_ppm": 100.0,
+    "project_limits_ppm": {
+      "CO": 0.5,
+      "CO2": 5.0,
+      "N2": 300.0,
+      "CH4": 100.0
+    },
+    "direct_CO_limit_validation": false,
+    "direct_CO2_limit_validation": false,
+    "direct_N2_limit_validation": false,
+    "direct_CH4_limit_validation": false,
+    "reason": "100 ppm analytical accuracy is 200x the 0.5 ppm CO limit and 20x the 5 ppm CO2 limit"
+  },
+  "evidence_grade": {
+    "multicomponent_high_temperature_operation": "strong qualitative and trend-level validation",
+    "permeance_and_recovery_scale": "quantitative external anchor",
+    "final_component_selectivity_vector": "not validated",
+    "project_product_specification": "not directly validated",
+    "matched_final_apparatus": false
+  },
+  "manuscript_use": "Use as an independent bench-scale full-syngas feasibility, inhibition, and recovery anchor. Do not use its 'pure hydrogen' wording as certification of the 0.5 ppm CO or 5 ppm CO2 gates."
+}

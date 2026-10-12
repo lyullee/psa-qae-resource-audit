@@ -1,0 +1,35 @@
+{
+  "schema": "psa-public-selectivity-acceptance-audit-manifest/v1",
+  "files": [
+    {
+      "path": "results\\pressure_consistent_public_selectivity_acceptance_audit_v1\\PSA_PUBLIC_SELECTIVITY_ACCEPTANCE_AUDIT_V1.json",
+      "bytes": 11074,
+      "sha256": "2e5ae49c54117124200c3cc11d81df63c78a7f7a5e0a3cb3f4180931f7cc6ad0"
+    },
+    {
+      "path": "results\\pressure_consistent_public_selectivity_acceptance_audit_v1\\PSA_PUBLIC_SELECTIVITY_ACCEPTANCE_AUDIT_V1.md",
+      "bytes": 1474,
+      "sha256": "08e8606a90def76d9d2bae803006ab5b6302f7a1608ee8f872a6268fc168b76c"
+    },
+    {
+      "path": "results\\pressure_consistent_public_selectivity_acceptance_audit_v1\\Table_component_selectivity_acceptance.csv",
+      "bytes": 566,
+      "sha256": "748512f6b345388f910806a8da308c67011717d50d799605b33ea55b620cadcd"
+    },
+    {
+      "path": "results\\pressure_consistent_public_selectivity_acceptance_audit_v1\\Table_public_selectivity_stress_summary.csv",
+      "bytes": 3195,
+      "sha256": "46efb4b2645ced07bec36d67bfe8e98468818d228e8a89ea0ad8a7bf3adef734"
+    },
+    {
+      "path": "results\\pressure_consistent_public_selectivity_acceptance_audit_v1\\Table_public_selectivity_stress_direct_cases.csv",
+      "bytes": 48198,
+      "sha256": "72c591c5e09a45eb8354148cf67decb653ab34d92d473f9f68f4211351fe799f"
+    },
+    {
+      "path": "results\\pressure_consistent_public_selectivity_acceptance_audit_v1\\Fig_public_selectivity_acceptance_audit_v1.png",
+      "bytes": 111072,
+      "sha256": "5e4182b98b561aa6d6097990d4cd6e20a75eacbf95bacd1380351d16f7397bac"
+    }
+  ]
+}

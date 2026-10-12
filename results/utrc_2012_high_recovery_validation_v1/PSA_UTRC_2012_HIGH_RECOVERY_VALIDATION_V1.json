@@ -1,0 +1,79 @@
+{
+  "schema": "psa-utrc-2012-high-recovery-validation/v1",
+  "status": "positive_high_recovery_bulk_purity_and_actual_gas_model_anchor_completed",
+  "source": {
+    "title": "Advanced Palladium Membrane Scale-up for Hydrogen Separation",
+    "authors": [
+      "Sean Emerson",
+      "Neal Magdefrau",
+      "Ying She",
+      "Catherine Thibaud-Erkey"
+    ],
+    "contract": "DE-FE0004967",
+    "date": "2012-10-31",
+    "doi": "10.2172/1063878",
+    "url": "https://doi.org/10.2172/1063878",
+    "local_file": "external_data\\pd_membrane_high_pressure\\UTRC_2012_Advanced_Palladium_Membrane_Scaleup.pdf",
+    "sha256": "fc378ca6fe34fdbfd4170738474c03a54f68e461eafdf38daa219d443e6a58d5",
+    "pages": 60,
+    "evidence_locations": {
+      "technical_status": "PDF page 9, report page 2",
+      "durability_test": "PDF pages 37-38, report pages 30-31, Figures 28-29",
+      "actual_gasifier_test": "PDF pages 41-42, report pages 34-35, Figure 31",
+      "conclusions": "PDF page 57, report page 50"
+    }
+  },
+  "simulated_syngas_durability_anchor": {
+    "membrane_area_m2_approx": 0.13935456000000002,
+    "feed_mole_percent": {
+      "H2": 75.0,
+      "CO": 1.0,
+      "CO2": 5.0,
+      "H2O": 19.0
+    },
+    "feed_H2S_ppmv": 1.65,
+    "temperature_C_mean": 500.8,
+    "temperature_C_sd": 10.6,
+    "feed_pressure_psig_mean": 184.7,
+    "feed_pressure_psig_sd": 7.8,
+    "feed_pressure_bar_abs_mean": 13.747863357548528,
+    "H2_product_lb_day_mean": 2.36,
+    "H2_product_lb_day_sd": 0.2,
+    "H2_product_mol_s_mean": 0.006146095793382028,
+    "H2_recovery_mean": 0.934,
+    "H2_recovery_sd": 0.08,
+    "target_duration_h_approx": 1300.0,
+    "reported_pre_leak_H2_purity": 0.999999,
+    "inferred_pre_leak_total_non_H2_ppm": 1.0,
+    "leak_onset_total_time_h": 2624.0,
+    "reported_post_leak_H2_purity_approx": 0.9998,
+    "inferred_post_leak_total_non_H2_ppm_approx": 200.0,
+    "total_test_time_h": 4087.0
+  },
+  "actual_coal_gasifier_model_anchor": {
+    "separator": "5307",
+    "actual_coal_syngas_duration_h": 77.0,
+    "temperature_C_mean": 511.0,
+    "feed_pressure_psia_mean": 498.0,
+    "feed_pressure_bar_abs_mean": 34.33589132002798,
+    "measured_H2_product_lb_day": 2.43,
+    "measured_H2_product_lb_day_uncertainty": 0.1,
+    "measured_H2_recovery": 0.743,
+    "measured_H2_recovery_uncertainty": 0.003,
+    "model_H2_product_lb_day": 2.32,
+    "model_H2_recovery": 0.701,
+    "product_rate_relative_error": -0.04526748971193428,
+    "recovery_error_percentage_point": -4.200000000000004
+  },
+  "project_comparison": {
+    "project_recovery_floor": 0.882940124864471,
+    "durability_mean_recovery_margin_percentage_point": 5.1059875135529005,
+    "durability_one_sd_lower_recovery": 0.8540000000000001,
+    "project_bulk_H2_min_fraction": 0.9997,
+    "project_bulk_total_non_H2_max_ppm": 300.0,
+    "pre_leak_bulk_impurity_to_project_bulk_max_ratio": 0.0033333333333333335,
+    "post_leak_bulk_impurity_to_project_bulk_max_ratio": 0.6666666666666666
+  },
+  "claim_boundary": "The high-recovery test used simulated H2/CO/CO2/H2O/H2S gas at about 13.75 bar absolute and 500.8 C, not the final 20-bar H2/CO/CO2/N2/CH4 feed. The 99.9999% pre-leak purity was inferred from an ideal H2/N2 separation factor and is not a component-resolved CO/CO2/N2/CH4 chromatographic measurement. The actual coal-gas test validates model prediction of H2 rate and recovery, but it does not report the final product impurity vector.",
+  "interpretation": "The report supplies the missing positive side of the validation hierarchy: sustained high recovery and calculated bulk purity in a multicomponent durability test, plus actual coal-gas model agreement. It supports the feasibility of the project recovery target and physics-model use while leaving component-specific ppm certification open."
+}

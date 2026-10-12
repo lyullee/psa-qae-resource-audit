@@ -1,0 +1,30 @@
+{
+  "schema": "psa-pd-actual-syngas-poisoning-guard-manifest/v1",
+  "files": [
+    {
+      "path": "results\\pressure_consistent_pd_actual_syngas_poisoning_guard_v1\\PSA_PD_ACTUAL_SYNGAS_POISONING_GUARD_V1.json",
+      "bytes": 6003,
+      "sha256": "1f77924c35f57b892d7ebe677a223e0bf557c597ceaeb5a786120b57dd383d6a"
+    },
+    {
+      "path": "results\\pressure_consistent_pd_actual_syngas_poisoning_guard_v1\\PSA_PD_ACTUAL_SYNGAS_POISONING_GUARD_V1.md",
+      "bytes": 429,
+      "sha256": "0d5c08193aeae638141509634e2934c6f481867dbdc47c60ddf60e336ec65a3a"
+    },
+    {
+      "path": "results\\pressure_consistent_pd_actual_syngas_poisoning_guard_v1\\Table_pd_actual_syngas_permeance_guard.csv",
+      "bytes": 1518,
+      "sha256": "c93ed9227024e64d8b6871bbbf628ead75130ead1676c1bc689bb4b773d4deae"
+    },
+    {
+      "path": "results\\pressure_consistent_pd_actual_syngas_poisoning_guard_v1\\Table_pd_50pct_retention_direct_cases.csv",
+      "bytes": 5263,
+      "sha256": "e8ce55dab2036ee3c4d38075ea3c7259bad9e29cabeb7c391276e26f01eefee2"
+    },
+    {
+      "path": "results\\pressure_consistent_pd_actual_syngas_poisoning_guard_v1\\Fig_pd_actual_syngas_poisoning_guard_v1.png",
+      "bytes": 210557,
+      "sha256": "87052d62bc4419b016382405e11299e59491b2235988b207af11f18c7edd284a"
+    }
+  ]
+}

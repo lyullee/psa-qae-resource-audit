@@ -1,0 +1,387 @@
+{
+  "schema": "psa-stage-resolved-membrane-train-manifest/v1",
+  "sources": [
+    {
+      "path": "results\\final_objective_evidence_v18\\PSA_FINAL_OBJECTIVE_EVIDENCE_V18.json",
+      "bytes": 11982,
+      "sha256": "342e179135c27c80a295b525726a03e01ef28e069c95f4729e6844eb4b7a41a1"
+    },
+    {
+      "path": "results\\membrane_component_selectivity_requirement\\PSA_MEMBRANE_COMPONENT_SELECTIVITY_REQUIREMENT.json",
+      "bytes": 9581,
+      "sha256": "46985e49f1ba3f79348fb2355652522e7cae53f9b07e74888e77830f413ffec0"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_008.json",
+      "bytes": 7766,
+      "sha256": "e5289ab2a5de010d568a9133b5614865bf060fefef0dc720a21b11863b7e3348"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_009.json",
+      "bytes": 7349,
+      "sha256": "452e7b0abc54d4969b57caf1b8f9c517fb8813b513bde7e2ba6c1e91c6f433dd"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_010.json",
+      "bytes": 7356,
+      "sha256": "0af9e32d91c095686a51133af20590305b7c3f80f28e99b81469ed74c29fab31"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_011.json",
+      "bytes": 7783,
+      "sha256": "e1da9f2607566e6fc46800a0c23e5cff78d3c35d0ec9f655366a5bdd81484c29"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_012.json",
+      "bytes": 7346,
+      "sha256": "0aca9df0357018610ff44d77e26d756f7be5fd9f6ab5b5a86b82077bed3e00ef"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_013.json",
+      "bytes": 7340,
+      "sha256": "45002c247cf2eedd08ab4710a20c517bc059ed1cccb2bbe94f150f07319f12c3"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_014.json",
+      "bytes": 7361,
+      "sha256": "197078a6aa64bec463d2e564941a2b7fdf81f94aeca496407ce1681ced9b6f8b"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_015.json",
+      "bytes": 7342,
+      "sha256": "9b4fc73f50e1de3cf56a56acb9fc27db359b27ad0790af7ebc76ad0933fb6e84"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_000.json",
+      "bytes": 17142,
+      "sha256": "c8961266babfb4d512569cceaa318af7685563342b75b1ae56a1b266bd5cc3da"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_001.json",
+      "bytes": 17158,
+      "sha256": "5a97b294b33fec273aa92ff8814502408192b21f3b589e8220152439455938de"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_002.json",
+      "bytes": 17151,
+      "sha256": "2b282350c75bc2c5193b229dc3bfff862bf4f6500f76c79af0eaa6e98e664486"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_003.json",
+      "bytes": 17155,
+      "sha256": "761a424b40353bcc4c65bd65aafa2a4a60892c33badd1b8cc65dd273cabd8b51"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_004.json",
+      "bytes": 17156,
+      "sha256": "2236f90e5d7e2071b73131a3751d94a9d4b462cd7d03df5978737bcca7b3054a"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_005.json",
+      "bytes": 17139,
+      "sha256": "eb3777f533a535ea397343eac69bd3cc783d795ddc68b52bb5292b3f18e48a2f"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_006.json",
+      "bytes": 17145,
+      "sha256": "8fbdc7b17e3b820d2770340d46016ab0b54bd08a20a15a4b84141a9a689eb512"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_007.json",
+      "bytes": 17147,
+      "sha256": "5ae381ca182a3ed6221344855dce4b997556eb619466da5790147a53b5ff45d2"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_008_traces.npz",
+      "bytes": 2059196,
+      "sha256": "e3ecf89edee4026bd5bd62d94a2d4b54dc5bb3e4a9f4334884ca0c7692f8598f"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_009_traces.npz",
+      "bytes": 2069327,
+      "sha256": "f76b18366f08a4f25ba25e68e4347f82b35bb88608afa1ccf1421f44ea33f567"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_010_traces.npz",
+      "bytes": 2059282,
+      "sha256": "020842af8f98fac45c0a1bd9741cf66d4f804698fb78532bdd5f40af5f6e059d"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_011_traces.npz",
+      "bytes": 2070278,
+      "sha256": "c0c75b8dfc1a573f87d64a5c7f1561450b0da8deee929dcfa2261fc175b7222b"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_012_traces.npz",
+      "bytes": 2053142,
+      "sha256": "ec21d18305723f44bee9798c2d076372e01023a747ec6a99770a3c9ff72251d5"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_013_traces.npz",
+      "bytes": 2060548,
+      "sha256": "3a4d812000624bfef0b90150bb248524b0284d313a3b4fad0dd1c69cdb798e08"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_014_traces.npz",
+      "bytes": 2051300,
+      "sha256": "e6a2a78ff1560dab2337bf0030efb8d9d2ba2aedb5c28cba8ae6ba740adef397"
+    },
+    {
+      "path": "results\\hydraulically_feasible_full_6cell_cube_v1\\states\\case_015_traces.npz",
+      "bytes": 2059563,
+      "sha256": "f7697a9d619565afe8213f2d9732135b3bfabd69b2ad57c3cfcc205d7bf3d324"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_000_traces.npz",
+      "bytes": 2059705,
+      "sha256": "9a5027603d457b8cece7983f69e5990482937d6467c4bacb9316f29d3ca450bb"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_001_traces.npz",
+      "bytes": 2060885,
+      "sha256": "fb35b919431bfb01089c0ddeb709ff0e3c4ba3cadcf12b4241afb293bdd53a9d"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_002_traces.npz",
+      "bytes": 2066725,
+      "sha256": "804bdf4e867772f25fec4e6fa3b0765293deb962b5e8032d26ade4e745f21c45"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_003_traces.npz",
+      "bytes": 2056140,
+      "sha256": "e9acda3a859c91d5f022a5e38d8080d3006763d84fae01218e90d2fe77085d37"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_004_traces.npz",
+      "bytes": 2056582,
+      "sha256": "115ba2dfe3917923f641b7c7e0846431d342a87f362ceabde713edd14e5017a9"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_005_traces.npz",
+      "bytes": 2065137,
+      "sha256": "0624b6d3bf0bbf5e0ae6d59dd95c8827bac6c23779d4cfc1ff6ca459a56fc57d"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_006_traces.npz",
+      "bytes": 2060561,
+      "sha256": "106503ca0aa1751aeb2b96f859a3091dd864a68614210b9dca83ed2b74fb18b3"
+    },
+    {
+      "path": "results\\hydraulically_feasible_selected_6cell_holdout_v1\\states\\case_007_traces.npz",
+      "bytes": 2064083,
+      "sha256": "ed14f842c6d6e8841228ce67537986ff032f018d67202c8b11cb28377293d90c"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\Fig_stage_resolved_membrane_train.pdf",
+      "bytes": 44827,
+      "sha256": "98ded5786eb45f35c898d8fec9890496eb798ac847bb53e6bffb9b05d7c4428b"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\Fig_stage_resolved_membrane_train.png",
+      "bytes": 401287,
+      "sha256": "68e1e571eb9407f84960ea40a94d158f44bf74de6ebbe304326ac44f6c3c70a2"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\Fig_stage_resolved_membrane_train.svg",
+      "bytes": 161124,
+      "sha256": "366b08c6855cfbd569d2c4d4f440cb2374307e18850c8b7003953194e708bd77"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\PSA_STAGE_RESOLVED_MEMBRANE_TRAIN.json",
+      "bytes": 21509,
+      "sha256": "cb14d222598c0754704c8263225981ae4c3782d91000546f1c1858bebc827a68"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\PSA_STAGE_RESOLVED_MEMBRANE_TRAIN.md",
+      "bytes": 3269,
+      "sha256": "34d8f97727c66ec14e672e01f23f25536d9cf4b01ae1a27985a68f49523b102a"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_00.json",
+      "bytes": 3620,
+      "sha256": "a281841926e67d3f80c00bc8104121ca4e46d5066f7f97de1a694db9ac3efd02"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_00_traces.npz",
+      "bytes": 552681,
+      "sha256": "7a020624ad9dc6d756d0e5ef392d1886a2af65692d4599d741bc75df1fe0c01f"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_01.json",
+      "bytes": 3619,
+      "sha256": "acc5b0ace8b0ed83d1f3b7356aa46ca8f85933a5128ea660b699822a84fb4f7c"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_01_traces.npz",
+      "bytes": 551445,
+      "sha256": "69180c3962cb40923b51197983e5e8ece0a4aa1ee043454e8dfb64724f522e8c"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_02.json",
+      "bytes": 3634,
+      "sha256": "d325f4c82f10cb9c4826e59ba3886553c2a9cf06b3f8b5893b695888848b25c0"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_02_traces.npz",
+      "bytes": 553444,
+      "sha256": "2fc6b4612fe666225bbe7474c39102d299131408e6da7f4aa86c773207bb15bb"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_03.json",
+      "bytes": 3633,
+      "sha256": "383b6bcd3bcc769c35c0176cec82f790e184a10adccd43c3ccb3258c6ee3a652"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_03_traces.npz",
+      "bytes": 552568,
+      "sha256": "38065e13180deab302935c92e7fd24f825e0c25a5b83887c4502ccbb8b300700"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_04.json",
+      "bytes": 3638,
+      "sha256": "0f6d482650d44a7e52132798f8e2c2bd57e88fbd39db41143f7b8315c0fd9db3"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_04_traces.npz",
+      "bytes": 545479,
+      "sha256": "898ba8a57c578ebda5f1c423a2acc22cf03fa5fadac533b7ae4c7d9d1e8a1d08"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_05.json",
+      "bytes": 3641,
+      "sha256": "f5cef7b426b4a0d29a01e4225a19b8b845657ed64d7d6cdda06f9309cda7cd2e"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_05_traces.npz",
+      "bytes": 543859,
+      "sha256": "13a4b3656f00f41993a07caa497ae3177b0f83d4b5dfe2059d74d3d4e8b3e2f1"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_06.json",
+      "bytes": 3640,
+      "sha256": "ec6788fc5617a7446ce894fcb80738da2a16b631eb3724859039ed715548591e"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_06_traces.npz",
+      "bytes": 547783,
+      "sha256": "c38557958476680fcc2dc4b8468b5351b4b66db943e5ac0a12fd78082f778e29"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_07.json",
+      "bytes": 3623,
+      "sha256": "355405ee4acd7b70d058876fa9c8fe4c80eef94acef21e0138116841356e8cb7"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_07_traces.npz",
+      "bytes": 544846,
+      "sha256": "e79e2e97f65d85d7cc7a656dba558fb64a847c4cc59a8c4f88e7388b2f2793f5"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_00.json",
+      "bytes": 3722,
+      "sha256": "90ee64f180231bd76fc90173ded7249d3f52c0ed29b92da99ea6849093b5b705"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_00_traces.npz",
+      "bytes": 547467,
+      "sha256": "c5767bd5caeebc6a7dc9ba121134a7644bd5d1eddc923e484e0d155a63839392"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_01.json",
+      "bytes": 3726,
+      "sha256": "662287e0de7de6f8c032d5ddd8ef8929a7cb4ac50791a69c849c5f33fa331626"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_01_traces.npz",
+      "bytes": 549135,
+      "sha256": "635b46b32273e816ab52be1b4d7d45a2af04cd60a363dc50988c4e418abc10e3"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_02.json",
+      "bytes": 3725,
+      "sha256": "e91abbd29a5b48e05d8b2e1fb3b335671e3358e7bccea1e345433373782f3815"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_02_traces.npz",
+      "bytes": 551341,
+      "sha256": "ef9d939765a0864319db746f3ce96df2f1d77b4b2d46292dc347b76fa86a7f87"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_03.json",
+      "bytes": 3723,
+      "sha256": "1fefffb83738a6044160daf5c91f94b7ccef6a21293cf13a8f4d158001cf0faa"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_03_traces.npz",
+      "bytes": 547366,
+      "sha256": "1e0520ae9dc09eab9a86953250b0a9677c72e22d042757a4705e2a6ae3f858f1"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_04.json",
+      "bytes": 3719,
+      "sha256": "f84be7fdb9cbbe0f19c88554842872c1a11068a3775aa23928f35d66e4d37d6c"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_04_traces.npz",
+      "bytes": 545747,
+      "sha256": "0318415602ed6aad4ac54216e3466a5db427363127a78de81894006e680ced6c"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_05.json",
+      "bytes": 3722,
+      "sha256": "c5f3190578eba2e5dbbc77ea3db538c41f3ee769d656a63b6d48e578864a9e8e"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_05_traces.npz",
+      "bytes": 550160,
+      "sha256": "dede4afb43cb1903643ba0d625086865b4344eb9d291d3d4b05283022610baf2"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_06.json",
+      "bytes": 3723,
+      "sha256": "7977065ed826af25df0b391ce25cb6ffd4402fdba73695d2b8375ffad2335187"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_06_traces.npz",
+      "bytes": 551571,
+      "sha256": "870730b36a056f01533eb266b9aa20ebe84392a3f0dc51016e7442a13cd854c8"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_07.json",
+      "bytes": 3723,
+      "sha256": "b3615f83a4cfd89bd87aef172f050b7fed4bce8f404eec67cf050c63eed9896d"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_07_traces.npz",
+      "bytes": 547313,
+      "sha256": "a7193661699aafe17df8d3003971cd27f64d2669b1ca0029a56930b129d4e842"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\Table_stage_train_area_screen.csv",
+      "bytes": 323813,
+      "sha256": "aa0c98d2702e5d7b54f888641dc4a39ad249cdd8b85919058fcac2c58d4365db"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\Table_stage_train_dynamic_confirmation.csv",
+      "bytes": 23698,
+      "sha256": "aecad3fce1edfb752fa06a90703e7cab9133133a8dfd43bf1eaa1401a078ebe0"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\Table_stage_train_mesh_audit.csv",
+      "bytes": 630,
+      "sha256": "d77656ec723eab7ff5aed7e2325488ce39c07fe97914ad2fc3c4a4db44866447"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\Table_stage_train_product_receiver_sizing.csv",
+      "bytes": 1230,
+      "sha256": "342ed8d00b078732ba92abc383de34e8489e485ebb16b4a65d7b95aef758e002"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\Table_stage_train_surge_buffer_sizing.csv",
+      "bytes": 1870,
+      "sha256": "502afce0ee88c8c2fc03e104645ee2cef8d2eec130e1b209128a6f63cfbec762"
+    }
+  ]
+}

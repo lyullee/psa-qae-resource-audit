@@ -1,0 +1,197 @@
+{
+  "schema": "psa-spt-pressure-consistent-manuscript/v2",
+  "status": "pressure_consistent_manuscript_with_verified_portable_qasm_and_explicit_external_boundaries",
+  "sources": [
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\final_objective_evidence_v44\\PSA_FINAL_OBJECTIVE_EVIDENCE_V44.json",
+      "bytes": 9801,
+      "sha256": "fc7cee6024c575a54107bb283b2632085b8bd55f907c3eef63b4646f92644cd9"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\hydraulically_feasible_full_6cell_cube_v1\\PSA_HYDRAULICALLY_FEASIBLE_FULL_6CELL_CUBE_V1.json",
+      "bytes": 141413,
+      "sha256": "b7f93ebbe838d30290661d33a3d4150af3e715aa1a229c4489b1eb7c30efd29d"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\hydraulically_feasible_selected_6cell_holdout_v1\\PSA_HYDRAULICALLY_FEASIBLE_SELECTED_6CELL_HOLDOUT_V1.json",
+      "bytes": 166532,
+      "sha256": "ef72251b5b1728e1ee033cb306693c8abb89279da62d99920ddee09eb7f12711"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_stage_resolved_membrane_train_v1\\PSA_STAGE_RESOLVED_MEMBRANE_TRAIN.json",
+      "bytes": 21509,
+      "sha256": "cb14d222598c0754704c8263225981ae4c3782d91000546f1c1858bebc827a68"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_independent_ode_membrane_audit_v1\\PSA_INDEPENDENT_ODE_MEMBRANE_AUDIT.json",
+      "bytes": 4639,
+      "sha256": "e3ff6da7b8aae79b5982c6ded99bfb2878467e8a430e24de177d5a7b69cd0d17"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_pd_actual_syngas_poisoning_guard_v1\\PSA_PD_ACTUAL_SYNGAS_POISONING_GUARD_V1.json",
+      "bytes": 6003,
+      "sha256": "1f77924c35f57b892d7ebe677a223e0bf557c597ceaeb5a786120b57dd383d6a"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\PSA_PHYSICAL_PD_AREA_QAE_BRIDGE.json",
+      "bytes": 10511,
+      "sha256": "d0ca212f3bd5ba5ae075ec7caca6fdf38fe715d062cc7d7dea38ecc574635e1f"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_independent_rk4_membrane_crosscheck_v1\\PSA_INDEPENDENT_RK4_MEMBRANE_CROSSCHECK_V1.json",
+      "bytes": 2573,
+      "sha256": "81fe9b9a300de15e4a4bc7a477816331485b839f571a9d23b2f66eda8a1f1b67"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_public_selectivity_acceptance_audit_v1\\PSA_PUBLIC_SELECTIVITY_ACCEPTANCE_AUDIT_V1.json",
+      "bytes": 11074,
+      "sha256": "2e5ae49c54117124200c3cc11d81df63c78a7f7a5e0a3cb3f4180931f7cc6ad0"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_portable_qasm_oracle_v1\\PSA_PRESSURE_CONSISTENT_PORTABLE_QASM_ORACLE_V1.json",
+      "bytes": 5069,
+      "sha256": "0eaae2efa8046f46632dab2cdee591894adcccbcb4d38a2ebacd8511869a0b22"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\hydraulically_feasible_full_6cell_cube_v1\\PSA_HYDRAULICALLY_FEASIBLE_FULL_6CELL_CUBE_V1.png",
+      "bytes": 183564,
+      "sha256": "a478665130ba3820692f3068e4b299230a02987752577b99c3edee3513db71eb"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\hydraulically_feasible_selected_6cell_holdout_v1\\PSA_HYDRAULICALLY_FEASIBLE_SELECTED_6CELL_HOLDOUT_V1.png",
+      "bytes": 154204,
+      "sha256": "5dc708a93285515a85a61c351d25db004d6c1177c410d45a5542f7c755482b1f"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_engineering_results_v1\\Fig3_public_dynamic_external_validation.png",
+      "bytes": 303709,
+      "sha256": "60350da93a1a0268f7bf811272e2a5a14eece88f978379bf20f493d8b925b0bb"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\membrane_public_evidence_audit_v2\\Fig_membrane_public_evidence_audit_v2.png",
+      "bytes": 225341,
+      "sha256": "08618e63cbfb46695d0916019ef04c7c0bbece8e6135d50328278a2370e2576c"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_stage_resolved_membrane_train_v1\\Fig_stage_resolved_membrane_train.png",
+      "bytes": 401287,
+      "sha256": "68e1e571eb9407f84960ea40a94d158f44bf74de6ebbe304326ac44f6c3c70a2"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_independent_ode_membrane_audit_v1\\Fig_independent_ode_membrane_audit.png",
+      "bytes": 511477,
+      "sha256": "bf9baec4ff5fb2921dffa76a6ba416ca09d2bb8087108282bfeeee5d3e386430"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_pd_leakage_aging_sensitivity_v1\\Fig_pd_leakage_aging_sensitivity.png",
+      "bytes": 413132,
+      "sha256": "ee89aefd9c0963285c63cebd75dc7cebbfd89528172ab1dac805c8c44fc7b9cd"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_engineering_results_v1\\Fig8_psa_stage_train_dwsim_crosscheck.png",
+      "bytes": 469074,
+      "sha256": "68af1668244ba5192eb7d68cf7a292371d786228a9776c1b4fd13e81a1d4fa41"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_portable_qasm_oracle_v1\\Fig_pressure_consistent_portable_qasm_oracle_v1.png",
+      "bytes": 167691,
+      "sha256": "9c4e027c66c6a3a8e134ff462f7c3dac6a79eec8a120548f60ffc1bd7c44777c"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_pd_actual_syngas_poisoning_guard_v1\\Fig_pd_actual_syngas_poisoning_guard_v1.png",
+      "bytes": 210557,
+      "sha256": "87052d62bc4419b016382405e11299e59491b2235988b207af11f18c7edd284a"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_independent_rk4_membrane_crosscheck_v1\\Fig_independent_rk4_membrane_crosscheck_v1.png",
+      "bytes": 181706,
+      "sha256": "a520250c7500f2e76162e697971cd8efb59b4cf9b8d38697d670a92a69363868"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\ververs_2024_mass_transfer_validation_v1\\Fig_ververs_2024_mass_transfer_validation_v1.png",
+      "bytes": 325090,
+      "sha256": "885e17ae4f849d130c518fadea9fa246e74b2cbba65d72fc9c05a35fa39e875b"
+    },
+    {
+      "path": "07_DWSIM_Aspen_\uc7ac\ud604\\results\\psa_stage_train_high_temperature_audit\\Fig_stage_train_high_temperature_audit.png",
+      "bytes": 249663,
+      "sha256": "079951c45c7da84ec53eb8bb4bb8399a59a061110049bec09807b71c386a3a39"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_public_selectivity_acceptance_audit_v1\\Fig_public_selectivity_acceptance_audit_v1.png",
+      "bytes": 111072,
+      "sha256": "5e4182b98b561aa6d6097990d4cd6e20a75eacbf95bacd1380351d16f7397bac"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\sanchez_2014_validation_audit_v1\\Fig_sanchez_detection_resolution_v1.png",
+      "bytes": 78571,
+      "sha256": "ae04217eb806eb95a6303028c43aff1c2f728419bb32844a8574f57758ed278f"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\doe_pall_2008_mixed_gas_validation_v1\\Fig_doe_pall_2008_mixed_gas_validation_v1.png",
+      "bytes": 150988,
+      "sha256": "33afdc0c2a11faf10525d2afd9b0a8e7a7473cd43a0775f911f85e3e408dab6e"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\utrc_2012_high_recovery_validation_v1\\Fig_utrc_2012_high_recovery_validation_v1.png",
+      "bytes": 158063,
+      "sha256": "17c3845e8c1b05f2dae3d0afba14f0a311dff9a9820402400e93c45572e459f7"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\bang_2021_joint_gate_validation_v1\\Fig_bang_2021_joint_gate_validation_v1.png",
+      "bytes": 177320,
+      "sha256": "ce4dace9b4a95a53867c5b556be97a15fcf0ae638d5f0625d73b19418d685ac8"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\csharp_direct_transport_crosscheck_v1\\Fig_csharp_direct_transport_crosscheck_v1.png",
+      "bytes": 334159,
+      "sha256": "6073722c8e3cd2854bb44f8a1bb5e6aa3e0840e087dc2964e6ebfcc27750ec09"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.md",
+      "bytes": 46721,
+      "sha256": "5fd27879ce6e196f27ca22f0391921c0fa33fd79996e7750341cf19ab315b46e"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.docx",
+      "bytes": 4262272,
+      "sha256": "dac7c076d74a28fc28167c088b34af1ef9233bc2460ce2dcfb916073541f87c1"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\REFERENCE_METADATA_AUDIT.json",
+      "bytes": 4663,
+      "sha256": "9598aaf65f0a84bcd7a27cbfaf317b764437ff3d4cfdaf9654d97b09141eb2fa"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.pdf",
+      "bytes": 2278421,
+      "sha256": "1f58adb1db5409041db561b897a99890cffa7b47fc4d25a3f956a9dc40545c5f"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\WORD_EXPORT_RENDER_AUDIT.json",
+      "bytes": 1304,
+      "sha256": "de3b08712b9dcdc83069d1a454b85f7ab1b64451e43346907717d57099b5bdaf"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\rendered\\contact_sheet.png",
+      "bytes": 2262056,
+      "sha256": "8e0f2d1eea8287c306c7f318b9262b47a95e07dbce86b88b826ece5d58bd6ec0"
+    }
+  ],
+  "claim_boundary": {
+    "current": "6.0 bar tank, discharge booster, corrected 6.2 bar polishing inlet, 8 corners, 8 hold-outs, DOP853 and RK4",
+    "pending": "device-specific quantum optimization/routing and corrected-input DWSIM execution on a host permitting their native DLLs",
+    "legacy_only": "earlier DWSIM quantitative results and C# packet replay"
+  },
+  "visual_qa": {
+    "status": "visual_render_checked",
+    "page_count": 23,
+    "audit": {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\WORD_EXPORT_RENDER_AUDIT.json",
+      "bytes": 1304,
+      "sha256": "de3b08712b9dcdc83069d1a454b85f7ab1b64451e43346907717d57099b5bdaf"
+    }
+  }
+}

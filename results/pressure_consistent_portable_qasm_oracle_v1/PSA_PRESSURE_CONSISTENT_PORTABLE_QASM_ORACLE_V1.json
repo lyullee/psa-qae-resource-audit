@@ -1,0 +1,193 @@
+{
+  "schema": "psa-pressure-consistent-portable-qasm-oracle/v1",
+  "status": "portable_qasm_serialized_and_basis_state_verified",
+  "source_algorithm": "Qiskit 2.5.2 WeightedAdder and two's-complement IntegerComparator source-equivalent construction",
+  "event": {
+    "physical_design_variable": "installed dense-Pd polishing area",
+    "selected_chance_pd_area_m2": 0.44,
+    "robust_literature_bounded_pd_area_m2": 0.4799119875751482,
+    "fixed_polymer_concentrator_area_m2": 0.18919607202481806,
+    "fixed_surge_capacity_mol": 4.615939905899888,
+    "fixed_product_receiver_capacity_mol": 1.54598433549796,
+    "joint_event": "regeneration reserve and numerical gates pass; installed surge capacity is adequate; H2 recovery and qualified shipment meet the frozen floors; product receiver capacity is adequate",
+    "probabilistic_sub_event": "H2 recovery and qualified shipment meet their frozen floors; the regeneration, surge, receiver, and numerical gates are separately fixed and directly audited",
+    "uncertainty_coordinates": [
+      "feed_u",
+      "equilibrium_pc_u",
+      "ldf_u"
+    ],
+    "measure": "independent uniform engineering measure over the declared uncertainty cube",
+    "chance_target": 0.95,
+    "dense_pd_assumption": "ideal defect-free H2-only permeation"
+  },
+  "integer_spec_sha256": "180be0ed56831e0ecd513af2a0364a29e6ba7e07efd654cdb15e6bf1a0da4b40",
+  "qasm": {
+    "path": "PSA_PHYSICAL_PD_AREA_EVENT_ORACLE_10BIT_PORTABLE.qasm",
+    "bytes": 823248,
+    "sha256": "1c4a2603090f0bc25a7f1b5539542e5e8272de47f2507f7bb9fb1a08f246759a",
+    "language": "OpenQASM 3.0"
+  },
+  "resources": {
+    "state": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "sum": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+    ],
+    "carry": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ],
+    "control": [
+      53
+    ],
+    "sum_qubits": 12,
+    "adder_ancillas": 12,
+    "flag": 54,
+    "comparator_work": [
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65
+    ],
+    "comparator_ancillas": 11,
+    "total_logical_qubits": 66,
+    "high_level_operation_counts": {
+      "x": 1764,
+      "ccx": 666,
+      "cx": 474,
+      "mcx3": 1080,
+      "or2": 22,
+      "z": 1
+    },
+    "portable_primitive_operation_counts": {
+      "x": 1874,
+      "h": 7856,
+      "cx": 24042,
+      "tdg": 11784,
+      "t": 15712,
+      "z": 1
+    },
+    "portable_primitive_size": 61269,
+    "portable_primitive_depth_all_to_all": 36163,
+    "portable_primitive_cx": 24042,
+    "portable_single_qubit_gates": 37227,
+    "decomposition": "exact CCX=6 CX Clifford+T; MCX3 one-clean-ancilla v-chain=3 CCX; no routing or optimization"
+  },
+  "verification": {
+    "exhaustive_2bit": {
+      "state_count": 64,
+      "phase_label_errors": 0,
+      "state_or_ancilla_restoration_errors": 0,
+      "all_pass": true
+    },
+    "exhaustive_3bit": {
+      "state_count": 512,
+      "phase_label_errors": 0,
+      "state_or_ancilla_restoration_errors": 0,
+      "all_pass": true
+    },
+    "exhaustive_4bit": {
+      "state_count": 4096,
+      "phase_label_errors": 0,
+      "state_or_ancilla_restoration_errors": 0,
+      "all_pass": true
+    },
+    "direct_10bit": {
+      "state_count": 16,
+      "phase_label_errors": 0,
+      "state_or_ancilla_restoration_errors": 0,
+      "all_pass": true,
+      "direct_engineering_label_errors": 0,
+      "case_ids": [
+        "corner_00",
+        "corner_01",
+        "corner_02",
+        "corner_03",
+        "corner_04",
+        "corner_05",
+        "corner_06",
+        "corner_07",
+        "holdout_00",
+        "holdout_01",
+        "holdout_02",
+        "holdout_03",
+        "holdout_04",
+        "holdout_05",
+        "holdout_06",
+        "holdout_07"
+      ]
+    },
+    "random_10bit": {
+      "state_count": 4096,
+      "phase_label_errors": 0,
+      "state_or_ancilla_restoration_errors": 0,
+      "all_pass": true
+    }
+  },
+  "probability": {
+    "continuous_conservative_affine": 0.9512096800712508,
+    "ten_bit_discrete": 0.9506290182471275,
+    "absolute_discretization_error": 0.0005806618241233075
+  },
+  "claim_boundary": {
+    "supported": "The included OpenQASM exactly implements the frozen integer weighted-sum event under the stated portable decomposition and restores all work qubits on every verified basis state.",
+    "not_supported": "The CX count and depth are not Qiskit-optimized, device-routed, error-corrected, or hardware-executed resources."
+  }
+}

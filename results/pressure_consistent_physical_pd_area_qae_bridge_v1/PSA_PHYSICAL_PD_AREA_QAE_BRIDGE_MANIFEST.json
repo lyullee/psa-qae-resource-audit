@@ -1,0 +1,227 @@
+{
+  "schema": "psa-physical-pd-area-qae-bridge-manifest/v1",
+  "sources": [
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\PSA_STAGE_RESOLVED_MEMBRANE_TRAIN.json",
+      "bytes": 21508,
+      "sha256": "5ac8a38d11bfb2bc77fa9c8891b7e24b9f338bcb7c08951b3af93b66ff1e5a29"
+    },
+    {
+      "path": "results\\final_objective_evidence_v19\\PSA_FINAL_OBJECTIVE_EVIDENCE_V19.json",
+      "bytes": 17706,
+      "sha256": "e169818876bf840c1e6583ea06a7f27db04087c041106d06b5bb3468d3a57025"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_00.json",
+      "bytes": 3620,
+      "sha256": "a281841926e67d3f80c00bc8104121ca4e46d5066f7f97de1a694db9ac3efd02"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_00_traces.npz",
+      "bytes": 552681,
+      "sha256": "7a020624ad9dc6d756d0e5ef392d1886a2af65692d4599d741bc75df1fe0c01f"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_01.json",
+      "bytes": 3619,
+      "sha256": "acc5b0ace8b0ed83d1f3b7356aa46ca8f85933a5128ea660b699822a84fb4f7c"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_01_traces.npz",
+      "bytes": 551445,
+      "sha256": "69180c3962cb40923b51197983e5e8ece0a4aa1ee043454e8dfb64724f522e8c"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_02.json",
+      "bytes": 3634,
+      "sha256": "d325f4c82f10cb9c4826e59ba3886553c2a9cf06b3f8b5893b695888848b25c0"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_02_traces.npz",
+      "bytes": 553444,
+      "sha256": "2fc6b4612fe666225bbe7474c39102d299131408e6da7f4aa86c773207bb15bb"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_03.json",
+      "bytes": 3633,
+      "sha256": "383b6bcd3bcc769c35c0176cec82f790e184a10adccd43c3ccb3258c6ee3a652"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_03_traces.npz",
+      "bytes": 552568,
+      "sha256": "38065e13180deab302935c92e7fd24f825e0c25a5b83887c4502ccbb8b300700"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_04.json",
+      "bytes": 3638,
+      "sha256": "0f6d482650d44a7e52132798f8e2c2bd57e88fbd39db41143f7b8315c0fd9db3"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_04_traces.npz",
+      "bytes": 545479,
+      "sha256": "898ba8a57c578ebda5f1c423a2acc22cf03fa5fadac533b7ae4c7d9d1e8a1d08"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_05.json",
+      "bytes": 3641,
+      "sha256": "f5cef7b426b4a0d29a01e4225a19b8b845657ed64d7d6cdda06f9309cda7cd2e"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_05_traces.npz",
+      "bytes": 543859,
+      "sha256": "13a4b3656f00f41993a07caa497ae3177b0f83d4b5dfe2059d74d3d4e8b3e2f1"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_06.json",
+      "bytes": 3640,
+      "sha256": "ec6788fc5617a7446ce894fcb80738da2a16b631eb3724859039ed715548591e"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_06_traces.npz",
+      "bytes": 547783,
+      "sha256": "c38557958476680fcc2dc4b8468b5351b4b66db943e5ac0a12fd78082f778e29"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_07.json",
+      "bytes": 3623,
+      "sha256": "355405ee4acd7b70d058876fa9c8fe4c80eef94acef21e0138116841356e8cb7"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\corner_07_traces.npz",
+      "bytes": 544846,
+      "sha256": "e79e2e97f65d85d7cc7a656dba558fb64a847c4cc59a8c4f88e7388b2f2793f5"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_00.json",
+      "bytes": 3722,
+      "sha256": "90ee64f180231bd76fc90173ded7249d3f52c0ed29b92da99ea6849093b5b705"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_00_traces.npz",
+      "bytes": 547467,
+      "sha256": "c5767bd5caeebc6a7dc9ba121134a7644bd5d1eddc923e484e0d155a63839392"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_01.json",
+      "bytes": 3726,
+      "sha256": "662287e0de7de6f8c032d5ddd8ef8929a7cb4ac50791a69c849c5f33fa331626"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_01_traces.npz",
+      "bytes": 549135,
+      "sha256": "635b46b32273e816ab52be1b4d7d45a2af04cd60a363dc50988c4e418abc10e3"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_02.json",
+      "bytes": 3725,
+      "sha256": "e91abbd29a5b48e05d8b2e1fb3b335671e3358e7bccea1e345433373782f3815"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_02_traces.npz",
+      "bytes": 551341,
+      "sha256": "ef9d939765a0864319db746f3ce96df2f1d77b4b2d46292dc347b76fa86a7f87"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_03.json",
+      "bytes": 3723,
+      "sha256": "1fefffb83738a6044160daf5c91f94b7ccef6a21293cf13a8f4d158001cf0faa"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_03_traces.npz",
+      "bytes": 547366,
+      "sha256": "1e0520ae9dc09eab9a86953250b0a9677c72e22d042757a4705e2a6ae3f858f1"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_04.json",
+      "bytes": 3719,
+      "sha256": "f84be7fdb9cbbe0f19c88554842872c1a11068a3775aa23928f35d66e4d37d6c"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_04_traces.npz",
+      "bytes": 545747,
+      "sha256": "0318415602ed6aad4ac54216e3466a5db427363127a78de81894006e680ced6c"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_05.json",
+      "bytes": 3722,
+      "sha256": "c5f3190578eba2e5dbbc77ea3db538c41f3ee769d656a63b6d48e578864a9e8e"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_05_traces.npz",
+      "bytes": 550160,
+      "sha256": "dede4afb43cb1903643ba0d625086865b4344eb9d291d3d4b05283022610baf2"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_06.json",
+      "bytes": 3723,
+      "sha256": "7977065ed826af25df0b391ce25cb6ffd4402fdba73695d2b8375ffad2335187"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_06_traces.npz",
+      "bytes": 551571,
+      "sha256": "870730b36a056f01533eb266b9aa20ebe84392a3f0dc51016e7442a13cd854c8"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_07.json",
+      "bytes": 3723,
+      "sha256": "b3615f83a4cfd89bd87aef172f050b7fed4bce8f404eec67cf050c63eed9896d"
+    },
+    {
+      "path": "results\\pressure_consistent_stage_resolved_membrane_train_v1\\states\\holdout_07_traces.npz",
+      "bytes": 547313,
+      "sha256": "a7193661699aafe17df8d3003971cd27f64d2669b1ca0029a56930b129d4e842"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\PSA_PHYSICAL_PD_AREA_QAE_BRIDGE.json",
+      "bytes": 10511,
+      "sha256": "d0ca212f3bd5ba5ae075ec7caca6fdf38fe715d062cc7d7dea38ecc574635e1f"
+    },
+    {
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\PSA_PHYSICAL_PD_AREA_QAE_BRIDGE.md",
+      "bytes": 883,
+      "sha256": "0bc930bc5ece6725a924adf525f590aa4e4d9fde2b3eb75cb6a12cd926d70850"
+    },
+    {
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\Table_physical_pd_area_direct_validation.csv",
+      "bytes": 4786,
+      "sha256": "f72712f7bfa0ef88927ad50119b5e28be71775cd349d2247de16fc830c397202"
+    },
+    {
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\Table_physical_pd_area_chance_screen.csv",
+      "bytes": 3332,
+      "sha256": "3e0042c20404d4a298d234358e0856d23fc22db62ab1bd53ddbed0013731ecc7"
+    },
+    {
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\Table_physical_pd_area_oracle_resources.csv",
+      "bytes": 976,
+      "sha256": "bd936422ba7bcdce308c8b064c0c8f31c7931d60e48120c21748c8ecbfbd0f24"
+    },
+    {
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\Table_physical_pd_area_mc_rqmc.csv",
+      "bytes": 1764,
+      "sha256": "bcb7fe17c98e210f78736e8e981e51122d8e26b0872174c5e4323e851a9af996"
+    },
+    {
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\Fig_physical_pd_area_qae_bridge.png",
+      "bytes": 478843,
+      "sha256": "9c17159158d22867df0f974853671daba30c031b387656b86c8b186d3b962a44"
+    },
+    {
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\Fig_physical_pd_area_qae_bridge.pdf",
+      "bytes": 28394,
+      "sha256": "fa5df900fa0a3272b00b3555210c3f73cb729d8ffccf8151ede66e53cab44cc8"
+    },
+    {
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\Fig_physical_pd_area_qae_bridge.svg",
+      "bytes": 150936,
+      "sha256": "3b53a2cb34a27c75c75ec37ab003cfc09e1c08e35e9006de722cd73cc72b8c6d"
+    },
+    {
+      "path": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\PSA_PHYSICAL_PD_AREA_EVENT_ORACLE_INTEGER_SPEC.json",
+      "bytes": 5277,
+      "sha256": "180be0ed56831e0ecd513af2a0364a29e6ba7e07efd654cdb15e6bf1a0da4b40"
+    }
+  ]
+}

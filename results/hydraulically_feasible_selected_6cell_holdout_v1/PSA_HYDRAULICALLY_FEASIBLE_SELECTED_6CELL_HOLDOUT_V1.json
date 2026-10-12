@@ -1,0 +1,4136 @@
+{
+  "schema": "psa-hydraulically-feasible-selected-6cell-holdout/v1",
+  "status": "predeclared_pressure_consistent_six_cell_holdout_complete",
+  "run_signature": {
+    "schema": "psa-hydraulically-feasible-selected-6cell-holdout-state/v1",
+    "n_cells": 6,
+    "n_cycles": 60,
+    "area_cm2": 2000.0,
+    "selectivity_multiplier": 7.5,
+    "area_steps": 280,
+    "qualified_h2_target_mol_s": 0.002,
+    "passive_fill_driving_margin_bar": 0.2,
+    "booster_efficiency": 0.72,
+    "policy": {
+      "policy": "selected",
+      "tank_setpoint_bar": 6.0,
+      "purge_active_s": 4.0,
+      "adsorption_stage_s": 540.0
+    },
+    "holdout_scenarios": [
+      {
+        "scenario": "sobol_interior_00",
+        "scenario_kind": "predeclared_interior_holdout",
+        "sample_index": 0,
+        "feed_u": 0.6895513292402029,
+        "equilibrium_pc_u": 0.9508766205981374,
+        "ldf_u": 0.5799618475139141,
+        "feed_h2_multiplier": 1.0189551329240203,
+        "equilibrium_scenario": "principal_axis_interpolation",
+        "bootstrap_replicate": null,
+        "capacity_coordinate_c": 0.749844655004335,
+        "affinity_coordinate_a": 0.7683861754318524,
+        "ldf_factor": 1.0319847390055656,
+        "equilibrium_pc_endpoint_method": {
+          "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+          "mean_c_a": [
+            0.7718096360294043,
+            0.73820215600804
+          ],
+          "covariance": [
+            [
+              0.0002059870640134691,
+              -0.00019995922704292427
+            ],
+            [
+              -0.00019995922704292427,
+              0.00037106616567087413
+            ]
+          ],
+          "leading_eigenvalue": 0.0005048515323403825,
+          "leading_axis_c_a": [
+            -0.5560784121785588,
+            0.8311298331241472
+          ],
+          "score_quantiles": [
+            0.025,
+            0.975
+          ],
+          "endpoints_are_observed_bootstrap_replicates": true
+        }
+      },
+      {
+        "scenario": "sobol_interior_01",
+        "scenario_kind": "predeclared_interior_holdout",
+        "sample_index": 1,
+        "feed_u": 0.42659708857536316,
+        "equilibrium_pc_u": 0.3246792992576957,
+        "ldf_u": 0.2884194990620017,
+        "feed_h2_multiplier": 0.9926597088575363,
+        "equilibrium_scenario": "principal_axis_interpolation",
+        "bootstrap_replicate": null,
+        "capacity_coordinate_c": 0.7822968666237845,
+        "affinity_coordinate_a": 0.7258004465589064,
+        "ldf_factor": 0.9153677996248007,
+        "equilibrium_pc_endpoint_method": {
+          "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+          "mean_c_a": [
+            0.7718096360294043,
+            0.73820215600804
+          ],
+          "covariance": [
+            [
+              0.0002059870640134691,
+              -0.00019995922704292427
+            ],
+            [
+              -0.00019995922704292427,
+              0.00037106616567087413
+            ]
+          ],
+          "leading_eigenvalue": 0.0005048515323403825,
+          "leading_axis_c_a": [
+            -0.5560784121785588,
+            0.8311298331241472
+          ],
+          "score_quantiles": [
+            0.025,
+            0.975
+          ],
+          "endpoints_are_observed_bootstrap_replicates": true
+        }
+      },
+      {
+        "scenario": "sobol_interior_02",
+        "scenario_kind": "predeclared_interior_holdout",
+        "sample_index": 2,
+        "feed_u": 0.12181356549263,
+        "equilibrium_pc_u": 0.6102131344377995,
+        "ldf_u": 0.7710621077567339,
+        "feed_h2_multiplier": 0.962181356549263,
+        "equilibrium_scenario": "principal_axis_interpolation",
+        "bootstrap_replicate": null,
+        "capacity_coordinate_c": 0.7674992874454794,
+        "affinity_coordinate_a": 0.7452187130934922,
+        "ldf_factor": 1.1084248431026937,
+        "equilibrium_pc_endpoint_method": {
+          "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+          "mean_c_a": [
+            0.7718096360294043,
+            0.73820215600804
+          ],
+          "covariance": [
+            [
+              0.0002059870640134691,
+              -0.00019995922704292427
+            ],
+            [
+              -0.00019995922704292427,
+              0.00037106616567087413
+            ]
+          ],
+          "leading_eigenvalue": 0.0005048515323403825,
+          "leading_axis_c_a": [
+            -0.5560784121785588,
+            0.8311298331241472
+          ],
+          "score_quantiles": [
+            0.025,
+            0.975
+          ],
+          "endpoints_are_observed_bootstrap_replicates": true
+        }
+      },
+      {
+        "scenario": "sobol_interior_03",
+        "scenario_kind": "predeclared_interior_holdout",
+        "sample_index": 3,
+        "feed_u": 0.7601960059255362,
+        "equilibrium_pc_u": 0.23541863821446896,
+        "ldf_u": 0.096831233240664,
+        "feed_h2_multiplier": 1.0260196005925535,
+        "equilibrium_scenario": "principal_axis_interpolation",
+        "bootstrap_replicate": null,
+        "capacity_coordinate_c": 0.7869227341622562,
+        "affinity_coordinate_a": 0.7197301070977445,
+        "ldf_factor": 0.8387324932962656,
+        "equilibrium_pc_endpoint_method": {
+          "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+          "mean_c_a": [
+            0.7718096360294043,
+            0.73820215600804
+          ],
+          "covariance": [
+            [
+              0.0002059870640134691,
+              -0.00019995922704292427
+            ],
+            [
+              -0.00019995922704292427,
+              0.00037106616567087413
+            ]
+          ],
+          "leading_eigenvalue": 0.0005048515323403825,
+          "leading_axis_c_a": [
+            -0.5560784121785588,
+            0.8311298331241472
+          ],
+          "score_quantiles": [
+            0.025,
+            0.975
+          ],
+          "endpoints_are_observed_bootstrap_replicates": true
+        }
+      },
+      {
+        "scenario": "sobol_interior_04",
+        "scenario_kind": "predeclared_interior_holdout",
+        "sample_index": 4,
+        "feed_u": 0.9142415355890989,
+        "equilibrium_pc_u": 0.6945249801501632,
+        "ldf_u": 0.49289671797305346,
+        "feed_h2_multiplier": 1.04142415355891,
+        "equilibrium_scenario": "principal_axis_interpolation",
+        "bootstrap_replicate": null,
+        "capacity_coordinate_c": 0.7631298885901361,
+        "affinity_coordinate_a": 0.7509524990423023,
+        "ldf_factor": 0.9971586871892214,
+        "equilibrium_pc_endpoint_method": {
+          "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+          "mean_c_a": [
+            0.7718096360294043,
+            0.73820215600804
+          ],
+          "covariance": [
+            [
+              0.0002059870640134691,
+              -0.00019995922704292427
+            ],
+            [
+              -0.00019995922704292427,
+              0.00037106616567087413
+            ]
+          ],
+          "leading_eigenvalue": 0.0005048515323403825,
+          "leading_axis_c_a": [
+            -0.5560784121785588,
+            0.8311298331241472
+          ],
+          "score_quantiles": [
+            0.025,
+            0.975
+          ],
+          "endpoints_are_observed_bootstrap_replicates": true
+        }
+      },
+      {
+        "scenario": "sobol_interior_05",
+        "scenario_kind": "predeclared_interior_holdout",
+        "sample_index": 5,
+        "feed_u": 0.21766111999750137,
+        "equilibrium_pc_u": 0.06931944657117128,
+        "ldf_u": 0.6387295555323362,
+        "feed_h2_multiplier": 0.97176611199975,
+        "equilibrium_scenario": "principal_axis_interpolation",
+        "bootstrap_replicate": null,
+        "capacity_coordinate_c": 0.7955307015446291,
+        "affinity_coordinate_a": 0.7084342185650445,
+        "ldf_factor": 1.0554918222129346,
+        "equilibrium_pc_endpoint_method": {
+          "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+          "mean_c_a": [
+            0.7718096360294043,
+            0.73820215600804
+          ],
+          "covariance": [
+            [
+              0.0002059870640134691,
+              -0.00019995922704292427
+            ],
+            [
+              -0.00019995922704292427,
+              0.00037106616567087413
+            ]
+          ],
+          "leading_eigenvalue": 0.0005048515323403825,
+          "leading_axis_c_a": [
+            -0.5560784121785588,
+            0.8311298331241472
+          ],
+          "score_quantiles": [
+            0.025,
+            0.975
+          ],
+          "endpoints_are_observed_bootstrap_replicates": true
+        }
+      },
+      {
+        "scenario": "sobol_interior_06",
+        "scenario_kind": "predeclared_interior_holdout",
+        "sample_index": 6,
+        "feed_u": 0.2720179930329323,
+        "equilibrium_pc_u": 0.8694787304848433,
+        "ldf_u": 0.18436098378151655,
+        "feed_h2_multiplier": 0.9772017993032932,
+        "equilibrium_scenario": "principal_axis_interpolation",
+        "bootstrap_replicate": null,
+        "capacity_coordinate_c": 0.7540630402725421,
+        "affinity_coordinate_a": 0.7628505585247496,
+        "ldf_factor": 0.8737443935126067,
+        "equilibrium_pc_endpoint_method": {
+          "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+          "mean_c_a": [
+            0.7718096360294043,
+            0.73820215600804
+          ],
+          "covariance": [
+            [
+              0.0002059870640134691,
+              -0.00019995922704292427
+            ],
+            [
+              -0.00019995922704292427,
+              0.00037106616567087413
+            ]
+          ],
+          "leading_eigenvalue": 0.0005048515323403825,
+          "leading_axis_c_a": [
+            -0.5560784121785588,
+            0.8311298331241472
+          ],
+          "score_quantiles": [
+            0.025,
+            0.975
+          ],
+          "endpoints_are_observed_bootstrap_replicates": true
+        }
+      },
+      {
+        "scenario": "sobol_interior_07",
+        "scenario_kind": "predeclared_interior_holdout",
+        "sample_index": 7,
+        "feed_u": 0.5940227936953306,
+        "equilibrium_pc_u": 0.49567608162760735,
+        "ldf_u": 0.9477532505989075,
+        "feed_h2_multiplier": 1.009402279369533,
+        "equilibrium_scenario": "principal_axis_interpolation",
+        "bootstrap_replicate": null,
+        "capacity_coordinate_c": 0.7734350852353962,
+        "affinity_coordinate_a": 0.7374294049782163,
+        "ldf_factor": 1.1791013002395632,
+        "equilibrium_pc_endpoint_method": {
+          "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+          "mean_c_a": [
+            0.7718096360294043,
+            0.73820215600804
+          ],
+          "covariance": [
+            [
+              0.0002059870640134691,
+              -0.00019995922704292427
+            ],
+            [
+              -0.00019995922704292427,
+              0.00037106616567087413
+            ]
+          ],
+          "leading_eigenvalue": 0.0005048515323403825,
+          "leading_axis_c_a": [
+            -0.5560784121785588,
+            0.8311298331241472
+          ],
+          "score_quantiles": [
+            0.025,
+            0.975
+          ],
+          "endpoints_are_observed_bootstrap_replicates": true
+        }
+      }
+    ],
+    "predeclared_source": "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json",
+    "predeclared_before_current_design": true,
+    "role": "independent interior validation excluded from policy selection",
+    "source_sha256": {
+      "psa_hydraulically_feasible_selected_6cell_holdout_v1.py": "f13a406f6156333dd664eaea348d96ad5292e0b59677fd580efff9a082be2175",
+      "psa_hydraulically_feasible_policy_6cell_confirmation_v1.py": "e8d9415ca2a79ec8a5c8b8dfdfb29e6f550711f79638ca571b6022ebf1d8f416",
+      "psa_literature_anchored_policy_full_6cell_cube.py": "831fdd60a132f52eb7bbf5c2a401c122092fab4ed5d725f68ed0695887a57f81",
+      "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json": "1fe4207ad67b9fd227132518b4dd610db9accdbdfc1674ca1bf5f2969e8feb53",
+      "results\\membrane_component_selectivity_requirement\\PSA_MEMBRANE_COMPONENT_SELECTIVITY_REQUIREMENT.json": "46985e49f1ba3f79348fb2355652522e7cae53f9b07e74888e77830f413ffec0"
+    }
+  },
+  "rows": [
+    {
+      "run_signature": {
+        "schema": "psa-hydraulically-feasible-selected-6cell-holdout-state/v1",
+        "n_cells": 6,
+        "n_cycles": 60,
+        "area_cm2": 2000.0,
+        "selectivity_multiplier": 7.5,
+        "area_steps": 280,
+        "qualified_h2_target_mol_s": 0.002,
+        "passive_fill_driving_margin_bar": 0.2,
+        "booster_efficiency": 0.72,
+        "policy": {
+          "policy": "selected",
+          "tank_setpoint_bar": 6.0,
+          "purge_active_s": 4.0,
+          "adsorption_stage_s": 540.0
+        },
+        "holdout_scenarios": [
+          {
+            "scenario": "sobol_interior_00",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 0,
+            "feed_u": 0.6895513292402029,
+            "equilibrium_pc_u": 0.9508766205981374,
+            "ldf_u": 0.5799618475139141,
+            "feed_h2_multiplier": 1.0189551329240203,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.749844655004335,
+            "affinity_coordinate_a": 0.7683861754318524,
+            "ldf_factor": 1.0319847390055656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_01",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 1,
+            "feed_u": 0.42659708857536316,
+            "equilibrium_pc_u": 0.3246792992576957,
+            "ldf_u": 0.2884194990620017,
+            "feed_h2_multiplier": 0.9926597088575363,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7822968666237845,
+            "affinity_coordinate_a": 0.7258004465589064,
+            "ldf_factor": 0.9153677996248007,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_02",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 2,
+            "feed_u": 0.12181356549263,
+            "equilibrium_pc_u": 0.6102131344377995,
+            "ldf_u": 0.7710621077567339,
+            "feed_h2_multiplier": 0.962181356549263,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7674992874454794,
+            "affinity_coordinate_a": 0.7452187130934922,
+            "ldf_factor": 1.1084248431026937,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_03",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 3,
+            "feed_u": 0.7601960059255362,
+            "equilibrium_pc_u": 0.23541863821446896,
+            "ldf_u": 0.096831233240664,
+            "feed_h2_multiplier": 1.0260196005925535,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7869227341622562,
+            "affinity_coordinate_a": 0.7197301070977445,
+            "ldf_factor": 0.8387324932962656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_04",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 4,
+            "feed_u": 0.9142415355890989,
+            "equilibrium_pc_u": 0.6945249801501632,
+            "ldf_u": 0.49289671797305346,
+            "feed_h2_multiplier": 1.04142415355891,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7631298885901361,
+            "affinity_coordinate_a": 0.7509524990423023,
+            "ldf_factor": 0.9971586871892214,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_05",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 5,
+            "feed_u": 0.21766111999750137,
+            "equilibrium_pc_u": 0.06931944657117128,
+            "ldf_u": 0.6387295555323362,
+            "feed_h2_multiplier": 0.97176611199975,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7955307015446291,
+            "affinity_coordinate_a": 0.7084342185650445,
+            "ldf_factor": 1.0554918222129346,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_06",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 6,
+            "feed_u": 0.2720179930329323,
+            "equilibrium_pc_u": 0.8694787304848433,
+            "ldf_u": 0.18436098378151655,
+            "feed_h2_multiplier": 0.9772017993032932,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7540630402725421,
+            "affinity_coordinate_a": 0.7628505585247496,
+            "ldf_factor": 0.8737443935126067,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_07",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 7,
+            "feed_u": 0.5940227936953306,
+            "equilibrium_pc_u": 0.49567608162760735,
+            "ldf_u": 0.9477532505989075,
+            "feed_h2_multiplier": 1.009402279369533,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7734350852353962,
+            "affinity_coordinate_a": 0.7374294049782163,
+            "ldf_factor": 1.1791013002395632,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          }
+        ],
+        "predeclared_source": "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json",
+        "predeclared_before_current_design": true,
+        "role": "independent interior validation excluded from policy selection",
+        "source_sha256": {
+          "psa_hydraulically_feasible_selected_6cell_holdout_v1.py": "f13a406f6156333dd664eaea348d96ad5292e0b59677fd580efff9a082be2175",
+          "psa_hydraulically_feasible_policy_6cell_confirmation_v1.py": "e8d9415ca2a79ec8a5c8b8dfdfb29e6f550711f79638ca571b6022ebf1d8f416",
+          "psa_literature_anchored_policy_full_6cell_cube.py": "831fdd60a132f52eb7bbf5c2a401c122092fab4ed5d725f68ed0695887a57f81",
+          "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json": "1fe4207ad67b9fd227132518b4dd610db9accdbdfc1674ca1bf5f2969e8feb53",
+          "results\\membrane_component_selectivity_requirement\\PSA_MEMBRANE_COMPONENT_SELECTIVITY_REQUIREMENT.json": "46985e49f1ba3f79348fb2355652522e7cae53f9b07e74888e77830f413ffec0"
+        }
+      },
+      "case_index": 0,
+      "policy": "selected",
+      "tank_setpoint_bar": 6.0,
+      "purge_active_s": 4.0,
+      "adsorption_stage_s": 540.0,
+      "scenario": "sobol_interior_00",
+      "scenario_kind": "predeclared_interior_holdout",
+      "sample_index": 0,
+      "feed_u": 0.6895513292402029,
+      "equilibrium_pc_u": 0.9508766205981374,
+      "ldf_u": 0.5799618475139141,
+      "feed_h2_multiplier": 1.0189551329240203,
+      "equilibrium_scenario": "principal_axis_interpolation",
+      "bootstrap_replicate": null,
+      "capacity_coordinate_c": 0.749844655004335,
+      "affinity_coordinate_a": 0.7683861754318524,
+      "ldf_factor": 1.0319847390055656,
+      "equilibrium_pc_endpoint_method": {
+        "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+        "mean_c_a": [
+          0.7718096360294043,
+          0.73820215600804
+        ],
+        "covariance": [
+          [
+            0.0002059870640134691,
+            -0.00019995922704292427
+          ],
+          [
+            -0.00019995922704292427,
+            0.00037106616567087413
+          ]
+        ],
+        "leading_eigenvalue": 0.0005048515323403825,
+        "leading_axis_c_a": [
+          -0.5560784121785588,
+          0.8311298331241472
+        ],
+        "score_quantiles": [
+          0.025,
+          0.975
+        ],
+        "endpoints_are_observed_bootstrap_replicates": true
+      },
+      "n_cells": 6,
+      "n_cycles": 60,
+      "raw_provenance": "direct_six_cell_sixty_cycle_integration",
+      "tank_capacity_mol": 1.166676860720253,
+      "min_tank_pressure_bar": 3.570807621662715,
+      "final_tank_pressure_bar": 6.0,
+      "reserve_threshold_bar": 0.8,
+      "reserve_margin_bar": 2.7708076216627147,
+      "product_manifold_backpressure_bar": 6.2,
+      "passive_fill_pressure_margin_bar": 0.20000000000000018,
+      "passive_fill_gate": true,
+      "maximum_booster_pressure_ratio": 1.8203164910276888,
+      "cumulative_internal_h2_demand_mol": 187.21327532094446,
+      "booster_discharge_pressure_bar": 6.5,
+      "booster_suction_temperature_K": 291.95,
+      "css_residual_final": 4.7452041778096027e-07,
+      "tail3_to_previous3_ratio": 0.9999998919116966,
+      "cycle_mass_balance_relative_max": 1.6127833869327947e-05,
+      "step_mass_balance_relative_max": 0.0010499082141928416,
+      "reserve_gate": true,
+      "css_gate": true,
+      "numerical_gate": true,
+      "raw_h2_rate_mol_s": 0.0026947448874038962,
+      "polished_h2_rate_mol_s": 0.002394745106278008,
+      "absolute_selectivity": {
+        "CO": 404018.28082867974,
+        "CO2": 1144859.3725842633,
+        "N2": 24573.18567215804,
+        "CH4": 4298.329225531435
+      },
+      "aggregate_h2_recovery": 0.8886722885983813,
+      "mean_stage_cut": 0.5387183427810669,
+      "mean_packet_h2_recovery": 0.8909508585929871,
+      "membrane_mass_balance_max_abs_mol": 4.996003610813204e-16,
+      "cycle_time_s": 2170.0,
+      "receiver_capacity_mol": 1.383,
+      "receiver_heel_fraction": 0.05487628914415837,
+      "elapsed_s": 130200.0,
+      "constant_outlet_rate_mol_s": 0.002395128938273919,
+      "qualified_h2_rate_mol_s": 0.002394745058538981,
+      "continuous_gate_pass": true,
+      "feasible_inventory": true,
+      "worst_gate_factor": 0.9999476890774596,
+      "limiting_constraint": "H2_min",
+      "minimum_inventory_mol": 0.07589390788636659,
+      "maximum_inventory_mol": 0.9734517892128587,
+      "initial_inventory_mol": 0.7720878152142714,
+      "final_inventory_mol": 0.7720878152170614,
+      "minimum_h2_fraction": 0.9997522979650185,
+      "maximum_co_ppm": 0.2380031793386918,
+      "maximum_co2_ppm": 2.3104736856887076,
+      "maximum_n2_ppm": 208.76624315564433,
+      "maximum_ch4_ppm": 47.45037603439811,
+      "receiver_mass_balance_max_abs_mol": 1.2379541836082808e-11,
+      "max_factor_H2_min": 0.9999476890774596,
+      "max_factor_CO_max": 0.4760063586773836,
+      "max_factor_CO2_max": 0.4620947371377416,
+      "max_factor_N2_max": 0.6958874771854812,
+      "max_factor_CH4_max": 0.4745037603439812,
+      "signed_quality_margin": 5.231092254043279e-05,
+      "conservative_booster_kwh_per_kg_qualified_h2": 0.18238015083013787,
+      "strict_event": true,
+      "confirmation_gate": true,
+      "conditional_design_event": true,
+      "trace_file": "states\\case_000_traces.npz",
+      "wall_time_s": 358.39089155197144
+    },
+    {
+      "run_signature": {
+        "schema": "psa-hydraulically-feasible-selected-6cell-holdout-state/v1",
+        "n_cells": 6,
+        "n_cycles": 60,
+        "area_cm2": 2000.0,
+        "selectivity_multiplier": 7.5,
+        "area_steps": 280,
+        "qualified_h2_target_mol_s": 0.002,
+        "passive_fill_driving_margin_bar": 0.2,
+        "booster_efficiency": 0.72,
+        "policy": {
+          "policy": "selected",
+          "tank_setpoint_bar": 6.0,
+          "purge_active_s": 4.0,
+          "adsorption_stage_s": 540.0
+        },
+        "holdout_scenarios": [
+          {
+            "scenario": "sobol_interior_00",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 0,
+            "feed_u": 0.6895513292402029,
+            "equilibrium_pc_u": 0.9508766205981374,
+            "ldf_u": 0.5799618475139141,
+            "feed_h2_multiplier": 1.0189551329240203,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.749844655004335,
+            "affinity_coordinate_a": 0.7683861754318524,
+            "ldf_factor": 1.0319847390055656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_01",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 1,
+            "feed_u": 0.42659708857536316,
+            "equilibrium_pc_u": 0.3246792992576957,
+            "ldf_u": 0.2884194990620017,
+            "feed_h2_multiplier": 0.9926597088575363,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7822968666237845,
+            "affinity_coordinate_a": 0.7258004465589064,
+            "ldf_factor": 0.9153677996248007,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_02",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 2,
+            "feed_u": 0.12181356549263,
+            "equilibrium_pc_u": 0.6102131344377995,
+            "ldf_u": 0.7710621077567339,
+            "feed_h2_multiplier": 0.962181356549263,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7674992874454794,
+            "affinity_coordinate_a": 0.7452187130934922,
+            "ldf_factor": 1.1084248431026937,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_03",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 3,
+            "feed_u": 0.7601960059255362,
+            "equilibrium_pc_u": 0.23541863821446896,
+            "ldf_u": 0.096831233240664,
+            "feed_h2_multiplier": 1.0260196005925535,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7869227341622562,
+            "affinity_coordinate_a": 0.7197301070977445,
+            "ldf_factor": 0.8387324932962656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_04",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 4,
+            "feed_u": 0.9142415355890989,
+            "equilibrium_pc_u": 0.6945249801501632,
+            "ldf_u": 0.49289671797305346,
+            "feed_h2_multiplier": 1.04142415355891,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7631298885901361,
+            "affinity_coordinate_a": 0.7509524990423023,
+            "ldf_factor": 0.9971586871892214,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_05",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 5,
+            "feed_u": 0.21766111999750137,
+            "equilibrium_pc_u": 0.06931944657117128,
+            "ldf_u": 0.6387295555323362,
+            "feed_h2_multiplier": 0.97176611199975,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7955307015446291,
+            "affinity_coordinate_a": 0.7084342185650445,
+            "ldf_factor": 1.0554918222129346,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_06",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 6,
+            "feed_u": 0.2720179930329323,
+            "equilibrium_pc_u": 0.8694787304848433,
+            "ldf_u": 0.18436098378151655,
+            "feed_h2_multiplier": 0.9772017993032932,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7540630402725421,
+            "affinity_coordinate_a": 0.7628505585247496,
+            "ldf_factor": 0.8737443935126067,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_07",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 7,
+            "feed_u": 0.5940227936953306,
+            "equilibrium_pc_u": 0.49567608162760735,
+            "ldf_u": 0.9477532505989075,
+            "feed_h2_multiplier": 1.009402279369533,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7734350852353962,
+            "affinity_coordinate_a": 0.7374294049782163,
+            "ldf_factor": 1.1791013002395632,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          }
+        ],
+        "predeclared_source": "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json",
+        "predeclared_before_current_design": true,
+        "role": "independent interior validation excluded from policy selection",
+        "source_sha256": {
+          "psa_hydraulically_feasible_selected_6cell_holdout_v1.py": "f13a406f6156333dd664eaea348d96ad5292e0b59677fd580efff9a082be2175",
+          "psa_hydraulically_feasible_policy_6cell_confirmation_v1.py": "e8d9415ca2a79ec8a5c8b8dfdfb29e6f550711f79638ca571b6022ebf1d8f416",
+          "psa_literature_anchored_policy_full_6cell_cube.py": "831fdd60a132f52eb7bbf5c2a401c122092fab4ed5d725f68ed0695887a57f81",
+          "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json": "1fe4207ad67b9fd227132518b4dd610db9accdbdfc1674ca1bf5f2969e8feb53",
+          "results\\membrane_component_selectivity_requirement\\PSA_MEMBRANE_COMPONENT_SELECTIVITY_REQUIREMENT.json": "46985e49f1ba3f79348fb2355652522e7cae53f9b07e74888e77830f413ffec0"
+        }
+      },
+      "case_index": 1,
+      "policy": "selected",
+      "tank_setpoint_bar": 6.0,
+      "purge_active_s": 4.0,
+      "adsorption_stage_s": 540.0,
+      "scenario": "sobol_interior_01",
+      "scenario_kind": "predeclared_interior_holdout",
+      "sample_index": 1,
+      "feed_u": 0.42659708857536316,
+      "equilibrium_pc_u": 0.3246792992576957,
+      "ldf_u": 0.2884194990620017,
+      "feed_h2_multiplier": 0.9926597088575363,
+      "equilibrium_scenario": "principal_axis_interpolation",
+      "bootstrap_replicate": null,
+      "capacity_coordinate_c": 0.7822968666237845,
+      "affinity_coordinate_a": 0.7258004465589064,
+      "ldf_factor": 0.9153677996248007,
+      "equilibrium_pc_endpoint_method": {
+        "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+        "mean_c_a": [
+          0.7718096360294043,
+          0.73820215600804
+        ],
+        "covariance": [
+          [
+            0.0002059870640134691,
+            -0.00019995922704292427
+          ],
+          [
+            -0.00019995922704292427,
+            0.00037106616567087413
+          ]
+        ],
+        "leading_eigenvalue": 0.0005048515323403825,
+        "leading_axis_c_a": [
+          -0.5560784121785588,
+          0.8311298331241472
+        ],
+        "score_quantiles": [
+          0.025,
+          0.975
+        ],
+        "endpoints_are_observed_bootstrap_replicates": true
+      },
+      "n_cells": 6,
+      "n_cycles": 60,
+      "raw_provenance": "direct_six_cell_sixty_cycle_integration",
+      "tank_capacity_mol": 1.166676860720253,
+      "min_tank_pressure_bar": 3.5758001854627386,
+      "final_tank_pressure_bar": 5.999999999999999,
+      "reserve_threshold_bar": 0.8,
+      "reserve_margin_bar": 2.7758001854627388,
+      "product_manifold_backpressure_bar": 6.2,
+      "passive_fill_pressure_margin_bar": 0.20000000000000018,
+      "passive_fill_gate": true,
+      "maximum_booster_pressure_ratio": 1.8177749490660775,
+      "cumulative_internal_h2_demand_mol": 187.25398783120167,
+      "booster_discharge_pressure_bar": 6.5,
+      "booster_suction_temperature_K": 291.95,
+      "css_residual_final": 5.024732704863897e-07,
+      "tail3_to_previous3_ratio": 1.0000000000534404,
+      "cycle_mass_balance_relative_max": 1.6306496106477564e-05,
+      "step_mass_balance_relative_max": 0.0009897965818681791,
+      "reserve_gate": true,
+      "css_gate": true,
+      "numerical_gate": true,
+      "raw_h2_rate_mol_s": 0.0026434271375689457,
+      "polished_h2_rate_mol_s": 0.0023361389489235866,
+      "absolute_selectivity": {
+        "CO": 404018.28082867974,
+        "CO2": 1144859.3725842633,
+        "N2": 24573.18567215804,
+        "CH4": 4298.329225531435
+      },
+      "aggregate_h2_recovery": 0.8837538647167104,
+      "mean_stage_cut": 0.5262954235076904,
+      "mean_packet_h2_recovery": 0.8860620856285095,
+      "membrane_mass_balance_max_abs_mol": 5.273559366969494e-16,
+      "cycle_time_s": 2170.0,
+      "receiver_capacity_mol": 1.383,
+      "receiver_heel_fraction": 0.05487628914415837,
+      "elapsed_s": 130200.0,
+      "constant_outlet_rate_mol_s": 0.0023365242910015883,
+      "qualified_h2_rate_mol_s": 0.002336138901909327,
+      "continuous_gate_pass": true,
+      "feasible_inventory": true,
+      "worst_gate_factor": 0.9999548965424793,
+      "limiting_constraint": "H2_min",
+      "minimum_inventory_mol": 0.07589390788637283,
+      "maximum_inventory_mol": 0.9450427768795883,
+      "initial_inventory_mol": 0.7449627726073157,
+      "final_inventory_mol": 0.7449627726025372,
+      "minimum_h2_fraction": 0.9997450919602868,
+      "maximum_co_ppm": 0.242652533352219,
+      "maximum_co2_ppm": 2.355090043192239,
+      "maximum_n2_ppm": 216.24475663917048,
+      "maximum_ch4_ppm": 48.22599245837756,
+      "receiver_mass_balance_max_abs_mol": 1.3965495426759844e-12,
+      "max_factor_H2_min": 0.9999548965424793,
+      "max_factor_CO_max": 0.485305066704438,
+      "max_factor_CO2_max": 0.47101800863844784,
+      "max_factor_N2_max": 0.7208158554639016,
+      "max_factor_CH4_max": 0.48225992458377565,
+      "signed_quality_margin": 4.51034575207343e-05,
+      "conservative_booster_kwh_per_kg_qualified_h2": 0.18652132460354712,
+      "strict_event": true,
+      "confirmation_gate": true,
+      "conditional_design_event": true,
+      "trace_file": "states\\case_001_traces.npz",
+      "wall_time_s": 430.60153579711914
+    },
+    {
+      "run_signature": {
+        "schema": "psa-hydraulically-feasible-selected-6cell-holdout-state/v1",
+        "n_cells": 6,
+        "n_cycles": 60,
+        "area_cm2": 2000.0,
+        "selectivity_multiplier": 7.5,
+        "area_steps": 280,
+        "qualified_h2_target_mol_s": 0.002,
+        "passive_fill_driving_margin_bar": 0.2,
+        "booster_efficiency": 0.72,
+        "policy": {
+          "policy": "selected",
+          "tank_setpoint_bar": 6.0,
+          "purge_active_s": 4.0,
+          "adsorption_stage_s": 540.0
+        },
+        "holdout_scenarios": [
+          {
+            "scenario": "sobol_interior_00",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 0,
+            "feed_u": 0.6895513292402029,
+            "equilibrium_pc_u": 0.9508766205981374,
+            "ldf_u": 0.5799618475139141,
+            "feed_h2_multiplier": 1.0189551329240203,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.749844655004335,
+            "affinity_coordinate_a": 0.7683861754318524,
+            "ldf_factor": 1.0319847390055656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_01",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 1,
+            "feed_u": 0.42659708857536316,
+            "equilibrium_pc_u": 0.3246792992576957,
+            "ldf_u": 0.2884194990620017,
+            "feed_h2_multiplier": 0.9926597088575363,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7822968666237845,
+            "affinity_coordinate_a": 0.7258004465589064,
+            "ldf_factor": 0.9153677996248007,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_02",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 2,
+            "feed_u": 0.12181356549263,
+            "equilibrium_pc_u": 0.6102131344377995,
+            "ldf_u": 0.7710621077567339,
+            "feed_h2_multiplier": 0.962181356549263,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7674992874454794,
+            "affinity_coordinate_a": 0.7452187130934922,
+            "ldf_factor": 1.1084248431026937,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_03",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 3,
+            "feed_u": 0.7601960059255362,
+            "equilibrium_pc_u": 0.23541863821446896,
+            "ldf_u": 0.096831233240664,
+            "feed_h2_multiplier": 1.0260196005925535,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7869227341622562,
+            "affinity_coordinate_a": 0.7197301070977445,
+            "ldf_factor": 0.8387324932962656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_04",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 4,
+            "feed_u": 0.9142415355890989,
+            "equilibrium_pc_u": 0.6945249801501632,
+            "ldf_u": 0.49289671797305346,
+            "feed_h2_multiplier": 1.04142415355891,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7631298885901361,
+            "affinity_coordinate_a": 0.7509524990423023,
+            "ldf_factor": 0.9971586871892214,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_05",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 5,
+            "feed_u": 0.21766111999750137,
+            "equilibrium_pc_u": 0.06931944657117128,
+            "ldf_u": 0.6387295555323362,
+            "feed_h2_multiplier": 0.97176611199975,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7955307015446291,
+            "affinity_coordinate_a": 0.7084342185650445,
+            "ldf_factor": 1.0554918222129346,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_06",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 6,
+            "feed_u": 0.2720179930329323,
+            "equilibrium_pc_u": 0.8694787304848433,
+            "ldf_u": 0.18436098378151655,
+            "feed_h2_multiplier": 0.9772017993032932,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7540630402725421,
+            "affinity_coordinate_a": 0.7628505585247496,
+            "ldf_factor": 0.8737443935126067,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_07",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 7,
+            "feed_u": 0.5940227936953306,
+            "equilibrium_pc_u": 0.49567608162760735,
+            "ldf_u": 0.9477532505989075,
+            "feed_h2_multiplier": 1.009402279369533,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7734350852353962,
+            "affinity_coordinate_a": 0.7374294049782163,
+            "ldf_factor": 1.1791013002395632,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          }
+        ],
+        "predeclared_source": "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json",
+        "predeclared_before_current_design": true,
+        "role": "independent interior validation excluded from policy selection",
+        "source_sha256": {
+          "psa_hydraulically_feasible_selected_6cell_holdout_v1.py": "f13a406f6156333dd664eaea348d96ad5292e0b59677fd580efff9a082be2175",
+          "psa_hydraulically_feasible_policy_6cell_confirmation_v1.py": "e8d9415ca2a79ec8a5c8b8dfdfb29e6f550711f79638ca571b6022ebf1d8f416",
+          "psa_literature_anchored_policy_full_6cell_cube.py": "831fdd60a132f52eb7bbf5c2a401c122092fab4ed5d725f68ed0695887a57f81",
+          "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json": "1fe4207ad67b9fd227132518b4dd610db9accdbdfc1674ca1bf5f2969e8feb53",
+          "results\\membrane_component_selectivity_requirement\\PSA_MEMBRANE_COMPONENT_SELECTIVITY_REQUIREMENT.json": "46985e49f1ba3f79348fb2355652522e7cae53f9b07e74888e77830f413ffec0"
+        }
+      },
+      "case_index": 2,
+      "policy": "selected",
+      "tank_setpoint_bar": 6.0,
+      "purge_active_s": 4.0,
+      "adsorption_stage_s": 540.0,
+      "scenario": "sobol_interior_02",
+      "scenario_kind": "predeclared_interior_holdout",
+      "sample_index": 2,
+      "feed_u": 0.12181356549263,
+      "equilibrium_pc_u": 0.6102131344377995,
+      "ldf_u": 0.7710621077567339,
+      "feed_h2_multiplier": 0.962181356549263,
+      "equilibrium_scenario": "principal_axis_interpolation",
+      "bootstrap_replicate": null,
+      "capacity_coordinate_c": 0.7674992874454794,
+      "affinity_coordinate_a": 0.7452187130934922,
+      "ldf_factor": 1.1084248431026937,
+      "equilibrium_pc_endpoint_method": {
+        "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+        "mean_c_a": [
+          0.7718096360294043,
+          0.73820215600804
+        ],
+        "covariance": [
+          [
+            0.0002059870640134691,
+            -0.00019995922704292427
+          ],
+          [
+            -0.00019995922704292427,
+            0.00037106616567087413
+          ]
+        ],
+        "leading_eigenvalue": 0.0005048515323403825,
+        "leading_axis_c_a": [
+          -0.5560784121785588,
+          0.8311298331241472
+        ],
+        "score_quantiles": [
+          0.025,
+          0.975
+        ],
+        "endpoints_are_observed_bootstrap_replicates": true
+      },
+      "n_cells": 6,
+      "n_cycles": 60,
+      "raw_provenance": "direct_six_cell_sixty_cycle_integration",
+      "tank_capacity_mol": 1.166676860720253,
+      "min_tank_pressure_bar": 3.5463268905815237,
+      "final_tank_pressure_bar": 6.000000000000001,
+      "reserve_threshold_bar": 0.8,
+      "reserve_margin_bar": 2.746326890581524,
+      "product_manifold_backpressure_bar": 6.2,
+      "passive_fill_pressure_margin_bar": 0.20000000000000018,
+      "passive_fill_gate": true,
+      "maximum_booster_pressure_ratio": 1.8328823598475816,
+      "cumulative_internal_h2_demand_mol": 187.21876477801285,
+      "booster_discharge_pressure_bar": 6.5,
+      "booster_suction_temperature_K": 291.95,
+      "css_residual_final": 5.478942706181605e-07,
+      "tail3_to_previous3_ratio": 1.0000001345228824,
+      "cycle_mass_balance_relative_max": 1.64211629844452e-05,
+      "step_mass_balance_relative_max": 0.0010898471295048065,
+      "reserve_gate": true,
+      "css_gate": true,
+      "numerical_gate": true,
+      "raw_h2_rate_mol_s": 0.0025883728778549405,
+      "polished_h2_rate_mol_s": 0.0022806458649878418,
+      "absolute_selectivity": {
+        "CO": 404018.28082867974,
+        "CO2": 1144859.3725842633,
+        "N2": 24573.18567215804,
+        "CH4": 4298.329225531435
+      },
+      "aggregate_h2_recovery": 0.8811117920837893,
+      "mean_stage_cut": 0.5203197598457336,
+      "mean_packet_h2_recovery": 0.8836727738380432,
+      "membrane_mass_balance_max_abs_mol": 5.551115123125783e-16,
+      "cycle_time_s": 2170.0,
+      "receiver_capacity_mol": 1.383,
+      "receiver_heel_fraction": 0.05487628914415837,
+      "elapsed_s": 130200.0,
+      "constant_outlet_rate_mol_s": 0.0022810346874777092,
+      "qualified_h2_rate_mol_s": 0.0022806458124524365,
+      "continuous_gate_pass": true,
+      "feasible_inventory": true,
+      "worst_gate_factor": 0.9999689880948871,
+      "limiting_constraint": "H2_min",
+      "minimum_inventory_mol": 0.07589390788636886,
+      "maximum_inventory_mol": 0.956620844023322,
+      "initial_inventory_mol": 0.7538089235291625,
+      "final_inventory_mol": 0.7538089235246439,
+      "minimum_h2_fraction": 0.9997310035630209,
+      "maximum_co_ppm": 0.2547361472993758,
+      "maximum_co2_ppm": 2.4608378102703665,
+      "maximum_n2_ppm": 227.2432141905559,
+      "maximum_ch4_ppm": 50.65429095076966,
+      "receiver_mass_balance_max_abs_mol": 8.61333226964689e-12,
+      "max_factor_H2_min": 0.9999689880948871,
+      "max_factor_CO_max": 0.5094722945987517,
+      "max_factor_CO2_max": 0.49216756205407336,
+      "max_factor_N2_max": 0.7574773806351864,
+      "max_factor_CH4_max": 0.5065429095076966,
+      "signed_quality_margin": 3.101190511289875e-05,
+      "conservative_booster_kwh_per_kg_qualified_h2": 0.19390727187736673,
+      "strict_event": true,
+      "confirmation_gate": true,
+      "conditional_design_event": true,
+      "trace_file": "states\\case_002_traces.npz",
+      "wall_time_s": 439.55949783325195
+    },
+    {
+      "run_signature": {
+        "schema": "psa-hydraulically-feasible-selected-6cell-holdout-state/v1",
+        "n_cells": 6,
+        "n_cycles": 60,
+        "area_cm2": 2000.0,
+        "selectivity_multiplier": 7.5,
+        "area_steps": 280,
+        "qualified_h2_target_mol_s": 0.002,
+        "passive_fill_driving_margin_bar": 0.2,
+        "booster_efficiency": 0.72,
+        "policy": {
+          "policy": "selected",
+          "tank_setpoint_bar": 6.0,
+          "purge_active_s": 4.0,
+          "adsorption_stage_s": 540.0
+        },
+        "holdout_scenarios": [
+          {
+            "scenario": "sobol_interior_00",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 0,
+            "feed_u": 0.6895513292402029,
+            "equilibrium_pc_u": 0.9508766205981374,
+            "ldf_u": 0.5799618475139141,
+            "feed_h2_multiplier": 1.0189551329240203,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.749844655004335,
+            "affinity_coordinate_a": 0.7683861754318524,
+            "ldf_factor": 1.0319847390055656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_01",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 1,
+            "feed_u": 0.42659708857536316,
+            "equilibrium_pc_u": 0.3246792992576957,
+            "ldf_u": 0.2884194990620017,
+            "feed_h2_multiplier": 0.9926597088575363,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7822968666237845,
+            "affinity_coordinate_a": 0.7258004465589064,
+            "ldf_factor": 0.9153677996248007,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_02",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 2,
+            "feed_u": 0.12181356549263,
+            "equilibrium_pc_u": 0.6102131344377995,
+            "ldf_u": 0.7710621077567339,
+            "feed_h2_multiplier": 0.962181356549263,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7674992874454794,
+            "affinity_coordinate_a": 0.7452187130934922,
+            "ldf_factor": 1.1084248431026937,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_03",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 3,
+            "feed_u": 0.7601960059255362,
+            "equilibrium_pc_u": 0.23541863821446896,
+            "ldf_u": 0.096831233240664,
+            "feed_h2_multiplier": 1.0260196005925535,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7869227341622562,
+            "affinity_coordinate_a": 0.7197301070977445,
+            "ldf_factor": 0.8387324932962656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_04",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 4,
+            "feed_u": 0.9142415355890989,
+            "equilibrium_pc_u": 0.6945249801501632,
+            "ldf_u": 0.49289671797305346,
+            "feed_h2_multiplier": 1.04142415355891,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7631298885901361,
+            "affinity_coordinate_a": 0.7509524990423023,
+            "ldf_factor": 0.9971586871892214,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_05",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 5,
+            "feed_u": 0.21766111999750137,
+            "equilibrium_pc_u": 0.06931944657117128,
+            "ldf_u": 0.6387295555323362,
+            "feed_h2_multiplier": 0.97176611199975,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7955307015446291,
+            "affinity_coordinate_a": 0.7084342185650445,
+            "ldf_factor": 1.0554918222129346,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_06",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 6,
+            "feed_u": 0.2720179930329323,
+            "equilibrium_pc_u": 0.8694787304848433,
+            "ldf_u": 0.18436098378151655,
+            "feed_h2_multiplier": 0.9772017993032932,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7540630402725421,
+            "affinity_coordinate_a": 0.7628505585247496,
+            "ldf_factor": 0.8737443935126067,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_07",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 7,
+            "feed_u": 0.5940227936953306,
+            "equilibrium_pc_u": 0.49567608162760735,
+            "ldf_u": 0.9477532505989075,
+            "feed_h2_multiplier": 1.009402279369533,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7734350852353962,
+            "affinity_coordinate_a": 0.7374294049782163,
+            "ldf_factor": 1.1791013002395632,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          }
+        ],
+        "predeclared_source": "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json",
+        "predeclared_before_current_design": true,
+        "role": "independent interior validation excluded from policy selection",
+        "source_sha256": {
+          "psa_hydraulically_feasible_selected_6cell_holdout_v1.py": "f13a406f6156333dd664eaea348d96ad5292e0b59677fd580efff9a082be2175",
+          "psa_hydraulically_feasible_policy_6cell_confirmation_v1.py": "e8d9415ca2a79ec8a5c8b8dfdfb29e6f550711f79638ca571b6022ebf1d8f416",
+          "psa_literature_anchored_policy_full_6cell_cube.py": "831fdd60a132f52eb7bbf5c2a401c122092fab4ed5d725f68ed0695887a57f81",
+          "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json": "1fe4207ad67b9fd227132518b4dd610db9accdbdfc1674ca1bf5f2969e8feb53",
+          "results\\membrane_component_selectivity_requirement\\PSA_MEMBRANE_COMPONENT_SELECTIVITY_REQUIREMENT.json": "46985e49f1ba3f79348fb2355652522e7cae53f9b07e74888e77830f413ffec0"
+        }
+      },
+      "case_index": 3,
+      "policy": "selected",
+      "tank_setpoint_bar": 6.0,
+      "purge_active_s": 4.0,
+      "adsorption_stage_s": 540.0,
+      "scenario": "sobol_interior_03",
+      "scenario_kind": "predeclared_interior_holdout",
+      "sample_index": 3,
+      "feed_u": 0.7601960059255362,
+      "equilibrium_pc_u": 0.23541863821446896,
+      "ldf_u": 0.096831233240664,
+      "feed_h2_multiplier": 1.0260196005925535,
+      "equilibrium_scenario": "principal_axis_interpolation",
+      "bootstrap_replicate": null,
+      "capacity_coordinate_c": 0.7869227341622562,
+      "affinity_coordinate_a": 0.7197301070977445,
+      "ldf_factor": 0.8387324932962656,
+      "equilibrium_pc_endpoint_method": {
+        "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+        "mean_c_a": [
+          0.7718096360294043,
+          0.73820215600804
+        ],
+        "covariance": [
+          [
+            0.0002059870640134691,
+            -0.00019995922704292427
+          ],
+          [
+            -0.00019995922704292427,
+            0.00037106616567087413
+          ]
+        ],
+        "leading_eigenvalue": 0.0005048515323403825,
+        "leading_axis_c_a": [
+          -0.5560784121785588,
+          0.8311298331241472
+        ],
+        "score_quantiles": [
+          0.025,
+          0.975
+        ],
+        "endpoints_are_observed_bootstrap_replicates": true
+      },
+      "n_cells": 6,
+      "n_cycles": 60,
+      "raw_provenance": "direct_six_cell_sixty_cycle_integration",
+      "tank_capacity_mol": 1.166676860720253,
+      "min_tank_pressure_bar": 3.5971797395246212,
+      "final_tank_pressure_bar": 5.999999999999999,
+      "reserve_threshold_bar": 0.8,
+      "reserve_margin_bar": 2.797179739524621,
+      "product_manifold_backpressure_bar": 6.2,
+      "passive_fill_pressure_margin_bar": 0.20000000000000018,
+      "passive_fill_gate": true,
+      "maximum_booster_pressure_ratio": 1.806971147029477,
+      "cumulative_internal_h2_demand_mol": 187.30405118457938,
+      "booster_discharge_pressure_bar": 6.5,
+      "booster_suction_temperature_K": 291.95,
+      "css_residual_final": 4.968742651668238e-07,
+      "tail3_to_previous3_ratio": 0.9999999163556198,
+      "cycle_mass_balance_relative_max": 1.6141255918271018e-05,
+      "step_mass_balance_relative_max": 0.0009715934222179957,
+      "reserve_gate": true,
+      "css_gate": true,
+      "numerical_gate": true,
+      "raw_h2_rate_mol_s": 0.0027033546236520972,
+      "polished_h2_rate_mol_s": 0.0023989041106978236,
+      "absolute_selectivity": {
+        "CO": 404018.28082867974,
+        "CO2": 1144859.3725842633,
+        "N2": 24573.18567215804,
+        "CH4": 4298.329225531435
+      },
+      "aggregate_h2_recovery": 0.8873804752470928,
+      "mean_stage_cut": 0.5349338054656982,
+      "mean_packet_h2_recovery": 0.8894819617271423,
+      "membrane_mass_balance_max_abs_mol": 5.551115123125783e-16,
+      "cycle_time_s": 2170.0,
+      "receiver_capacity_mol": 1.383,
+      "receiver_heel_fraction": 0.05487628914415837,
+      "elapsed_s": 130200.0,
+      "constant_outlet_rate_mol_s": 0.0023992861922926207,
+      "qualified_h2_rate_mol_s": 0.002398904067713744,
+      "continuous_gate_pass": true,
+      "feasible_inventory": true,
+      "worst_gate_factor": 0.9999419076768752,
+      "limiting_constraint": "H2_min",
+      "minimum_inventory_mol": 0.0758939078863672,
+      "maximum_inventory_mol": 0.9406655100746273,
+      "initial_inventory_mol": 0.7472307364881362,
+      "final_inventory_mol": 0.7472307364896157,
+      "minimum_h2_fraction": 0.9997580782693295,
+      "maximum_co_ppm": 0.23171536637032386,
+      "maximum_co2_ppm": 2.2564776754796383,
+      "maximum_n2_ppm": 205.63194806991882,
+      "maximum_ch4_ppm": 46.0665648941301,
+      "receiver_mass_balance_max_abs_mol": 1.7639556482151875e-11,
+      "max_factor_H2_min": 0.9999419076768752,
+      "max_factor_CO_max": 0.4634307327406477,
+      "max_factor_CO2_max": 0.4512955350959277,
+      "max_factor_N2_max": 0.6854398268997295,
+      "max_factor_CH4_max": 0.4606656489413011,
+      "signed_quality_margin": 5.809232312481427e-05,
+      "conservative_booster_kwh_per_kg_qualified_h2": 0.17971849348377927,
+      "strict_event": true,
+      "confirmation_gate": true,
+      "conditional_design_event": true,
+      "trace_file": "states\\case_003_traces.npz",
+      "wall_time_s": 443.4965844154358
+    },
+    {
+      "run_signature": {
+        "schema": "psa-hydraulically-feasible-selected-6cell-holdout-state/v1",
+        "n_cells": 6,
+        "n_cycles": 60,
+        "area_cm2": 2000.0,
+        "selectivity_multiplier": 7.5,
+        "area_steps": 280,
+        "qualified_h2_target_mol_s": 0.002,
+        "passive_fill_driving_margin_bar": 0.2,
+        "booster_efficiency": 0.72,
+        "policy": {
+          "policy": "selected",
+          "tank_setpoint_bar": 6.0,
+          "purge_active_s": 4.0,
+          "adsorption_stage_s": 540.0
+        },
+        "holdout_scenarios": [
+          {
+            "scenario": "sobol_interior_00",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 0,
+            "feed_u": 0.6895513292402029,
+            "equilibrium_pc_u": 0.9508766205981374,
+            "ldf_u": 0.5799618475139141,
+            "feed_h2_multiplier": 1.0189551329240203,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.749844655004335,
+            "affinity_coordinate_a": 0.7683861754318524,
+            "ldf_factor": 1.0319847390055656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_01",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 1,
+            "feed_u": 0.42659708857536316,
+            "equilibrium_pc_u": 0.3246792992576957,
+            "ldf_u": 0.2884194990620017,
+            "feed_h2_multiplier": 0.9926597088575363,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7822968666237845,
+            "affinity_coordinate_a": 0.7258004465589064,
+            "ldf_factor": 0.9153677996248007,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_02",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 2,
+            "feed_u": 0.12181356549263,
+            "equilibrium_pc_u": 0.6102131344377995,
+            "ldf_u": 0.7710621077567339,
+            "feed_h2_multiplier": 0.962181356549263,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7674992874454794,
+            "affinity_coordinate_a": 0.7452187130934922,
+            "ldf_factor": 1.1084248431026937,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_03",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 3,
+            "feed_u": 0.7601960059255362,
+            "equilibrium_pc_u": 0.23541863821446896,
+            "ldf_u": 0.096831233240664,
+            "feed_h2_multiplier": 1.0260196005925535,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7869227341622562,
+            "affinity_coordinate_a": 0.7197301070977445,
+            "ldf_factor": 0.8387324932962656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_04",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 4,
+            "feed_u": 0.9142415355890989,
+            "equilibrium_pc_u": 0.6945249801501632,
+            "ldf_u": 0.49289671797305346,
+            "feed_h2_multiplier": 1.04142415355891,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7631298885901361,
+            "affinity_coordinate_a": 0.7509524990423023,
+            "ldf_factor": 0.9971586871892214,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_05",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 5,
+            "feed_u": 0.21766111999750137,
+            "equilibrium_pc_u": 0.06931944657117128,
+            "ldf_u": 0.6387295555323362,
+            "feed_h2_multiplier": 0.97176611199975,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7955307015446291,
+            "affinity_coordinate_a": 0.7084342185650445,
+            "ldf_factor": 1.0554918222129346,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_06",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 6,
+            "feed_u": 0.2720179930329323,
+            "equilibrium_pc_u": 0.8694787304848433,
+            "ldf_u": 0.18436098378151655,
+            "feed_h2_multiplier": 0.9772017993032932,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7540630402725421,
+            "affinity_coordinate_a": 0.7628505585247496,
+            "ldf_factor": 0.8737443935126067,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_07",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 7,
+            "feed_u": 0.5940227936953306,
+            "equilibrium_pc_u": 0.49567608162760735,
+            "ldf_u": 0.9477532505989075,
+            "feed_h2_multiplier": 1.009402279369533,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7734350852353962,
+            "affinity_coordinate_a": 0.7374294049782163,
+            "ldf_factor": 1.1791013002395632,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          }
+        ],
+        "predeclared_source": "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json",
+        "predeclared_before_current_design": true,
+        "role": "independent interior validation excluded from policy selection",
+        "source_sha256": {
+          "psa_hydraulically_feasible_selected_6cell_holdout_v1.py": "f13a406f6156333dd664eaea348d96ad5292e0b59677fd580efff9a082be2175",
+          "psa_hydraulically_feasible_policy_6cell_confirmation_v1.py": "e8d9415ca2a79ec8a5c8b8dfdfb29e6f550711f79638ca571b6022ebf1d8f416",
+          "psa_literature_anchored_policy_full_6cell_cube.py": "831fdd60a132f52eb7bbf5c2a401c122092fab4ed5d725f68ed0695887a57f81",
+          "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json": "1fe4207ad67b9fd227132518b4dd610db9accdbdfc1674ca1bf5f2969e8feb53",
+          "results\\membrane_component_selectivity_requirement\\PSA_MEMBRANE_COMPONENT_SELECTIVITY_REQUIREMENT.json": "46985e49f1ba3f79348fb2355652522e7cae53f9b07e74888e77830f413ffec0"
+        }
+      },
+      "case_index": 4,
+      "policy": "selected",
+      "tank_setpoint_bar": 6.0,
+      "purge_active_s": 4.0,
+      "adsorption_stage_s": 540.0,
+      "scenario": "sobol_interior_04",
+      "scenario_kind": "predeclared_interior_holdout",
+      "sample_index": 4,
+      "feed_u": 0.9142415355890989,
+      "equilibrium_pc_u": 0.6945249801501632,
+      "ldf_u": 0.49289671797305346,
+      "feed_h2_multiplier": 1.04142415355891,
+      "equilibrium_scenario": "principal_axis_interpolation",
+      "bootstrap_replicate": null,
+      "capacity_coordinate_c": 0.7631298885901361,
+      "affinity_coordinate_a": 0.7509524990423023,
+      "ldf_factor": 0.9971586871892214,
+      "equilibrium_pc_endpoint_method": {
+        "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+        "mean_c_a": [
+          0.7718096360294043,
+          0.73820215600804
+        ],
+        "covariance": [
+          [
+            0.0002059870640134691,
+            -0.00019995922704292427
+          ],
+          [
+            -0.00019995922704292427,
+            0.00037106616567087413
+          ]
+        ],
+        "leading_eigenvalue": 0.0005048515323403825,
+        "leading_axis_c_a": [
+          -0.5560784121785588,
+          0.8311298331241472
+        ],
+        "score_quantiles": [
+          0.025,
+          0.975
+        ],
+        "endpoints_are_observed_bootstrap_replicates": true
+      },
+      "n_cells": 6,
+      "n_cycles": 60,
+      "raw_provenance": "direct_six_cell_sixty_cycle_integration",
+      "tank_capacity_mol": 1.166676860720253,
+      "min_tank_pressure_bar": 3.5857950212895293,
+      "final_tank_pressure_bar": 6.000000000000001,
+      "reserve_threshold_bar": 0.8,
+      "reserve_margin_bar": 2.7857950212895295,
+      "product_manifold_backpressure_bar": 6.2,
+      "passive_fill_pressure_margin_bar": 0.20000000000000018,
+      "passive_fill_gate": true,
+      "maximum_booster_pressure_ratio": 1.812708189232317,
+      "cumulative_internal_h2_demand_mol": 187.31956612327704,
+      "booster_discharge_pressure_bar": 6.5,
+      "booster_suction_temperature_K": 291.95,
+      "css_residual_final": 5.626825076950334e-07,
+      "tail3_to_previous3_ratio": 1.0000002128386092,
+      "cycle_mass_balance_relative_max": 1.597013579464274e-05,
+      "step_mass_balance_relative_max": 0.001033656193524626,
+      "reserve_gate": true,
+      "css_gate": true,
+      "numerical_gate": true,
+      "raw_h2_rate_mol_s": 0.0027332269374618643,
+      "polished_h2_rate_mol_s": 0.0024356315781253694,
+      "absolute_selectivity": {
+        "CO": 404018.28082867974,
+        "CO2": 1144859.3725842633,
+        "N2": 24573.18567215804,
+        "CH4": 4298.329225531435
+      },
+      "aggregate_h2_recovery": 0.891119410811585,
+      "mean_stage_cut": 0.5444434881210327,
+      "mean_packet_h2_recovery": 0.8932380080223083,
+      "membrane_mass_balance_max_abs_mol": 5.551115123125783e-16,
+      "cycle_time_s": 2170.0,
+      "receiver_capacity_mol": 1.383,
+      "receiver_heel_fraction": 0.05487628914415837,
+      "elapsed_s": 130200.0,
+      "constant_outlet_rate_mol_s": 0.0024360131055223898,
+      "qualified_h2_rate_mol_s": 0.002435631533198949,
+      "continuous_gate_pass": true,
+      "feasible_inventory": true,
+      "worst_gate_factor": 0.9999388856827591,
+      "limiting_constraint": "H2_min",
+      "minimum_inventory_mol": 0.0758939078863729,
+      "maximum_inventory_mol": 0.9576670763637201,
+      "initial_inventory_mol": 0.7749197385579465,
+      "final_inventory_mol": 0.7749197385600586,
+      "minimum_h2_fraction": 0.9997610997170132,
+      "maximum_co_ppm": 0.23145428402332804,
+      "maximum_co2_ppm": 2.2508202880340953,
+      "maximum_n2_ppm": 202.09164780155274,
+      "maximum_ch4_ppm": 46.097806636909326,
+      "receiver_mass_balance_max_abs_mol": 1.6741608099835048e-11,
+      "max_factor_H2_min": 0.9999388856827591,
+      "max_factor_CO_max": 0.46290856804665614,
+      "max_factor_CO2_max": 0.4501640576068191,
+      "max_factor_N2_max": 0.6736388260051759,
+      "max_factor_CH4_max": 0.46097806636909333,
+      "signed_quality_margin": 6.111431724087346e-05,
+      "conservative_booster_kwh_per_kg_qualified_h2": 0.1780552290622328,
+      "strict_event": true,
+      "confirmation_gate": true,
+      "conditional_design_event": true,
+      "trace_file": "states\\case_004_traces.npz",
+      "wall_time_s": 451.20678877830505
+    },
+    {
+      "run_signature": {
+        "schema": "psa-hydraulically-feasible-selected-6cell-holdout-state/v1",
+        "n_cells": 6,
+        "n_cycles": 60,
+        "area_cm2": 2000.0,
+        "selectivity_multiplier": 7.5,
+        "area_steps": 280,
+        "qualified_h2_target_mol_s": 0.002,
+        "passive_fill_driving_margin_bar": 0.2,
+        "booster_efficiency": 0.72,
+        "policy": {
+          "policy": "selected",
+          "tank_setpoint_bar": 6.0,
+          "purge_active_s": 4.0,
+          "adsorption_stage_s": 540.0
+        },
+        "holdout_scenarios": [
+          {
+            "scenario": "sobol_interior_00",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 0,
+            "feed_u": 0.6895513292402029,
+            "equilibrium_pc_u": 0.9508766205981374,
+            "ldf_u": 0.5799618475139141,
+            "feed_h2_multiplier": 1.0189551329240203,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.749844655004335,
+            "affinity_coordinate_a": 0.7683861754318524,
+            "ldf_factor": 1.0319847390055656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_01",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 1,
+            "feed_u": 0.42659708857536316,
+            "equilibrium_pc_u": 0.3246792992576957,
+            "ldf_u": 0.2884194990620017,
+            "feed_h2_multiplier": 0.9926597088575363,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7822968666237845,
+            "affinity_coordinate_a": 0.7258004465589064,
+            "ldf_factor": 0.9153677996248007,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_02",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 2,
+            "feed_u": 0.12181356549263,
+            "equilibrium_pc_u": 0.6102131344377995,
+            "ldf_u": 0.7710621077567339,
+            "feed_h2_multiplier": 0.962181356549263,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7674992874454794,
+            "affinity_coordinate_a": 0.7452187130934922,
+            "ldf_factor": 1.1084248431026937,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_03",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 3,
+            "feed_u": 0.7601960059255362,
+            "equilibrium_pc_u": 0.23541863821446896,
+            "ldf_u": 0.096831233240664,
+            "feed_h2_multiplier": 1.0260196005925535,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7869227341622562,
+            "affinity_coordinate_a": 0.7197301070977445,
+            "ldf_factor": 0.8387324932962656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_04",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 4,
+            "feed_u": 0.9142415355890989,
+            "equilibrium_pc_u": 0.6945249801501632,
+            "ldf_u": 0.49289671797305346,
+            "feed_h2_multiplier": 1.04142415355891,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7631298885901361,
+            "affinity_coordinate_a": 0.7509524990423023,
+            "ldf_factor": 0.9971586871892214,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_05",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 5,
+            "feed_u": 0.21766111999750137,
+            "equilibrium_pc_u": 0.06931944657117128,
+            "ldf_u": 0.6387295555323362,
+            "feed_h2_multiplier": 0.97176611199975,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7955307015446291,
+            "affinity_coordinate_a": 0.7084342185650445,
+            "ldf_factor": 1.0554918222129346,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_06",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 6,
+            "feed_u": 0.2720179930329323,
+            "equilibrium_pc_u": 0.8694787304848433,
+            "ldf_u": 0.18436098378151655,
+            "feed_h2_multiplier": 0.9772017993032932,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7540630402725421,
+            "affinity_coordinate_a": 0.7628505585247496,
+            "ldf_factor": 0.8737443935126067,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_07",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 7,
+            "feed_u": 0.5940227936953306,
+            "equilibrium_pc_u": 0.49567608162760735,
+            "ldf_u": 0.9477532505989075,
+            "feed_h2_multiplier": 1.009402279369533,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7734350852353962,
+            "affinity_coordinate_a": 0.7374294049782163,
+            "ldf_factor": 1.1791013002395632,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          }
+        ],
+        "predeclared_source": "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json",
+        "predeclared_before_current_design": true,
+        "role": "independent interior validation excluded from policy selection",
+        "source_sha256": {
+          "psa_hydraulically_feasible_selected_6cell_holdout_v1.py": "f13a406f6156333dd664eaea348d96ad5292e0b59677fd580efff9a082be2175",
+          "psa_hydraulically_feasible_policy_6cell_confirmation_v1.py": "e8d9415ca2a79ec8a5c8b8dfdfb29e6f550711f79638ca571b6022ebf1d8f416",
+          "psa_literature_anchored_policy_full_6cell_cube.py": "831fdd60a132f52eb7bbf5c2a401c122092fab4ed5d725f68ed0695887a57f81",
+          "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json": "1fe4207ad67b9fd227132518b4dd610db9accdbdfc1674ca1bf5f2969e8feb53",
+          "results\\membrane_component_selectivity_requirement\\PSA_MEMBRANE_COMPONENT_SELECTIVITY_REQUIREMENT.json": "46985e49f1ba3f79348fb2355652522e7cae53f9b07e74888e77830f413ffec0"
+        }
+      },
+      "case_index": 5,
+      "policy": "selected",
+      "tank_setpoint_bar": 6.0,
+      "purge_active_s": 4.0,
+      "adsorption_stage_s": 540.0,
+      "scenario": "sobol_interior_05",
+      "scenario_kind": "predeclared_interior_holdout",
+      "sample_index": 5,
+      "feed_u": 0.21766111999750137,
+      "equilibrium_pc_u": 0.06931944657117128,
+      "ldf_u": 0.6387295555323362,
+      "feed_h2_multiplier": 0.97176611199975,
+      "equilibrium_scenario": "principal_axis_interpolation",
+      "bootstrap_replicate": null,
+      "capacity_coordinate_c": 0.7955307015446291,
+      "affinity_coordinate_a": 0.7084342185650445,
+      "ldf_factor": 1.0554918222129346,
+      "equilibrium_pc_endpoint_method": {
+        "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+        "mean_c_a": [
+          0.7718096360294043,
+          0.73820215600804
+        ],
+        "covariance": [
+          [
+            0.0002059870640134691,
+            -0.00019995922704292427
+          ],
+          [
+            -0.00019995922704292427,
+            0.00037106616567087413
+          ]
+        ],
+        "leading_eigenvalue": 0.0005048515323403825,
+        "leading_axis_c_a": [
+          -0.5560784121785588,
+          0.8311298331241472
+        ],
+        "score_quantiles": [
+          0.025,
+          0.975
+        ],
+        "endpoints_are_observed_bootstrap_replicates": true
+      },
+      "n_cells": 6,
+      "n_cycles": 60,
+      "raw_provenance": "direct_six_cell_sixty_cycle_integration",
+      "tank_capacity_mol": 1.166676860720253,
+      "min_tank_pressure_bar": 3.562573288192602,
+      "final_tank_pressure_bar": 6.0,
+      "reserve_threshold_bar": 0.8,
+      "reserve_margin_bar": 2.762573288192602,
+      "product_manifold_backpressure_bar": 6.2,
+      "passive_fill_pressure_margin_bar": 0.20000000000000018,
+      "passive_fill_gate": true,
+      "maximum_booster_pressure_ratio": 1.8245238691770578,
+      "cumulative_internal_h2_demand_mol": 187.31760293266353,
+      "booster_discharge_pressure_bar": 6.5,
+      "booster_suction_temperature_K": 291.95,
+      "css_residual_final": 6.829777659535445e-07,
+      "tail3_to_previous3_ratio": 0.99999999627726,
+      "cycle_mass_balance_relative_max": 1.632804728176343e-05,
+      "step_mass_balance_relative_max": 0.0010679695852145277,
+      "reserve_gate": true,
+      "css_gate": true,
+      "numerical_gate": true,
+      "raw_h2_rate_mol_s": 0.002603035215000846,
+      "polished_h2_rate_mol_s": 0.0022940702492295732,
+      "absolute_selectivity": {
+        "CO": 404018.28082867974,
+        "CO2": 1144859.3725842633,
+        "N2": 24573.18567215804,
+        "CH4": 4298.329225531435
+      },
+      "aggregate_h2_recovery": 0.8813058832278716,
+      "mean_stage_cut": 0.5202785134315491,
+      "mean_packet_h2_recovery": 0.8837152123451233,
+      "membrane_mass_balance_max_abs_mol": 5.551115123125783e-16,
+      "cycle_time_s": 2170.0,
+      "receiver_capacity_mol": 1.383,
+      "receiver_heel_fraction": 0.05487628914415837,
+      "elapsed_s": 130200.0,
+      "constant_outlet_rate_mol_s": 0.0022944575177371988,
+      "qualified_h2_rate_mol_s": 0.0022940701999127323,
+      "continuous_gate_pass": true,
+      "feasible_inventory": true,
+      "worst_gate_factor": 0.9999632106363397,
+      "limiting_constraint": "H2_min",
+      "minimum_inventory_mol": 0.07589390788637643,
+      "maximum_inventory_mol": 0.9271781803234929,
+      "initial_inventory_mol": 0.747150507403602,
+      "final_inventory_mol": 0.7471505074039477,
+      "minimum_h2_fraction": 0.9997367796799522,
+      "maximum_co_ppm": 0.2509592332696846,
+      "maximum_co2_ppm": 2.427436607199034,
+      "maximum_n2_ppm": 223.86888199567608,
+      "maximum_ch4_ppm": 49.766705467613555,
+      "receiver_mass_balance_max_abs_mol": 7.060907414313533e-12,
+      "max_factor_H2_min": 0.9999632106363397,
+      "max_factor_CO_max": 0.5019184665393693,
+      "max_factor_CO2_max": 0.48548732143980683,
+      "max_factor_N2_max": 0.7462296066522537,
+      "max_factor_CH4_max": 0.4976670546761356,
+      "signed_quality_margin": 3.6789363660250096e-05,
+      "conservative_booster_kwh_per_kg_qualified_h2": 0.19128961668051203,
+      "strict_event": true,
+      "confirmation_gate": true,
+      "conditional_design_event": true,
+      "trace_file": "states\\case_005_traces.npz",
+      "wall_time_s": 412.5229663848877
+    },
+    {
+      "run_signature": {
+        "schema": "psa-hydraulically-feasible-selected-6cell-holdout-state/v1",
+        "n_cells": 6,
+        "n_cycles": 60,
+        "area_cm2": 2000.0,
+        "selectivity_multiplier": 7.5,
+        "area_steps": 280,
+        "qualified_h2_target_mol_s": 0.002,
+        "passive_fill_driving_margin_bar": 0.2,
+        "booster_efficiency": 0.72,
+        "policy": {
+          "policy": "selected",
+          "tank_setpoint_bar": 6.0,
+          "purge_active_s": 4.0,
+          "adsorption_stage_s": 540.0
+        },
+        "holdout_scenarios": [
+          {
+            "scenario": "sobol_interior_00",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 0,
+            "feed_u": 0.6895513292402029,
+            "equilibrium_pc_u": 0.9508766205981374,
+            "ldf_u": 0.5799618475139141,
+            "feed_h2_multiplier": 1.0189551329240203,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.749844655004335,
+            "affinity_coordinate_a": 0.7683861754318524,
+            "ldf_factor": 1.0319847390055656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_01",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 1,
+            "feed_u": 0.42659708857536316,
+            "equilibrium_pc_u": 0.3246792992576957,
+            "ldf_u": 0.2884194990620017,
+            "feed_h2_multiplier": 0.9926597088575363,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7822968666237845,
+            "affinity_coordinate_a": 0.7258004465589064,
+            "ldf_factor": 0.9153677996248007,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_02",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 2,
+            "feed_u": 0.12181356549263,
+            "equilibrium_pc_u": 0.6102131344377995,
+            "ldf_u": 0.7710621077567339,
+            "feed_h2_multiplier": 0.962181356549263,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7674992874454794,
+            "affinity_coordinate_a": 0.7452187130934922,
+            "ldf_factor": 1.1084248431026937,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_03",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 3,
+            "feed_u": 0.7601960059255362,
+            "equilibrium_pc_u": 0.23541863821446896,
+            "ldf_u": 0.096831233240664,
+            "feed_h2_multiplier": 1.0260196005925535,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7869227341622562,
+            "affinity_coordinate_a": 0.7197301070977445,
+            "ldf_factor": 0.8387324932962656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_04",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 4,
+            "feed_u": 0.9142415355890989,
+            "equilibrium_pc_u": 0.6945249801501632,
+            "ldf_u": 0.49289671797305346,
+            "feed_h2_multiplier": 1.04142415355891,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7631298885901361,
+            "affinity_coordinate_a": 0.7509524990423023,
+            "ldf_factor": 0.9971586871892214,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_05",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 5,
+            "feed_u": 0.21766111999750137,
+            "equilibrium_pc_u": 0.06931944657117128,
+            "ldf_u": 0.6387295555323362,
+            "feed_h2_multiplier": 0.97176611199975,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7955307015446291,
+            "affinity_coordinate_a": 0.7084342185650445,
+            "ldf_factor": 1.0554918222129346,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_06",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 6,
+            "feed_u": 0.2720179930329323,
+            "equilibrium_pc_u": 0.8694787304848433,
+            "ldf_u": 0.18436098378151655,
+            "feed_h2_multiplier": 0.9772017993032932,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7540630402725421,
+            "affinity_coordinate_a": 0.7628505585247496,
+            "ldf_factor": 0.8737443935126067,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_07",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 7,
+            "feed_u": 0.5940227936953306,
+            "equilibrium_pc_u": 0.49567608162760735,
+            "ldf_u": 0.9477532505989075,
+            "feed_h2_multiplier": 1.009402279369533,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7734350852353962,
+            "affinity_coordinate_a": 0.7374294049782163,
+            "ldf_factor": 1.1791013002395632,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          }
+        ],
+        "predeclared_source": "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json",
+        "predeclared_before_current_design": true,
+        "role": "independent interior validation excluded from policy selection",
+        "source_sha256": {
+          "psa_hydraulically_feasible_selected_6cell_holdout_v1.py": "f13a406f6156333dd664eaea348d96ad5292e0b59677fd580efff9a082be2175",
+          "psa_hydraulically_feasible_policy_6cell_confirmation_v1.py": "e8d9415ca2a79ec8a5c8b8dfdfb29e6f550711f79638ca571b6022ebf1d8f416",
+          "psa_literature_anchored_policy_full_6cell_cube.py": "831fdd60a132f52eb7bbf5c2a401c122092fab4ed5d725f68ed0695887a57f81",
+          "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json": "1fe4207ad67b9fd227132518b4dd610db9accdbdfc1674ca1bf5f2969e8feb53",
+          "results\\membrane_component_selectivity_requirement\\PSA_MEMBRANE_COMPONENT_SELECTIVITY_REQUIREMENT.json": "46985e49f1ba3f79348fb2355652522e7cae53f9b07e74888e77830f413ffec0"
+        }
+      },
+      "case_index": 6,
+      "policy": "selected",
+      "tank_setpoint_bar": 6.0,
+      "purge_active_s": 4.0,
+      "adsorption_stage_s": 540.0,
+      "scenario": "sobol_interior_06",
+      "scenario_kind": "predeclared_interior_holdout",
+      "sample_index": 6,
+      "feed_u": 0.2720179930329323,
+      "equilibrium_pc_u": 0.8694787304848433,
+      "ldf_u": 0.18436098378151655,
+      "feed_h2_multiplier": 0.9772017993032932,
+      "equilibrium_scenario": "principal_axis_interpolation",
+      "bootstrap_replicate": null,
+      "capacity_coordinate_c": 0.7540630402725421,
+      "affinity_coordinate_a": 0.7628505585247496,
+      "ldf_factor": 0.8737443935126067,
+      "equilibrium_pc_endpoint_method": {
+        "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+        "mean_c_a": [
+          0.7718096360294043,
+          0.73820215600804
+        ],
+        "covariance": [
+          [
+            0.0002059870640134691,
+            -0.00019995922704292427
+          ],
+          [
+            -0.00019995922704292427,
+            0.00037106616567087413
+          ]
+        ],
+        "leading_eigenvalue": 0.0005048515323403825,
+        "leading_axis_c_a": [
+          -0.5560784121785588,
+          0.8311298331241472
+        ],
+        "score_quantiles": [
+          0.025,
+          0.975
+        ],
+        "endpoints_are_observed_bootstrap_replicates": true
+      },
+      "n_cells": 6,
+      "n_cycles": 60,
+      "raw_provenance": "direct_six_cell_sixty_cycle_integration",
+      "tank_capacity_mol": 1.166676860720253,
+      "min_tank_pressure_bar": 3.5639075651282446,
+      "final_tank_pressure_bar": 6.0,
+      "reserve_threshold_bar": 0.8,
+      "reserve_margin_bar": 2.7639075651282443,
+      "product_manifold_backpressure_bar": 6.2,
+      "passive_fill_pressure_margin_bar": 0.20000000000000018,
+      "passive_fill_gate": true,
+      "maximum_booster_pressure_ratio": 1.8238407930667255,
+      "cumulative_internal_h2_demand_mol": 187.05816310048849,
+      "booster_discharge_pressure_bar": 6.5,
+      "booster_suction_temperature_K": 291.95,
+      "css_residual_final": 3.088513817721443e-07,
+      "tail3_to_previous3_ratio": 0.9999999402131905,
+      "cycle_mass_balance_relative_max": 1.6455544212008558e-05,
+      "step_mass_balance_relative_max": 0.0009739120983355218,
+      "reserve_gate": true,
+      "css_gate": true,
+      "numerical_gate": true,
+      "raw_h2_rate_mol_s": 0.002618516009782866,
+      "polished_h2_rate_mol_s": 0.002308817973152575,
+      "absolute_selectivity": {
+        "CO": 404018.28082867974,
+        "CO2": 1144859.3725842633,
+        "N2": 24573.18567215804,
+        "CH4": 4298.329225531435
+      },
+      "aggregate_h2_recovery": 0.8817276520467133,
+      "mean_stage_cut": 0.5221818089485168,
+      "mean_packet_h2_recovery": 0.884207546710968,
+      "membrane_mass_balance_max_abs_mol": 5.551115123125783e-16,
+      "cycle_time_s": 2170.0,
+      "receiver_capacity_mol": 1.383,
+      "receiver_heel_fraction": 0.05487628914415837,
+      "elapsed_s": 130200.0,
+      "constant_outlet_rate_mol_s": 0.0023092051058716074,
+      "qualified_h2_rate_mol_s": 0.0023088179238144285,
+      "continuous_gate_pass": true,
+      "feasible_inventory": true,
+      "worst_gate_factor": 0.9999621392191149,
+      "limiting_constraint": "H2_min",
+      "minimum_inventory_mol": 0.07589390788637049,
+      "maximum_inventory_mol": 0.9814466328325964,
+      "initial_inventory_mol": 0.7390433246381386,
+      "final_inventory_mol": 0.739043324642704,
+      "minimum_h2_fraction": 0.9997378508557138,
+      "maximum_co_ppm": 0.24659211613581739,
+      "maximum_co2_ppm": 2.3929858665145964,
+      "maximum_n2_ppm": 220.82340463806298,
+      "maximum_ch4_ppm": 49.146154515886806,
+      "receiver_mass_balance_max_abs_mol": 3.063804765446321e-11,
+      "max_factor_H2_min": 0.9999621392191149,
+      "max_factor_CO_max": 0.49318423227163477,
+      "max_factor_CO2_max": 0.47859717330291934,
+      "max_factor_N2_max": 0.73607801546021,
+      "max_factor_CH4_max": 0.49146154515886814,
+      "signed_quality_margin": 3.786078088507949e-05,
+      "conservative_booster_kwh_per_kg_qualified_h2": 0.18967576462210656,
+      "strict_event": true,
+      "confirmation_gate": true,
+      "conditional_design_event": true,
+      "trace_file": "states\\case_006_traces.npz",
+      "wall_time_s": 432.62457513809204
+    },
+    {
+      "run_signature": {
+        "schema": "psa-hydraulically-feasible-selected-6cell-holdout-state/v1",
+        "n_cells": 6,
+        "n_cycles": 60,
+        "area_cm2": 2000.0,
+        "selectivity_multiplier": 7.5,
+        "area_steps": 280,
+        "qualified_h2_target_mol_s": 0.002,
+        "passive_fill_driving_margin_bar": 0.2,
+        "booster_efficiency": 0.72,
+        "policy": {
+          "policy": "selected",
+          "tank_setpoint_bar": 6.0,
+          "purge_active_s": 4.0,
+          "adsorption_stage_s": 540.0
+        },
+        "holdout_scenarios": [
+          {
+            "scenario": "sobol_interior_00",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 0,
+            "feed_u": 0.6895513292402029,
+            "equilibrium_pc_u": 0.9508766205981374,
+            "ldf_u": 0.5799618475139141,
+            "feed_h2_multiplier": 1.0189551329240203,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.749844655004335,
+            "affinity_coordinate_a": 0.7683861754318524,
+            "ldf_factor": 1.0319847390055656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_01",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 1,
+            "feed_u": 0.42659708857536316,
+            "equilibrium_pc_u": 0.3246792992576957,
+            "ldf_u": 0.2884194990620017,
+            "feed_h2_multiplier": 0.9926597088575363,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7822968666237845,
+            "affinity_coordinate_a": 0.7258004465589064,
+            "ldf_factor": 0.9153677996248007,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_02",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 2,
+            "feed_u": 0.12181356549263,
+            "equilibrium_pc_u": 0.6102131344377995,
+            "ldf_u": 0.7710621077567339,
+            "feed_h2_multiplier": 0.962181356549263,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7674992874454794,
+            "affinity_coordinate_a": 0.7452187130934922,
+            "ldf_factor": 1.1084248431026937,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_03",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 3,
+            "feed_u": 0.7601960059255362,
+            "equilibrium_pc_u": 0.23541863821446896,
+            "ldf_u": 0.096831233240664,
+            "feed_h2_multiplier": 1.0260196005925535,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7869227341622562,
+            "affinity_coordinate_a": 0.7197301070977445,
+            "ldf_factor": 0.8387324932962656,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_04",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 4,
+            "feed_u": 0.9142415355890989,
+            "equilibrium_pc_u": 0.6945249801501632,
+            "ldf_u": 0.49289671797305346,
+            "feed_h2_multiplier": 1.04142415355891,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7631298885901361,
+            "affinity_coordinate_a": 0.7509524990423023,
+            "ldf_factor": 0.9971586871892214,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_05",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 5,
+            "feed_u": 0.21766111999750137,
+            "equilibrium_pc_u": 0.06931944657117128,
+            "ldf_u": 0.6387295555323362,
+            "feed_h2_multiplier": 0.97176611199975,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7955307015446291,
+            "affinity_coordinate_a": 0.7084342185650445,
+            "ldf_factor": 1.0554918222129346,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_06",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 6,
+            "feed_u": 0.2720179930329323,
+            "equilibrium_pc_u": 0.8694787304848433,
+            "ldf_u": 0.18436098378151655,
+            "feed_h2_multiplier": 0.9772017993032932,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7540630402725421,
+            "affinity_coordinate_a": 0.7628505585247496,
+            "ldf_factor": 0.8737443935126067,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          },
+          {
+            "scenario": "sobol_interior_07",
+            "scenario_kind": "predeclared_interior_holdout",
+            "sample_index": 7,
+            "feed_u": 0.5940227936953306,
+            "equilibrium_pc_u": 0.49567608162760735,
+            "ldf_u": 0.9477532505989075,
+            "feed_h2_multiplier": 1.009402279369533,
+            "equilibrium_scenario": "principal_axis_interpolation",
+            "bootstrap_replicate": null,
+            "capacity_coordinate_c": 0.7734350852353962,
+            "affinity_coordinate_a": 0.7374294049782163,
+            "ldf_factor": 1.1791013002395632,
+            "equilibrium_pc_endpoint_method": {
+              "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+              "mean_c_a": [
+                0.7718096360294043,
+                0.73820215600804
+              ],
+              "covariance": [
+                [
+                  0.0002059870640134691,
+                  -0.00019995922704292427
+                ],
+                [
+                  -0.00019995922704292427,
+                  0.00037106616567087413
+                ]
+              ],
+              "leading_eigenvalue": 0.0005048515323403825,
+              "leading_axis_c_a": [
+                -0.5560784121785588,
+                0.8311298331241472
+              ],
+              "score_quantiles": [
+                0.025,
+                0.975
+              ],
+              "endpoints_are_observed_bootstrap_replicates": true
+            }
+          }
+        ],
+        "predeclared_source": "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json",
+        "predeclared_before_current_design": true,
+        "role": "independent interior validation excluded from policy selection",
+        "source_sha256": {
+          "psa_hydraulically_feasible_selected_6cell_holdout_v1.py": "f13a406f6156333dd664eaea348d96ad5292e0b59677fd580efff9a082be2175",
+          "psa_hydraulically_feasible_policy_6cell_confirmation_v1.py": "e8d9415ca2a79ec8a5c8b8dfdfb29e6f550711f79638ca571b6022ebf1d8f416",
+          "psa_literature_anchored_policy_full_6cell_cube.py": "831fdd60a132f52eb7bbf5c2a401c122092fab4ed5d725f68ed0695887a57f81",
+          "results\\literature_anchored_continuous_holdout_2000cm2\\PSA_FINAL_CODESIGN_CONTINUOUS_HOLDOUT.json": "1fe4207ad67b9fd227132518b4dd610db9accdbdfc1674ca1bf5f2969e8feb53",
+          "results\\membrane_component_selectivity_requirement\\PSA_MEMBRANE_COMPONENT_SELECTIVITY_REQUIREMENT.json": "46985e49f1ba3f79348fb2355652522e7cae53f9b07e74888e77830f413ffec0"
+        }
+      },
+      "case_index": 7,
+      "policy": "selected",
+      "tank_setpoint_bar": 6.0,
+      "purge_active_s": 4.0,
+      "adsorption_stage_s": 540.0,
+      "scenario": "sobol_interior_07",
+      "scenario_kind": "predeclared_interior_holdout",
+      "sample_index": 7,
+      "feed_u": 0.5940227936953306,
+      "equilibrium_pc_u": 0.49567608162760735,
+      "ldf_u": 0.9477532505989075,
+      "feed_h2_multiplier": 1.009402279369533,
+      "equilibrium_scenario": "principal_axis_interpolation",
+      "bootstrap_replicate": null,
+      "capacity_coordinate_c": 0.7734350852353962,
+      "affinity_coordinate_a": 0.7374294049782163,
+      "ldf_factor": 1.1791013002395632,
+      "equilibrium_pc_endpoint_method": {
+        "bootstrap_source": "results\\jeong_2025_zeolite5a_independent_equilibrium_audit\\jeong_2025_fit_bootstrap.csv",
+        "mean_c_a": [
+          0.7718096360294043,
+          0.73820215600804
+        ],
+        "covariance": [
+          [
+            0.0002059870640134691,
+            -0.00019995922704292427
+          ],
+          [
+            -0.00019995922704292427,
+            0.00037106616567087413
+          ]
+        ],
+        "leading_eigenvalue": 0.0005048515323403825,
+        "leading_axis_c_a": [
+          -0.5560784121785588,
+          0.8311298331241472
+        ],
+        "score_quantiles": [
+          0.025,
+          0.975
+        ],
+        "endpoints_are_observed_bootstrap_replicates": true
+      },
+      "n_cells": 6,
+      "n_cycles": 60,
+      "raw_provenance": "direct_six_cell_sixty_cycle_integration",
+      "tank_capacity_mol": 1.166676860720253,
+      "min_tank_pressure_bar": 3.5653578286068317,
+      "final_tank_pressure_bar": 6.0,
+      "reserve_threshold_bar": 0.8,
+      "reserve_margin_bar": 2.765357828606832,
+      "product_manifold_backpressure_bar": 6.2,
+      "passive_fill_pressure_margin_bar": 0.20000000000000018,
+      "passive_fill_gate": true,
+      "maximum_booster_pressure_ratio": 1.8230989181077186,
+      "cumulative_internal_h2_demand_mol": 187.38635846697804,
+      "booster_discharge_pressure_bar": 6.5,
+      "booster_suction_temperature_K": 291.95,
+      "css_residual_final": 7.548973657661624e-07,
+      "tail3_to_previous3_ratio": 0.9999999787306728,
+      "cycle_mass_balance_relative_max": 1.6104619198737867e-05,
+      "step_mass_balance_relative_max": 0.001121676436240695,
+      "reserve_gate": true,
+      "css_gate": true,
+      "numerical_gate": true,
+      "raw_h2_rate_mol_s": 0.0026743108939668663,
+      "polished_h2_rate_mol_s": 0.0023743089632778246,
+      "absolute_selectivity": {
+        "CO": 404018.28082867974,
+        "CO2": 1144859.3725842633,
+        "N2": 24573.18567215804,
+        "CH4": 4298.329225531435
+      },
+      "aggregate_h2_recovery": 0.8878208470952896,
+      "mean_stage_cut": 0.5361180901527405,
+      "mean_packet_h2_recovery": 0.8901016712188721,
+      "membrane_mass_balance_max_abs_mol": 5.273559366969494e-16,
+      "cycle_time_s": 2170.0,
+      "receiver_capacity_mol": 1.383,
+      "receiver_heel_fraction": 0.05487628914415837,
+      "elapsed_s": 130200.0,
+      "constant_outlet_rate_mol_s": 0.0023746934668576122,
+      "qualified_h2_rate_mol_s": 0.0023743089146886056,
+      "continuous_gate_pass": true,
+      "feasible_inventory": true,
+      "worst_gate_factor": 0.9999506784527203,
+      "limiting_constraint": "H2_min",
+      "minimum_inventory_mol": 0.07589390788637113,
+      "maximum_inventory_mol": 0.9444836369172324,
+      "initial_inventory_mol": 0.7761337891288923,
+      "final_inventory_mol": 0.7761337891232379,
+      "minimum_h2_fraction": 0.9997493091828207,
+      "maximum_co_ppm": 0.24229766836235603,
+      "maximum_co2_ppm": 2.3465336637568077,
+      "maximum_n2_ppm": 212.40462931378977,
+      "maximum_ch4_ppm": 48.169005020001535,
+      "receiver_mass_balance_max_abs_mol": 2.5550006554908578e-11,
+      "max_factor_H2_min": 0.9999506784527203,
+      "max_factor_CO_max": 0.4845953367247121,
+      "max_factor_CO2_max": 0.46930673275136153,
+      "max_factor_N2_max": 0.708015431045966,
+      "max_factor_CH4_max": 0.48169005020001543,
+      "signed_quality_margin": 4.9321547279657096e-05,
+      "conservative_booster_kwh_per_kg_qualified_h2": 0.1846312831314237,
+      "strict_event": true,
+      "confirmation_gate": true,
+      "conditional_design_event": true,
+      "trace_file": "states\\case_007_traces.npz",
+      "wall_time_s": 435.14461302757263
+    }
+  ],
+  "summary": {
+    "holdout_count": 8,
+    "direct_pass_count": 8,
+    "direct_fail_count": 0,
+    "minimum_qualified_h2_rate_mol_s": 0.0022806458124524365,
+    "minimum_h2_recovery": 0.8811117920837893,
+    "minimum_tank_pressure_bar": 3.5463268905815237,
+    "minimum_reserve_margin_bar": 2.746326890581524,
+    "maximum_worst_gate_factor": 0.9999689880948871,
+    "maximum_n2_ppm": 227.2432141905559,
+    "maximum_booster_kwh_per_kg_qualified_h2": 0.19390727187736673,
+    "maximum_css_residual_final": 7.548973657661624e-07,
+    "maximum_cycle_mass_balance_relative": 1.6455544212008558e-05,
+    "all_passive_fill_checks_pass": true,
+    "all_trace_integrity_checks_pass": true
+  },
+  "claim_limits": [
+    "The eight Sobol interior points were declared before the pressure-consistent design was selected.",
+    "The hold-out set tests interpolation inside the deterministic engineering envelope; it is not a plant-calibrated probability sample.",
+    "The passive refill check uses a static 0.2-bar driving margin and the booster duty is a conservative ideal-gas estimate."
+  ]
+}

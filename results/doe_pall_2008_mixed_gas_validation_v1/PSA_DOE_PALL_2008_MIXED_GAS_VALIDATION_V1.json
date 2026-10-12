@@ -1,0 +1,71 @@
+{
+  "schema": "psa-doe-pall-2008-mixed-gas-validation/v1",
+  "status": "synchronized_mixed_gas_negative_control_completed",
+  "source": {
+    "title": "High Performance Palladium-Based Membrane for Hydrogen Separation and Purification",
+    "report": "DOE Hydrogen Program FY 2008 Annual Progress Report, pp. 57-62",
+    "contract": "DE-FG36-05GO15093",
+    "url": "https://www.hydrogen.energy.gov/docs/hydrogenprogramlibraries/pdfs/progress08/ii_a_9_acquaviva.pdf",
+    "local_file": "external_data\\pd_membrane_high_pressure\\DOE_Pall_2008_WGS_mixed_gas.pdf",
+    "sha256": "ca8395f93a7faf6257ca608111b32903f283a14a780c30d3a9767f6ee0819c07",
+    "figure": 3
+  },
+  "operating_condition": {
+    "temperature_C": 400.0,
+    "feed_pressure_psia": 62.0,
+    "permeate_pressure_psia": 12.0,
+    "pressure_difference_psi": 50.0,
+    "duration_min": 900.0,
+    "feed_mole_fraction": {
+      "H2": 0.51,
+      "CO2": 0.26,
+      "H2O": 0.21,
+      "CO": 0.02
+    },
+    "flow_sccm": {
+      "feed_H2": 1020.0,
+      "feed_CO2": 520.0,
+      "feed_H2O": 410.0,
+      "feed_CO": 40.0,
+      "retentate_H2": 245.0,
+      "retentate_CO2": 520.0,
+      "retentate_H2O": 410.0,
+      "retentate_CO": 40.0,
+      "permeate_H2": 775.0
+    },
+    "permeate_composition": {
+      "H2": 0.9995,
+      "CO2": 0.00045,
+      "CO": 7.5e-05
+    }
+  },
+  "derived_observation": {
+    "H2_recovery": 0.7598039215686274,
+    "effective_H2_CO_separation_factor": 522.6143790849674,
+    "effective_H2_CO2_separation_factor": 1132.331154684096,
+    "CO_to_project_limit_ratio": 150.0,
+    "CO2_to_project_limit_ratio": 90.0
+  },
+  "project_transfer": {
+    "area_m2": 0.887,
+    "permeance_retention": 0.5,
+    "stress_selectivity": {
+      "CO": 522.6143790849674,
+      "CO2": 1132.331154684096,
+      "N2": 2337.215335789677,
+      "CH4": 102.58627444712793
+    },
+    "pass_count": 0,
+    "case_count": 16,
+    "all_pass": false,
+    "minimum_recovery": 0.8837123054476491,
+    "minimum_qualified_h2_rate_mol_s": 0.002362425416199197,
+    "maximum_co_ppm": 4.053784224674429,
+    "maximum_co2_ppm": 558.2121362510934,
+    "maximum_n2_ppm": 51.78149085043046,
+    "maximum_ch4_ppm": 25.18738693870451,
+    "receiver_capacity_mol": 1.2229795646896187
+  },
+  "claim_boundary": "Observed wet mixed-gas separation factors are transferred as a system-level rejection stress, not as intrinsic permeability selectivities. N2 and CH4 remain at the selected project values because the public mixture did not contain them.",
+  "interpretation": "The public membrane was a credible mixed-gas separator by its contemporary target, yet it fails the present strict CO, CO2, and recovery gates. This is an empirical negative control for the project acceptance rule."
+}

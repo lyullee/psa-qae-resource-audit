@@ -1,0 +1,104 @@
+{
+  "schema": "psa-spt-reference-metadata-audit/v1",
+  "checked_on": "2026-10-12",
+  "method": "DOI metadata was checked against Crossref; the Cranfield dataset was checked against its institutional repository record.",
+  "corrected_references": [
+    {
+      "reference": 9,
+      "doi": "10.1016/j.memsci.2016.10.024",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.memsci.2016.10.024",
+      "status": "title, authors, journal, volume, year, and pages matched"
+    },
+    {
+      "reference": 10,
+      "doi": "10.1016/j.renene.2023.04.095",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.renene.2023.04.095",
+      "status": "title, authors, journal, volume, year, and pages matched"
+    },
+    {
+      "reference": 11,
+      "doi": "10.1016/j.seppur.2017.04.035",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.seppur.2017.04.035",
+      "status": "title, authors, journal, volume, year, and pages matched"
+    },
+    {
+      "reference": 12,
+      "doi": "10.1007/s11705-016-1567-1",
+      "metadata_source": "https://api.crossref.org/works/10.1007%2Fs11705-016-1567-1",
+      "status": "title, authors, journal, volume, year, and pages matched"
+    },
+    {
+      "reference": 13,
+      "doi": "10.1016/j.renene.2023.119243",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.renene.2023.119243",
+      "status": "title, authors, journal, volume, year, and article number matched"
+    },
+    {
+      "reference": 21,
+      "doi": "10.1021/ef302130s",
+      "metadata_source": "https://api.crossref.org/works/10.1021%2Fef302130s",
+      "status": "title, authors, journal, volume, issue, year, and pages matched"
+    },
+    {
+      "reference": 22,
+      "doi": "10.1016/j.ijhydene.2024.04.337",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.ijhydene.2024.04.337",
+      "status": "title, authors, journal, volume, year, pages, and public dataset matched"
+    },
+    {
+      "reference": 23,
+      "doi": "10.1016/j.memsci.2015.08.061",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.memsci.2015.08.061",
+      "status": "title, authors, journal, volume, year, and pages matched"
+    },
+    {
+      "reference": 24,
+      "doi": "10.1016/j.memsci.2007.08.056",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.memsci.2007.08.056",
+      "status": "title, authors, journal, volume, year, and pages matched"
+    },
+    {
+      "reference": 25,
+      "doi": "10.1016/j.egypro.2011.01.103",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.egypro.2011.01.103",
+      "status": "title, authors, journal, volume, year, and pages matched"
+    },
+    {
+      "reference": 27,
+      "doi": "10.1016/j.fuel.2013.02.051",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.fuel.2013.02.051",
+      "status": "title, authors, journal, volume, year, and pages matched"
+    }
+  ],
+  "dataset_reference": {
+    "reference": 7,
+    "doi": "10.17862/cranfield.rd.10123346",
+    "metadata_source": "https://dspace.lib.cranfield.ac.uk/items/01190c6a-eb8e-4476-9358-afc4fc591b41",
+    "status": "title, creators, year, publisher, DOI, and related article verified"
+  },
+  "technical_report_reference": {
+    "reference": 26,
+    "report_number": "DE-FG36-04GO14330",
+    "metadata_source": "https://www.osti.gov/servlets/purl/883041",
+    "status": "title, contractor, report number, sponsor, year, and public full text verified"
+  },
+  "doe_progress_report_reference": {
+    "reference": 28,
+    "contract_number": "DE-FG36-05GO15093",
+    "metadata_source": "https://www.hydrogen.energy.gov/docs/hydrogenprogramlibraries/pdfs/progress08/ii_a_9_acquaviva.pdf",
+    "status": "title, author, contractor, contract, year, pages, Figure 3 flows, and public full text verified"
+  },
+  "doe_utrc_final_report_reference": {
+    "reference": 29,
+    "doi": "10.2172/1063878",
+    "contract_number": "DE-FE0004967",
+    "metadata_source": "https://doi.org/10.2172/1063878",
+    "status": "title, authors, contract, date, 60-page public full text, durability values, and actual-gas comparison verified"
+  },
+  "bang_integrated_cmr_psa_reference": {
+    "reference": 30,
+    "doi": "10.1016/j.cej.2021.128473",
+    "metadata_source": "https://yonsei.elsevierpure.com/en/publications/high-purity-hydrogen-production-via-a-water-gas-shift-reaction-in/",
+    "status": "title, authors, journal, volume, article number, feed, conditions, and both reported CO-recovery operating points verified"
+  }
+}

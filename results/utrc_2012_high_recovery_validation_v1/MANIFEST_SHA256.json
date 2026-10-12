@@ -1,0 +1,14 @@
+{
+  "PSA_UTRC_2012_HIGH_RECOVERY_VALIDATION_V1.json": {
+    "sha256": "dfee531225960b88b14ae9c29662bb31adc273666ddf36ed4ce283a72bd9ff56",
+    "bytes": 3874
+  },
+  "Fig_utrc_2012_high_recovery_validation_v1.png": {
+    "sha256": "17c3845e8c1b05f2dae3d0afba14f0a311dff9a9820402400e93c45572e459f7",
+    "bytes": 158063
+  },
+  "Table_utrc_2012_validation_anchors.csv": {
+    "sha256": "efc8f013390041582c91fb53af540ef98e33bb90e7ab2430350540d70b4d015f",
+    "bytes": 466
+  }
+}

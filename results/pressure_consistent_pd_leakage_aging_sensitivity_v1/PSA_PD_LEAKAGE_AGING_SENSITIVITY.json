@@ -1,0 +1,170 @@
+{
+  "schema": "psa-pd-leakage-aging-sensitivity/v1",
+  "status": "finite_pd_leakage_aging_guard_band_quantified",
+  "original_literature_bounded_design": {
+    "pd_area_m2": 0.4799119875751482,
+    "receiver_capacity_mol": 1.54598433549796,
+    "minimum_ideal_selectivity_permeance_retention_for_all_16": 0.9215682029724124,
+    "maximum_tolerable_permeance_loss_fraction": 0.07843179702758762
+  },
+  "guard_banded_20_percent_retention_design": {
+    "target_permeance_retention": 0.8,
+    "minimum_effective_pd_area_at_full_permeance_m2": 0.44227158909851416,
+    "minimum_scaled_pd_area_m2": 0.5528394863731426,
+    "selected_rounded_pd_area_m2": 0.553,
+    "area_increase_vs_original_percent": 15.229461717375248,
+    "minimum_common_selectivity_multiplier": 16.77940987047889,
+    "selected_common_selectivity_multiplier": 20.98,
+    "selected_effective_selectivity": {
+      "CO": 18573.352394382455,
+      "CO2": 166726.68729020684,
+      "N2": 2467.491793825331,
+      "CH4": 108.28062381384457
+    },
+    "co_sized_receiver_capacity_mol": 1.2145383092641473,
+    "co_sized_receiver_volume_L_at_1bar_298K": 30.10788279416267,
+    "direct_confirmation": {
+      "pass_count": 16,
+      "case_count": 16,
+      "all_pass": true,
+      "minimum_recovery": 0.8831585596616711,
+      "minimum_qualified_h2_rate_mol_s": 0.002362514471642916,
+      "maximum_worst_gate_factor": 0.9997719810424089,
+      "maximum_co_ppm": 0.11978506562636868,
+      "maximum_co2_ppm": 3.998948148088539,
+      "maximum_n2_ppm": 48.14058205423002,
+      "maximum_ch4_ppm": 24.95008980147399,
+      "receiver_capacity_mol": 1.2145383092641473,
+      "maximum_receiver_mass_balance_abs_mol": 1.4208856313757678e-11
+    },
+    "maximum_mass_balance_abs_mol": 1.4208856313757678e-11
+  },
+  "component_thresholds": [
+    {
+      "impurity": "CO",
+      "low_stage_screen_selectivity": 885.2884840029768,
+      "dynamic_minimum_effective_selectivity": 4448.7030095052905,
+      "dynamic_to_low_stage_ratio": 5.025145011928486,
+      "guard_banded_selected_selectivity": 18573.352394382455,
+      "guard_to_dynamic_threshold_ratio": 4.175003895449489
+    },
+    {
+      "impurity": "CO2",
+      "low_stage_screen_selectivity": 7946.934570553233,
+      "dynamic_minimum_effective_selectivity": 133351.85038651372,
+      "dynamic_to_low_stage_ratio": 16.78028794657992,
+      "guard_banded_selected_selectivity": 166726.68729020684,
+      "guard_to_dynamic_threshold_ratio": 1.2502765189006213
+    },
+    {
+      "impurity": "N2",
+      "low_stage_screen_selectivity": 117.61162029672693,
+      "dynamic_minimum_effective_selectivity": 394.8270842512067,
+      "dynamic_to_low_stage_ratio": 3.35704144926396,
+      "guard_banded_selected_selectivity": 2467.491793825331,
+      "guard_to_dynamic_threshold_ratio": 6.249550479813087
+    },
+    {
+      "impurity": "CH4",
+      "low_stage_screen_selectivity": 5.1611355488009805,
+      "dynamic_minimum_effective_selectivity": 26.01669997604904,
+      "dynamic_to_low_stage_ratio": 5.040886783547695,
+      "guard_banded_selected_selectivity": 108.28062381384457,
+      "guard_to_dynamic_threshold_ratio": 4.1619661184365295
+    }
+  ],
+  "defect_leakage_boundary": {
+    "definition": "local H2-equivalent Knudsen defect H2 transfer divided by dense-Pd H2 transfer; this is a conductance ratio, not a geometric pinhole-area fraction",
+    "maximum_passing_ratio": 3.503710031509399e-05,
+    "guard_banded_ratio": 2.8029680252075195e-05,
+    "guard_banded_direct_confirmation": {
+      "pass_count": 16,
+      "case_count": 16,
+      "all_pass": true,
+      "minimum_recovery": 0.8831587653739351,
+      "minimum_qualified_h2_rate_mol_s": 0.0023624930397253886,
+      "maximum_worst_gate_factor": 0.9997048208757598,
+      "maximum_co_ppm": 0.016731314415879148,
+      "maximum_co2_ppm": 3.999946363857124,
+      "maximum_n2_ppm": 0.8936754952245123,
+      "maximum_ch4_ppm": 0.02716901209257507,
+      "receiver_capacity_mol": 1.2145383092641473,
+      "maximum_receiver_mass_balance_abs_mol": 1.5135448450109834e-11
+    },
+    "approximate_effective_selectivity_at_maximum_ratio": {
+      "CO": 106392.75407449901,
+      "CO2": 133360.72221102953,
+      "N2": 106399.02120221347,
+      "CH4": 80517.58593588122
+    }
+  },
+  "literature_anchors": [
+    {
+      "source": "Iulianelli et al. Pd-Au membrane",
+      "doi": "10.1016/j.cattod.2018.04.029",
+      "use": "reported finite pure-gas H2/N2, H2/CO2, and H2/CH4 selectivities"
+    },
+    {
+      "source": "continuous-flow electroless pore-plated Pd membrane",
+      "doi": "10.1016/j.ijhydene.2026.154365",
+      "use": "mixed-gas integrity, approximately plus/minus 20 percent permeance reproducibility, and 300 h stability; detection limits remain unmatched"
+    },
+    {
+      "source": "Zito et al. multistage concentration plus Pd process",
+      "doi": "10.1016/j.renene.2023.119243",
+      "use": "Pd permeance, pressure, and flow-scaled architecture anchor; source Pd selectivity is ideal"
+    }
+  ],
+  "literature_scenario_results": [
+    {
+      "scenario": "Pd-Au 2018 reported pure-gas selectivities; CO treated ideal",
+      "co_selectivity": "unresolved/idealized",
+      "co2_selectivity": 630.0,
+      "n2_selectivity": 500.0,
+      "ch4_selectivity": 350.0,
+      "pass_count": 0,
+      "case_count": 16,
+      "maximum_co2_ppm": 1222.569093653206,
+      "maximum_n2_ppm": 323.9205313352265,
+      "maximum_ch4_ppm": 9.078794620997376,
+      "doi_or_source": "10.1016/j.cattod.2018.04.029",
+      "interpretation": "component selectivities are pure-gas anchors and do not close the simultaneous project gate"
+    },
+    {
+      "scenario": "pure Pd H2/N2 lower-bound anchor; other impurities ideal",
+      "co_selectivity": "idealized",
+      "co2_selectivity": "idealized",
+      "n2_selectivity": 6000.0,
+      "ch4_selectivity": "idealized",
+      "pass_count": 16,
+      "case_count": 16,
+      "maximum_co2_ppm": 7.712160414852531e-07,
+      "maximum_n2_ppm": 27.04672549164491,
+      "maximum_ch4_ppm": 3.1894413793677185e-09,
+      "doi_or_source": "OSTI 898816",
+      "interpretation": "supports the N2 gate only; simultaneous CO/CO2/CH4 evidence remains absent"
+    },
+    {
+      "scenario": "2026 defect-free mixed-gas Pd membrane",
+      "co_selectivity": "no impurity detected",
+      "co2_selectivity": "no impurity detected",
+      "n2_selectivity": "no impurity detected",
+      "ch4_selectivity": "not reported in the accessible mixed-gas statement",
+      "pass_count": "not numerically assignable",
+      "case_count": 16,
+      "maximum_co2_ppm": "detection limit not matched to 5 ppm gate",
+      "maximum_n2_ppm": "detection limit not matched to 300 ppm gate",
+      "maximum_ch4_ppm": "not closed",
+      "doi_or_source": "10.1016/j.ijhydene.2026.154365",
+      "interpretation": "300 h stability and mixed-gas integrity are encouraging, but project-specific detection limits are required"
+    }
+  ],
+  "model_scope": {
+    "included": "packet-wise finite effective selectivity, Pd permeance retention, Knudsen-like defect leakage, co-sized product receiver, frozen recovery/shipment thresholds, and all 16 dynamic cases",
+    "excluded": "temperature-dependent inhibition kinetics, healing or crack growth, concentration polarization, module pressure drop, heating duty, and experimentally measured detection limits"
+  },
+  "claim_boundary": {
+    "allowed": "The conditional model quantifies the effective selectivity, conductance-leak, area, and receiver guard bands required to preserve the declared engineering event under 20 percent Pd permeance loss.",
+    "not_allowed": "A commercial Pd module has demonstrated simultaneous compliance with the declared CO/CO2/N2/CH4 limits or that the calculated conductance ratio equals a measured geometric defect fraction."
+  }
+}

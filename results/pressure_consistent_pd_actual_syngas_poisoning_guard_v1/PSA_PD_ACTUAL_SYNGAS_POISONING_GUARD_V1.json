@@ -1,0 +1,137 @@
+{
+  "schema": "psa-pd-actual-syngas-poisoning-guard/v1",
+  "status": "public_actual_syngas_permeance_loss_guard_completed",
+  "literature_anchor": {
+    "citation": "Guazzone et al., Energy & Fuels 27 (2013) 4150-4160",
+    "doi": "10.1021/ef302130s",
+    "apparatus": "200 cm2 Pd and Pd-Au membranes in actual desulfurized coal-derived syngas",
+    "reported_h2_purity_percent": [
+      99.8,
+      99.9
+    ],
+    "reported_h2_permeance_loss_percent": [
+      40.0,
+      50.0
+    ],
+    "reported_pd_au_stable_exposure_h": 473.0
+  },
+  "model_contract": {
+    "solver": "scipy solve_ivp DOP853",
+    "case_count": 16,
+    "transport_law": "same finite-selectivity Pd law as the independent ODE audit",
+    "selected_effective_selectivity": {
+      "CO": 18768.11586086311,
+      "CO2": 168475.01289572855,
+      "N2": 2493.366350290611,
+      "CH4": 109.41607363458078
+    },
+    "minimum_effective_pd_area_m2": 0.44301633281284014,
+    "rounding": "installed area rounded upward to 0.001 m2"
+  },
+  "retention_designs": [
+    {
+      "permeance_retention": 1.0,
+      "permeance_loss_percent": 0.0,
+      "minimum_unrounded_installed_area_m2": 0.44301633281284014,
+      "selected_rounded_installed_area_m2": 0.444,
+      "area_increase_vs_0p554_percent": -19.85559566787004,
+      "effective_area_m2": 0.444,
+      "pass_count": 16,
+      "case_count": 16,
+      "minimum_overall_h2_recovery": 0.8844399467195309,
+      "minimum_qualified_h2_rate_mol_s": 0.0023631619337349317,
+      "receiver_capacity_mol": 1.2386004720150379,
+      "receiver_volume_L_at_1bar_298K": 30.704373469139252,
+      "maximum_co_ppm": 0.12074825101574028,
+      "maximum_co2_ppm": 4.011460721850771,
+      "maximum_n2_ppm": 49.141575462972575,
+      "maximum_ch4_ppm": 25.14633400101748,
+      "maximum_module_mass_balance_abs_mol": 4.163336342344337e-17,
+      "maximum_receiver_mass_balance_abs_mol": 1.6395773627664312e-11
+    },
+    {
+      "permeance_retention": 0.8,
+      "permeance_loss_percent": 19.999999999999996,
+      "minimum_unrounded_installed_area_m2": 0.5537704160160501,
+      "selected_rounded_installed_area_m2": 0.554,
+      "area_increase_vs_0p554_percent": 0.0,
+      "effective_area_m2": 0.44320000000000004,
+      "pass_count": 16,
+      "case_count": 16,
+      "minimum_overall_h2_recovery": 0.883220742882423,
+      "minimum_qualified_h2_rate_mol_s": 0.0023605451505414096,
+      "receiver_capacity_mol": 1.232009239802619,
+      "receiver_volume_L_at_1bar_298K": 30.54097965487508,
+      "maximum_co_ppm": 0.12036718943759817,
+      "maximum_co2_ppm": 3.9998322116112184,
+      "maximum_n2_ppm": 48.82818170798942,
+      "maximum_ch4_ppm": 25.06874296016963,
+      "maximum_module_mass_balance_abs_mol": 4.163336342344337e-17,
+      "maximum_receiver_mass_balance_abs_mol": 1.2623790901500342e-11
+    },
+    {
+      "permeance_retention": 0.6,
+      "permeance_loss_percent": 40.0,
+      "minimum_unrounded_installed_area_m2": 0.7383605546880669,
+      "selected_rounded_installed_area_m2": 0.739,
+      "area_increase_vs_0p554_percent": 33.393501805054136,
+      "effective_area_m2": 0.44339999999999996,
+      "pass_count": 16,
+      "case_count": 16,
+      "minimum_overall_h2_recovery": 0.8835260154080309,
+      "minimum_qualified_h2_rate_mol_s": 0.0023612015805792434,
+      "receiver_capacity_mol": 1.233654227223308,
+      "receiver_volume_L_at_1bar_298K": 30.58175818617558,
+      "maximum_co_ppm": 0.12046222860609426,
+      "maximum_co2_ppm": 4.002731939595226,
+      "maximum_n2_ppm": 48.90616264649364,
+      "maximum_ch4_ppm": 25.088095422250547,
+      "maximum_module_mass_balance_abs_mol": 4.163336342344337e-17,
+      "maximum_receiver_mass_balance_abs_mol": 1.8855805805628734e-11
+    },
+    {
+      "permeance_retention": 0.5,
+      "permeance_loss_percent": 50.0,
+      "minimum_unrounded_installed_area_m2": 0.8860326656256803,
+      "selected_rounded_installed_area_m2": 0.887,
+      "area_increase_vs_0p554_percent": 60.10830324909746,
+      "effective_area_m2": 0.4435,
+      "pass_count": 16,
+      "case_count": 16,
+      "minimum_overall_h2_recovery": 0.8836785341331956,
+      "minimum_qualified_h2_rate_mol_s": 0.0023615292385084276,
+      "receiver_capacity_mol": 1.2344774293528509,
+      "receiver_volume_L_at_1bar_298K": 30.60216501323334,
+      "maximum_co_ppm": 0.12050980470138846,
+      "maximum_co2_ppm": 4.004183649298486,
+      "maximum_n2_ppm": 48.94524488911931,
+      "maximum_ch4_ppm": 25.09778296601926,
+      "maximum_module_mass_balance_abs_mol": 4.163336342344337e-17,
+      "maximum_receiver_mass_balance_abs_mol": 1.3761769501741128e-11
+    }
+  ],
+  "conservative_50_percent_retention_design": {
+    "permeance_retention": 0.5,
+    "permeance_loss_percent": 50.0,
+    "minimum_unrounded_installed_area_m2": 0.8860326656256803,
+    "selected_rounded_installed_area_m2": 0.887,
+    "area_increase_vs_0p554_percent": 60.10830324909746,
+    "effective_area_m2": 0.4435,
+    "pass_count": 16,
+    "case_count": 16,
+    "minimum_overall_h2_recovery": 0.8836785341331956,
+    "minimum_qualified_h2_rate_mol_s": 0.0023615292385084276,
+    "receiver_capacity_mol": 1.2344774293528509,
+    "receiver_volume_L_at_1bar_298K": 30.60216501323334,
+    "maximum_co_ppm": 0.12050980470138846,
+    "maximum_co2_ppm": 4.004183649298486,
+    "maximum_n2_ppm": 48.94524488911931,
+    "maximum_ch4_ppm": 25.09778296601926,
+    "maximum_module_mass_balance_abs_mol": 4.163336342344337e-17,
+    "maximum_receiver_mass_balance_abs_mol": 1.3761769501741128e-11
+  },
+  "claim_boundary": {
+    "supported": "A 50% permeance-retention design directly passes all 16 frozen uncertainty and hold-out cases under the same adaptive finite-selectivity model.",
+    "not_supported": "The public coal-syngas experiment is not a matched validation of the present feed, module, four impurity detection limits, or long-term plant control."
+  }
+}

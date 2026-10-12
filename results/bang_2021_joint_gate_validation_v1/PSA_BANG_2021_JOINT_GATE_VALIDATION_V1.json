@@ -1,0 +1,67 @@
+{
+  "schema": "psa-bang-2021-joint-gate-validation/v1",
+  "status": "published_integrated_cmr_psa_operating_points_bracket_joint_gate",
+  "source": {
+    "citation": "G. Bang, D.K. Moon, J.H. Kang, Y.J. Han, K.M. Kim, C.H. Lee, Chemical Engineering Journal 411 (2021) 128473",
+    "title": "High-purity hydrogen production via a water-gas-shift reaction in a palladium-copper catalytic membrane reactor integrated with pressure swing adsorption",
+    "doi": "10.1016/j.cej.2021.128473",
+    "doi_url": "https://doi.org/10.1016/j.cej.2021.128473",
+    "author_affiliation_record": "https://yonsei.elsevierpure.com/en/publications/high-purity-hydrogen-production-via-a-water-gas-shift-reaction-in/",
+    "public_record_accessed": "2026-10-12",
+    "reported_feed": "CO/H2/CO2 = 65:30:5 vol%; steam/carbon = 1-5",
+    "reported_conditions": "360-380 C; 6-10 bar; H2 sweep gas",
+    "process": "Pd-Cu catalytic membrane reactor plus activated-carbon/zeolite four-bed PSA"
+  },
+  "project_gate": {
+    "minimum_h2_recovery_fraction": 0.882940124864471,
+    "maximum_co_ppm": 0.5
+  },
+  "reported_integrated_process_points": [
+    {
+      "point_id": "bang_high_recovery",
+      "evidence_type": "published integrated CMR+four-bed PSA operating point",
+      "h2_recovery_percent": 91.37,
+      "co_ppm": 8.67,
+      "reported_h2_purity_percent_lower_bound": 99.9991,
+      "passes_project_recovery_floor": true,
+      "passes_project_co_limit": false,
+      "passes_joint_project_gate": false,
+      "recovery_margin_percentage_point": 3.075987513552903,
+      "co_to_limit_ratio": 17.34
+    },
+    {
+      "point_id": "bang_low_co",
+      "evidence_type": "published integrated CMR+four-bed PSA operating point",
+      "h2_recovery_percent": 85.99,
+      "co_ppm": 0.15,
+      "reported_h2_purity_percent_lower_bound": "",
+      "passes_project_recovery_floor": false,
+      "passes_project_co_limit": true,
+      "passes_joint_project_gate": false,
+      "recovery_margin_percentage_point": -2.3040124864471068,
+      "co_to_limit_ratio": 0.3
+    }
+  ],
+  "present_modeled_worst_case": {
+    "point_id": "project_worst_case_model",
+    "evidence_type": "present model; 0.887 m2 Pd at 50% permeance retention",
+    "h2_recovery_percent": 88.36756434665011,
+    "co_ppm": 0.12066847780533324,
+    "reported_h2_purity_percent_lower_bound": "",
+    "passes_project_recovery_floor": true,
+    "passes_project_co_limit": true,
+    "passes_joint_project_gate": true,
+    "recovery_margin_percentage_point": 0.07355186020300275,
+    "co_to_limit_ratio": 0.24133695561066648
+  },
+  "computed_interpretation": {
+    "reported_joint_pass_count": 0,
+    "reported_point_count": 2,
+    "high_recovery_point_co_excess_factor": 17.34,
+    "low_co_point_recovery_shortfall_percentage_point": 2.3040124864471068,
+    "model_recovery_margin_percentage_point": 0.07355186020300275,
+    "model_co_margin_ppm": 0.37933152219466676
+  },
+  "engineering_use": "The paired published operating points demonstrate the same governing conflict encoded by the project oracle: an operating point may satisfy recovery or CO while failing their conjunction. The present model places its worst case inside that joint pass region and therefore makes a stronger, explicitly testable prediction than bulk-purity reporting.",
+  "claim_boundary": "The Bang CMR was experimentally operated with H2 sweep and a CO/H2/CO2/steam feed, but the public record used here does not establish the complete integrated four-bed PSA output as an independently measured dataset. It did not report N2 or CH4 product concentrations, and the two published points do not show a simultaneous pass of the present CO and recovery gates. The points validate the engineering tradeoff and one component-specific low-CO capability at the integrated-study level, not the final five-component apparatus or its joint pass claim."
+}

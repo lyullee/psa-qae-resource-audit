@@ -1,0 +1,113 @@
+{
+  "source": {
+    "citation": "J. Wang et al., Chemical Engineering Journal 472 (2023) 144920",
+    "doi": "10.1016/j.cej.2023.144920",
+    "article_url": "https://www.sciencedirect.com/science/article/pii/S1385894723036513",
+    "supplement_url": "https://ars.els-cdn.com/content/image/1-s2.0-S1385894723036513-mmc1.pdf",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "local_supplement": "C:\\Users\\lyul\\Desktop\\DocuData\\혐기성소화 공정 프로젝트\\10_TEA_LCA_Python\\psa_qae\\public_datasets\\wang_2023_cog_vpsa\\Wang_2023_CEJ_VPSA_Supplement.pdf",
+    "sha256": "b32b669a63bdbb8f99926a1cc119820c34c802e25f042a4f66d25cd50de90bf0",
+    "pages": 21
+  },
+  "source_process": {
+    "configuration": "four-bed twelve-step laboratory VPSA",
+    "adsorbent": "commercial activated carbon RB3",
+    "feed_mole_fractions": {
+      "H2": 0.58,
+      "CH4": 0.29,
+      "N2": 0.07,
+      "CO2": 0.06
+    },
+    "reported_experimental_performance": {
+      "feed_pressure_bar": 5.17,
+      "H2_purity_percent": 99.67,
+      "H2_recovery_percent": 91.97
+    }
+  },
+  "digitization": {
+    "breakthrough_marker_count": 170,
+    "marker_count_by_species": {
+      "H2": 46,
+      "CH4": 36,
+      "N2": 42,
+      "CO2": 46
+    },
+    "pressure_point_count": 145,
+    "coordinate_uncertainty": {
+      "assumed_pixel_center_uncertainty_px": 2.0,
+      "breakthrough_time_s": 6.3,
+      "breakthrough_mole_fraction": 0.0048,
+      "pressure_bar": 0.0353
+    },
+    "half_feed_crossing_s": {
+      "N2": 213.88,
+      "CH4": 385.44,
+      "CO2": 943.38
+    },
+    "observed_breakthrough_order": [
+      "N2",
+      "CH4",
+      "CO2"
+    ],
+    "pressure_features": {
+      "Run_I": {
+        "digitized_points": 68,
+        "min_pressure_bar": 1.1029,
+        "max_pressure_bar": 5.2279,
+        "median_pressure_bar": 3.1897,
+        "fraction_below_0p3_bar": 0.0
+      },
+      "Run_III": {
+        "digitized_points": 77,
+        "min_pressure_bar": 0.0529,
+        "max_pressure_bar": 5.2412,
+        "median_pressure_bar": 2.1971,
+        "fraction_below_0p3_bar": 0.3377
+      }
+    }
+  },
+  "published_model_table": {
+    "rows": 60,
+    "evidence_class": "model-derived, not experimental",
+    "illustrative_high_purity_row": {
+      "feed_flow_SLPM": 2.9,
+      "vacuum_pressure_bar": 0.02,
+      "feed_pressure_bar": 5,
+      "H2_purity_percent": 99.99,
+      "H2_recovery_percent": 92.6,
+      "productivity_mol_H2_per_kg_ads_per_h": 2.29,
+      "specific_power_kJ_per_mol_H2": 6.42,
+      "evidence_class": "published_model_derived_table"
+    }
+  },
+  "article_run_table": {
+    "rows": 12,
+    "runs_with_experimental_purity_and_recovery": 6,
+    "experimental_run_ids": [
+      "I",
+      "II",
+      "III",
+      "VI",
+      "IX",
+      "XII"
+    ],
+    "maximum_purity_absolute_error_percentage_points": 0.6,
+    "maximum_recovery_absolute_error_percentage_points": 6.03,
+    "maximum_recovery_error_excluding_run_II_percentage_points": 0.39,
+    "evidence_class": "six experimental operating points paired with the authors' simulations; six additional simulation-only rows"
+  },
+  "claim_boundary": {
+    "allowed": [
+      "independent experimental mechanism check for breakthrough ordering",
+      "independent experimental cyclic-pressure-shape benchmark",
+      "secondary model-derived check of operating-trend direction"
+    ],
+    "not_allowed": [
+      "raw synchronized valve/tank/product logs",
+      "calibration or validation of the present model without reproducing the source apparatus",
+      "plant-scale performance validation"
+    ],
+    "reason": "The source process and adsorbent differ, and only plotted experimental traces plus a model-derived parametric table are public."
+  }
+}

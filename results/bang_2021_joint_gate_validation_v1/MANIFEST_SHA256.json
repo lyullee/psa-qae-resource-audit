@@ -1,0 +1,14 @@
+{
+  "PSA_BANG_2021_JOINT_GATE_VALIDATION_V1.json": {
+    "sha256": "0746243cd86762f0d24492297aac98ca542c64bf4f5ee5308a454b90cedf612c",
+    "bytes": 3926
+  },
+  "Fig_bang_2021_joint_gate_validation_v1.png": {
+    "sha256": "ce4dace9b4a95a53867c5b556be97a15fcf0ae638d5f0625d73b19418d685ac8",
+    "bytes": 177320
+  },
+  "Table_bang_2021_joint_gate_points.csv": {
+    "sha256": "1809170ec60ac90c31b69bbf4169588f8ac7cfe2319c40f21b20b4a61fa0c5f9",
+    "bytes": 652
+  }
+}

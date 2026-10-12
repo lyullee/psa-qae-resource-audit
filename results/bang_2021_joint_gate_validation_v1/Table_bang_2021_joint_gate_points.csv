@@ -1,0 +1,4 @@
+﻿point_id,evidence_type,h2_recovery_percent,co_ppm,reported_h2_purity_percent_lower_bound,passes_project_recovery_floor,passes_project_co_limit,passes_joint_project_gate,recovery_margin_percentage_point,co_to_limit_ratio
+bang_high_recovery,published integrated CMR+four-bed PSA operating point,91.37,8.67,99.9991,True,False,False,3.075987513552903,17.34
+bang_low_co,published integrated CMR+four-bed PSA operating point,85.99,0.15,,False,True,False,-2.3040124864471068,0.3
+project_worst_case_model,present model; 0.887 m2 Pd at 50% permeance retention,88.36756434665011,0.12066847780533324,,True,True,True,0.07355186020300275,0.24133695561066648

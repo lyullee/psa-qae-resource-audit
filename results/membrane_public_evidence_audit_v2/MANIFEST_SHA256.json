@@ -1,0 +1,47 @@
+{
+  "schema": "psa-membrane-public-evidence-audit-manifest/v2",
+  "sources": [
+    {
+      "path": "07_DWSIM_Aspen_\uc7ac\ud604\\results\\psa_stage_train_dwsim_input.csv",
+      "bytes": 12238,
+      "sha256": "a2236d058e53f58d1cd6c5b27b9fa3758fe34bddfda5b76c1cf50cabd7d68c03"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\independent_ode_membrane_audit\\PSA_INDEPENDENT_ODE_MEMBRANE_AUDIT.json",
+      "bytes": 4646,
+      "sha256": "2e56ea1bdbeebdc2693da88bac21c6c588dfaabddb137f6aa2b2e76c74790db6"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\independent_ode_membrane_audit\\Table_ode_revised_guard_validation.csv",
+      "bytes": 5252,
+      "sha256": "893e7083bc4093c844ada90f3e0d72dc0e0c77e203d4eac87a7379e82fa18010"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "Table_public_membrane_benchmarks.csv",
+      "bytes": 2226,
+      "sha256": "d6d03922d1d2a497c2f1786aad3d3e0a6d53e9725a9dd0a4900bc8cd7b922383"
+    },
+    {
+      "path": "Table_current_membrane_normalization.csv",
+      "bytes": 4312,
+      "sha256": "eac87106cdd2ae93a8f9a32fd3ad120274dcf9842a2d7ff2e9dc60a8530277d3"
+    },
+    {
+      "path": "Fig_membrane_public_evidence_audit_v2.png",
+      "bytes": 225341,
+      "sha256": "08618e63cbfb46695d0916019ef04c7c0bbece8e6135d50328278a2370e2576c"
+    },
+    {
+      "path": "MEMBRANE_PUBLIC_EVIDENCE_AUDIT_V2.json",
+      "bytes": 2404,
+      "sha256": "21163dae8b0c196d55be96cb6cd11c1931a071c61e4c22b0fb67b85e8e09c38c"
+    },
+    {
+      "path": "MEMBRANE_PUBLIC_EVIDENCE_AUDIT_V2.md",
+      "bytes": 912,
+      "sha256": "f817f12f92364f7917def886aabc027d6409dff793523a9721e41ab6476418d0"
+    }
+  ]
+}

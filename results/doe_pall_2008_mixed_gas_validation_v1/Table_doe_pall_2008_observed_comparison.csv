@@ -1,0 +1,4 @@
+﻿metric,DOE_Pall_2008,project_gate,ratio_to_gate,unit
+CO permeate,75.0,0.5,150.0,ppm
+CO2 permeate,450.0,5.0,90.0,ppm
+H2 recovery,0.7598039215686274,0.882940124864471,0.8605384444219876,fraction
