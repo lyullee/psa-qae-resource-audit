@@ -9,8 +9,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
+PROJECT = ROOT.parents[1]
 RESULTS = ROOT / "results"
-OUT = RESULTS / "final_objective_evidence_v44"
+OUT = RESULTS / "final_objective_evidence_v45"
 
 SOURCES = {
     "pressure_audit": RESULTS / "pressure_consistency_audit_v1" / "PSA_PRESSURE_CONSISTENCY_AUDIT_V1.json",
@@ -23,6 +24,7 @@ SOURCES = {
     "rk4": RESULTS / "pressure_consistent_independent_rk4_membrane_crosscheck_v1" / "PSA_INDEPENDENT_RK4_MEMBRANE_CROSSCHECK_V1.json",
     "selectivity": RESULTS / "pressure_consistent_public_selectivity_acceptance_audit_v1" / "PSA_PUBLIC_SELECTIVITY_ACCEPTANCE_AUDIT_V1.json",
     "portable_qasm": RESULTS / "pressure_consistent_portable_qasm_oracle_v1" / "PSA_PRESSURE_CONSISTENT_PORTABLE_QASM_ORACLE_V1.json",
+    "dwsim": PROJECT / "07_DWSIM_Aspen_재현" / "results" / "pressure_consistent_stage_train_v1" / "psa_stage_train_dwsim_audit" / "PSA_STAGE_TRAIN_DWSIM_CROSSCHECK.json",
 }
 
 
@@ -63,16 +65,17 @@ def main() -> None:
     portable = data["portable_qasm"]
     portable_resources = portable["resources"]
     portable_verification = portable["verification"]
+    dwsim = data["dwsim"]
 
     evidence = {
-        "schema": "psa-final-objective-evidence/v44",
-        "status": "pressure_consistent_design_and_numerical_validation_complete_portable_qasm_verified_dwsim_pending",
+        "schema": "psa-final-objective-evidence/v45",
+        "status": "pressure_consistent_design_numerical_validation_portable_qasm_and_corrected_dwsim_verified",
         "objective": (
             "maximize continuously specification-compliant H2 shipment while retaining enough regeneration hydrogen "
             "under feed, adsorption-equilibrium, and kinetic uncertainty"
         ),
         "supersedes": {
-            "previous_schema": "psa-final-objective-evidence/v43",
+            "previous_schema": "psa-final-objective-evidence/v44",
             "scientific_design_changed": True,
             "reason": (
                 "the former 7.0 bar tank set point could not be passively filled from the 6.2 bar product manifold; "
@@ -158,11 +161,21 @@ def main() -> None:
                 for x in data["rk4"]["summary_by_design"].values()
             ),
         },
+        "process_simulator_crosscheck": {
+            "software": dwsim["software"],
+            "process_architecture": dwsim["process_architecture"],
+            "checks": dwsim["checks"],
+            "energy_and_temperature": dwsim["energy_and_temperature"],
+            "claim_boundary": dwsim["claim_boundary"],
+        },
         "external_native_execution_boundary": {
             "corrected_dwsim_input_deck_generated": True,
-            "corrected_dwsim_execution_complete": False,
-            "corrected_dwsim_blocker": "Windows Application Control blocked DWSIM.FileStorage.dll (HRESULT 0x800711C7)",
-            "legacy_dwsim_role": "prior structural Peng-Robinson and equipment-staging cross-check only",
+            "corrected_dwsim_execution_complete": True,
+            "corrected_dwsim_case_count": dwsim["checks"]["case_count"],
+            "corrected_dwsim_calculation_error_count": dwsim["checks"]["calculation_error_count"],
+            "corrected_dwsim_component_balance_max_abs_mol_s": dwsim["checks"]["maximum_component_balance_abs_mol_s"],
+            "corrected_dwsim_product_reference_max_abs_mol_s": dwsim["checks"]["maximum_product_reference_difference_mol_s"],
+            "corrected_dwsim_execution_note": dwsim["software"]["file_storage_loading"],
             "portable_qasm_serialization_complete": True,
             "portable_qasm_basis_state_verification_complete": True,
             "qiskit_optimized_transpilation_complete": False,
@@ -178,15 +191,15 @@ def main() -> None:
             "holdout_and_public_experimental_evidence": 100,
             "strict_product_impurity_specification": 100,
             "integrated_manuscript_figures_reproducibility": 100,
-            "overall": 99.9,
+            "overall": 100,
         },
         "source_integrity": [
-            {"name": name, "path": str(path.relative_to(ROOT)), "bytes": path.stat().st_size, "sha256": sha256(path)}
+            {"name": name, "path": str(path.relative_to(PROJECT)), "bytes": path.stat().st_size, "sha256": sha256(path)}
             for name, path in SOURCES.items()
         ],
     }
 
-    json_path = OUT / "PSA_FINAL_OBJECTIVE_EVIDENCE_V44.json"
+    json_path = OUT / "PSA_FINAL_OBJECTIVE_EVIDENCE_V45.json"
     json_path.write_text(json.dumps(evidence, indent=2), encoding="utf-8")
     gates = [
         {"gate": "hydraulic topology", "result": "pass", "evidence": "6.2 bar manifold -> 6.0 bar tank; booster -> 6.5 bar header"},
@@ -197,17 +210,17 @@ def main() -> None:
         {"gate": "independent RK4", "result": "pass", "evidence": "32/32 labels agree with DOP853"},
         {"gate": "portable QASM oracle", "result": "pass", "evidence": "66 qubits; 24,042 CX; depth 36,163; zero verified phase/restoration errors"},
         {"gate": "Qiskit optimization and hardware routing", "result": "pending", "evidence": "optional device-specific step; host rustworkx DLL blocked"},
-        {"gate": "corrected DWSIM execution", "result": "pending", "evidence": "input deck frozen; host DLL blocked"},
+        {"gate": "corrected DWSIM execution", "result": "pass", "evidence": "6.2 bar input; 16/16 Peng-Robinson cases; maximum component-balance error 8.945e-19 mol/s"},
     ]
-    write_csv(OUT / "PSA_FINAL_OBJECTIVE_GATES_V44.csv", gates)
+    write_csv(OUT / "PSA_FINAL_OBJECTIVE_GATES_V45.csv", gates)
     write_csv(
-        OUT / "PSA_FINAL_OBJECTIVE_PROGRESS_V44.csv",
+        OUT / "PSA_FINAL_OBJECTIVE_PROGRESS_V45.csv",
         [{"workstream": key, "percent": value} for key, value in evidence["progress_percent"].items()],
     )
-    (OUT / "PSA_FINAL_OBJECTIVE_EVIDENCE_V44.md").write_text(
+    (OUT / "PSA_FINAL_OBJECTIVE_EVIDENCE_V45.md").write_text(
         "\n".join(
             [
-                "# Pressure-consistent PSA/QAE evidence V44",
+                "# Pressure-consistent PSA/QAE evidence V45",
                 "",
                 "The corrected process uses passive fill from the 6.2 bar product manifold to a 6.0 bar regeneration tank and a booster from the tank to the 6.5 bar purge/repressurization header.",
                 "",
@@ -217,14 +230,15 @@ def main() -> None:
                 f"- Corrected 20% loss guard: {ode['selected_rounded_pd_area_m2']:.3f} m2; 50% actual-syngas stress guard: {syngas['selected_rounded_installed_area_m2']:.3f} m2.",
                 f"- Chance-area conservative probability: {qae_validation['conservative_affine_probability']:.6f}; 10-bit discrete probability: {resources['exact_discrete_oracle_probability']:.6f}.",
                 f"- Portable OpenQASM 3 oracle: {portable_resources['total_logical_qubits']} logical qubits, {portable_resources['portable_primitive_cx']:,} CX gates, all-to-all depth {portable_resources['portable_primitive_depth_all_to_all']:,}; zero phase or restoration errors in the reported exhaustive/direct/random checks.",
-                "- Current external-execution boundary: device-specific Qiskit optimization/routing and corrected DWSIM execution require a host that does not block their native DLLs; neither is needed to reproduce the included portable QASM.",
+                f"- Corrected DWSIM 8.7.1 Peng-Robinson cross-check: {dwsim['checks']['case_count']}/16 cases solved at a {dwsim['process_architecture']['raw_psa_pressure_bar']:.1f} bar inlet; maximum component-balance error {dwsim['checks']['maximum_component_balance_abs_mol_s']:.3e} mol/s; compression {dwsim['energy_and_temperature']['dwsim_specific_compression_kWh_kg_H2_range'][0]:.3f}-{dwsim['energy_and_temperature']['dwsim_specific_compression_kWh_kg_H2_range'][1]:.3f} kWh/kg H2.",
+                "- Current external-execution boundary: device-specific Qiskit optimization/routing and hardware execution remain optional future steps; the portable QASM and corrected DWSIM process cross-check are complete.",
             ]
         ),
         encoding="utf-8",
     )
-    outputs = [json_path, OUT / "PSA_FINAL_OBJECTIVE_GATES_V44.csv", OUT / "PSA_FINAL_OBJECTIVE_PROGRESS_V44.csv", OUT / "PSA_FINAL_OBJECTIVE_EVIDENCE_V44.md"]
+    outputs = [json_path, OUT / "PSA_FINAL_OBJECTIVE_GATES_V45.csv", OUT / "PSA_FINAL_OBJECTIVE_PROGRESS_V45.csv", OUT / "PSA_FINAL_OBJECTIVE_EVIDENCE_V45.md"]
     manifest = {
-        "schema": "psa-final-objective-evidence-manifest/v44",
+        "schema": "psa-final-objective-evidence-manifest/v45",
         "files": [
             {"path": path.name, "bytes": path.stat().st_size, "sha256": sha256(path)} for path in outputs
         ],

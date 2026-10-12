@@ -19,8 +19,8 @@ legacy = importlib.util.module_from_spec(spec)
 assert spec.loader is not None
 spec.loader.exec_module(legacy)
 
-EVIDENCE = RESULTS / "final_objective_evidence_v44" / "PSA_FINAL_OBJECTIVE_EVIDENCE_V44.json"
-OUT = RESULTS / "spt_pressure_consistent_manuscript_v2"
+EVIDENCE = RESULTS / "final_objective_evidence_v45" / "PSA_FINAL_OBJECTIVE_EVIDENCE_V45.json"
+OUT = RESULTS / "spt_pressure_consistent_manuscript_v3"
 MD_OUT = OUT / "SPT_PRESSURE_CONSISTENT_MANUSCRIPT.md"
 DOCX_OUT = OUT / "SPT_PRESSURE_CONSISTENT_MANUSCRIPT.docx"
 MANIFEST_OUT = OUT / "MANIFEST_SHA256.json"
@@ -35,6 +35,7 @@ QAE_JSON = RESULTS / "pressure_consistent_physical_pd_area_qae_bridge_v1" / "PSA
 RK4_JSON = RESULTS / "pressure_consistent_independent_rk4_membrane_crosscheck_v1" / "PSA_INDEPENDENT_RK4_MEMBRANE_CROSSCHECK_V1.json"
 SELECTIVITY_JSON = RESULTS / "pressure_consistent_public_selectivity_acceptance_audit_v1" / "PSA_PUBLIC_SELECTIVITY_ACCEPTANCE_AUDIT_V1.json"
 PORTABLE_QASM_JSON = RESULTS / "pressure_consistent_portable_qasm_oracle_v1" / "PSA_PRESSURE_CONSISTENT_PORTABLE_QASM_ORACLE_V1.json"
+DWSIM_JSON = PROJECT / "07_DWSIM_Aspen_재현" / "results" / "pressure_consistent_stage_train_v1" / "psa_stage_train_dwsim_audit" / "PSA_STAGE_TRAIN_DWSIM_CROSSCHECK.json"
 
 OLD_PACKAGE = RESULTS / "spt_engineering_results_v1"
 
@@ -46,7 +47,7 @@ FIGURES = {
     5: RESULTS / "pressure_consistent_stage_resolved_membrane_train_v1" / "Fig_stage_resolved_membrane_train.png",
     6: RESULTS / "pressure_consistent_independent_ode_membrane_audit_v1" / "Fig_independent_ode_membrane_audit.png",
     7: RESULTS / "pressure_consistent_pd_leakage_aging_sensitivity_v1" / "Fig_pd_leakage_aging_sensitivity.png",
-    8: OLD_PACKAGE / "Fig8_psa_stage_train_dwsim_crosscheck.png",
+    8: PROJECT / "07_DWSIM_Aspen_재현" / "results" / "pressure_consistent_stage_train_v1" / "psa_stage_train_dwsim_audit" / "Fig_psa_stage_train_dwsim_crosscheck.png",
     9: RESULTS / "pressure_consistent_portable_qasm_oracle_v1" / "Fig_pressure_consistent_portable_qasm_oracle_v1.png",
     10: RESULTS / "pressure_consistent_pd_actual_syngas_poisoning_guard_v1" / "Fig_pd_actual_syngas_poisoning_guard_v1.png",
     11: RESULTS / "pressure_consistent_independent_rk4_membrane_crosscheck_v1" / "Fig_independent_rk4_membrane_crosscheck_v1.png",
@@ -76,7 +77,7 @@ legacy.MANIFEST_OUT = MANIFEST_OUT
 legacy.REFERENCE_AUDIT_OUT = REFERENCE_AUDIT_OUT
 legacy.EVIDENCE = EVIDENCE
 legacy.DATA_AVAILABILITY = (
-    "The complete calculation records, direct states, portable OpenQASM circuit, DWSIM input deck, figures, "
+    "The complete calculation records, direct states, portable OpenQASM circuit, corrected DWSIM input and results, figures, "
     "tables, and SHA-256 manifests are archived under the version-independent repository DOI "
     "https://doi.org/10.5281/zenodo.23271866 and mirrored at "
     "https://github.com/lyullee/psa-qae-resource-audit."
@@ -88,7 +89,8 @@ legacy.ABSTRACT = (
     "A pressure audit showed that the preliminary 7.0 bar tank could not be passively refilled from a 6.2 bar product manifold. The corrected topology therefore uses a 6.0 bar regulated tank, a 0.2 bar fill driving margin, and a discharge booster to the 6.5 bar regeneration header. "
     "Within declared feed, adsorption-equilibrium, and kinetic uncertainty, the selected policy of 4 s active purge and 540 s adsorption passed all eight corner cases and all eight predeclared interior hold-outs; a 6 s, 480 s comparison passed none. Specification-qualified hydrogen shipment increased by 6.785-7.341%, the minimum reserve-margin gain was 0.542 bar, and conservative booster duty remained below 0.198 kWh kg-1 H2. "
     "A literature-parameterized polymer concentrator followed by dense palladium polishing passed all 16 direct cases. Adaptive DOP853 integration corrected a near-boundary 20%-permeance-loss guard from 0.553 to 0.554 m2; the revised design gave at least 88.322% recovery and maximum CO, CO2, N2, and CH4 contents of 0.121, 4.000, 48.83, and 25.07 ppm. A public actual-syngas 50%-permeance-retention stress increased the conditional installed area to 0.887 m2 and retained all 16 cases. A separately coded fixed-area RK4 solver reproduced all 32 design-case labels, with a maximum recovery difference below 9.4e-8 percentage point relative to DOP853. "
-    "For a 0.440 m2 chance design, error-buffered trilinear integration gave a minimum scrambled-Sobol probability of 0.956673; a conservative affine event gave 0.951210, and its 10-bit discretization gave 0.950629 with no direct label errors. An exact portable OpenQASM 3 oracle uses 66 logical qubits, 24,042 CX gates, 61,269 primitive gates, and all-to-all depth 36,163 before optimization or routing. Exhaustive 2-, 3-, and 4-bit checks plus direct and random 10-bit checks gave zero phase-label and work-qubit-restoration errors. Device-specific optimization and a corrected-input DWSIM run remain external execution steps. "
+    "A corrected DWSIM 8.7.1 Peng-Robinson calculation solved all 16 horizon-averaged cases at the 6.2 bar inlet, with maximum component-balance error 8.95e-19 mol s-1 and compression demand of 3.091-3.183 kWh kg-1 H2. "
+    "For a 0.440 m2 chance design, error-buffered trilinear integration gave a minimum scrambled-Sobol probability of 0.956673; a conservative affine event gave 0.951210, and its 10-bit discretization gave 0.950629 with no direct label errors. An exact portable OpenQASM 3 oracle uses 66 logical qubits, 24,042 CX gates, 61,269 primitive gates, and all-to-all depth 36,163 before optimization or routing. Exhaustive 2-, 3-, and 4-bit checks plus direct and random 10-bit checks gave zero phase-label and work-qubit-restoration errors. "
     "For this smooth three-variable event, randomized quasi-Monte Carlo remains the practical estimator. The contribution is a pressure-consistent separation design rule and an auditable process-to-oracle construction for future higher-dimensional plant uncertainty."
 )
 
@@ -100,6 +102,7 @@ legacy.HIGHLIGHTS = [
     "A 0.554 m2 Pd guard passes all 16 cases at 20% permeance loss",
     "A 0.887 m2 conditional guard covers a public 50% actual-syngas loss stress",
     "Independent RK4 reproduces all 32 adaptive-integrator decisions",
+    "Corrected DWSIM Peng-Robinson calculations solve all 16 process cases",
     "A verified 66-qubit OpenQASM oracle connects the process chance constraint to QAE",
 ]
 
@@ -138,13 +141,13 @@ sections[2][1][10] = (
     "Installed dense-palladium area is the physical design coordinate. At 0.440 m2, 13 of 16 direct stress cases pass while the continuous chance probability exceeds 0.95. A conservative affine event is checked against every direct label and digitized with 10 qubits for each of three uncertainty coordinates. Reversible signed accumulation and comparison require 66 logical qubits. The circuit follows source-equivalent weighted-adder and two's-complement comparator constructions and is expanded exactly to OpenQASM 3 using X, H, T, Tdg, Z, and CX. Its portable unoptimized resources are 24,042 CX gates, 61,269 total primitive gates, and all-to-all depth 36,163. These counts exclude device routing, error correction, and hardware calibration."
 )
 sections[2][1][12] = (
-    "Compression is recalculated from the corrected 6.2 bar product manifold to the 20 bar polishing buffer and from the 1 bar polymer permeate to the 20 bar palladium feed. A corrected 16-case DWSIM input deck was generated, but local execution stopped when Windows Application Control blocked DWSIM.FileStorage.dll. Earlier Peng-Robinson runs are therefore shown only as evidence that the flowsheet and staged-compression method execute; their numerical duties are not used as current corrected-input results."
+    "Compression is recalculated from the corrected 6.2 bar product manifold to the 20 bar polishing buffer and from the 1 bar polymer permeate to the 20 bar palladium feed. The corrected 16-case deck was executed in DWSIM 8.7.1 with the Peng-Robinson property package, a 72% efficient first compressor, and three equal-pressure-ratio intercooled recompression stages. Windows Application Control blocked the distributed file-storage assembly only; a syntax-equivalent local rebuild from the official v8.7.1 source was preloaded, while the thermodynamic and unit-operation assemblies remained unchanged. DWSIM receives horizon-averaged component split fractions from the packet-resolved Python membrane model, so this is an independent pressure, duty, thermodynamic-state, and material-closure check rather than an independent membrane-transport calculation."
 )
 sections[2][1][13] = (
     "The independent RK4 implementation evaluates the frozen polymer solution-diffusion and finite-selectivity palladium equations at 48, 96, and 192 area sections. It covers the 0.554 m2, 80%-retention guard and the 0.887 m2, 50%-retention actual-syngas stress over all 16 direct cases. This isolates numerical implementation and mesh sensitivity while retaining the same constitutive laws."
 )
 sections[2][1][17] = (
-    "Earlier DWSIM hot-stage calculations established a workable Peng-Robinson flowsheet with three-stage recompression, a 420 C palladium heater, coolers, and component closure. Because the pressure-consistent input rerun is blocked on the current host, those values are retained as a structural and method cross-check only. Published 22-26 bar palladium inhibition and endurance studies [23,24] independently define the pressure and temperature evidence boundary."
+    "The corrected DWSIM calculation establishes the 6.2-to-20 bar compression, three-stage recompression, intercooling, and component closure at 298.15 K. An earlier hot-stage calculation additionally documents a 420 C palladium heater and coolers for the preceding input set; its heat-integration numbers are retained only as structural evidence. Published 22-26 bar palladium inhibition and endurance studies [23,24] independently define the high-temperature evidence boundary."
 )
 sections[2][1][19] = (
     "The 0.887 m2 design is replayed while one effective impurity selectivity is reduced and the others remain fixed. Logarithmic bisection finds the lowest value preserving all 16 events; a 25% simultaneous margin and upward rounding form an incoming-module screen. Li et al. [25] and DOE/MPT [26] provide public high-pressure and defect-leakage stresses, respectively, and are used as transfer and rejection controls rather than matched certification."
@@ -168,9 +171,9 @@ sections[3][1][10] = (
 sections[3][1][11] = (
     "The 0.554 m2 design passed all 16 direct cases. Minimum recovery was 0.883221 and minimum qualified hydrogen was 0.00236055 mol s-1. Maximum CO, CO2, N2, and CH4 were 0.1204, 3.9998, 48.83, and 25.07 ppm. The receiver capacity was 1.2320 mol (30.541 L at 1 bar and 298.15 K), and module and receiver balance errors remained below 4.2e-17 and 1.3e-11 mol."
 )
-sections[3][1][12] = "4.6 Corrected compression duty and external-simulator boundary"
+sections[3][1][12] = "4.6 Corrected DWSIM compression and process-simulator cross-check"
 sections[3][1][13] = (
-    "Changing the polishing inlet from the obsolete 8 bar assumption to the physically available 6.2 bar manifold increased the conservative design-screen compression requirement to 2.573 kWh kg-1 H2, without changing area, recovery, purity, or pass labels. A corrected 16-case DWSIM deck was generated. Its execution was blocked before solving by Windows Application Control, so earlier DWSIM results in Figure 8 are not used as corrected quantitative evidence."
+    "Changing the polishing inlet from the obsolete 8 bar assumption to the physically available 6.2 bar manifold increased the ideal-gas isothermal design-screen requirement to 2.573 kWh kg-1 H2, without changing area, recovery, purity, or pass labels. The corrected DWSIM deck solved all 16 cases with zero calculation errors. Maximum component-balance error was 8.95e-19 mol s-1 and maximum product-stream difference from the supplied split fractions was 1.30e-18 mol s-1. DWSIM adiabatic compression required 3.091-3.183 kWh kg-1 H2, 16.94-16.98% above the matched isothermal lower bound. Maximum first-compressor and recompression-stage discharge temperatures were 460.03 and 433.64 K, respectively."
 )
 sections[3][1][15] = (
     "At 0.440 m2 installed dense-palladium area, 13 of 16 direct points passed. The error-buffered trilinear probability had a minimum-scramble value of 0.956673; the conservative affine probability was 0.951210. Ten-bit digitization gave 0.950629, an absolute probability error of 0.000581, with zero false-positive and zero false-negative direct labels. The included OpenQASM 3 oracle uses 66 logical qubits, 24,042 CX gates, 61,269 primitive gates, and all-to-all depth 36,163 before optimization or routing. It produced zero phase-label and restoration errors in exhaustive 2-, 3-, and 4-bit tests, all 16 direct 10-bit engineering states, and 4,096 seeded random 10-bit states."
@@ -186,7 +189,7 @@ sections[3][1][20] = (
 )
 sections[3][1][23] = "4.11 High-pressure palladium evidence and legacy hot-stage cross-check"
 sections[3][1][24] = (
-    "The earlier hot-stage DWSIM run resolved three-stage compression, a 420 C palladium heater, coolers, and Peng-Robinson closure for the preceding input set. The present corrected deck could not be executed under the host DLL policy, so Figure 13 documents the method and equipment structure rather than current energy numbers. Published 22 bar inhibition and 26 bar, 400 C endurance studies [23,24] independently support the pressure-temperature feasibility envelope but do not certify the final impurity vector."
+    "The corrected DWSIM run resolves the current 6.2 bar pressure basis, compressor duties, temperatures, and Peng-Robinson closure, as shown in Figure 8. Figure 13 retains the earlier 420 C heater and heat-integration structure for the preceding input set and is not used for current energy numbers. Published 22 bar inhibition and 26 bar, 400 C endurance studies [23,24] independently support the high-temperature feasibility envelope but do not certify the final impurity vector."
 )
 sections[3][1][25] = (
     "The literature inhibition and endurance records support retaining an explicit permeance-loss guard. The 0.554 and 0.887 m2 designs are therefore interpreted as conditional engineering sizes tied to 80% and 50% permeance retention, respectively. A matched wet multicomponent module test remains necessary before converting either size into a procurement specification."
@@ -217,7 +220,7 @@ sections[4][1][8] = (
     "QAE is subordinate to the separation result. Current RQMC is cheaper for this three-dimensional response. The quantum contribution is the auditable reduction from a physical membrane-area chance constraint to a verified discrete reversible event with known probability error, a portable OpenQASM implementation, and explicit pre-routing resources. The 24,042-CX count is a reproducible upper-level resource baseline rather than an optimized device cost, and no hardware-advantage claim is made."
 )
 sections[4][1][10] = (
-    "The main limitations are the uniform engineering uncertainty measure, transfer of adsorption and membrane parameters across apparatuses, common constitutive laws in DOP853 and RK4, absence of a corrected-input DWSIM execution on the restricted host, lack of device-specific quantum routing and execution, and the lack of a matched component-resolved integrated experiment. Public membrane studies establish feasibility, recovery scale, degradation stresses, and rejection cases, but their feeds, pressures, modules, and analytical resolutions differ. These boundaries define the next validation work and do not change the pressure-consistent numerical design decision reported here."
+    "The main limitations are the uniform engineering uncertainty measure, transfer of adsorption and membrane parameters across apparatuses, common constitutive laws in DOP853 and RK4, use of supplied horizon-averaged membrane split fractions in DWSIM, lack of device-specific quantum routing and execution, and the lack of a matched component-resolved integrated experiment. Public membrane studies establish feasibility, recovery scale, degradation stresses, and rejection cases, but their feeds, pressures, modules, and analytical resolutions differ. These boundaries define the next validation work and do not change the pressure-consistent numerical design decision reported here."
 )
 
 sections[5][1][0] = (
@@ -227,7 +230,7 @@ sections[5][1][1] = (
     "The staged polishing train combines a 0.1892 m2 polymer concentrator with dense-palladium polishing. Adaptive integration set the 20%-loss guard at 0.554 m2; it passed 16/16 cases with minimum recovery 88.322% and every impurity below its limit. A public 50%-retention actual-syngas stress increased the conditional guard to 0.887 m2 and again passed 16/16. Independent RK4 preserved all 32 final labels, confirming that the design decision is insensitive to the numerical integrator and refined area mesh."
 )
 sections[5][1][2] = (
-    "The physical chance event at 0.440 m2 has conservative continuous probability 0.951210 and 10-bit discrete probability 0.950629 with no direct label errors. The verified portable oracle requires 66 logical qubits and has an exact pre-routing count of 24,042 CX gates. RQMC remains preferred for the present model; QAE becomes relevant when validated plant uncertainty and repeated probability queries make classical event evaluation expensive. Device-specific quantum execution, a corrected-input DWSIM solve, and a synchronized integrated experiment remain external validation steps."
+    "The corrected DWSIM calculation solved all 16 horizon-averaged cases and quantified the adiabatic compression penalty above the isothermal screen. The physical chance event at 0.440 m2 has conservative continuous probability 0.951210 and 10-bit discrete probability 0.950629 with no direct label errors. The verified portable oracle requires 66 logical qubits and has an exact pre-routing count of 24,042 CX gates. RQMC remains preferred for the present model; QAE becomes relevant when validated plant uncertainty and repeated probability queries make classical event evaluation expensive. Device-specific quantum execution and a synchronized integrated experiment remain external validation steps."
 )
 
 legacy.SECTIONS = sections
@@ -239,11 +242,11 @@ legacy.FIGURE_CAPTIONS.update(
         5: "Corrected pressure-consistent polymer plus dense-palladium train over eight corners and eight hold-outs.",
         6: "Independent continuous-area DOP853 audit that changes the 20%-permeance-loss palladium guard from 0.553 to 0.554 m2.",
         7: "Finite selectivity, defect leakage, and permeance-retention sensitivity for the corrected train.",
-        8: "Earlier DWSIM Peng-Robinson structural cross-check. The flowsheet method is retained, while its numerical duties are not used as corrected 6.2 bar inlet results.",
+        8: "Corrected DWSIM 8.7.1 Peng-Robinson cross-check for all 16 horizon-averaged cases at the 6.2 bar polishing inlet. The calculation independently checks pressure states, compression and cooling duties, temperatures, and material closure while using membrane split fractions supplied by the packet model.",
         9: "Verified physical dense-palladium-area chance event and portable OpenQASM resource baseline. CX and depth are exact all-to-all counts before device optimization and routing.",
         10: "Corrected installed-area requirement under the 40-50% actual-syngas permeance-loss stress.",
         11: "Corrected fixed-area RK4 mesh refinement and agreement with adaptive DOP853 for both guard designs.",
-        13: "Earlier hot-stage DWSIM equipment and heat-integration audit retained as a structural method cross-check; corrected-input execution is pending.",
+        13: "Earlier hot-stage DWSIM equipment and heat-integration audit retained as structural evidence for the 420 C palladium stage; current corrected compression results are reported in Figure 8.",
         14: "Pressure-consistent component selectivity thresholds and simultaneous incoming-module acceptance guard.",
         19: "Third-language packetwise method evidence from the superseded input set. It is not counted as current pressure-consistent confirmation.",
     }
@@ -281,6 +284,8 @@ def data_tables(_evidence):
     qr = qae["conservative_affine_oracle"]["ten_bit_resources"]
     portable = load(PORTABLE_QASM_JSON)
     pr = portable["resources"]
+    dwsim = load(DWSIM_JSON)
+    de = dwsim["energy_and_temperature"]
     selectivity = load(SELECTIVITY_JSON)
     thresholds = {row["impurity"]: row for row in selectivity["component_acceptance_thresholds"]}
     procurement = selectivity["design"]["rounded_procurement_acceptance_vector"]
@@ -303,7 +308,7 @@ def data_tables(_evidence):
             ["Independent RK4", "32/32 labels agree", "Implementation robustness", "Same constitutive laws"],
             ["Ververs data", "468 flux records", "Concentration polarization", "Binary 2-5 bar"],
             ["Public Pd studies", "pressure, aging, rejection anchors", "Feasibility envelope", "Unmatched modules"],
-            ["Corrected DWSIM", "input deck frozen", "Execution pending", "Host DLL blocked"],
+            ["Corrected DWSIM", "16/16 solved", "Pressure/duty/closure", "Supplied membrane splits"],
             ["Portable QASM", "0 phase/restoration errors", "Executable event", "Pre-routing resources"],
         ]),
         (3, "Membrane and receiver design tiers", ["Quantity", "Value", "Gate"], [
@@ -320,6 +325,9 @@ def data_tables(_evidence):
             ["Regeneration booster", "Maximum duty", f"{cube['selected_maximum_booster_kwh_per_kg_qualified_h2']:.3f} kWh kg-1 H2"],
             ["Polishing compression", "Conservative screen", f"{train['selected_design']['maximum_compression_energy_kwh_kg_h2']:.3f} kWh kg-1 H2"],
             ["Polishing compression", "Pressure basis", "6.2->20 bar; 1->20 bar"],
+            ["DWSIM compression", "Adiabatic range", f"{de['dwsim_specific_compression_kWh_kg_H2_range'][0]:.3f}-{de['dwsim_specific_compression_kWh_kg_H2_range'][1]:.3f} kWh kg-1 H2"],
+            ["DWSIM compression", "Premium over isothermal", f"{100*(de['adiabatic_to_isothermal_power_ratio_range'][0]-1):.2f}-{100*(de['adiabatic_to_isothermal_power_ratio_range'][1]-1):.2f}%"],
+            ["DWSIM temperatures", "Maximum discharges", f"{de['maximum_first_compressor_discharge_K']:.2f} / {de['maximum_interstage_compressor_discharge_K']:.2f} K"],
             ["QAE event", "Chance Pd area", f"{qae['event']['selected_chance_pd_area_m2']:.3f} m2"],
             ["QAE event", "Continuous affine probability", f"{qv['conservative_affine_probability']:.6f}"],
             ["QAE event", "10-bit probability", f"{qr['exact_discrete_oracle_probability']:.6f}"],
@@ -353,7 +361,7 @@ def sha256(path: Path) -> str:
 
 def main() -> None:
     evidence = load(EVIDENCE)
-    assert evidence["schema"] == "psa-final-objective-evidence/v44"
+    assert evidence["schema"] == "psa-final-objective-evidence/v45"
     OUT.mkdir(parents=True, exist_ok=True)
     for path in FIGURES.values():
         assert path.exists(), path
@@ -361,17 +369,17 @@ def main() -> None:
     legacy.build_docx(evidence)
     old_audit = RESULTS / "spt_full_manuscript_v1" / "REFERENCE_METADATA_AUDIT.json"
     shutil.copy2(old_audit, REFERENCE_AUDIT_OUT)
-    sources = [EVIDENCE, CUBE_JSON, HOLDOUT_JSON, TRAIN_JSON, ODE_JSON, SYNGAS_JSON, QAE_JSON, RK4_JSON, SELECTIVITY_JSON, PORTABLE_QASM_JSON, *FIGURES.values()]
+    sources = [EVIDENCE, CUBE_JSON, HOLDOUT_JSON, TRAIN_JSON, ODE_JSON, SYNGAS_JSON, QAE_JSON, RK4_JSON, SELECTIVITY_JSON, PORTABLE_QASM_JSON, DWSIM_JSON, *FIGURES.values()]
     outputs = [MD_OUT, DOCX_OUT, REFERENCE_AUDIT_OUT]
     manifest = {
-        "schema": "psa-spt-pressure-consistent-manuscript/v2",
-        "status": "pressure_consistent_manuscript_with_verified_portable_qasm_and_explicit_external_boundaries",
+        "schema": "psa-spt-pressure-consistent-manuscript/v3",
+        "status": "pressure_consistent_manuscript_with_verified_portable_qasm_and_corrected_dwsim_crosscheck",
         "sources": [{"path": str(p.relative_to(PROJECT)), "bytes": p.stat().st_size, "sha256": sha256(p)} for p in sources],
         "outputs": [{"path": str(p.relative_to(PROJECT)), "bytes": p.stat().st_size, "sha256": sha256(p)} for p in outputs],
         "claim_boundary": {
-            "current": "6.0 bar tank, discharge booster, corrected 6.2 bar polishing inlet, 8 corners, 8 hold-outs, DOP853 and RK4",
-            "pending": "device-specific quantum optimization/routing and corrected-input DWSIM execution on a host permitting their native DLLs",
-            "legacy_only": "earlier DWSIM quantitative results and C# packet replay",
+            "current": "6.0 bar tank, discharge booster, corrected 6.2 bar polishing inlet, 8 corners, 8 hold-outs, DOP853, RK4, and 16-case DWSIM Peng-Robinson cross-check",
+            "pending": "device-specific quantum optimization/routing and synchronized integrated experimental certification",
+            "legacy_only": "earlier hot-stage DWSIM heat-integration values and C# packet replay",
         },
     }
     MANIFEST_OUT.write_text(json.dumps(manifest, indent=2), encoding="utf-8")

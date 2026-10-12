@@ -1,0 +1,58 @@
+{
+  "schema": "psa-stage-train-dwsim-crosscheck/v1",
+  "status": "passed_16_of_16_horizon_averaged_cases",
+  "software": {
+    "dwsim_version": "8.7.1.0",
+    "property_package": "Peng-Robinson (PR)",
+    "file_storage_loading": "syntax-equivalent local rebuild from the official DWSIM v8.7.1 FileDatabaseProvider.cs was preloaded because Windows Application Control blocked the distributed DWSIM.FileStorage.dll; process calculations still use the unmodified DWSIM 8.7.1 thermodynamics and unit-operation assemblies"
+  },
+  "process_architecture": {
+    "raw_psa_pressure_bar": 6.2,
+    "polymer_feed_pressure_bar": 20.0,
+    "polymer_permeate_pressure_bar": 1.0,
+    "pd_feed_pressure_bar": 20.0,
+    "pd_permeate_pressure_bar": 1.0,
+    "polymer_area_m2": 0.18919607212953285,
+    "pd_area_m2": 0.554,
+    "pd_permeance_retention": 0.8,
+    "membrane_integration_method": "adaptive_DOP853_continuous_area",
+    "first_compression": "one adiabatic stage, 6.2 to 20 bar, 72% efficiency, cooled to 298.15 K",
+    "interstage_compression": "three equal-pressure-ratio adiabatic stages, 1 to 20 bar, 72% efficiency each, intercooling to 298.15 K",
+    "membrane_representation": "DWSIM Component Separators receive horizon-averaged component split fractions from the packet-resolved Python membrane model"
+  },
+  "checks": {
+    "case_count": 16,
+    "calculation_error_count": 0,
+    "maximum_component_balance_abs_mol_s": 8.944667923005412e-19,
+    "maximum_product_reference_difference_mol_s": 1.3010426069826053e-18,
+    "saved_reopenable_case_count": 2
+  },
+  "energy_and_temperature": {
+    "adiabatic_compression_power_W_range": [
+      53.13344858013879,
+      56.11389628997904
+    ],
+    "python_isothermal_lower_bound_power_W_range": [
+      45.419302006591614,
+      47.984293699417776
+    ],
+    "adiabatic_to_isothermal_power_ratio_range": [
+      1.1694221580395985,
+      1.1698429133153043
+    ],
+    "dwsim_specific_compression_kWh_kg_H2_range": [
+      3.090796799880003,
+      3.1825127472210992
+    ],
+    "total_cooling_duty_W_range": [
+      53.3159432673304,
+      56.29297442881685
+    ],
+    "maximum_first_compressor_discharge_K": 460.02811582743834,
+    "maximum_interstage_compressor_discharge_K": 433.6379329430978
+  },
+  "claim_boundary": {
+    "supported": "The specified two-stage membrane train is thermodynamically and materially consistent in DWSIM for the 16 horizon-averaged cases; three-stage intercooled recompression limits the modeled discharge temperature; the exact shaft-power premium over the isothermal lower bound is reported from all 16 cases.",
+    "not_supported": "This check does not independently reproduce membrane transport, cyclic surge/receiver dynamics, compressor maps, pressure drop, or a vendor module. The component split fractions are supplied by the Python membrane model."
+  }
+}

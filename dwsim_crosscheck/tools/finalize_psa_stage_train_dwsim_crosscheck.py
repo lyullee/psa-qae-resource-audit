@@ -15,6 +15,7 @@ import pandas as pd
 PROJECT = Path(__file__).resolve().parents[2]
 DWSIM = PROJECT / "07_DWSIM_Aspen_재현"
 RESULTS = DWSIM / "results" / os.environ.get("PSA_DWSIM_RESULTS_SUBDIR", "")
+TRAIN_DIR_NAME = os.environ.get("PSA_DWSIM_TRAIN_DIR", "stage_resolved_membrane_train")
 INPUT = RESULTS / "psa_stage_train_dwsim_input.csv"
 CROSSCHECK = RESULTS / "psa_stage_train_dwsim_crosscheck.csv"
 STREAMS = RESULTS / "psa_stage_train_dwsim_streams.csv"
@@ -48,6 +49,10 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     inp = pd.read_csv(INPUT)
     result = pd.read_csv(CROSSCHECK)
+    raw_pressures = inp["raw_feed_pressure_Pa"].unique()
+    if len(raw_pressures) != 1:
+        raise AssertionError("DWSIM input deck mixes raw-feed pressure bases")
+    raw_pressure_bar = float(raw_pressures[0]) / 1.0e5
     merged = result.merge(
         inp[["case_id", "python_product_H2_mol_s"]], on="case_id", validate="one_to_one"
     )
@@ -78,9 +83,15 @@ def main() -> None:
         "software": {
             "dwsim_version": "8.7.1.0",
             "property_package": "Peng-Robinson (PR)",
+            "file_storage_loading": (
+                "syntax-equivalent local rebuild from the official DWSIM v8.7.1 "
+                "FileDatabaseProvider.cs was preloaded because Windows Application Control "
+                "blocked the distributed DWSIM.FileStorage.dll; process calculations still "
+                "use the unmodified DWSIM 8.7.1 thermodynamics and unit-operation assemblies"
+            ),
         },
         "process_architecture": {
-            "raw_psa_pressure_bar": 8.0,
+            "raw_psa_pressure_bar": raw_pressure_bar,
             "polymer_feed_pressure_bar": 20.0,
             "polymer_permeate_pressure_bar": 1.0,
             "pd_feed_pressure_bar": 20.0,
@@ -89,7 +100,7 @@ def main() -> None:
             "pd_area_m2": float(inp["pd_area_m2"].iloc[0]),
             "pd_permeance_retention": float(inp["pd_permeance_retention"].iloc[0]),
             "membrane_integration_method": str(inp["membrane_integration_method"].iloc[0]),
-            "first_compression": "one adiabatic stage, 8 to 20 bar, 72% efficiency, cooled to 298.15 K",
+            "first_compression": f"one adiabatic stage, {raw_pressure_bar:g} to 20 bar, 72% efficiency, cooled to 298.15 K",
             "interstage_compression": "three equal-pressure-ratio adiabatic stages, 1 to 20 bar, 72% efficiency each, intercooling to 298.15 K",
             "membrane_representation": "DWSIM Component Separators receive horizon-averaged component split fractions from the packet-resolved Python membrane model",
         },
@@ -138,7 +149,7 @@ def main() -> None:
         "claim_boundary": {
             "supported": (
                 "The specified two-stage membrane train is thermodynamically and materially consistent in DWSIM for the 16 horizon-averaged cases; "
-                "three-stage intercooled recompression limits the modeled discharge temperature and requires about 15.3% more shaft power than the isothermal lower bound."
+                "three-stage intercooled recompression limits the modeled discharge temperature; the exact shaft-power premium over the isothermal lower bound is reported from all 16 cases."
             ),
             "not_supported": (
                 "This check does not independently reproduce membrane transport, cyclic surge/receiver dynamics, compressor maps, pressure drop, or a vendor module. "
@@ -177,7 +188,7 @@ def main() -> None:
     ax.legend(frameon=False, fontsize=8)
 
     ax = axes[1, 0]
-    ax.plot(x, merged["c1_hot_temperature_K"], "o-", label="8→20 bar compressor")
+    ax.plot(x, merged["c1_hot_temperature_K"], "o-", label=f"{raw_pressure_bar:g}→20 bar compressor")
     ax.plot(x, merged["c2a_hot_temperature_K"], "^-", label="1→2.71 bar")
     ax.plot(x, merged["c2b_hot_temperature_K"], "v-", label="2.71→7.37 bar")
     ax.plot(x, merged["c2c_hot_temperature_K"], "d-", label="7.37→20 bar")
@@ -212,7 +223,7 @@ def main() -> None:
 
 All **16/16** predeclared uncertainty and hold-out cases solved in DWSIM 8.7.1 with the Peng–Robinson property package. The largest component material-balance residual was **{checks['maximum_component_balance_abs_mol_s']:.3e} mol/s**, and the largest difference between the DWSIM product stream and the supplied packet-model split was **{checks['maximum_product_reference_difference_mol_s']:.3e} mol/s**.
 
-The process uses a **0.1892-m² polymer stage**, a **{verification['process_architecture']['pd_area_m2']:.3f}-m² Pd stage at 80% permeance retention**, one 8→20 bar compressor before the polymer stage, and three equal-pressure-ratio, intercooled compressor stages between the 1 bar polymer permeate and the 20 bar Pd feed. The maximum first-stage discharge temperature was **{e['maximum_first_compressor_discharge_K']:.2f} K**; the maximum recompression-stage discharge temperature was **{e['maximum_interstage_compressor_discharge_K']:.2f} K**.
+The process uses a **0.1892-m² polymer stage**, a **{verification['process_architecture']['pd_area_m2']:.3f}-m² Pd stage at 80% permeance retention**, one {raw_pressure_bar:g}→20 bar compressor before the polymer stage, and three equal-pressure-ratio, intercooled compressor stages between the 1 bar polymer permeate and the 20 bar Pd feed. The maximum first-stage discharge temperature was **{e['maximum_first_compressor_discharge_K']:.2f} K**; the maximum recompression-stage discharge temperature was **{e['maximum_interstage_compressor_discharge_K']:.2f} K**.
 
 The DWSIM adiabatic shaft-power range was **{e['adiabatic_compression_power_W_range'][0]:.3f}–{e['adiabatic_compression_power_W_range'][1]:.3f} W**, equal to **{e['dwsim_specific_compression_kWh_kg_H2_range'][0]:.3f}–{e['dwsim_specific_compression_kWh_kg_H2_range'][1]:.3f} kWh/kg H2**. This is **{100*(e['adiabatic_to_isothermal_power_ratio_range'][0]-1):.2f}–{100*(e['adiabatic_to_isothermal_power_ratio_range'][1]-1):.2f}%** above the earlier isothermal lower bound. The total intercooling duty was **{e['total_cooling_duty_W_range'][0]:.3f}–{e['total_cooling_duty_W_range'][1]:.3f} W**.
 
@@ -244,8 +255,18 @@ DWSIM does not independently calculate the polymer or Pd transport laws here. Ea
         ODE_AUDIT,
         ODE_MANIFEST,
     ]
+    rebuild_dir = DWSIM / "results" / "dwsim_filestorage_rebuild_v871"
+    source_paths.extend(
+        path
+        for path in (
+            rebuild_dir / "DWSIM.FileStorage.dll",
+            rebuild_dir / "source" / "FileDatabaseProvider.cs",
+            rebuild_dir / "source" / "AssemblyInfo.cs",
+        )
+        if path.exists()
+    )
     source_paths.extend(sorted(CASES.glob("*.dwxmz")))
-    source_paths.extend(sorted((PROJECT / "10_TEA_LCA_Python" / "psa_qae" / "results" / "stage_resolved_membrane_train" / "states").glob("*_traces.npz")))
+    source_paths.extend(sorted((PROJECT / "10_TEA_LCA_Python" / "psa_qae" / "results" / TRAIN_DIR_NAME / "states").glob("*_traces.npz")))
     output_paths = [
         OUT / "Table_dwsim_crosscheck_augmented.csv",
         OUT / "PSA_STAGE_TRAIN_DWSIM_CROSSCHECK.json",

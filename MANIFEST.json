@@ -1,8 +1,8 @@
 {
-  "schema": "psa-qae-spt-release-candidate/v0.2.0-rc12",
-  "status": "pressure_consistent_local_release_candidate_portable_qasm_verified_dwsim_external",
-  "file_count": 296,
-  "current_evidence": "psa-final-objective-evidence/v44",
+  "schema": "psa-qae-spt-release-candidate/v0.2.1-rc13",
+  "status": "pressure_consistent_release_candidate_portable_qasm_and_corrected_dwsim_verified",
+  "file_count": 312,
+  "current_evidence": "psa-final-objective-evidence/v45",
   "manuscript_pages": 23,
-  "release_boundary": "portable QASM complete; device-specific routing and corrected-input DWSIM execution remain external"
+  "release_boundary": "portable QASM and corrected DWSIM complete; device-specific routing and matched integrated experiment remain external"
 }

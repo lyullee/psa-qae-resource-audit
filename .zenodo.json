@@ -1,6 +1,6 @@
 {
   "title": "Hydraulically feasible regeneration-reserve-aware hydrogen pressure swing adsorption under uncertainty with staged membrane polishing and a quantum-ready probability event",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publication_date": "2026-10-12",
   "upload_type": "software",
   "description": "Reproducibility package for a pressure-consistent dynamic hydrogen PSA, staged polymer and palladium polishing, public-data validation, uncertainty analysis, and a verified portable OpenQASM probability oracle.",
@@ -42,5 +42,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "The portable OpenQASM oracle and all claimed corrected calculations are included. Device-specific quantum execution, corrected-input DWSIM execution, and matched integrated experimental certification remain outside the quantitative claim."
+  "notes": "The portable OpenQASM oracle, corrected DWSIM 8.7.1 cross-check, and all claimed corrected calculations are included. Device-specific quantum execution and matched integrated experimental certification remain outside the quantitative claim."
 }

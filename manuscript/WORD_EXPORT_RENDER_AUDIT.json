@@ -1,0 +1,36 @@
+{
+  "status": "visual_render_checked",
+  "checked_at": "2026-10-12T20:39:42.0697672+09:00",
+  "page_count": 23,
+  "render_dpi": 144,
+  "inspected_original_pages": [
+    1,
+    4,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    21,
+    22
+  ],
+  "contact_sheets_inspected": [
+    "CONTACT_SHEET_01.png",
+    "CONTACT_SHEET_02.png",
+    "CONTACT_SHEET_03.png",
+    "CONTACT_SHEET_04.png"
+  ],
+  "findings": {
+    "clipped_content": false,
+    "overlapping_content": false,
+    "blank_pages": false,
+    "table_figure_caption_issues": false,
+    "conclusion": "pass"
+  },
+  "sha256": {
+    "docx": "626bcf72b345346e6b414bcd28721ba7a85cec0c90a3243195cbe7185c255b7f",
+    "pdf": "15f3fd21893e8bf086bda9af906734fedf81a4a4bae39bf1055d98f49989e129"
+  },
+  "rendered_png_count": 23
+}

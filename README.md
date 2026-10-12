@@ -1,6 +1,6 @@
 # Pressure-consistent regeneration-reserve-aware hydrogen PSA and QAE event
 
-This is the **v0.2.0** reproducibility package for a Separation and
+This is the **v0.2.1** reproducibility package for a Separation and
 Purification Technology-oriented study. It supersedes v0.1.0 because the former
 7.0 bar regeneration tank could not be passively filled from the 6.2 bar
 product manifold.
@@ -28,22 +28,28 @@ product manifold.
   and all-to-all depth 36,163 before device optimization or routing. Its
   reported basis-state tests have zero phase-label or work-qubit-restoration
   errors.
+- A corrected DWSIM 8.7.1 Peng-Robinson cross-check solved all 16 cases at the
+  physical 6.2 bar inlet with component-balance error below 8.95e-19 mol s-1.
+  Adiabatic compression is 3.091-3.183 kWh kg-1 H2, 16.94-16.98% above the
+  matched isothermal lower bound.
 
 ## Execution boundary
 
-The corrected integer specification, portable OpenQASM 3 oracle, and corrected
-DWSIM input deck are included. Device-specific Qiskit optimization/routing and
-DWSIM execution were blocked on the current Windows host by Application Control
-rejecting their native DLLs. Earlier DWSIM and C# runs are not used as current
-corrected-input evidence. The manuscript states these boundaries explicitly.
+The corrected integer specification, portable OpenQASM 3 oracle, corrected
+DWSIM input deck, DWSIM outputs, saved cases, and audit are included. Windows
+Application Control rejected only the distributed DWSIM.FileStorage assembly;
+an assembly-identical local build from the official DWSIM 8.7.1 source enabled
+the run. The exact source, rebuilt assembly, hashes, and execution provenance
+are included. Device-specific Qiskit optimization/routing remains external.
 
 ## Contents
 
 - `manuscript/`: render-checked Word, PDF, Markdown, and reference audit.
-- `evidence/`: V44 consolidated evidence, gates, progress, and hashes.
+- `evidence/`: V45 consolidated evidence, gates, progress, and hashes.
 - `results/`: corrected machine-readable calculation records and public-data audits.
 - `source/`: scripts needed to rerun the corrected analyses and rebuild artifacts.
-- `dwsim_corrected_input/`: the 16-case corrected DWSIM input deck and runner tools.
+- `dwsim_crosscheck/`: corrected input, 16-case outputs, saved cases, figures,
+  official-source rebuild provenance, and runner/finalizer tools.
 - `figures/`: 19 manuscript figures.
 - `checksums/sha256.txt`: file-level SHA-256 ledger.
 

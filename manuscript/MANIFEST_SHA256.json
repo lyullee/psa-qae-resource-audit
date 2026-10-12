@@ -1,11 +1,11 @@
 {
-  "schema": "psa-spt-pressure-consistent-manuscript/v2",
-  "status": "pressure_consistent_manuscript_with_verified_portable_qasm_and_explicit_external_boundaries",
+  "schema": "psa-spt-pressure-consistent-manuscript/v3",
+  "status": "pressure_consistent_manuscript_with_verified_portable_qasm_and_corrected_dwsim_crosscheck",
   "sources": [
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\final_objective_evidence_v44\\PSA_FINAL_OBJECTIVE_EVIDENCE_V44.json",
-      "bytes": 9801,
-      "sha256": "fc7cee6024c575a54107bb283b2632085b8bd55f907c3eef63b4646f92644cd9"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\final_objective_evidence_v45\\PSA_FINAL_OBJECTIVE_EVIDENCE_V45.json",
+      "bytes": 13680,
+      "sha256": "5ac3de198d1e10fc718fbbf05a30338571b06fa0de28a0031e1c3aa9eaae7fab"
     },
     {
       "path": "10_TEA_LCA_Python\\psa_qae\\results\\hydraulically_feasible_full_6cell_cube_v1\\PSA_HYDRAULICALLY_FEASIBLE_FULL_6CELL_CUBE_V1.json",
@@ -53,6 +53,11 @@
       "sha256": "0eaae2efa8046f46632dab2cdee591894adcccbcb4d38a2ebacd8511869a0b22"
     },
     {
+      "path": "07_DWSIM_Aspen_\uc7ac\ud604\\results\\pressure_consistent_stage_train_v1\\psa_stage_train_dwsim_audit\\PSA_STAGE_TRAIN_DWSIM_CROSSCHECK.json",
+      "bytes": 2899,
+      "sha256": "1ec3209f3e7e74b8dbfc2a641a0f35fb5f6877dd8f5fcc602d1a2f248aee5961"
+    },
+    {
       "path": "10_TEA_LCA_Python\\psa_qae\\results\\hydraulically_feasible_full_6cell_cube_v1\\PSA_HYDRAULICALLY_FEASIBLE_FULL_6CELL_CUBE_V1.png",
       "bytes": 183564,
       "sha256": "a478665130ba3820692f3068e4b299230a02987752577b99c3edee3513db71eb"
@@ -88,9 +93,9 @@
       "sha256": "ee89aefd9c0963285c63cebd75dc7cebbfd89528172ab1dac805c8c44fc7b9cd"
     },
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_engineering_results_v1\\Fig8_psa_stage_train_dwsim_crosscheck.png",
-      "bytes": 469074,
-      "sha256": "68af1668244ba5192eb7d68cf7a292371d786228a9776c1b4fd13e81a1d4fa41"
+      "path": "07_DWSIM_Aspen_\uc7ac\ud604\\results\\pressure_consistent_stage_train_v1\\psa_stage_train_dwsim_audit\\Fig_psa_stage_train_dwsim_crosscheck.png",
+      "bytes": 457264,
+      "sha256": "d42087f0855a102bb1191a2cb673b9e43621de33fa6cf65a783a61e6fd964231"
     },
     {
       "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_portable_qasm_oracle_v1\\Fig_pressure_consistent_portable_qasm_oracle_v1.png",
@@ -150,48 +155,24 @@
   ],
   "outputs": [
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.md",
-      "bytes": 46721,
-      "sha256": "5fd27879ce6e196f27ca22f0391921c0fa33fd79996e7750341cf19ab315b46e"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v3\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.md",
+      "bytes": 47619,
+      "sha256": "f4cb8b287cd56d254ccf9740b89320607c31224edac4521e6c0bab2e61596436"
     },
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.docx",
-      "bytes": 4262272,
-      "sha256": "dac7c076d74a28fc28167c088b34af1ef9233bc2460ce2dcfb916073541f87c1"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v3\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.docx",
+      "bytes": 4250111,
+      "sha256": "626bcf72b345346e6b414bcd28721ba7a85cec0c90a3243195cbe7185c255b7f"
     },
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\REFERENCE_METADATA_AUDIT.json",
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v3\\REFERENCE_METADATA_AUDIT.json",
       "bytes": 4663,
       "sha256": "9598aaf65f0a84bcd7a27cbfaf317b764437ff3d4cfdaf9654d97b09141eb2fa"
-    },
-    {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.pdf",
-      "bytes": 2278421,
-      "sha256": "1f58adb1db5409041db561b897a99890cffa7b47fc4d25a3f956a9dc40545c5f"
-    },
-    {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\WORD_EXPORT_RENDER_AUDIT.json",
-      "bytes": 1304,
-      "sha256": "de3b08712b9dcdc83069d1a454b85f7ab1b64451e43346907717d57099b5bdaf"
-    },
-    {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\rendered\\contact_sheet.png",
-      "bytes": 2262056,
-      "sha256": "8e0f2d1eea8287c306c7f318b9262b47a95e07dbce86b88b826ece5d58bd6ec0"
     }
   ],
   "claim_boundary": {
-    "current": "6.0 bar tank, discharge booster, corrected 6.2 bar polishing inlet, 8 corners, 8 hold-outs, DOP853 and RK4",
-    "pending": "device-specific quantum optimization/routing and corrected-input DWSIM execution on a host permitting their native DLLs",
-    "legacy_only": "earlier DWSIM quantitative results and C# packet replay"
-  },
-  "visual_qa": {
-    "status": "visual_render_checked",
-    "page_count": 23,
-    "audit": {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v2\\WORD_EXPORT_RENDER_AUDIT.json",
-      "bytes": 1304,
-      "sha256": "de3b08712b9dcdc83069d1a454b85f7ab1b64451e43346907717d57099b5bdaf"
-    }
+    "current": "6.0 bar tank, discharge booster, corrected 6.2 bar polishing inlet, 8 corners, 8 hold-outs, DOP853, RK4, and 16-case DWSIM Peng-Robinson cross-check",
+    "pending": "device-specific quantum optimization/routing and synchronized integrated experimental certification",
+    "legacy_only": "earlier hot-stage DWSIM heat-integration values and C# packet replay"
   }
 }

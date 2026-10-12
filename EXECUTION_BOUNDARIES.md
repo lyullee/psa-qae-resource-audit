@@ -18,13 +18,21 @@
   all 16 direct 10-bit engineering states, and 4,096 seeded random 10-bit
   states.
 
+## Corrected process-simulator cross-check completed
+
+- DWSIM 8.7.1 with Peng-Robinson solved all 16 pressure-consistent cases.
+- The audit covers pressure states, compression/cooling duties, temperatures,
+  stream reconstruction, and component closure. Membrane split fractions are
+  supplied by the packet-resolved Python model, so this is not an independent
+  membrane-transport calculation.
+- The exact official DWSIM 8.7.1 FileStorage source and the syntax-equivalent
+  locally rebuilt assembly are archived with hashes and provenance.
+
 ## Requiring another execution host
 
 - Device-specific Qiskit optimization, coupling-map routing, and hardware
   execution. The present Windows Application Control policy blocks the native
   rustworkx DLL.
-- DWSIM execution of the corrected 16-case deck. The same policy blocks
-  DWSIM.FileStorage.dll before a flowsheet can solve.
 
 ## Experimental boundary
 

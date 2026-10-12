@@ -92,7 +92,12 @@ def main() -> None:
                 "validation_kind": kind,
                 "case_id": case_id,
                 "temperature_K": 298.15,
-                "raw_feed_pressure_Pa": 8.0e5,
+                # Keep the DWSIM feed pressure on the same basis used by the
+                # Python compression calculation.  The pressure-consistent
+                # workflow sets PSA_STAGE_UPSTREAM_PRESSURE_PA=620000; using
+                # the former hard-coded 8 bar value silently mixed two
+                # hydraulic topologies in the cross-check deck.
+                "raw_feed_pressure_Pa": train_model.UPSTREAM_PRESSURE_PA,
                 "membrane_feed_pressure_Pa": 20.0e5,
                 "permeate_pressure_Pa": 1.0e5,
                 "compressor_efficiency": 0.72,
