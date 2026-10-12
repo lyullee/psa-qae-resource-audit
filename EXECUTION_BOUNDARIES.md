@@ -2,37 +2,34 @@
 
 ## Completed on the corrected pressure topology
 
-- Six-cell, 60-cycle eight-corner operating-policy cube.
-- Eight predeclared interior hold-outs.
+- Six-cell, 60-cycle eight-corner operating-policy cube and eight predeclared hold-outs.
 - Pressure and booster audit for the 6.2/6.0/6.5 bar routing.
-- Stage-resolved polymer/Pd train over all 16 cases.
-- Adaptive DOP853 finite-selectivity, defect, and permeance-loss guards.
-- Independent fixed-area RK4 mesh replay of both final guard designs.
+- Stage-resolved polymer/Pd train, adaptive DOP853 guards, and independent RK4 replay.
 - Continuous, affine, and 10-bit discrete probability calculations.
-- Corrected component-specific module selectivity acceptance audit.
+- Corrected 16-case DWSIM 8.7.1 Peng-Robinson pressure, duty, temperature, and closure audit.
 
-## Portable oracle completed
+## Portable arithmetic oracle completed
 
-- The frozen integer event is serialized as OpenQASM 3 using an exact
-  Clifford+T decomposition and verified by exhaustive small-register tests,
-  all 16 direct 10-bit engineering states, and 4,096 seeded random 10-bit
-  states.
+- The frozen integer event is serialized as exact OpenQASM 3.
+- Exhaustive 2-, 3-, and 4-bit checks, all 16 direct 10-bit engineering states,
+  and 4,096 seeded random 10-bit states give zero phase-label or restoration errors.
+- The 10-bit construction requires 66 logical qubits and 24,042 CX gates before routing.
 
-## Corrected process-simulator cross-check completed
+## IBM QPU final-event probe completed
 
-- DWSIM 8.7.1 with Peng-Robinson solved all 16 pressure-consistent cases.
-- The audit covers pressure states, compression/cooling duties, temperatures,
-  stream reconstruction, and component closure. Membrane split fractions are
-  supplied by the packet-resolved Python model, so this is not an independent
-  membrane-transport calculation.
-- The exact official DWSIM 8.7.1 FileStorage source and the syntax-equivalent
-  locally rebuilt assembly are archived with hashes and provenance.
+- The exact final affine event at two bits per uncertainty variable was reduced
+  to six input qubits and one flag through an exact three-cube complement cover.
+- All 128 reversible input/flag mappings pass local statevector verification.
+- All 64 zero-flag input states were run on IBM Kingston at 256 shots per state.
+- Job `db6emt04qg6s73c4lja0` used 7 QPU s; 64/64 states were majority-correct.
+- A separate read-only retrieval exactly matched all 64 archived count dictionaries.
 
-## Requiring another execution host
+## Quantum work that remains external
 
-- Device-specific Qiskit optimization, coupling-map routing, and hardware
-  execution. The present Windows Application Control policy blocks the native
-  rustworkx DLL.
+- Coherent state preparation and amplitude-estimation iterations.
+- Hardware execution of the 42-logical-qubit two-bit arithmetic oracle or the
+  66-logical-qubit ten-bit arithmetic oracle.
+- Any claim of quantum speedup, cost advantage, or fault-tolerant resource sufficiency.
 
 ## Experimental boundary
 

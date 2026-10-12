@@ -1,0 +1,2470 @@
+{
+  "schema": "psa-ibm-final-event-2bit-probe/v1",
+  "generated_at": "2026-10-12T14:15:13.827288+00:00",
+  "submission_requested": true,
+  "source": "results\\pressure_consistent_physical_pd_area_qae_bridge_v1\\PSA_PHYSICAL_PD_AREA_QAE_BRIDGE.json",
+  "account_guard": {
+    "saved_account_name": "psa_open",
+    "plan": "open",
+    "pricing_type": "free",
+    "usage_consumed_seconds_before": 188,
+    "usage_limit_seconds": 600,
+    "usage_remaining_seconds_before": 412,
+    "usage_limit_reached_before": false
+  },
+  "event_compilation": {
+    "input_bits_per_variable": 2,
+    "variables": 3,
+    "state_qubits": 6,
+    "flag_qubits": 1,
+    "compact_logical_qubits": 7,
+    "portable_arithmetic_logical_qubits": 42,
+    "uniform_grid_states": 64,
+    "marked_states": 50,
+    "failing_states": 14,
+    "uniform_grid_event_fraction": 0.78125,
+    "failing_state_indices": [
+      3,
+      7,
+      11,
+      15,
+      19,
+      23,
+      27,
+      31,
+      39,
+      43,
+      47,
+      55,
+      59,
+      63
+    ],
+    "failing_disjoint_cubes": [
+      [
+        1,
+        1,
+        null,
+        null,
+        null,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        null,
+        1
+      ]
+    ],
+    "failing_cube_expression": "(b0 & b1 & ~b5) OR (b0 & b1 & b2 & b5) OR (b0 & b1 & ~b2 & b3 & b5)",
+    "exhaustive_reversible_verification": {
+      "basis_states_checked": 128,
+      "failure_count": 0,
+      "all_pass": true,
+      "failures": []
+    }
+  },
+  "backend": {
+    "name": "ibm_kingston",
+    "num_qubits": 156,
+    "status": "active",
+    "pending_jobs_at_routing": 4,
+    "calibration_last_update": "2026-10-12 22:39:48+09:00"
+  },
+  "backend_selection": [
+    {
+      "backend": "ibm_fez",
+      "pending_jobs": 13,
+      "status": "active",
+      "mean_calibration_survival_proxy": 0.7222181207109776,
+      "min_calibration_survival_proxy": 0.6247795035383366,
+      "mean_cz": 127.125,
+      "min_cz": 98,
+      "max_cz": 179,
+      "selected": false
+    },
+    {
+      "backend": "ibm_kingston",
+      "pending_jobs": 4,
+      "status": "active",
+      "mean_calibration_survival_proxy": 0.793785987402212,
+      "min_calibration_survival_proxy": 0.721958251792054,
+      "mean_cz": 127.125,
+      "min_cz": 98,
+      "max_cz": 179,
+      "selected": true
+    },
+    {
+      "backend": "ibm_marrakesh",
+      "pending_jobs": 0,
+      "status": "active",
+      "mean_calibration_survival_proxy": 0.7408094586852996,
+      "min_calibration_survival_proxy": 0.6557707119749263,
+      "mean_cz": 127.125,
+      "min_cz": 98,
+      "max_cz": 179,
+      "selected": false
+    }
+  ],
+  "experiment": {
+    "shots_per_circuit": 256,
+    "routed_circuits": 64,
+    "qpu_submitted_circuits": 64,
+    "transpiler_optimization_level": 3,
+    "transpiler_seed": 17
+  },
+  "routing_summary": {
+    "cz_range": [
+      80,
+      179
+    ],
+    "depth_range": [
+      244,
+      456
+    ],
+    "size_range": [
+      375,
+      759
+    ],
+    "mean_calibration_survival_proxy": 0.7920210726032981
+  },
+  "routing_rows": [
+    {
+      "input_state": 0,
+      "input_bits_little_endian": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 318,
+      "isa_size": 499,
+      "isa_cz": 116,
+      "isa_sx": 232,
+      "isa_rz": 139,
+      "isa_x": 11,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8098275772452529,
+      "calibrated_instructions_in_proxy": 499,
+      "qpu_counts": {
+        "1": 214,
+        "0": 42
+      },
+      "qpu_expected_probability": 0.8359375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 1,
+      "input_bits_little_endian": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 318,
+      "isa_size": 501,
+      "isa_cz": 116,
+      "isa_sx": 232,
+      "isa_rz": 141,
+      "isa_x": 11,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8098275772452529,
+      "calibrated_instructions_in_proxy": 501,
+      "qpu_counts": {
+        "1": 219,
+        "0": 37
+      },
+      "qpu_expected_probability": 0.85546875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 2,
+      "input_bits_little_endian": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 318,
+      "isa_size": 500,
+      "isa_cz": 116,
+      "isa_sx": 232,
+      "isa_rz": 139,
+      "isa_x": 12,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8096446476967646,
+      "calibrated_instructions_in_proxy": 500,
+      "qpu_counts": {
+        "1": 213,
+        "0": 43
+      },
+      "qpu_expected_probability": 0.83203125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 3,
+      "input_bits_little_endian": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 318,
+      "isa_size": 502,
+      "isa_cz": 116,
+      "isa_sx": 232,
+      "isa_rz": 141,
+      "isa_x": 12,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8096446476967646,
+      "calibrated_instructions_in_proxy": 502,
+      "qpu_counts": {
+        "0": 217,
+        "1": 39
+      },
+      "qpu_expected_probability": 0.84765625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 4,
+      "input_bits_little_endian": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 276,
+      "isa_size": 429,
+      "isa_cz": 98,
+      "isa_sx": 200,
+      "isa_rz": 121,
+      "isa_x": 9,
+      "physical_qubits": [
+        79,
+        94,
+        95,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.833236548403432,
+      "calibrated_instructions_in_proxy": 429,
+      "qpu_counts": {
+        "1": 226,
+        "0": 30
+      },
+      "qpu_expected_probability": 0.8828125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 5,
+      "input_bits_little_endian": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 276,
+      "isa_size": 430,
+      "isa_cz": 98,
+      "isa_sx": 200,
+      "isa_rz": 121,
+      "isa_x": 10,
+      "physical_qubits": [
+        79,
+        94,
+        95,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8331290729375609,
+      "calibrated_instructions_in_proxy": 430,
+      "qpu_counts": {
+        "1": 216,
+        "0": 40
+      },
+      "qpu_expected_probability": 0.84375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 6,
+      "input_bits_little_endian": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 275,
+      "isa_size": 429,
+      "isa_cz": 98,
+      "isa_sx": 200,
+      "isa_rz": 120,
+      "isa_x": 10,
+      "physical_qubits": [
+        79,
+        94,
+        95,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8330964602714066,
+      "calibrated_instructions_in_proxy": 429,
+      "qpu_counts": {
+        "1": 214,
+        "0": 42
+      },
+      "qpu_expected_probability": 0.8359375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 7,
+      "input_bits_little_endian": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 275,
+      "isa_size": 430,
+      "isa_cz": 98,
+      "isa_sx": 200,
+      "isa_rz": 120,
+      "isa_x": 11,
+      "physical_qubits": [
+        79,
+        94,
+        95,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8329890028748788,
+      "calibrated_instructions_in_proxy": 430,
+      "qpu_counts": {
+        "0": 221,
+        "1": 35
+      },
+      "qpu_expected_probability": 0.86328125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 8,
+      "input_bits_little_endian": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 264,
+      "isa_size": 460,
+      "isa_cz": 100,
+      "isa_sx": 209,
+      "isa_rz": 142,
+      "isa_x": 8,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        72,
+        94,
+        75,
+        74
+      ],
+      "independent_calibration_survival_proxy": 0.8289936065460298,
+      "calibrated_instructions_in_proxy": 460,
+      "qpu_counts": {
+        "1": 233,
+        "0": 23
+      },
+      "qpu_expected_probability": 0.91015625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 9,
+      "input_bits_little_endian": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 264,
+      "isa_size": 461,
+      "isa_cz": 100,
+      "isa_sx": 209,
+      "isa_rz": 142,
+      "isa_x": 9,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        72,
+        94,
+        75,
+        74
+      ],
+      "independent_calibration_survival_proxy": 0.8288016405137769,
+      "calibrated_instructions_in_proxy": 461,
+      "qpu_counts": {
+        "1": 222,
+        "0": 34
+      },
+      "qpu_expected_probability": 0.8671875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 10,
+      "input_bits_little_endian": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 264,
+      "isa_size": 461,
+      "isa_cz": 100,
+      "isa_sx": 209,
+      "isa_rz": 142,
+      "isa_x": 9,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        72,
+        94,
+        75,
+        74
+      ],
+      "independent_calibration_survival_proxy": 0.8288063476400527,
+      "calibrated_instructions_in_proxy": 461,
+      "qpu_counts": {
+        "1": 234,
+        "0": 22
+      },
+      "qpu_expected_probability": 0.9140625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 11,
+      "input_bits_little_endian": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 264,
+      "isa_size": 462,
+      "isa_cz": 100,
+      "isa_sx": 209,
+      "isa_rz": 142,
+      "isa_x": 10,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        72,
+        94,
+        75,
+        74
+      ],
+      "independent_calibration_survival_proxy": 0.8286144249704371,
+      "calibrated_instructions_in_proxy": 462,
+      "qpu_counts": {
+        "0": 218,
+        "1": 38
+      },
+      "qpu_expected_probability": 0.8515625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 12,
+      "input_bits_little_endian": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 246,
+      "isa_size": 376,
+      "isa_cz": 80,
+      "isa_sx": 169,
+      "isa_rz": 120,
+      "isa_x": 6,
+      "physical_qubits": [
+        73,
+        93,
+        95,
+        91,
+        79,
+        92,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.8676559234419785,
+      "calibrated_instructions_in_proxy": 376,
+      "qpu_counts": {
+        "1": 238,
+        "0": 18
+      },
+      "qpu_expected_probability": 0.9296875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 13,
+      "input_bits_little_endian": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 245,
+      "isa_size": 377,
+      "isa_cz": 80,
+      "isa_sx": 169,
+      "isa_rz": 121,
+      "isa_x": 6,
+      "physical_qubits": [
+        73,
+        93,
+        95,
+        91,
+        79,
+        92,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.8676559234419785,
+      "calibrated_instructions_in_proxy": 377,
+      "qpu_counts": {
+        "0": 19,
+        "1": 237
+      },
+      "qpu_expected_probability": 0.92578125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 14,
+      "input_bits_little_endian": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 245,
+      "isa_size": 376,
+      "isa_cz": 80,
+      "isa_sx": 169,
+      "isa_rz": 119,
+      "isa_x": 7,
+      "physical_qubits": [
+        73,
+        93,
+        95,
+        91,
+        79,
+        92,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.8674550045643554,
+      "calibrated_instructions_in_proxy": 376,
+      "qpu_counts": {
+        "1": 232,
+        "0": 24
+      },
+      "qpu_expected_probability": 0.90625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 15,
+      "input_bits_little_endian": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 244,
+      "isa_size": 377,
+      "isa_cz": 80,
+      "isa_sx": 169,
+      "isa_rz": 120,
+      "isa_x": 7,
+      "physical_qubits": [
+        73,
+        93,
+        95,
+        91,
+        79,
+        92,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.8674550045643554,
+      "calibrated_instructions_in_proxy": 377,
+      "qpu_counts": {
+        "0": 236,
+        "1": 20
+      },
+      "qpu_expected_probability": 0.921875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 16,
+      "input_bits_little_endian": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 424,
+      "isa_size": 663,
+      "isa_cz": 156,
+      "isa_sx": 311,
+      "isa_rz": 181,
+      "isa_x": 14,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7556610832046877,
+      "calibrated_instructions_in_proxy": 663,
+      "qpu_counts": {
+        "1": 217,
+        "0": 39
+      },
+      "qpu_expected_probability": 0.84765625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 17,
+      "input_bits_little_endian": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 424,
+      "isa_size": 665,
+      "isa_cz": 156,
+      "isa_sx": 311,
+      "isa_rz": 183,
+      "isa_x": 14,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7556610832046877,
+      "calibrated_instructions_in_proxy": 665,
+      "qpu_counts": {
+        "1": 206,
+        "0": 50
+      },
+      "qpu_expected_probability": 0.8046875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 18,
+      "input_bits_little_endian": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 424,
+      "isa_size": 664,
+      "isa_cz": 156,
+      "isa_sx": 311,
+      "isa_rz": 181,
+      "isa_x": 15,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7554903891648145,
+      "calibrated_instructions_in_proxy": 664,
+      "qpu_counts": {
+        "1": 208,
+        "0": 48
+      },
+      "qpu_expected_probability": 0.8125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 19,
+      "input_bits_little_endian": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 424,
+      "isa_size": 666,
+      "isa_cz": 156,
+      "isa_sx": 311,
+      "isa_rz": 183,
+      "isa_x": 15,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7554903891648145,
+      "calibrated_instructions_in_proxy": 666,
+      "qpu_counts": {
+        "0": 207,
+        "1": 49
+      },
+      "qpu_expected_probability": 0.80859375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 20,
+      "input_bits_little_endian": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 381,
+      "isa_size": 593,
+      "isa_cz": 138,
+      "isa_sx": 279,
+      "isa_rz": 162,
+      "isa_x": 13,
+      "physical_qubits": [
+        94,
+        79,
+        73,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7771060897375408,
+      "calibrated_instructions_in_proxy": 593,
+      "qpu_counts": {
+        "0": 48,
+        "1": 208
+      },
+      "qpu_expected_probability": 0.8125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 21,
+      "input_bits_little_endian": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 381,
+      "isa_size": 594,
+      "isa_cz": 138,
+      "isa_sx": 279,
+      "isa_rz": 162,
+      "isa_x": 14,
+      "physical_qubits": [
+        94,
+        79,
+        73,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.776975438554866,
+      "calibrated_instructions_in_proxy": 594,
+      "qpu_counts": {
+        "0": 37,
+        "1": 219
+      },
+      "qpu_expected_probability": 0.85546875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 22,
+      "input_bits_little_endian": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 381,
+      "isa_size": 594,
+      "isa_cz": 138,
+      "isa_sx": 279,
+      "isa_rz": 162,
+      "isa_x": 14,
+      "physical_qubits": [
+        94,
+        79,
+        73,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7770058542891728,
+      "calibrated_instructions_in_proxy": 594,
+      "qpu_counts": {
+        "1": 194,
+        "0": 62
+      },
+      "qpu_expected_probability": 0.7578125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 23,
+      "input_bits_little_endian": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 381,
+      "isa_size": 595,
+      "isa_cz": 138,
+      "isa_sx": 279,
+      "isa_rz": 162,
+      "isa_x": 15,
+      "physical_qubits": [
+        94,
+        79,
+        73,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7768752199586112,
+      "calibrated_instructions_in_proxy": 595,
+      "qpu_counts": {
+        "1": 44,
+        "0": 212
+      },
+      "qpu_expected_probability": 0.828125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 24,
+      "input_bits_little_endian": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 396,
+      "isa_size": 709,
+      "isa_cz": 166,
+      "isa_sx": 338,
+      "isa_rz": 193,
+      "isa_x": 11,
+      "physical_qubits": [
+        94,
+        79,
+        93,
+        73,
+        92,
+        98,
+        91
+      ],
+      "independent_calibration_survival_proxy": 0.7416251793977876,
+      "calibrated_instructions_in_proxy": 709,
+      "qpu_counts": {
+        "0": 46,
+        "1": 210
+      },
+      "qpu_expected_probability": 0.8203125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 25,
+      "input_bits_little_endian": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 396,
+      "isa_size": 710,
+      "isa_cz": 166,
+      "isa_sx": 338,
+      "isa_rz": 193,
+      "isa_x": 12,
+      "physical_qubits": [
+        94,
+        79,
+        93,
+        73,
+        92,
+        98,
+        91
+      ],
+      "independent_calibration_survival_proxy": 0.7415004934532694,
+      "calibrated_instructions_in_proxy": 710,
+      "qpu_counts": {
+        "1": 205,
+        "0": 51
+      },
+      "qpu_expected_probability": 0.80078125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 26,
+      "input_bits_little_endian": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 396,
+      "isa_size": 710,
+      "isa_cz": 166,
+      "isa_sx": 338,
+      "isa_rz": 193,
+      "isa_x": 12,
+      "physical_qubits": [
+        94,
+        79,
+        93,
+        73,
+        92,
+        98,
+        91
+      ],
+      "independent_calibration_survival_proxy": 0.7415295204737878,
+      "calibrated_instructions_in_proxy": 710,
+      "qpu_counts": {
+        "1": 203,
+        "0": 53
+      },
+      "qpu_expected_probability": 0.79296875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 27,
+      "input_bits_little_endian": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 396,
+      "isa_size": 711,
+      "isa_cz": 166,
+      "isa_sx": 338,
+      "isa_rz": 193,
+      "isa_x": 13,
+      "physical_qubits": [
+        94,
+        79,
+        93,
+        73,
+        92,
+        98,
+        91
+      ],
+      "independent_calibration_survival_proxy": 0.7414048506119534,
+      "calibrated_instructions_in_proxy": 711,
+      "qpu_counts": {
+        "0": 227,
+        "1": 29
+      },
+      "qpu_expected_probability": 0.88671875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 28,
+      "input_bits_little_endian": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 454,
+      "isa_size": 756,
+      "isa_cz": 179,
+      "isa_sx": 356,
+      "isa_rz": 205,
+      "isa_x": 15,
+      "physical_qubits": [
+        73,
+        79,
+        72,
+        75,
+        74,
+        93,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.7222145248758018,
+      "calibrated_instructions_in_proxy": 756,
+      "qpu_counts": {
+        "1": 221,
+        "0": 35
+      },
+      "qpu_expected_probability": 0.86328125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 29,
+      "input_bits_little_endian": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 454,
+      "isa_size": 757,
+      "isa_cz": 179,
+      "isa_sx": 356,
+      "isa_rz": 205,
+      "isa_x": 16,
+      "physical_qubits": [
+        73,
+        79,
+        72,
+        75,
+        74,
+        93,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.7220513859797463,
+      "calibrated_instructions_in_proxy": 757,
+      "qpu_counts": {
+        "1": 222,
+        "0": 34
+      },
+      "qpu_expected_probability": 0.8671875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 30,
+      "input_bits_little_endian": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 455,
+      "isa_size": 757,
+      "isa_cz": 179,
+      "isa_sx": 356,
+      "isa_rz": 206,
+      "isa_x": 15,
+      "physical_qubits": [
+        73,
+        79,
+        72,
+        75,
+        74,
+        93,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.7222145248758018,
+      "calibrated_instructions_in_proxy": 757,
+      "qpu_counts": {
+        "1": 220,
+        "0": 36
+      },
+      "qpu_expected_probability": 0.859375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 31,
+      "input_bits_little_endian": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 454,
+      "isa_size": 759,
+      "isa_cz": 179,
+      "isa_sx": 358,
+      "isa_rz": 206,
+      "isa_x": 15,
+      "physical_qubits": [
+        73,
+        79,
+        72,
+        75,
+        74,
+        93,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.721958251792054,
+      "calibrated_instructions_in_proxy": 759,
+      "qpu_counts": {
+        "0": 212,
+        "1": 44
+      },
+      "qpu_expected_probability": 0.828125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 32,
+      "input_bits_little_endian": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 316,
+      "isa_size": 496,
+      "isa_cz": 116,
+      "isa_sx": 232,
+      "isa_rz": 137,
+      "isa_x": 10,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8100572462775052,
+      "calibrated_instructions_in_proxy": 496,
+      "qpu_counts": {
+        "1": 217,
+        "0": 39
+      },
+      "qpu_expected_probability": 0.84765625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 33,
+      "input_bits_little_endian": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 316,
+      "isa_size": 498,
+      "isa_cz": 116,
+      "isa_sx": 232,
+      "isa_rz": 139,
+      "isa_x": 10,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8100572462775052,
+      "calibrated_instructions_in_proxy": 498,
+      "qpu_counts": {
+        "1": 219,
+        "0": 37
+      },
+      "qpu_expected_probability": 0.85546875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 34,
+      "input_bits_little_endian": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 316,
+      "isa_size": 497,
+      "isa_cz": 116,
+      "isa_sx": 232,
+      "isa_rz": 137,
+      "isa_x": 11,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8098742648497608,
+      "calibrated_instructions_in_proxy": 497,
+      "qpu_counts": {
+        "1": 201,
+        "0": 55
+      },
+      "qpu_expected_probability": 0.78515625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 35,
+      "input_bits_little_endian": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 316,
+      "isa_size": 499,
+      "isa_cz": 116,
+      "isa_sx": 232,
+      "isa_rz": 139,
+      "isa_x": 11,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8098742648497608,
+      "calibrated_instructions_in_proxy": 499,
+      "qpu_counts": {
+        "1": 217,
+        "0": 39
+      },
+      "qpu_expected_probability": 0.84765625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 36,
+      "input_bits_little_endian": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 276,
+      "isa_size": 428,
+      "isa_cz": 98,
+      "isa_sx": 200,
+      "isa_rz": 121,
+      "isa_x": 8,
+      "physical_qubits": [
+        79,
+        94,
+        95,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8334728562757325,
+      "calibrated_instructions_in_proxy": 428,
+      "qpu_counts": {
+        "0": 37,
+        "1": 219
+      },
+      "qpu_expected_probability": 0.85546875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 37,
+      "input_bits_little_endian": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 276,
+      "isa_size": 429,
+      "isa_cz": 98,
+      "isa_sx": 200,
+      "isa_rz": 121,
+      "isa_x": 9,
+      "physical_qubits": [
+        79,
+        94,
+        95,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8333653503295628,
+      "calibrated_instructions_in_proxy": 429,
+      "qpu_counts": {
+        "1": 210,
+        "0": 46
+      },
+      "qpu_expected_probability": 0.8203125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 38,
+      "input_bits_little_endian": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 275,
+      "isa_size": 428,
+      "isa_cz": 98,
+      "isa_sx": 200,
+      "isa_rz": 120,
+      "isa_x": 9,
+      "physical_qubits": [
+        79,
+        94,
+        95,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.8333327284143788,
+      "calibrated_instructions_in_proxy": 428,
+      "qpu_counts": {
+        "1": 214,
+        "0": 42
+      },
+      "qpu_expected_probability": 0.8359375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 39,
+      "input_bits_little_endian": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 275,
+      "isa_size": 429,
+      "isa_cz": 98,
+      "isa_sx": 200,
+      "isa_rz": 120,
+      "isa_x": 10,
+      "physical_qubits": [
+        79,
+        94,
+        95,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.833225240542677,
+      "calibrated_instructions_in_proxy": 429,
+      "qpu_counts": {
+        "0": 207,
+        "1": 49
+      },
+      "qpu_expected_probability": 0.80859375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 40,
+      "input_bits_little_endian": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 264,
+      "isa_size": 459,
+      "isa_cz": 100,
+      "isa_sx": 209,
+      "isa_rz": 142,
+      "isa_x": 7,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        72,
+        94,
+        75,
+        74
+      ],
+      "independent_calibration_survival_proxy": 0.8290754639804665,
+      "calibrated_instructions_in_proxy": 459,
+      "qpu_counts": {
+        "1": 236,
+        "0": 20
+      },
+      "qpu_expected_probability": 0.921875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 41,
+      "input_bits_little_endian": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 264,
+      "isa_size": 460,
+      "isa_cz": 100,
+      "isa_sx": 209,
+      "isa_rz": 142,
+      "isa_x": 8,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        72,
+        94,
+        75,
+        74
+      ],
+      "independent_calibration_survival_proxy": 0.8288834789928842,
+      "calibrated_instructions_in_proxy": 460,
+      "qpu_counts": {
+        "1": 218,
+        "0": 38
+      },
+      "qpu_expected_probability": 0.8515625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 42,
+      "input_bits_little_endian": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 264,
+      "isa_size": 460,
+      "isa_cz": 100,
+      "isa_sx": 209,
+      "isa_rz": 142,
+      "isa_x": 8,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        72,
+        94,
+        75,
+        74
+      ],
+      "independent_calibration_survival_proxy": 0.8288881865839564,
+      "calibrated_instructions_in_proxy": 460,
+      "qpu_counts": {
+        "1": 230,
+        "0": 26
+      },
+      "qpu_expected_probability": 0.8984375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 43,
+      "input_bits_little_endian": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 264,
+      "isa_size": 461,
+      "isa_cz": 100,
+      "isa_sx": 209,
+      "isa_rz": 142,
+      "isa_x": 9,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        72,
+        94,
+        75,
+        74
+      ],
+      "independent_calibration_survival_proxy": 0.8286962449632932,
+      "calibrated_instructions_in_proxy": 461,
+      "qpu_counts": {
+        "0": 200,
+        "1": 56
+      },
+      "qpu_expected_probability": 0.78125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 44,
+      "input_bits_little_endian": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 246,
+      "isa_size": 375,
+      "isa_cz": 80,
+      "isa_sx": 169,
+      "isa_rz": 120,
+      "isa_x": 5,
+      "physical_qubits": [
+        73,
+        93,
+        95,
+        91,
+        79,
+        92,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.8679025076556698,
+      "calibrated_instructions_in_proxy": 375,
+      "qpu_counts": {
+        "1": 234,
+        "0": 22
+      },
+      "qpu_expected_probability": 0.9140625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 45,
+      "input_bits_little_endian": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 245,
+      "isa_size": 376,
+      "isa_cz": 80,
+      "isa_sx": 169,
+      "isa_rz": 121,
+      "isa_x": 5,
+      "physical_qubits": [
+        73,
+        93,
+        95,
+        91,
+        79,
+        92,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.8679025076556698,
+      "calibrated_instructions_in_proxy": 376,
+      "qpu_counts": {
+        "1": 232,
+        "0": 24
+      },
+      "qpu_expected_probability": 0.90625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 46,
+      "input_bits_little_endian": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 245,
+      "isa_size": 375,
+      "isa_cz": 80,
+      "isa_sx": 169,
+      "isa_rz": 119,
+      "isa_x": 6,
+      "physical_qubits": [
+        73,
+        93,
+        95,
+        91,
+        79,
+        92,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.8677015316777353,
+      "calibrated_instructions_in_proxy": 375,
+      "qpu_counts": {
+        "0": 24,
+        "1": 232
+      },
+      "qpu_expected_probability": 0.90625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 47,
+      "input_bits_little_endian": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 244,
+      "isa_size": 376,
+      "isa_cz": 80,
+      "isa_sx": 169,
+      "isa_rz": 120,
+      "isa_x": 6,
+      "physical_qubits": [
+        73,
+        93,
+        95,
+        91,
+        79,
+        92,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.8677015316777353,
+      "calibrated_instructions_in_proxy": 376,
+      "qpu_counts": {
+        "0": 227,
+        "1": 29
+      },
+      "qpu_expected_probability": 0.88671875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 48,
+      "input_bits_little_endian": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 422,
+      "isa_size": 660,
+      "isa_cz": 156,
+      "isa_sx": 311,
+      "isa_rz": 179,
+      "isa_x": 13,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7558753904900493,
+      "calibrated_instructions_in_proxy": 660,
+      "qpu_counts": {
+        "1": 218,
+        "0": 38
+      },
+      "qpu_expected_probability": 0.8515625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 49,
+      "input_bits_little_endian": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 422,
+      "isa_size": 662,
+      "isa_cz": 156,
+      "isa_sx": 311,
+      "isa_rz": 181,
+      "isa_x": 13,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7558753904900493,
+      "calibrated_instructions_in_proxy": 662,
+      "qpu_counts": {
+        "1": 199,
+        "0": 57
+      },
+      "qpu_expected_probability": 0.77734375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 50,
+      "input_bits_little_endian": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 422,
+      "isa_size": 661,
+      "isa_cz": 156,
+      "isa_sx": 311,
+      "isa_rz": 179,
+      "isa_x": 14,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7557046480409392,
+      "calibrated_instructions_in_proxy": 661,
+      "qpu_counts": {
+        "0": 49,
+        "1": 207
+      },
+      "qpu_expected_probability": 0.80859375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 51,
+      "input_bits_little_endian": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 422,
+      "isa_size": 663,
+      "isa_cz": 156,
+      "isa_sx": 311,
+      "isa_rz": 181,
+      "isa_x": 14,
+      "physical_qubits": [
+        93,
+        73,
+        79,
+        94,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7557046480409392,
+      "calibrated_instructions_in_proxy": 663,
+      "qpu_counts": {
+        "1": 202,
+        "0": 54
+      },
+      "qpu_expected_probability": 0.7890625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 52,
+      "input_bits_little_endian": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 381,
+      "isa_size": 592,
+      "isa_cz": 138,
+      "isa_sx": 279,
+      "isa_rz": 162,
+      "isa_x": 12,
+      "physical_qubits": [
+        94,
+        79,
+        73,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.777326478877899,
+      "calibrated_instructions_in_proxy": 592,
+      "qpu_counts": {
+        "1": 209,
+        "0": 47
+      },
+      "qpu_expected_probability": 0.81640625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 53,
+      "input_bits_little_endian": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 381,
+      "isa_size": 593,
+      "isa_cz": 138,
+      "isa_sx": 279,
+      "isa_rz": 162,
+      "isa_x": 13,
+      "physical_qubits": [
+        94,
+        79,
+        73,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7771957906422371,
+      "calibrated_instructions_in_proxy": 593,
+      "qpu_counts": {
+        "1": 209,
+        "0": 47
+      },
+      "qpu_expected_probability": 0.81640625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 54,
+      "input_bits_little_endian": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 381,
+      "isa_size": 593,
+      "isa_cz": 138,
+      "isa_sx": 279,
+      "isa_rz": 162,
+      "isa_x": 13,
+      "physical_qubits": [
+        94,
+        79,
+        73,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7772262150025188,
+      "calibrated_instructions_in_proxy": 593,
+      "qpu_counts": {
+        "1": 206,
+        "0": 50
+      },
+      "qpu_expected_probability": 0.8046875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 55,
+      "input_bits_little_endian": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 381,
+      "isa_size": 594,
+      "isa_cz": 138,
+      "isa_sx": 279,
+      "isa_rz": 162,
+      "isa_x": 14,
+      "physical_qubits": [
+        94,
+        79,
+        73,
+        93,
+        98,
+        91,
+        92
+      ],
+      "independent_calibration_survival_proxy": 0.7770955436237494,
+      "calibrated_instructions_in_proxy": 594,
+      "qpu_counts": {
+        "0": 203,
+        "1": 53
+      },
+      "qpu_expected_probability": 0.79296875,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 56,
+      "input_bits_little_endian": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 396,
+      "isa_size": 707,
+      "isa_cz": 166,
+      "isa_sx": 338,
+      "isa_rz": 193,
+      "isa_x": 9,
+      "physical_qubits": [
+        94,
+        79,
+        93,
+        73,
+        92,
+        98,
+        91
+      ],
+      "independent_calibration_survival_proxy": 0.7420044644387588,
+      "calibrated_instructions_in_proxy": 707,
+      "qpu_counts": {
+        "0": 57,
+        "1": 199
+      },
+      "qpu_expected_probability": 0.77734375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 57,
+      "input_bits_little_endian": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 396,
+      "isa_size": 708,
+      "isa_cz": 166,
+      "isa_sx": 338,
+      "isa_rz": 193,
+      "isa_x": 10,
+      "physical_qubits": [
+        94,
+        79,
+        93,
+        73,
+        92,
+        98,
+        91
+      ],
+      "independent_calibration_survival_proxy": 0.741879714726835,
+      "calibrated_instructions_in_proxy": 708,
+      "qpu_counts": {
+        "1": 183,
+        "0": 73
+      },
+      "qpu_expected_probability": 0.71484375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 58,
+      "input_bits_little_endian": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 396,
+      "isa_size": 708,
+      "isa_cz": 166,
+      "isa_sx": 338,
+      "isa_rz": 193,
+      "isa_x": 10,
+      "physical_qubits": [
+        94,
+        79,
+        93,
+        73,
+        92,
+        98,
+        91
+      ],
+      "independent_calibration_survival_proxy": 0.7419087565924734,
+      "calibrated_instructions_in_proxy": 708,
+      "qpu_counts": {
+        "1": 205,
+        "0": 51
+      },
+      "qpu_expected_probability": 0.80078125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 59,
+      "input_bits_little_endian": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 396,
+      "isa_size": 709,
+      "isa_cz": 166,
+      "isa_sx": 338,
+      "isa_rz": 193,
+      "isa_x": 11,
+      "physical_qubits": [
+        94,
+        79,
+        93,
+        73,
+        92,
+        98,
+        91
+      ],
+      "independent_calibration_survival_proxy": 0.7417840229714584,
+      "calibrated_instructions_in_proxy": 709,
+      "qpu_counts": {
+        "0": 167,
+        "1": 89
+      },
+      "qpu_expected_probability": 0.65234375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 60,
+      "input_bits_little_endian": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 455,
+      "isa_size": 758,
+      "isa_cz": 179,
+      "isa_sx": 358,
+      "isa_rz": 206,
+      "isa_x": 14,
+      "physical_qubits": [
+        73,
+        79,
+        72,
+        75,
+        74,
+        93,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.722121369645551,
+      "calibrated_instructions_in_proxy": 758,
+      "qpu_counts": {
+        "1": 220,
+        "0": 36
+      },
+      "qpu_expected_probability": 0.859375,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 61,
+      "input_bits_little_endian": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 454,
+      "isa_size": 759,
+      "isa_cz": 179,
+      "isa_sx": 358,
+      "isa_rz": 206,
+      "isa_x": 15,
+      "physical_qubits": [
+        73,
+        79,
+        72,
+        75,
+        74,
+        93,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.721958251792054,
+      "calibrated_instructions_in_proxy": 759,
+      "qpu_counts": {
+        "1": 197,
+        "0": 59
+      },
+      "qpu_expected_probability": 0.76953125,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 62,
+      "input_bits_little_endian": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "expected_flag": 1,
+      "shots": 256,
+      "isa_depth": 456,
+      "isa_size": 759,
+      "isa_cz": 179,
+      "isa_sx": 358,
+      "isa_rz": 207,
+      "isa_x": 14,
+      "physical_qubits": [
+        73,
+        79,
+        72,
+        75,
+        74,
+        93,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.722121369645551,
+      "calibrated_instructions_in_proxy": 759,
+      "qpu_counts": {
+        "1": 218,
+        "0": 38
+      },
+      "qpu_expected_probability": 0.8515625,
+      "qpu_majority_correct": true
+    },
+    {
+      "input_state": 63,
+      "input_bits_little_endian": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "expected_flag": 0,
+      "shots": 256,
+      "isa_depth": 454,
+      "isa_size": 759,
+      "isa_cz": 179,
+      "isa_sx": 358,
+      "isa_rz": 206,
+      "isa_x": 15,
+      "physical_qubits": [
+        73,
+        79,
+        72,
+        75,
+        74,
+        93,
+        94
+      ],
+      "independent_calibration_survival_proxy": 0.721958251792054,
+      "calibrated_instructions_in_proxy": 759,
+      "qpu_counts": {
+        "0": 208,
+        "1": 48
+      },
+      "qpu_expected_probability": 0.8125,
+      "qpu_majority_correct": true
+    }
+  ],
+  "qpu_job": {
+    "job_id": "db6emt04qg6s73c4lja0",
+    "status": "DONE",
+    "backend": "ibm_kingston",
+    "submitted_at": "2026-10-12T14:15:16.563167+00:00",
+    "shots_per_circuit": 256,
+    "completed_at": "2026-10-12T14:15:28.755297+00:00",
+    "usage_seconds": 7,
+    "usage_consumed_seconds_after": 195,
+    "usage_remaining_seconds_after": 405,
+    "majority_correct_circuits": 64,
+    "total_circuits": 64,
+    "mean_expected_flag_probability": 0.8388671875,
+    "min_expected_flag_probability": 0.65234375,
+    "max_expected_flag_probability": 0.9296875,
+    "passing_state_mean_expected_probability": 0.84234375,
+    "failing_state_mean_expected_probability": 0.8264508928571429
+  },
+  "claim_limits": [
+    "This exhaustively tests the reversible truth mapping of the exact final-model two-bit event, not coherent amplitude estimation.",
+    "The compact Boolean circuit is truth-table equivalent at two-bit resolution; it is not the 42-qubit arithmetic implementation or the 66-qubit ten-bit implementation.",
+    "The two-bit uniform-grid event fraction is a coarse-discretization diagnostic and is not used as the reported process probability.",
+    "Basis-state classification on one IBM QPU does not establish quantum advantage or validate the dynamic PSA equations."
+  ]
+}

@@ -1,25 +1,25 @@
 {
-  "schema": "psa-final-objective-evidence-manifest/v45",
+  "schema": "psa-final-objective-evidence-manifest/v46",
   "files": [
     {
-      "path": "PSA_FINAL_OBJECTIVE_EVIDENCE_V45.json",
-      "bytes": 13680,
-      "sha256": "5ac3de198d1e10fc718fbbf05a30338571b06fa0de28a0031e1c3aa9eaae7fab"
+      "path": "PSA_FINAL_OBJECTIVE_EVIDENCE_V46.json",
+      "bytes": 15934,
+      "sha256": "9fa3f10ef2cd6af09792ba0163303175b47db100525f00782471f4e261d37d89"
     },
     {
-      "path": "PSA_FINAL_OBJECTIVE_GATES_V45.csv",
-      "bytes": 722,
-      "sha256": "ce1bbad0b371b1bb0c7709d3fa155cf67e14711b9f5bf6d213ebd08fe0752400"
+      "path": "PSA_FINAL_OBJECTIVE_GATES_V46.csv",
+      "bytes": 870,
+      "sha256": "3d6b15ec2451711354834d4dd39b096557de28313f99f05f3610648839b3ef17"
     },
     {
-      "path": "PSA_FINAL_OBJECTIVE_PROGRESS_V45.csv",
+      "path": "PSA_FINAL_OBJECTIVE_PROGRESS_V46.csv",
       "bytes": 323,
       "sha256": "067ada9f3348c6743a940e331e745ce14fa45506160c0a7b8ddd4d502dd0de06"
     },
     {
-      "path": "PSA_FINAL_OBJECTIVE_EVIDENCE_V45.md",
-      "bytes": 1146,
-      "sha256": "97308fd9756a88f7bca7751cc2071ca34164eb4c0ad0d7b412132bd03770eb32"
+      "path": "PSA_FINAL_OBJECTIVE_EVIDENCE_V46.md",
+      "bytes": 1539,
+      "sha256": "c78ff426946e4449a2987171fd4074decff887234afd62818e6c1b29b23ee974"
     }
   ]
 }

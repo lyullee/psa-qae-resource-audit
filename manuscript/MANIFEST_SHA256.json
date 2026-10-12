@@ -1,11 +1,11 @@
 {
-  "schema": "psa-spt-pressure-consistent-manuscript/v3",
-  "status": "pressure_consistent_manuscript_with_verified_portable_qasm_and_corrected_dwsim_crosscheck",
+  "schema": "psa-spt-pressure-consistent-manuscript/v4",
+  "status": "pressure_consistent_manuscript_with_corrected_dwsim_portable_qasm_and_final_event_ibm_qpu_probe",
   "sources": [
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\final_objective_evidence_v45\\PSA_FINAL_OBJECTIVE_EVIDENCE_V45.json",
-      "bytes": 13680,
-      "sha256": "5ac3de198d1e10fc718fbbf05a30338571b06fa0de28a0031e1c3aa9eaae7fab"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\final_objective_evidence_v46\\PSA_FINAL_OBJECTIVE_EVIDENCE_V46.json",
+      "bytes": 15934,
+      "sha256": "9fa3f10ef2cd6af09792ba0163303175b47db100525f00782471f4e261d37d89"
     },
     {
       "path": "10_TEA_LCA_Python\\psa_qae\\results\\hydraulically_feasible_full_6cell_cube_v1\\PSA_HYDRAULICALLY_FEASIBLE_FULL_6CELL_CUBE_V1.json",
@@ -58,6 +58,16 @@
       "sha256": "1ec3209f3e7e74b8dbfc2a641a0f35fb5f6877dd8f5fcc602d1a2f248aee5961"
     },
     {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\ibm_final_event_2bit_probe\\PSA_IBM_FINAL_EVENT_2BIT_PROBE.json",
+      "bytes": 51796,
+      "sha256": "3828c68c00ed1f67a5afa44fdf175ea2acc0f2c7f31255861be97119232e07cf"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\ibm_final_event_2bit_probe\\PSA_IBM_FINAL_EVENT_2BIT_JOB_VERIFICATION.json",
+      "bytes": 20804,
+      "sha256": "8ffa45535b5e9004a34fc1c44c30672ee482ccabe7058f254cd67a8de2b5db63"
+    },
+    {
       "path": "10_TEA_LCA_Python\\psa_qae\\results\\hydraulically_feasible_full_6cell_cube_v1\\PSA_HYDRAULICALLY_FEASIBLE_FULL_6CELL_CUBE_V1.png",
       "bytes": 183564,
       "sha256": "a478665130ba3820692f3068e4b299230a02987752577b99c3edee3513db71eb"
@@ -98,9 +108,9 @@
       "sha256": "d42087f0855a102bb1191a2cb673b9e43621de33fa6cf65a783a61e6fd964231"
     },
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_portable_qasm_oracle_v1\\Fig_pressure_consistent_portable_qasm_oracle_v1.png",
-      "bytes": 167691,
-      "sha256": "9c4e027c66c6a3a8e134ff462f7c3dac6a79eec8a120548f60ffc1bd7c44777c"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\ibm_final_event_2bit_probe\\Fig_qae_oracle_and_ibm_hardware_v2.png",
+      "bytes": 205556,
+      "sha256": "8d1ed29be2b36d8b3bed3df634e04cc6b9bcf6ebb652dd3bacc4500262129218"
     },
     {
       "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_pd_actual_syngas_poisoning_guard_v1\\Fig_pd_actual_syngas_poisoning_guard_v1.png",
@@ -155,24 +165,45 @@
   ],
   "outputs": [
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v3\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.md",
-      "bytes": 47619,
-      "sha256": "f4cb8b287cd56d254ccf9740b89320607c31224edac4521e6c0bab2e61596436"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v4\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.md",
+      "bytes": 50457,
+      "sha256": "978304e01c228943d6bd10b09d2fe0dac0781b1ba2f993924b740bc391304af3"
     },
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v3\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.docx",
-      "bytes": 4250111,
-      "sha256": "626bcf72b345346e6b414bcd28721ba7a85cec0c90a3243195cbe7185c255b7f"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v4\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.docx",
+      "bytes": 4295121,
+      "sha256": "776dd8a19517dcd07cd02c96a4c5648270bab1e31956928fd80b76a88cb164bc"
     },
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v3\\REFERENCE_METADATA_AUDIT.json",
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v4\\REFERENCE_METADATA_AUDIT.json",
       "bytes": 4663,
       "sha256": "9598aaf65f0a84bcd7a27cbfaf317b764437ff3d4cfdaf9654d97b09141eb2fa"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v4\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.pdf",
+      "bytes": 2321246,
+      "sha256": "092843d3d9d982fe83758758f56a172a1a14ad57a658fd32634a72ee7138cc4a"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v4\\PAGE_TEXT_INDEX.json",
+      "bytes": 5176,
+      "sha256": "52b67197b7f1574d38c9b6082c114037265c085f449c11a7429bc47c0ab173aa"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v4\\WORD_EXPORT_RENDER_AUDIT.json",
+      "bytes": 844,
+      "sha256": "cec8251ecd1419b9167f6c49961b3d750b069608488a5e2d32f872a572effee7"
     }
   ],
   "claim_boundary": {
-    "current": "6.0 bar tank, discharge booster, corrected 6.2 bar polishing inlet, 8 corners, 8 hold-outs, DOP853, RK4, and 16-case DWSIM Peng-Robinson cross-check",
-    "pending": "device-specific quantum optimization/routing and synchronized integrated experimental certification",
+    "current": "6.0 bar tank, discharge booster, corrected 6.2 bar polishing inlet, 8 corners, 8 hold-outs, DOP853, RK4, 16-case DWSIM Peng-Robinson cross-check, portable 66-qubit oracle, and 64-state final-event IBM QPU probe",
+    "pending": "coherent QAE, full 42- or 66-logical-qubit arithmetic-oracle execution, and synchronized integrated experimental certification",
     "legacy_only": "earlier hot-stage DWSIM heat-integration values and C# packet replay"
+  },
+  "render_verification": {
+    "renderer": "Microsoft Word ExportAsFixedFormat plus pypdfium2",
+    "page_count": 24,
+    "all_pages_visually_inspected": true,
+    "layout_defects_found": 0
   }
 }

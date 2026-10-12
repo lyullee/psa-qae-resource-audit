@@ -1,11 +1,11 @@
 {
-  "schema": "psa-final-objective-evidence/v45",
-  "status": "pressure_consistent_design_numerical_validation_portable_qasm_and_corrected_dwsim_verified",
+  "schema": "psa-final-objective-evidence/v46",
+  "status": "pressure_consistent_design_portable_qasm_corrected_dwsim_and_final_event_ibm_qpu_verified",
   "objective": "maximize continuously specification-compliant H2 shipment while retaining enough regeneration hydrogen under feed, adsorption-equilibrium, and kinetic uncertainty",
   "supersedes": {
-    "previous_schema": "psa-final-objective-evidence/v44",
-    "scientific_design_changed": true,
-    "reason": "the former 7.0 bar tank set point could not be passively filled from the 6.2 bar product manifold; the corrected topology uses a 6.0 bar regulated tank and a discharge booster to the 6.5 bar header"
+    "previous_schema": "psa-final-objective-evidence/v45",
+    "scientific_design_changed": false,
+    "reason": "the exact two-bit reduction of the final pressure-consistent chance event was compiled to a seven-qubit circuit, executed on IBM Quantum for all 64 inputs, and independently retrieved against all archived raw counts"
   },
   "hydraulic_topology": {
     "adsorber_high_pressure_bar": 6.5,
@@ -141,8 +141,59 @@
         "all_pass": true
       }
     },
-    "qiskit_optimized_transpilation_complete": false,
-    "hardware_routing_complete": false
+    "final_event_two_bit_hardware_probe": {
+      "job_id": "db6emt04qg6s73c4lja0",
+      "backend": "ibm_kingston",
+      "status": "DONE",
+      "logical_qubits": 7,
+      "full_arithmetic_logical_qubits_at_two_bit_resolution": 42,
+      "input_states": 64,
+      "shots_per_state": 256,
+      "routed_cz_range": [
+        80,
+        179
+      ],
+      "routed_depth_range": [
+        244,
+        456
+      ],
+      "majority_correct_states": 64,
+      "mean_expected_label_fraction": 0.8388671875,
+      "minimum_expected_label_fraction": 0.65234375,
+      "qpu_usage_seconds": 7,
+      "live_retrieval_exact_count_matches": 64,
+      "exact_local_reversible_basis_checks": 128,
+      "failing_disjoint_cubes": [
+        [
+          1,
+          1,
+          null,
+          null,
+          null,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          null,
+          1
+        ]
+      ],
+      "claim_boundary": "This read-only retrieval verifies all 64 basis-state count dictionaries for the exact two-bit reduction of the final pressure-consistent event. It is not coherent amplitude estimation, execution of the 42- or 66-logical-qubit arithmetic oracle, or quantum advantage."
+    },
+    "reduced_qiskit_optimized_transpilation_complete": true,
+    "hardware_routing_complete_for_reduced_probe": true,
+    "full_66_logical_qubit_hardware_execution_complete": false
   },
   "independent_numerical_checks": {
     "rk4_all_32_pairs_pass": true,
@@ -216,9 +267,11 @@
     "corrected_dwsim_execution_note": "syntax-equivalent local rebuild from the official DWSIM v8.7.1 FileDatabaseProvider.cs was preloaded because Windows Application Control blocked the distributed DWSIM.FileStorage.dll; process calculations still use the unmodified DWSIM 8.7.1 thermodynamics and unit-operation assemblies",
     "portable_qasm_serialization_complete": true,
     "portable_qasm_basis_state_verification_complete": true,
-    "qiskit_optimized_transpilation_complete": false,
-    "qiskit_optimized_transpilation_blocker": "Windows Application Control blocked the unsigned rustworkx native DLL",
-    "portable_resource_boundary": "exact unoptimized all-to-all Clifford+T decomposition; no device routing or hardware execution",
+    "qiskit_reduced_probe_routing_complete": true,
+    "qiskit_reduced_probe_hardware_execution_complete": true,
+    "qiskit_final_event_two_bit_probe_live_count_retrieval_complete": true,
+    "full_66_logical_qubit_hardware_execution_complete": false,
+    "portable_resource_boundary": "exact unoptimized all-to-all Clifford+T decomposition for the full oracle; IBM routing and hardware execution apply to an exact seven-qubit Boolean compilation of the final event at two-bit-per-variable resolution",
     "legacy_csharp_role": "third-language transport implementation evidence for the superseded input set only"
   },
   "progress_percent": {
@@ -291,6 +344,18 @@
       "path": "10_TEA_LCA_Python\\psa_qae\\results\\pressure_consistent_portable_qasm_oracle_v1\\PSA_PRESSURE_CONSISTENT_PORTABLE_QASM_ORACLE_V1.json",
       "bytes": 5069,
       "sha256": "0eaae2efa8046f46632dab2cdee591894adcccbcb4d38a2ebacd8511869a0b22"
+    },
+    {
+      "name": "ibm_qpu",
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\ibm_final_event_2bit_probe\\PSA_IBM_FINAL_EVENT_2BIT_PROBE.json",
+      "bytes": 51796,
+      "sha256": "3828c68c00ed1f67a5afa44fdf175ea2acc0f2c7f31255861be97119232e07cf"
+    },
+    {
+      "name": "ibm_qpu_verification",
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\ibm_final_event_2bit_probe\\PSA_IBM_FINAL_EVENT_2BIT_JOB_VERIFICATION.json",
+      "bytes": 20804,
+      "sha256": "8ffa45535b5e9004a34fc1c44c30672ee482ccabe7058f254cd67a8de2b5db63"
     },
     {
       "name": "dwsim",

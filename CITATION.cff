@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software or data, cite the archived release."
 title: "Hydraulically feasible regeneration-reserve-aware hydrogen pressure swing adsorption under uncertainty with staged membrane polishing and a quantum-ready probability event"
 type: software
-version: "0.2.1"
+version: "0.2.2"
 date-released: 2026-10-12
 doi: "10.5281/zenodo.23271866"
 url: "https://doi.org/10.5281/zenodo.23271866"
