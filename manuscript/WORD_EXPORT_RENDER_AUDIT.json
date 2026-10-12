@@ -1,9 +1,10 @@
 {
   "status": "visual_render_checked",
-  "checked_at": "2026-10-12T23:26:49.047662+09:00",
-  "page_count": 24,
-  "render_dpi": 150,
+  "checked_at": "2026-10-13T05:43:20.988262+09:00",
+  "page_count": 25,
+  "render_scale": 2.5,
   "renderer": "Microsoft Word ExportAsFixedFormat and pypdfium2",
+  "render_docx_py_attempt": "unavailable because LibreOffice soffice.exe is absent from PATH; Word PDF export was rasterized instead",
   "inspected_original_pages": [
     1,
     2,
@@ -28,7 +29,8 @@
     21,
     22,
     23,
-    24
+    24,
+    25
   ],
   "findings": {
     "clipped_content": false,
@@ -38,8 +40,8 @@
     "conclusion": "pass"
   },
   "sha256": {
-    "docx": "776dd8a19517dcd07cd02c96a4c5648270bab1e31956928fd80b76a88cb164bc",
-    "pdf": "092843d3d9d982fe83758758f56a172a1a14ad57a658fd32634a72ee7138cc4a"
+    "docx": "81c13a4333d06079fce341535802402cf954b6feabf5e64a3101ea8bb297ab92",
+    "pdf": "718e424842986e1f845b30bb1d5ec3de834ec8cb670f4b65c31f6cfc73edb743"
   },
-  "rendered_png_count": 24
+  "rendered_png_count": 25
 }

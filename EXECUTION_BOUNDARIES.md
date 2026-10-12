@@ -35,5 +35,7 @@
 
 Public studies support model family, concentration polarization, pressure and
 temperature feasibility, recovery scale, aging stress, and rejection controls.
+The Chen and Voigt tables additionally support the purity-recovery trade-off,
+purge-allocation cost, and feed-dependent cycle settings without local refitting.
 No public experiment synchronously measures the final five-component product
 at the declared ppm limits for this exact integrated PSA/membrane topology.

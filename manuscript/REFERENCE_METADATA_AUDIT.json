@@ -1,6 +1,6 @@
 {
   "schema": "psa-spt-reference-metadata-audit/v1",
-  "checked_on": "2026-10-12",
+  "checked_on": "2026-10-13",
   "method": "DOI metadata was checked against Crossref; the Cranfield dataset was checked against its institutional repository record.",
   "corrected_references": [
     {
@@ -100,5 +100,19 @@
     "doi": "10.1016/j.cej.2021.128473",
     "metadata_source": "https://yonsei.elsevierpure.com/en/publications/high-purity-hydrogen-production-via-a-water-gas-shift-reaction-in/",
     "status": "title, authors, journal, volume, article number, feed, conditions, and both reported CO-recovery operating points verified"
-  }
+  },
+  "additional_references": [
+    {
+      "reference": 31,
+      "doi": "10.1016/j.ecmx.2023.100459",
+      "metadata_source": "https://www.sciencedirect.com/science/article/pii/S2590174523001150",
+      "status": "authors, title, journal, volume, year, article number, open-access status, apparatus description, and Table 5 values checked"
+    },
+    {
+      "reference": 32,
+      "doi": "10.34726/hss.2022.103430",
+      "metadata_source": "https://repositum.tuwien.at/handle/20.500.12708/101906",
+      "status": "author, title, institution, year, full public thesis, Tables 11-16, purity-class definition, recovery values, and analytical boundary checked"
+    }
+  ]
 }

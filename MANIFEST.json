@@ -1,8 +1,14 @@
 {
-  "schema": "psa-qae-spt-release-candidate/v0.2.2-rc14",
-  "status": "pressure_consistent_release_with_final_event_ibm_qpu_probe",
+  "schema": "psa-qae-spt-release-candidate/v0.2.3-rc15",
+  "status": "pressure_consistent_release_with_two_public_experimental_holdouts",
   "current_evidence": "psa-final-objective-evidence/v46",
-  "manuscript_pages": 24,
+  "manuscript_pages": 25,
+  "external_experimental_holdouts": {
+    "chen_directional_tests": "12/12",
+    "voigt_source_event_passes": "6/13",
+    "voigt_feed_stages_with_at_least_one_pass": "4/4",
+    "model_refit": false
+  },
   "ibm_qpu": {
     "job_id": "db6emt04qg6s73c4lja0",
     "backend": "ibm_kingston",
@@ -11,6 +17,6 @@
     "majority_correct": 64,
     "qpu_usage_seconds": 7
   },
-  "release_boundary": "portable 66-qubit arithmetic oracle and final-event two-bit IBM truth-mapping probe complete; coherent QAE, full arithmetic-oracle hardware execution, and matched integrated experiment remain external",
-  "file_count": 208
+  "release_boundary": "portable 66-qubit arithmetic oracle, final-event two-bit IBM truth-mapping probe, and two post-freeze public experimental controls complete; coherent QAE, full arithmetic-oracle hardware execution, and matched integrated experiment remain external",
+  "file_count": 224
 }

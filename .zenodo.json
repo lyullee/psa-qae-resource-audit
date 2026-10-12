@@ -1,9 +1,9 @@
 {
   "title": "Hydraulically feasible regeneration-reserve-aware hydrogen pressure swing adsorption under uncertainty with staged membrane polishing and a quantum-ready probability event",
-  "version": "0.2.2",
-  "publication_date": "2026-10-12",
+  "version": "0.2.3",
+  "publication_date": "2026-10-13",
   "upload_type": "software",
-  "description": "Reproducibility package for a pressure-consistent dynamic hydrogen PSA, staged polymer and palladium polishing, public-data validation, uncertainty analysis, a verified 66-logical-qubit portable OpenQASM oracle, and an exact two-bit final-event truth-mapping probe executed over all 64 inputs on IBM Kingston.",
+  "description": "Reproducibility package for a pressure-consistent dynamic hydrogen PSA, staged polymer and palladium polishing, public-data validation, uncertainty analysis, two post-freeze public experimental hold-outs, a verified 66-logical-qubit portable OpenQASM oracle, and an exact two-bit final-event truth-mapping probe executed over all 64 inputs on IBM Kingston.",
   "creators": [
     {
       "name": "Lee, Ugwiyeon",
@@ -42,5 +42,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "IBM job db6emt04qg6s73c4lja0 used the free Open Plan for 7 QPU seconds. All 64 two-bit final-event states were majority-correct at 256 shots per state. This is a basis-state truth-mapping test, not coherent QAE or quantum advantage."
+  "notes": "The v0.2.3 update adds Chen et al. 2023 and Voigt 2022 experimental tables without refitting. All 12 Chen endpoint-direction tests pass; 6/13 Voigt cycles pass the source Type-1-plus-70%-recovery event, with at least one pass in each feed stage. The IBM result remains a basis-state truth-mapping test, not coherent QAE or quantum advantage."
 }

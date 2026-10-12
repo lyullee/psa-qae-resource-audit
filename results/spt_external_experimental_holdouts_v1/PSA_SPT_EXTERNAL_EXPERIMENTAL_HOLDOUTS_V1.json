@@ -1,0 +1,497 @@
+{
+  "schema": "psa-spt-external-experimental-holdouts/v1",
+  "model_freeze": {
+    "repository_release": "v0.2.2",
+    "release_doi": "https://doi.org/10.5281/zenodo.23319840",
+    "concept_doi": "https://doi.org/10.5281/zenodo.23271866",
+    "frozen_before_holdout_integration": true,
+    "refitted_parameters": [],
+    "changed_product_thresholds": []
+  },
+  "claim_type": "post-freeze external directional and joint-event validation",
+  "sources": {
+    "pradana_2023": {
+      "citation": "W.-H. Chen et al., Optimization of hydrogen purification via vacuum pressure swing adsorption, Energy Conversion and Management: X 20 (2023) 100459.",
+      "doi": "https://doi.org/10.1016/j.ecmx.2023.100459",
+      "open_article": "https://www.sciencedirect.com/science/article/pii/S2590174523001150",
+      "apparatus": "two-column H2/CO2 laboratory VPSA, 450 mm by 65 mm columns, 1 kg zeolite",
+      "table": 5,
+      "runs": [
+        {
+          "run": 1,
+          "operating_pressure_kgf_cm2_reported": 1,
+          "feed_h2_percent": 25,
+          "product_h2_purity_percent": 96.99,
+          "h2_recovery_percent": 56.11,
+          "project_joint_gate_pass": false
+        },
+        {
+          "run": 2,
+          "operating_pressure_kgf_cm2_reported": 3,
+          "feed_h2_percent": 25,
+          "product_h2_purity_percent": 97.11,
+          "h2_recovery_percent": 30.89,
+          "project_joint_gate_pass": false
+        },
+        {
+          "run": 3,
+          "operating_pressure_kgf_cm2_reported": 5,
+          "feed_h2_percent": 25,
+          "product_h2_purity_percent": 99.0,
+          "h2_recovery_percent": 24.2,
+          "project_joint_gate_pass": false
+        },
+        {
+          "run": 4,
+          "operating_pressure_kgf_cm2_reported": 1,
+          "feed_h2_percent": 50,
+          "product_h2_purity_percent": 98.97,
+          "h2_recovery_percent": 30.12,
+          "project_joint_gate_pass": false
+        },
+        {
+          "run": 5,
+          "operating_pressure_kgf_cm2_reported": 3,
+          "feed_h2_percent": 50,
+          "product_h2_purity_percent": 99.84,
+          "h2_recovery_percent": 17.56,
+          "project_joint_gate_pass": false
+        },
+        {
+          "run": 6,
+          "operating_pressure_kgf_cm2_reported": 3,
+          "feed_h2_percent": 50,
+          "product_h2_purity_percent": 99.29,
+          "h2_recovery_percent": 16.77,
+          "project_joint_gate_pass": false
+        },
+        {
+          "run": 7,
+          "operating_pressure_kgf_cm2_reported": 3,
+          "feed_h2_percent": 50,
+          "product_h2_purity_percent": 99.66,
+          "h2_recovery_percent": 17.93,
+          "project_joint_gate_pass": false
+        },
+        {
+          "run": 8,
+          "operating_pressure_kgf_cm2_reported": 3,
+          "feed_h2_percent": 50,
+          "product_h2_purity_percent": 99.94,
+          "h2_recovery_percent": 17.92,
+          "project_joint_gate_pass": false
+        },
+        {
+          "run": 9,
+          "operating_pressure_kgf_cm2_reported": 3,
+          "feed_h2_percent": 50,
+          "product_h2_purity_percent": 99.21,
+          "h2_recovery_percent": 16.75,
+          "project_joint_gate_pass": false
+        },
+        {
+          "run": 10,
+          "operating_pressure_kgf_cm2_reported": 5,
+          "feed_h2_percent": 50,
+          "product_h2_purity_percent": 99.99,
+          "h2_recovery_percent": 13.67,
+          "project_joint_gate_pass": false
+        },
+        {
+          "run": 11,
+          "operating_pressure_kgf_cm2_reported": 1,
+          "feed_h2_percent": 75,
+          "product_h2_purity_percent": 99.99,
+          "h2_recovery_percent": 20.29,
+          "project_joint_gate_pass": false
+        },
+        {
+          "run": 12,
+          "operating_pressure_kgf_cm2_reported": 3,
+          "feed_h2_percent": 75,
+          "product_h2_purity_percent": 99.99,
+          "h2_recovery_percent": 13.57,
+          "project_joint_gate_pass": false
+        },
+        {
+          "run": 13,
+          "operating_pressure_kgf_cm2_reported": 5,
+          "feed_h2_percent": 75,
+          "product_h2_purity_percent": 99.99,
+          "h2_recovery_percent": 9.5,
+          "project_joint_gate_pass": false
+        }
+      ],
+      "directional_tests": [
+        {
+          "factor": "pressure",
+          "held_at": "feed H2 25%",
+          "response": "purity",
+          "expected": "nondecreasing",
+          "delta": 2.010000000000005,
+          "pass": true
+        },
+        {
+          "factor": "pressure",
+          "held_at": "feed H2 25%",
+          "response": "recovery",
+          "expected": "decreasing",
+          "delta": -31.91,
+          "pass": true
+        },
+        {
+          "factor": "pressure",
+          "held_at": "feed H2 50%",
+          "response": "purity",
+          "expected": "nondecreasing",
+          "delta": 1.019999999999996,
+          "pass": true
+        },
+        {
+          "factor": "pressure",
+          "held_at": "feed H2 50%",
+          "response": "recovery",
+          "expected": "decreasing",
+          "delta": -16.450000000000003,
+          "pass": true
+        },
+        {
+          "factor": "pressure",
+          "held_at": "feed H2 75%",
+          "response": "purity",
+          "expected": "nondecreasing",
+          "delta": 0.0,
+          "pass": true
+        },
+        {
+          "factor": "pressure",
+          "held_at": "feed H2 75%",
+          "response": "recovery",
+          "expected": "decreasing",
+          "delta": -10.79,
+          "pass": true
+        },
+        {
+          "factor": "feed_h2",
+          "held_at": "pressure 1 kgf cm-2 reported",
+          "response": "purity",
+          "expected": "nondecreasing",
+          "delta": 3.0,
+          "pass": true
+        },
+        {
+          "factor": "feed_h2",
+          "held_at": "pressure 1 kgf cm-2 reported",
+          "response": "recovery",
+          "expected": "decreasing",
+          "delta": -35.82,
+          "pass": true
+        },
+        {
+          "factor": "feed_h2",
+          "held_at": "pressure 3 kgf cm-2 reported",
+          "response": "purity",
+          "expected": "nondecreasing",
+          "delta": 2.8799999999999955,
+          "pass": true
+        },
+        {
+          "factor": "feed_h2",
+          "held_at": "pressure 3 kgf cm-2 reported",
+          "response": "recovery",
+          "expected": "decreasing",
+          "delta": -17.32,
+          "pass": true
+        },
+        {
+          "factor": "feed_h2",
+          "held_at": "pressure 5 kgf cm-2 reported",
+          "response": "purity",
+          "expected": "nondecreasing",
+          "delta": 0.9899999999999949,
+          "pass": true
+        },
+        {
+          "factor": "feed_h2",
+          "held_at": "pressure 5 kgf cm-2 reported",
+          "response": "recovery",
+          "expected": "decreasing",
+          "delta": -14.7,
+          "pass": true
+        }
+      ],
+      "directional_pass_count": 12,
+      "directional_test_count": 12,
+      "correlations_descriptive": {
+        "purity_vs_recovery": {
+          "spearman_rho": -0.7660910188636757,
+          "two_sided_p_descriptive": 0.002260329824394875
+        },
+        "pressure_vs_purity": {
+          "spearman_rho": 0.3528869368610239,
+          "two_sided_p_descriptive": 0.23693461253564424
+        },
+        "pressure_vs_recovery": {
+          "spearman_rho": -0.5749661560353623,
+          "two_sided_p_descriptive": 0.03981807388758622
+        },
+        "feed_h2_vs_purity": {
+          "spearman_rho": 0.8438600664067963,
+          "two_sided_p_descriptive": 0.00028723358099698004
+        },
+        "feed_h2_vs_recovery": {
+          "spearman_rho": -0.6960116625691226,
+          "two_sided_p_descriptive": 0.008233162962735976
+        }
+      },
+      "center_repeatability": {
+        "n": 5,
+        "purity_mean_percent": 99.588,
+        "purity_sample_sd_percentage_point": 0.32568389582538493,
+        "recovery_mean_percent": 17.386000000000003,
+        "recovery_sample_sd_percentage_point": 0.5906183200680456
+      },
+      "project_joint_gate": {
+        "purity_floor_percent": 99.97,
+        "recovery_floor_percent": 88.294,
+        "pass_count": 0,
+        "total": 13
+      }
+    },
+    "voigt_2022": {
+      "citation": "J. Voigt, Pressure Swing Adsorption for the Recovery of Hydrogen from Underground Storages, TU Wien, 2022.",
+      "doi": "https://doi.org/10.34726/hss.2022.103430",
+      "apparatus": "four-bed activated-carbon H2/CH4 laboratory PSA, 25-60 bara, four transient feed stages",
+      "source_tables": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "runs": [
+        {
+          "stage": 1,
+          "run": 1,
+          "bed_utilization_pct": 50,
+          "purge_to_feed_ratio": 0.18,
+          "ppe2_bar_abs": 8.1,
+          "cycle_time_s": 2520,
+          "number_of_cycles": 3,
+          "last_cycle_recovery_pct": 77.4,
+          "recovery_uncertainty_pct": 1.7,
+          "purity_class": "Type 1",
+          "purity_type1": true,
+          "event_recovery_ge_70_and_type1": true
+        },
+        {
+          "stage": 1,
+          "run": 2,
+          "bed_utilization_pct": 30,
+          "purge_to_feed_ratio": 0.18,
+          "ppe2_bar_abs": 10.0,
+          "cycle_time_s": 1512,
+          "number_of_cycles": 6,
+          "last_cycle_recovery_pct": 74.4,
+          "recovery_uncertainty_pct": 1.7,
+          "purity_class": "Type 1",
+          "purity_type1": true,
+          "event_recovery_ge_70_and_type1": true
+        },
+        {
+          "stage": 1,
+          "run": 3,
+          "bed_utilization_pct": 50,
+          "purge_to_feed_ratio": 0.12,
+          "ppe2_bar_abs": 10.0,
+          "cycle_time_s": 2320,
+          "number_of_cycles": 4,
+          "last_cycle_recovery_pct": 80.9,
+          "recovery_uncertainty_pct": 1.7,
+          "purity_class": "Type 1",
+          "purity_type1": true,
+          "event_recovery_ge_70_and_type1": true
+        },
+        {
+          "stage": 2,
+          "run": 4,
+          "bed_utilization_pct": 50,
+          "purge_to_feed_ratio": 0.38,
+          "ppe2_bar_abs": 7.2,
+          "cycle_time_s": 1496,
+          "number_of_cycles": 5,
+          "last_cycle_recovery_pct": 66.5,
+          "recovery_uncertainty_pct": 2.1,
+          "purity_class": "Type 1",
+          "purity_type1": true,
+          "event_recovery_ge_70_and_type1": false
+        },
+        {
+          "stage": 2,
+          "run": 5,
+          "bed_utilization_pct": 30,
+          "purge_to_feed_ratio": 0.3,
+          "ppe2_bar_abs": 9.2,
+          "cycle_time_s": 896,
+          "number_of_cycles": 6,
+          "last_cycle_recovery_pct": 62.0,
+          "recovery_uncertainty_pct": 2.1,
+          "purity_class": "Type 1",
+          "purity_type1": true,
+          "event_recovery_ge_70_and_type1": false
+        },
+        {
+          "stage": 2,
+          "run": 6,
+          "bed_utilization_pct": 50,
+          "purge_to_feed_ratio": 0.2,
+          "ppe2_bar_abs": 9.2,
+          "cycle_time_s": 1496,
+          "number_of_cycles": 4,
+          "last_cycle_recovery_pct": 73.3,
+          "recovery_uncertainty_pct": 2.1,
+          "purity_class": "Type 1",
+          "purity_type1": true,
+          "event_recovery_ge_70_and_type1": true
+        },
+        {
+          "stage": 3,
+          "run": 7,
+          "bed_utilization_pct": 50,
+          "purge_to_feed_ratio": 0.3,
+          "ppe2_bar_abs": 5.6,
+          "cycle_time_s": 1152,
+          "number_of_cycles": 7,
+          "last_cycle_recovery_pct": 73.1,
+          "recovery_uncertainty_pct": 2.8,
+          "purity_class": "Type 1",
+          "purity_type1": true,
+          "event_recovery_ge_70_and_type1": true
+        },
+        {
+          "stage": 3,
+          "run": 8,
+          "bed_utilization_pct": 50,
+          "purge_to_feed_ratio": 0.4,
+          "ppe2_bar_abs": 2.5,
+          "cycle_time_s": 1152,
+          "number_of_cycles": 3,
+          "last_cycle_recovery_pct": 68.6,
+          "recovery_uncertainty_pct": 3.1,
+          "purity_class": "Type 2",
+          "purity_type1": false,
+          "event_recovery_ge_70_and_type1": false
+        },
+        {
+          "stage": 3,
+          "run": 9,
+          "bed_utilization_pct": 30,
+          "purge_to_feed_ratio": 0.4,
+          "ppe2_bar_abs": 7.9,
+          "cycle_time_s": 692,
+          "number_of_cycles": 6,
+          "last_cycle_recovery_pct": 54.0,
+          "recovery_uncertainty_pct": 2.8,
+          "purity_class": "Type 1",
+          "purity_type1": true,
+          "event_recovery_ge_70_and_type1": false
+        },
+        {
+          "stage": 3,
+          "run": 10,
+          "bed_utilization_pct": 50,
+          "purge_to_feed_ratio": 0.3,
+          "ppe2_bar_abs": 7.9,
+          "cycle_time_s": 1152,
+          "number_of_cycles": 4,
+          "last_cycle_recovery_pct": 69.9,
+          "recovery_uncertainty_pct": 2.8,
+          "purity_class": "Type 1",
+          "purity_type1": true,
+          "event_recovery_ge_70_and_type1": false
+        },
+        {
+          "stage": 4,
+          "run": 11,
+          "bed_utilization_pct": 35,
+          "purge_to_feed_ratio": 0.5,
+          "ppe2_bar_abs": 3.3,
+          "cycle_time_s": 688,
+          "number_of_cycles": 8,
+          "last_cycle_recovery_pct": 62.6,
+          "recovery_uncertainty_pct": 3.7,
+          "purity_class": "Type 1",
+          "purity_type1": true,
+          "event_recovery_ge_70_and_type1": false
+        },
+        {
+          "stage": 4,
+          "run": 12,
+          "bed_utilization_pct": 35,
+          "purge_to_feed_ratio": 0.3,
+          "ppe2_bar_abs": 6.9,
+          "cycle_time_s": 688,
+          "number_of_cycles": 4,
+          "last_cycle_recovery_pct": 76.0,
+          "recovery_uncertainty_pct": 3.6,
+          "purity_class": "Type 1",
+          "purity_type1": true,
+          "event_recovery_ge_70_and_type1": true
+        },
+        {
+          "stage": 4,
+          "run": 13,
+          "bed_utilization_pct": 25,
+          "purge_to_feed_ratio": 0.3,
+          "ppe2_bar_abs": 6.9,
+          "cycle_time_s": 492,
+          "number_of_cycles": 11,
+          "last_cycle_recovery_pct": 62.0,
+          "recovery_uncertainty_pct": 3.6,
+          "purity_class": "Type 1",
+          "purity_type1": true,
+          "event_recovery_ge_70_and_type1": false
+        }
+      ],
+      "source_joint_gate": {
+        "purity": "Type 1: CH4 did not exceed the 0.5 vol% analyzer limit",
+        "recovery_floor_percent": 70.0,
+        "pass_count": 6,
+        "total": 13,
+        "wilson95": [
+          0.23206067809538303,
+          0.7085620428549398
+        ],
+        "stage_pass_counts": {
+          "1": 3,
+          "2": 1,
+          "3": 1,
+          "4": 1
+        }
+      },
+      "correlations_descriptive": {
+        "purge_feed_vs_recovery": {
+          "spearman_rho": -0.7577830657342797,
+          "two_sided_p_descriptive": 0.0026914281175833654
+        }
+      },
+      "repeatability": "duplicate breakthrough times differed by less than 3.3% according to the source",
+      "analytical_boundary": "the source explicitly states that fuel-cell-grade 99.97% purity could not be investigated with the gas analyzer"
+    }
+  },
+  "acceptance": {
+    "pradana_all_12_endpoint_directions": true,
+    "pradana_negative_purity_recovery_rank_association": true,
+    "voigt_negative_purge_recovery_rank_association": true,
+    "voigt_at_least_one_source_gate_pass_per_feed_stage": true,
+    "overall": "pass"
+  },
+  "boundary": [
+    "Neither source was used to fit the local PSA, membrane, receiver, or oracle model.",
+    "Different equipment and feeds prevent pointwise error claims for the final integrated apparatus.",
+    "The Chen et al. data test directional purity-recovery behavior and show that the project joint gate is not reached by the public two-bed VPSA domain.",
+    "The Voigt data test purge-allocation behavior and source-defined joint-event feasibility across transient feed stages.",
+    "Voigt Type 1 purity is an analyzer-limited class, not proof of the project's 99.97% H2 or component-specific ppm limits."
+  ]
+}

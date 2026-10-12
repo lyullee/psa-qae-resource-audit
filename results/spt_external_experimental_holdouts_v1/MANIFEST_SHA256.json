@@ -1,0 +1,35 @@
+{
+  "schema": "psa-spt-external-experimental-holdouts-manifest/v1",
+  "files": [
+    {
+      "path": "results\\spt_external_experimental_holdouts_v1\\CHEN_2023_TABLE5_DIGITIZED.csv",
+      "bytes": 465,
+      "sha256": "e39be92514a7016114b5b9d2e5740dc860160d3c4848ab2506212c05d1ddd207"
+    },
+    {
+      "path": "results\\spt_external_experimental_holdouts_v1\\VOIGT_2022_TABLES13_16_DIGITIZED.csv",
+      "bytes": 851,
+      "sha256": "9e930e5e298516599602c012d4e77395392b3ac62580c5ac10e40573d80af387"
+    },
+    {
+      "path": "results\\spt_external_experimental_holdouts_v1\\PSA_SPT_EXTERNAL_EXPERIMENTAL_HOLDOUTS_V1.json",
+      "bytes": 16660,
+      "sha256": "071149fcf7629ad4db9d2f1323324e743feeaedf1ec1e59104df2f461d619e28"
+    },
+    {
+      "path": "results\\spt_external_experimental_holdouts_v1\\PSA_SPT_EXTERNAL_EXPERIMENTAL_HOLDOUTS_V1.md",
+      "bytes": 2095,
+      "sha256": "550d78b2bf36b523d48ca60c95c54473be90a7132c4682fc148a3ec3609215cb"
+    },
+    {
+      "path": "results\\spt_external_experimental_holdouts_v1\\Fig_external_experimental_holdouts_v1.png",
+      "bytes": 450422,
+      "sha256": "44850d2108fc76dca8d8977c2d1c9d3c5ee86357123f4552a7f8bd6bd012aca1"
+    },
+    {
+      "path": "results\\spt_external_experimental_holdouts_v1\\Fig_external_experimental_holdouts_v1.pdf",
+      "bytes": 39529,
+      "sha256": "5b191950c06dbcfa4b2025b23a2ebdc2a8f7a038e9004782bdd402898e38269c"
+    }
+  ]
+}

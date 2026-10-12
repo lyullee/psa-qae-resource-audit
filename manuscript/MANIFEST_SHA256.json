@@ -1,6 +1,6 @@
 {
-  "schema": "psa-spt-pressure-consistent-manuscript/v4",
-  "status": "pressure_consistent_manuscript_with_corrected_dwsim_portable_qasm_and_final_event_ibm_qpu_probe",
+  "schema": "psa-spt-pressure-consistent-manuscript/v5",
+  "status": "pressure_consistent_manuscript_with_two_post_freeze_public_experimental_holdouts",
   "sources": [
     {
       "path": "10_TEA_LCA_Python\\psa_qae\\results\\final_objective_evidence_v46\\PSA_FINAL_OBJECTIVE_EVIDENCE_V46.json",
@@ -66,6 +66,11 @@
       "path": "10_TEA_LCA_Python\\psa_qae\\results\\ibm_final_event_2bit_probe\\PSA_IBM_FINAL_EVENT_2BIT_JOB_VERIFICATION.json",
       "bytes": 20804,
       "sha256": "8ffa45535b5e9004a34fc1c44c30672ee482ccabe7058f254cd67a8de2b5db63"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_external_experimental_holdouts_v1\\PSA_SPT_EXTERNAL_EXPERIMENTAL_HOLDOUTS_V1.json",
+      "bytes": 16660,
+      "sha256": "071149fcf7629ad4db9d2f1323324e743feeaedf1ec1e59104df2f461d619e28"
     },
     {
       "path": "10_TEA_LCA_Python\\psa_qae\\results\\hydraulically_feasible_full_6cell_cube_v1\\PSA_HYDRAULICALLY_FEASIBLE_FULL_6CELL_CUBE_V1.png",
@@ -158,52 +163,66 @@
       "sha256": "ce4dace9b4a95a53867c5b556be97a15fcf0ae638d5f0625d73b19418d685ac8"
     },
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\csharp_direct_transport_crosscheck_v1\\Fig_csharp_direct_transport_crosscheck_v1.png",
-      "bytes": 334159,
-      "sha256": "6073722c8e3cd2854bb44f8a1bb5e6aa3e0840e087dc2964e6ebfcc27750ec09"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_external_experimental_holdouts_v1\\Fig_external_experimental_holdouts_v1.png",
+      "bytes": 450422,
+      "sha256": "44850d2108fc76dca8d8977c2d1c9d3c5ee86357123f4552a7f8bd6bd012aca1"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_external_experimental_holdouts_v1\\PSA_SPT_EXTERNAL_EXPERIMENTAL_HOLDOUTS_V1.md",
+      "bytes": 2095,
+      "sha256": "550d78b2bf36b523d48ca60c95c54473be90a7132c4682fc148a3ec3609215cb"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_external_experimental_holdouts_v1\\CHEN_2023_TABLE5_DIGITIZED.csv",
+      "bytes": 465,
+      "sha256": "e39be92514a7016114b5b9d2e5740dc860160d3c4848ab2506212c05d1ddd207"
+    },
+    {
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_external_experimental_holdouts_v1\\VOIGT_2022_TABLES13_16_DIGITIZED.csv",
+      "bytes": 851,
+      "sha256": "9e930e5e298516599602c012d4e77395392b3ac62580c5ac10e40573d80af387"
     }
   ],
   "outputs": [
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v4\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.md",
-      "bytes": 50457,
-      "sha256": "978304e01c228943d6bd10b09d2fe0dac0781b1ba2f993924b740bc391304af3"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v5\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.md",
+      "bytes": 55115,
+      "sha256": "b060b065c8a9143eb74522556a0308b79d9a94249b76c7bd407cb193fd8f35fc"
     },
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v4\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.docx",
-      "bytes": 4295121,
-      "sha256": "776dd8a19517dcd07cd02c96a4c5648270bab1e31956928fd80b76a88cb164bc"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v5\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.docx",
+      "bytes": 4417843,
+      "sha256": "81c13a4333d06079fce341535802402cf954b6feabf5e64a3101ea8bb297ab92"
     },
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v4\\REFERENCE_METADATA_AUDIT.json",
-      "bytes": 4663,
-      "sha256": "9598aaf65f0a84bcd7a27cbfaf317b764437ff3d4cfdaf9654d97b09141eb2fa"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v5\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.pdf",
+      "bytes": 2391161,
+      "sha256": "718e424842986e1f845b30bb1d5ec3de834ec8cb670f4b65c31f6cfc73edb743"
     },
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v4\\SPT_PRESSURE_CONSISTENT_MANUSCRIPT.pdf",
-      "bytes": 2321246,
-      "sha256": "092843d3d9d982fe83758758f56a172a1a14ad57a658fd32634a72ee7138cc4a"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v5\\REFERENCE_METADATA_AUDIT.json",
+      "bytes": 5350,
+      "sha256": "84839350ccfa4e25ad5b640c8622c0f895a536ce82f4dcef95f3ee6b7b1cc7fb"
     },
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v4\\PAGE_TEXT_INDEX.json",
-      "bytes": 5176,
-      "sha256": "52b67197b7f1574d38c9b6082c114037265c085f449c11a7429bc47c0ab173aa"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v5\\PAGE_TEXT_INDEX.json",
+      "bytes": 5450,
+      "sha256": "b39091b57e833f56e1e148a80529331e0600fed7900bf6f0e6c56596e48d6a05"
     },
     {
-      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v4\\WORD_EXPORT_RENDER_AUDIT.json",
-      "bytes": 844,
-      "sha256": "cec8251ecd1419b9167f6c49961b3d750b069608488a5e2d32f872a572effee7"
+      "path": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v5\\WORD_EXPORT_RENDER_AUDIT.json",
+      "bytes": 993,
+      "sha256": "dd334ee7219f9fd0b420d14e00f4e1664d260c29808af7a79514a2cc75a3c78d"
     }
   ],
   "claim_boundary": {
-    "current": "6.0 bar tank, discharge booster, corrected 6.2 bar polishing inlet, 8 corners, 8 hold-outs, DOP853, RK4, 16-case DWSIM Peng-Robinson cross-check, portable 66-qubit oracle, and 64-state final-event IBM QPU probe",
+    "current": "6.0 bar tank, discharge booster, corrected 6.2 bar polishing inlet, 8 corners, 8 internal hold-outs, two post-freeze public experimental hold-outs, DOP853, RK4, 16-case DWSIM Peng-Robinson cross-check, portable 66-qubit oracle, and 64-state final-event IBM QPU probe",
     "pending": "coherent QAE, full 42- or 66-logical-qubit arithmetic-oracle execution, and synchronized integrated experimental certification",
     "legacy_only": "earlier hot-stage DWSIM heat-integration values and C# packet replay"
   },
-  "render_verification": {
-    "renderer": "Microsoft Word ExportAsFixedFormat plus pypdfium2",
-    "page_count": 24,
-    "all_pages_visually_inspected": true,
-    "layout_defects_found": 0
+  "render_qa": {
+    "pages": 25,
+    "visual_inspection": "pass",
+    "audit": "10_TEA_LCA_Python\\psa_qae\\results\\spt_pressure_consistent_manuscript_v5\\WORD_EXPORT_RENDER_AUDIT.json"
   }
 }
